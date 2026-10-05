@@ -1,0 +1,96 @@
+{
+  "name": "Arizona",
+  "abbr": "AZ",
+  "slug": "arizona",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 5.6,
+    "rateNote": "Arizona levies a transaction privilege tax (TPT), a tax on the vendor for the privilege of doing business, usually passed on to buyers. The 5.6% state retail rate is the 5% base rate (A.R.S. 42-5010) plus a voter-approved 0.6% education increment. Counties and cities add their own TPT.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "county excise taxes and city/town transaction privilege taxes, all collected by ADOR; some cities apply tiered rates on single items above a set price",
+      "cap": null,
+      "capNote": "Cities must follow the state retail rules (A.R.S. 42-6017) but may still tax food for home consumption.",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://aztaxes.gov/Home/Address/",
+      "url": "https://azdor.gov/business/transaction-privilege-tax"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food for home consumption sold by grocery-type retailers is exempt from state TPT (A.R.S. 42-5102); food consumed on the premises is taxable. Cities and towns may still levy their TPT on food sales.",
+      "url": "https://www.azleg.gov/ars/42/05102.htm"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable under the retail classification; Arizona has no clothing exemption.",
+      "url": "https://www.azleg.gov/ars/42/05010.htm"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://azdor.gov/business/transaction-privilege-tax/deduction-codes"
+    },
+    "otherRates": [
+      {"item": "transient lodging", "rate": 5.5, "note": "State base rate for hotels and short-term lodging (A.R.S. 42-5010(A)(2)), before the education increment and local taxes.", "url": "https://www.azleg.gov/ars/42/05010.htm"},
+      {"item": "mining", "rate": 3.125, "note": "State base rate for the mining classification.", "url": "https://www.azleg.gov/ars/42/05010.htm"},
+      {"item": "commercial lease (state)", "rate": 0, "note": "No state TPT on commercial leases; cities may tax them.", "url": "https://www.azleg.gov/ars/42/05010.htm"}
+    ],
+    "holidays2026": [],
+    "holidayNote": "Arizona has no sales tax holiday.",
+    "useTax": {
+      "rate": 5.6,
+      "note": "State use tax on items bought from out-of-state retailers without Arizona tax is levied at the same rate as the retail TPT (A.R.S. 42-5155), including the 0.6% increment.",
+      "url": "https://www.azleg.gov/ars/42/05155.htm"
+    },
+    "facts": [
+      {"text": "Arizona's 'sales tax' is legally a transaction privilege tax on the seller, not on the buyer, though sellers may pass it on.", "url": "https://azdor.gov/business/transaction-privilege-tax"},
+      {"text": "Prescription drugs are exempt from both state and city TPT.", "url": "https://azdor.gov/business/transaction-privilege-tax/deduction-codes"},
+      {"text": "Groceries are exempt from state TPT, but cities and towns may tax food sold for home consumption.", "url": "https://www.azleg.gov/ars/42/06017.htm"},
+      {"text": "Since January 1, 2025, no city or town may tax residential rents (A.R.S. 42-6004(H)).", "url": "https://www.azleg.gov/ars/42/06004.htm"},
+      {"text": "Some cities use tiered rates: a different rate on single items priced above a threshold, either on the whole item or on the portion over it.", "url": "https://azdor.gov/business/transaction-privilege-tax/tax-rate-table"},
+      {"text": "City rate changes take effect only after a 60-day notice period agreed between ADOR and the municipalities.", "url": "https://azdor.gov/business/transaction-privilege-tax/tax-rate-table"},
+      {"text": "Nonresidents buying a car in Arizona pay a reduced state rate if their home state's vehicle tax is lower than Arizona's 5.6%.", "url": "https://azdor.gov/business/transaction-privilege-tax/motor-vehicle-sales"}
+    ]
+  },
+  "property": {
+    "levied": "County, city, school district, community college and special district levies, billed and collected by the county treasurer; primary taxes on the limited property value (LPV).",
+    "assessment": {
+      "text": "Owner-occupied homes (class three) are assessed at 10% of limited property value. The LPV may rise by at most 5% a year and never above full cash value. Commercial property (class one) is assessed at 15.5% in 2026, falling to 15% from 2027.",
+      "ratio": 10,
+      "url": "https://www.azleg.gov/ars/42/15003.htm"
+    },
+    "homestead": {
+      "name": "Homeowner rebate (additional state aid to education)",
+      "amountType": "credit",
+      "amount": 600,
+      "text": "On owner-occupied homes the state pays part of the school district primary tax (50% of the qualifying rate, limited to half the district's primary rate), reducing each home's bill by up to $600. Separately, primary taxes on a home cannot exceed 1% of its limited value.",
+      "applyBy": "Applied by the county on owner-occupied (primary residence) classification.",
+      "url": "https://www.azleg.gov/ars/15/00972.htm"
+    },
+    "otherRelief": [
+      {"name": "Widow/widower and disability exemption", "text": "$4,188 of assessed value (statutory base, indexed each year) for eligible widows, widowers and totally disabled residents within income and assessment limits.", "url": "https://www.azleg.gov/ars/42/11111.htm"},
+      {"name": "100% disabled veteran exemption", "text": "The primary residence of a veteran rated 100% service-connected disabled (or unemployable) is fully exempt, as is that of the surviving spouse.", "url": "https://www.azleg.gov/ars/42/11111.htm"},
+      {"name": "1% residential cap", "text": "Primary taxes on residential property may not exceed 1% of its limited value (bonds and voter overrides excluded).", "url": "https://www.azleg.gov/const/9/18.htm"}
+    ],
+    "dueDates": {
+      "text": "First half due October 1, delinquent after November 1 at 5 p.m.; second half due March 1, delinquent after May 1 at 5 p.m. Bills of $100 or less are due in full October 1. No interest is charged if the full year is paid by December 31.",
+      "url": "https://www.azleg.gov/ars/42/18052.htm"
+    },
+    "facts": [
+      {"text": "Limited property value rises at most 5% a year (A.R.S. 42-13301), whatever the market does.", "url": "https://www.azleg.gov/ars/42/13301.htm"},
+      {"text": "The Arizona Constitution caps primary taxes on a home at 1% of its limited value.", "url": "https://www.azleg.gov/const/9/18.htm"},
+      {"text": "The commercial assessment ratio has been cut step by step from 25% in 2005 to 15.5% in 2026 and 15% from 2027.", "url": "https://www.azleg.gov/ars/42/15001.htm"},
+      {"text": "Residential rentals (class four) are assessed at the same 10% ratio as owner-occupied homes but do not get the homeowner rebate.", "url": "https://www.azleg.gov/ars/42/15004.htm"},
+      {"text": "Late property taxes bear 16% simple interest a year.", "url": "https://www.azleg.gov/ars/42/18053.htm"}
+    ]
+  },
+  "uncertain": [
+    "azdor.gov pages sit behind a Cloudflare challenge: they answer HTTP 403 to curl but open normally in a browser (read via Chrome).",
+    "The indexed 2026 amount of the widow/disability exemption ($4,188 is the statutory base before annual indexing) was not read on an ADOR page.",
+    "Effective date of the 5.6% combined state rate not stated on the pages read."
+  ]
+}

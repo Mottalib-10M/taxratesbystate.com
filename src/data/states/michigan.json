@@ -1,0 +1,149 @@
+{
+  "name": "Michigan",
+  "abbr": "MI",
+  "slug": "michigan",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6,
+    "rateNote": "6% sales tax on retail sales of tangible personal property and 6% use tax; residential electricity, natural gas and home heating fuels are taxed at 4%. Michigan does not allow cities or local units to impose sales or use tax.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": false,
+      "levies": "none: Michigan does not allow city or local units to impose sales or use tax",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://www.michigan.gov/taxes/business-taxes/sales-use-tax"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "The Michigan Constitution (art. IX, sec. 8) prohibits taxing food for human consumption except prepared food. Prepared food includes food sold heated, food mixed by the seller, and (since February 13, 2024, PAs 141-142 of 2023) food sold with eating utensils provided by the seller.",
+      "url": "https://www.michigan.gov/treasury/reference/taxpayer-notices/2024/01/25/changes-to-the-tax-treatment-of-prepared-food"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption; clothing is taxed at 6%.",
+      "url": "https://www.michigan.gov/taxes/business-taxes/sales-use-tax"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.michigan.gov/taxes/business-taxes/sales-use-tax/information/exemptions-faq"
+    },
+    "otherRates": [
+      {
+        "item": "residential electricity, natural gas and home heating fuel",
+        "rate": 4,
+        "note": "Reduced rate for residential use.",
+        "url": "https://www.michigan.gov/taxes/business-taxes/sales-use-tax"
+      },
+      {
+        "item": "hotel/motel accommodations and telecommunications",
+        "rate": 6,
+        "note": "Subject to the 6% use tax.",
+        "url": "https://www.michigan.gov/taxes/business-taxes/sales-use-tax"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "Michigan has no sales tax holiday; none appears in Treasury guidance.",
+    "useTax": {
+      "rate": 6,
+      "note": "6% on items bought out of state or online without Michigan tax, with credit for tax paid to another state. Items bought for personal use outside Michigan are exempt if brought in more than 360 days after purchase (residents) or 90 days (nonresidents).",
+      "url": "https://www.michigan.gov/taxes/business-taxes/sales-use-tax/information/general-faq"
+    },
+    "facts": [
+      {
+        "text": "Michigan bans local sales taxes, so the rate is 6% everywhere in the state.",
+        "url": "https://www.michigan.gov/taxes/business-taxes/sales-use-tax"
+      },
+      {
+        "text": "Home heating (residential electricity, natural gas and heating fuel) is taxed at a reduced 4%.",
+        "url": "https://www.michigan.gov/taxes/business-taxes/sales-use-tax"
+      },
+      {
+        "text": "Since February 13, 2024, food becomes taxable 'prepared food' when the seller provides eating utensils such as forks, napkins or straws.",
+        "url": "https://www.michigan.gov/treasury/reference/taxpayer-notices/2024/01/25/changes-to-the-tax-treatment-of-prepared-food"
+      },
+      {
+        "text": "Bakery items like bread, bagels, muffins and cookies stay tax-free when sold without utensils.",
+        "url": "https://www.michigan.gov/treasury/reference/taxpayer-notices/2024/01/25/changes-to-the-tax-treatment-of-prepared-food"
+      },
+      {
+        "text": "Buying a car from a spouse, parent, sibling, child, grandparent, step-relative or in-law is exempt from use tax.",
+        "url": "https://www.michigan.gov/taxes/business-taxes/sales-use-tax/information/general-faq"
+      },
+      {
+        "text": "A Michigan resident who brings home an item bought for personal use out of state more than 360 days after purchase owes no use tax.",
+        "url": "https://www.michigan.gov/taxes/business-taxes/sales-use-tax/information/general-faq"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local units (cities, townships, villages, counties, school districts, special authorities) plus the 6-mill State Education Tax collected with summer taxes; assessments by local assessors, equalized by counties and the State Tax Commission",
+    "assessment": {
+      "text": "Tax is levied on 'taxable value', not market value. Under Proposal A of 1994, taxable value is capped: each year it can rise only by the capped value formula using the State Tax Commission's inflation rate multiplier (1.027, i.e. 2.7%, for 2026), until the property is transferred, when it 'uncaps' the following year.",
+      "ratio": null,
+      "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/STC/Bulletins/2025/Bulletin-14-of-2025--Inflation-Rate-Multiplier-for-2026.pdf",
+      "capped": true,
+      "capText": "Tax is levied on 'taxable value', not market value. Under Proposal A of 1994, taxable value is capped: each year it can rise only by the capped value formula using the State Tax Commission's inflation rate multiplier (1.027, i.e. 2.7%, for 2026), until the property is transferred, when it 'uncaps' the following year.",
+      "capUrl": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/STC/Bulletins/2025/Bulletin-14-of-2025--Inflation-Rate-Multiplier-for-2026.pdf"
+    },
+    "homestead": {
+      "name": "Principal Residence Exemption (PRE)",
+      "amountType": "percent",
+      "amount": null,
+      "text": "Exempts an owner's principal residence from the local school operating millage, up to 18 mills. It is distinct from the Homestead Property Tax Credit claimed on the income tax return.",
+      "applyBy": "File the PRE affidavit with the local assessor of the city or township.",
+      "url": "https://www.michigan.gov/taxes/property/principal"
+    },
+    "otherRelief": [
+      {
+        "name": "Homestead Property Tax Credit",
+        "text": "Income tax credit for Michigan homeowners and renters (resident at least 6 months) with total household resources under an annually adjusted limit; homeowners' taxable value must also be under a limit. Can be claimed up to four years back.",
+        "url": "https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc"
+      },
+      {
+        "name": "Property tax deferment and veterans exemptions",
+        "text": "Treasury lists programs allowing qualified owners to postpone payment of taxes or special assessments, and exemptions and credits for veterans and active-duty military.",
+        "url": "https://www.michigan.gov/taxes/property"
+      }
+    ],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "Michigan homes are taxed on a capped 'taxable value': for 2026 it could rise by no more than the 2.7% inflation rate multiplier (1.027), even if market value rose more.",
+        "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/STC/Bulletins/2025/Bulletin-14-of-2025--Inflation-Rate-Multiplier-for-2026.pdf"
+      },
+      {
+        "text": "When a home is sold, its taxable value 'uncaps' the next year, so a buyer can pay much more tax than the previous owner.",
+        "url": "https://www.michigan.gov/taxes/property/change-ownership"
+      },
+      {
+        "text": "Local assessors are not allowed to use any multiplier other than 1.027 for 2026.",
+        "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/STC/Bulletins/2025/Bulletin-14-of-2025--Inflation-Rate-Multiplier-for-2026.pdf"
+      },
+      {
+        "text": "The Principal Residence Exemption removes up to 18 mills of school operating tax from a primary home.",
+        "url": "https://www.michigan.gov/taxes/property/principal"
+      },
+      {
+        "text": "Every property pays the 6-mill State Education Tax as part of the summer tax bill.",
+        "url": "https://www.michigan.gov/taxes/property"
+      }
+    ]
+  },
+  "uncertain": [
+    "michigan.gov and legislature.mi.gov block automated requests (HTTP 403 / WAF); pages were read in a real browser session. MCL statutes (205.54g, 211.27a) could not be opened.",
+    "Prescription drugs: the exemption (Michigan Constitution art. IX sec. 8 / MCL 205.54g) was not read verbatim on an accessible official page; the Treasury exemptions FAQ read does not list it. Treatment 'exempt' should be re-checked.",
+    "The 5% ceiling on annual taxable value growth (lesser of 5% or inflation) and the 50% state equalized value (SEV) ratio were not read on an accessible official page; not stated as figures.",
+    "Homestead Property Tax Credit maximum and income limits for 2025 not shown on the page read.",
+    "Property tax due dates (summer and winter bills) not recorded."
+  ]
+}

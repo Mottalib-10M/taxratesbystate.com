@@ -1,0 +1,188 @@
+{
+  "name": "South Dakota",
+  "abbr": "SD",
+  "slug": "south-dakota",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4.2,
+    "rateNote": "State sales and use tax rate of 4.2%, a temporary reduction from 4.5% (HB 1137, 2023). The tax applies to goods and to the sale of services unless specifically exempt.",
+    "effectiveSince": "2023-07-01",
+    "scheduledChanges": [
+      {
+        "date": "2027-07-01",
+        "rate": 4.5,
+        "what": "The 2023 rate cut sunsets: the state rate returns from 4.2% to 4.5%. SB 245 (2026) dedicates the extra 0.3% to owner-occupied property tax relief.",
+        "url": "https://dor.sd.gov/media/oxznwtqd/oo-property-tax-relief.pdf"
+      },
+      {
+        "date": "2027-01-01",
+        "rate": null,
+        "what": "Earliest date an optional county sales and use tax of up to 0.5% (SB 96, 2026) can take effect; revenue must reduce county property taxes on owner-occupied homes.",
+        "url": "https://dor.sd.gov/media/pzopolsk/2026-pt-tax-reduction-programs.pdf"
+      }
+    ],
+    "local": {
+      "allowed": true,
+      "levies": "municipalities (municipal sales and use tax, plus a municipal gross receipts tax on alcohol, restaurants, lodging and admissions); from 2027 counties may opt into a sales tax of up to 0.5% under SB 96",
+      "cap": 2,
+      "capNote": "Municipal sales and use tax capped at 2% (SDCL 10-52-2); municipal gross receipts tax up to 1% on top; optional county tax up to 0.5% (SB 96, 2026).",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://sdgis.sd.gov/portal/apps/experiencebuilder/experience/?id=09f9b73eff74481fb2e12de719662b8f",
+      "url": "https://sdlegislature.gov/api/Statutes/10-52-2.html"
+    },
+    "groceries": {
+      "treatment": "taxed",
+      "rate": 4.2,
+      "note": "South Dakota has no general grocery exemption: food is taxed at the full state rate plus municipal tax. Only purchases made with SNAP (food stamps) or WIC are exempt.",
+      "url": "https://dor.sd.gov/media/fmmhpbym/foodstampswic.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption; clothing is taxed at the state rate plus municipal tax.",
+      "url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://dor.sd.gov/media/skpmuvgy/health-services.pdf"
+    },
+    "otherRates": [
+      {
+        "item": "motor vehicles",
+        "rate": 4,
+        "note": "Motor vehicle excise tax applies to the purchase of most motor vehicles instead of sales tax.",
+        "url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf"
+      },
+      {
+        "item": "lodging, amusement and short-term vehicle rentals (tourism tax)",
+        "rate": 1.5,
+        "note": "Tourism tax on top of sales tax; funds tourism promotion.",
+        "url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf"
+      },
+      {
+        "item": "contractor's excise tax",
+        "rate": 2,
+        "note": "On gross receipts of prime contractors for construction and realty improvement projects.",
+        "url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf"
+      },
+      {
+        "item": "farm machinery and irrigation equipment (ag excise tax)",
+        "rate": 4.2,
+        "note": "Excise tax on agricultural machinery used exclusively for farming.",
+        "url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf"
+      },
+      {
+        "item": "wireless telecommunications gross receipts tax",
+        "rate": 4,
+        "note": "On retail wireless communication services with a primary place of use in South Dakota.",
+        "url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "South Dakota does not hold a sales tax holiday; the DOR's 2026 sales and use tax guide lists none.",
+    "useTax": {
+      "rate": 4.2,
+      "note": "State use tax at the same rate as sales tax, plus municipal use tax, on products and services used in South Dakota when sales tax was not paid or was paid at a lower rate.",
+      "url": "https://dor.sd.gov/businesses/taxes/sales-use-tax/"
+    },
+    "facts": [
+      {
+        "text": "South Dakota taxes services by default: sales tax applies to the sale of all services unless a specific exemption applies (health, education, financial services, trucking and others are exempt).",
+        "url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf"
+      },
+      {
+        "text": "The 4.2% rate is temporary: SDCL 10-45-2 already carries the 4.5% text effective July 1, 2027.",
+        "url": "https://sdlegislature.gov/api/Statutes/10-45-2.html"
+      },
+      {
+        "text": "Remote sellers with no physical presence must obtain a South Dakota sales tax license and collect once their gross revenue from sales into the state exceeds $100,000 in the current or previous calendar year (SDCL 10-64).",
+        "url": "https://dor.sd.gov/businesses/taxes/sales-use-tax/"
+      },
+      {
+        "text": "Restaurants, bars, hotels and venues can owe a municipal gross receipts tax of up to 1% in addition to the municipal sales tax.",
+        "url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf"
+      },
+      {
+        "text": "Insulin for human use is exempt whether or not it is sold with a prescription.",
+        "url": "https://dor.sd.gov/media/skpmuvgy/health-services.pdf"
+      },
+      {
+        "text": "Starting July 1, 2026, the sale of video lottery machines is subject to state and local sales tax.",
+        "url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local only (school districts, counties, municipalities and other districts); the state does not collect or spend property tax money",
+    "assessment": {
+      "text": "Property is assessed at full and true (market) value by the county director of equalization, then equalized to 85% for taxation: a home worth $230,000 has a taxable value of $195,500. Levies are expressed in dollars per thousand of taxable value.",
+      "ratio": 85,
+      "url": "https://dor.sd.gov/individuals/taxes/property-tax/",
+      "capped": true,
+      "capText": "SB 216 (2025) caps the annual growth of total owner-occupied valuation at 3% per county and local property tax budgets at 3%, for five years; first seen on 2026 assessment notices, applied to taxes payable in 2027.",
+      "capUrl": "https://dor.sd.gov/media/pzopolsk/2026-pt-tax-reduction-programs.pdf"
+    },
+    "homestead": {
+      "name": "Owner-Occupied Classification",
+      "amountType": "none",
+      "amount": null,
+      "text": "South Dakota has no flat homestead value exemption. A primary residence classified as owner-occupied pays a reduced school general fund levy; all other levies are the same for every property. (The state's 'Homestead Exemption' is a tax deferral for owners aged 70+, not a reduction.)",
+      "applyBy": "File the owner-occupied form with the county director of equalization by March 15.",
+      "url": "https://dor.sd.gov/media/3tvdp2wl/owner-occupied.pdf"
+    },
+    "otherRelief": [
+      {
+        "name": "Freeze on Assessments for Disabled and Senior Citizens",
+        "text": "Owners aged 65+ or disabled who meet income limits can freeze the taxable value of their home. Apply to the county treasurer by April 1.",
+        "url": "https://dor.sd.gov/media/pzopolsk/2026-pt-tax-reduction-programs.pdf"
+      },
+      {
+        "name": "Homestead Exemption (tax deferral)",
+        "text": "Owners aged 70+ can delay payment of property taxes until the home is sold; taxes become a lien with interest. Deadline April 1.",
+        "url": "https://dor.sd.gov/media/pzopolsk/2026-pt-tax-reduction-programs.pdf"
+      },
+      {
+        "name": "Disabled Veteran Exemption",
+        "text": "Veterans rated permanently and totally disabled from a service-connected disability: first $200,000 of value exempt. Deadline November 1.",
+        "url": "https://dor.sd.gov/media/pzopolsk/2026-pt-tax-reduction-programs.pdf"
+      },
+      {
+        "name": "Paraplegic Veteran Exemption",
+        "text": "Exempts the home of a paraplegic veteran (or un-remarried surviving spouse) from all property taxes.",
+        "url": "https://dor.sd.gov/media/pzopolsk/2026-pt-tax-reduction-programs.pdf"
+      }
+    ],
+    "dueDates": {
+      "text": "Taxes are paid the year after assessment: the first half is delinquent on May 1 (pay by April 30) and the second half on November 1 (pay by October 31). Bills of $50 or less must be paid in full by April 30.",
+      "url": "https://sdlegislature.gov/api/Statutes/10-21-23.html"
+    },
+    "facts": [
+      {
+        "text": "SB 216 (2025) caps the annual growth of total owner-occupied valuation at 3% per county and local property tax budgets at 3%, for five years; first seen on 2026 assessment notices, applied to taxes payable in 2027.",
+        "url": "https://dor.sd.gov/media/pzopolsk/2026-pt-tax-reduction-programs.pdf"
+      },
+      {
+        "text": "SB 245 (2026) uses one-time state money to lower the owner-occupied school levy on 2027 tax bills, then dedicates the 0.3% sales tax increase of July 2027 to ongoing homeowner relief.",
+        "url": "https://dor.sd.gov/media/oxznwtqd/oo-property-tax-relief.pdf"
+      },
+      {
+        "text": "SB 96 (2026) lets each county adopt a sales tax of up to 0.5% whose revenue appears as a credit on the county portion of owner-occupied tax bills.",
+        "url": "https://dor.sd.gov/media/oxznwtqd/oo-property-tax-relief.pdf"
+      },
+      {
+        "text": "Local taxing districts other than schools may raise property tax revenue only by CPI plus growth unless they 'opt out', a decision subject to local rules.",
+        "url": "https://dor.sd.gov/individuals/taxes/property-tax/"
+      },
+      {
+        "text": "Renewable energy systems under 5 MW get a property tax exemption of 70% of assessed value or $50,000, whichever is greater.",
+        "url": "https://dor.sd.gov/media/pzopolsk/2026-pt-tax-reduction-programs.pdf"
+      }
+    ]
+  },
+  "uncertain": [
+    "The text 'pay by April 30 / October 31' is derived from the delinquency dates in SDCL 10-21-23 (May 1 and November 1).",
+    "Grocery treatment: no DOR page states 'groceries are taxable' in one sentence; it follows from the absence of any food exemption in the 2026 guide and the SNAP/WIC-only exemption fact sheet.",
+    "No sales tax holiday: inferred from the DOR guide and site (no holiday program listed); no explicit 'no holiday' statement found."
+  ]
+}

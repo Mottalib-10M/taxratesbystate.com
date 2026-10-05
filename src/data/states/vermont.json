@@ -1,0 +1,70 @@
+{
+  "name": "Vermont",
+  "abbr": "VT",
+  "slug": "vermont",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6,
+    "rateNote": "6% sales and use tax on tangible personal property unless exempt by law. Restaurant meals and lodging pay a separate 9% meals and rooms tax (10% on alcoholic beverages served), not sales tax. Towns may add a 1% local option tax.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "municipalities that vote a 1% Local Option Tax on sales, meals, rooms and/or alcoholic beverages",
+      "cap": 1,
+      "capNote": "Local option tax is 1% on each base: sales 6% + 1% = 7%; meals and rooms 9% + 1% = 10%; alcoholic beverages 10% + 1% = 11%.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://vcgi.maps.arcgis.com/apps/instant/lookup/index.html?appid=ec6d6af106f14e408731de6063883021",
+      "url": "https://tax.vermont.gov/business/local-option-tax"
+    },
+    "groceries": {"treatment": "exempt", "rate": null, "note": "Food, food products and beverages are exempt (32 V.S.A. 9741(13)), except soft drinks. Prepared meals fall under the 9% meals and rooms tax instead.", "url": "https://tax.vermont.gov/exempt-items"},
+    "clothing": {"treatment": "exempt", "threshold": null, "note": "Clothing and footwear are exempt with no price limit (32 V.S.A. 9741(45)); clothing accessories and protective or sports equipment are taxable.", "url": "https://tax.vermont.gov/exempt-items"},
+    "prescriptionDrugs": {"treatment": "exempt", "url": "https://legislature.vermont.gov/statutes/section/32/233/09741"},
+    "otherRates": [
+      {"item": "restaurant meals and lodging (meals and rooms tax)", "rate": 9, "note": "Separate tax on prepared meals and room rentals; 10% with the local option where adopted.", "url": "https://legislature.vermont.gov/statutes/section/32/225/09241"},
+      {"item": "alcoholic beverages served in bars and restaurants", "rate": 10, "note": "Meals and rooms tax rate on alcoholic beverages; 11% with the local option.", "url": "https://tax.vermont.gov/business/local-option-tax"}
+    ],
+    "holidays2026": [],
+    "holidayNote": "Vermont has no sales tax holiday; clothing and food are already exempt year-round.",
+    "useTax": {"rate": 6, "note": "Use tax is imposed on the buyer at the same 6% rate when Vermont sales tax was not charged.", "url": "https://tax.vermont.gov/business/sales-and-use-tax"},
+    "facts": [
+      {"text": "All clothing is exempt from Vermont sales tax regardless of price, but clothing accessories (jewelry, handbags, sunglasses) are taxable.", "url": "https://tax.vermont.gov/exempt-items"},
+      {"text": "Over-the-counter drugs such as aspirin, antacids and cough medicine are exempt, like prescription drugs.", "url": "https://tax.vermont.gov/exempt-items"},
+      {"text": "Restaurant meals are not subject to sales tax but to the 9% meals and rooms tax, which becomes 10% in towns with a local option tax.", "url": "https://tax.vermont.gov/business/local-option-tax"},
+      {"text": "Businesses that collect any Local Option Tax must file and pay electronically.", "url": "https://tax.vermont.gov/business/meals-and-rooms-tax"},
+      {"text": "Menstrual care products are exempt from sales tax.", "url": "https://tax.vermont.gov/exempt-items"},
+      {"text": "Soft drinks are the main exception to Vermont's food exemption.", "url": "https://tax.vermont.gov/exempt-items"}
+    ]
+  },
+  "property": {
+    "levied": "state education property tax (set by the state, collected by towns) plus municipal property tax set by each town or city",
+    "assessment": {"text": "Town listers or assessors appraise real property at fair market value; the assessment then reflects the town's common level of appraisal. For the education tax, property is classified as homestead (owner's principal dwelling) or nonhomestead, with different rates set for each town every year.", "ratio": null, "url": "https://tax.vermont.gov/property-owners/understanding-property-taxes/assessment"},
+    "homestead": {
+      "name": "Homestead Declaration (homestead education tax rate)",
+      "amountType": "none",
+      "amount": null,
+      "text": "Vermont has no fixed homestead value exemption. Owners who live in their home as their principal dwelling must file a Homestead Declaration each year so the property is taxed at the town's homestead education rate instead of the nonhomestead rate; income-based relief comes through the Property Tax Credit.",
+      "applyBy": "File Form HS-122 by the April filing deadline (with the income tax return); late filing can bring a penalty of up to 3%.",
+      "url": "https://tax.vermont.gov/property/homestead-declaration"
+    },
+    "otherRelief": [
+      {"name": "Vermont Property Tax Credit", "text": "For homestead owners: up to $5,600 against the state education property tax and $2,400 against the municipal tax. Household income limit $115,400 for tax year 2025.", "url": "https://tax.vermont.gov/ptc"},
+      {"name": "Disabled Veteran and Surviving Spouse Exemption", "text": "State law mandates at least a $10,000 exemption; towns may vote up to $40,000. Apply to the Office of Veterans Affairs by May 1 each year.", "url": "https://tax.vermont.gov/property-owners/exemptions"}
+    ],
+    "dueDates": {"text": "Due dates are set by each town; bills are generally mailed 30 days before the due date.", "url": "https://tax.vermont.gov/property/tax-bill"},
+    "facts": [
+      {"text": "Vermont property tax pays for schools through a statewide education property tax: FY2027 homestead and nonhomestead rates were set town by town (summary table as of July 29, 2026).", "url": "https://tax.vermont.gov/ed-rates"},
+      {"text": "Listers, elected or hired by each town, are a role unique to Vermont: they determine the fair market value of property.", "url": "https://tax.vermont.gov/property-owners/understanding-property-taxes/assessment"},
+      {"text": "A homestead leased to a tenant on April 1 can still qualify if it is not rented for more than 182 days in the year.", "url": "https://tax.vermont.gov/ptc"},
+      {"text": "The Property Tax Credit income limit rose from $115,000 (tax year 2024) to $115,400 (tax year 2025).", "url": "https://tax.vermont.gov/ptc"},
+      {"text": "Any veteran exemption voted above $10,000 is paid for by the town, not the state Education Fund.", "url": "https://tax.vermont.gov/property-owners/exemptions"}
+    ]
+  },
+  "uncertain": [
+    "No 2025-2026 change to the 6% sales tax or 9% meals and rooms tax was found; the Department's 2025-2026 newsletters are hosted on Constant Contact (not an official domain) and were not used.",
+    "Motor vehicle purchase and use tax (DMV) not verified.",
+    "Act 73 (2025) education finance reform and its effect on property tax classes from 2027 onward were not verified on an official page.",
+    "The exact April filing deadline date (April 15 in most years) is described only as 'the April filing deadline'."
+  ]
+}

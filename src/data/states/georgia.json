@@ -1,0 +1,149 @@
+{
+  "name": "Georgia",
+  "abbr": "GA",
+  "slug": "georgia",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4,
+    "rateNote": "State sales and use tax of 4%, included in every jurisdiction's combined rate except two special Fulton County districts. Counties and cities add a stack of local option taxes (LOST, SPLOST, ESPLOST, TSPLOST, MARTA, etc.). Most vehicles pay a one-time Title Ad Valorem Tax (7.0%) instead of sales tax.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "county and municipal special purpose and local option sales taxes: LOST, SPLOST, ESPLOST (education), HOST/EHOST, TSPLOST, MARTA and Atlanta MOST, PTRLOST (property tax relief LOST); rates change quarterly",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://dor.georgia.gov/sales-tax-rates-general",
+      "url": "https://dor.georgia.gov/sales-use-tax"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food and food ingredients for off-premises consumption are exempt from the 4% state tax but subject to all local sales taxes (except the SPLOST tied to an EHOST). DOR publishes a separate food rate chart.",
+      "url": "https://dor.georgia.gov/document/document/2020-list-sales-and-use-tax-exemptions/download"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable at the combined state and local rate.",
+      "url": "https://dor.georgia.gov/sales-use-tax"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://dor.georgia.gov/document/document/2020-list-sales-and-use-tax-exemptions/download"
+    },
+    "otherRates": [
+      {
+        "item": "motor vehicles (Title Ad Valorem Tax, TAVT)",
+        "rate": 7,
+        "note": "One-time tax on fair market value at titling, replacing sales tax and annual ad valorem tax on most vehicles; 3% for new Georgia residents, 0.5% for some family transfers.",
+        "url": "https://dor.georgia.gov/motor-vehicles/vehicle-registration-license-plates/vehicle-taxes-title-ad-valorem-tax-tavt-and"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "No Georgia sales tax holiday was found for 2026 on DOR pages.",
+    "useTax": {
+      "rate": 4,
+      "note": "Use tax is due at the same state and local rates on taxable goods bought without Georgia tax.",
+      "url": "https://dor.georgia.gov/sales-use-tax"
+    },
+    "facts": [
+      {
+        "text": "The 4% state rate is part of every jurisdiction's rate except two special Fulton County districts (Central Yards and South Downtown), where only local taxes apply.",
+        "url": "https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download"
+      },
+      {
+        "text": "Groceries are exempt from the 4% state tax but still pay local option sales taxes.",
+        "url": "https://dor.georgia.gov/document/document/2020-list-sales-and-use-tax-exemptions/download"
+      },
+      {
+        "text": "Georgia's local taxes come as 1% building blocks such as LOST, SPLOST, ESPLOST, TSPLOST and, newly on the 2026 charts, PTRLOST for property tax relief.",
+        "url": "https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download"
+      },
+      {
+        "text": "Instead of sales tax, car buyers pay a one-time 7.0% Title Ad Valorem Tax on the vehicle's fair market value.",
+        "url": "https://dor.georgia.gov/motor-vehicles/vehicle-registration-license-plates/vehicle-taxes-title-ad-valorem-tax-tavt-and"
+      },
+      {
+        "text": "New Georgia residents pay TAVT at 3% when they title a vehicle (law effective July 1, 2019).",
+        "url": "https://dor.georgia.gov/motor-vehicles/vehicle-registration-license-plates/vehicle-taxes-title-ad-valorem-tax-tavt-and"
+      },
+      {
+        "text": "Local rates change by quarter; DOR publishes a new rate chart each January 1, April 1, July 1 and October 1.",
+        "url": "https://dor.georgia.gov/sales-tax-rates-general"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Counties, school districts and cities levy millage; the county tax commissioner collects county, school and state taxes. Property is valued by the county board of assessors.",
+    "assessment": {
+      "text": "Property is assessed at 40% of fair market value (O.C.G.A. 48-5-7); qualifying agricultural property under preferential assessment is taxed on 30% of fair market value. Tax = (assessed value - exemptions) x millage rate.",
+      "ratio": 40,
+      "url": "https://dor.georgia.gov/property-tax-valuation"
+    },
+    "homestead": {
+      "name": "Standard Homestead Exemption",
+      "amountType": "value-exemption",
+      "amount": 2000,
+      "text": "$2,000 deducted from the 40% assessed value of an owner-occupied primary residence, for county and school taxes (not municipal school taxes or bond debt). Many counties grant larger local exemptions or base-year valuation freezes.",
+      "applyBy": "Own the home on January 1 and file with the county tax commissioner (or assessor) by the property tax return deadline, April 1, or within the 45-day assessment appeal window.",
+      "url": "https://dor.georgia.gov/property-tax-homestead-exemptions"
+    },
+    "otherRelief": [
+      {
+        "name": "Age 65+ exemption",
+        "text": "$4,000 exemption from county taxes if household income was $10,000 or less (retirement income excluded up to the Social Security maximum, $96,432 for 2025).",
+        "url": "https://dor.georgia.gov/property-tax-homestead-exemptions"
+      },
+      {
+        "name": "Age 62+ school tax exemption",
+        "text": "Up to $10,000 of assessed value exempt from school taxes for low-income owners aged 62+.",
+        "url": "https://dor.georgia.gov/property-tax-homestead-exemptions"
+      },
+      {
+        "name": "Floating inflation-proof exemption (62+)",
+        "text": "Owners aged 62+ with household income up to $30,000 can exempt increases in value above $10,000 from county taxes.",
+        "url": "https://dor.georgia.gov/property-tax-homestead-exemptions"
+      },
+      {
+        "name": "Disabled veterans",
+        "text": "Exemption of $121,812 of value (2025 amount) from all state, county, municipal and school taxes for qualifying disabled veterans and surviving spouses.",
+        "url": "https://dor.georgia.gov/property-tax-homestead-exemptions"
+      }
+    ],
+    "dueDates": {
+      "text": "Property taxes are due by December 20 in most counties (dates vary); taxpayers have 60 days from billing to pay.",
+      "url": "https://dor.georgia.gov/property-tax-real-and-personal-property-faq"
+    },
+    "facts": [
+      {
+        "text": "Georgia taxes homes on 40% of market value: a $300,000 house has a $120,000 assessed value before exemptions.",
+        "url": "https://dor.georgia.gov/property-tax-valuation"
+      },
+      {
+        "text": "The statewide homestead exemption is only $2,000 of assessed value, so county exemptions and freezes matter more.",
+        "url": "https://dor.georgia.gov/property-tax-homestead-exemptions"
+      },
+      {
+        "text": "Several counties freeze a homestead's value at a base year for as long as the owner lives there.",
+        "url": "https://dor.georgia.gov/property-tax-homestead-exemptions"
+      },
+      {
+        "text": "Property tax returns are filed between January 1 and April 1, and the owner on January 1 owes the year's tax.",
+        "url": "https://dor.georgia.gov/property-tax-valuation"
+      },
+      {
+        "text": "Bona fide agricultural land kept in use for 10 years can be assessed at 30% of market value instead of 40%.",
+        "url": "https://dor.georgia.gov/property-tax-valuation"
+      }
+    ]
+  },
+  "uncertain": [
+    "HB 581 (2024) statewide floating homestead exemption (base-year value capped at inflation unless a local government opted out in 2025) was not described on the DOR pages read; not included.",
+    "Georgia DOR offers no address-based rate lookup tool on the pages read; lookupUrl points to the official quarterly rate charts.",
+    "Effective date of the 4% state rate not stated on the pages read.",
+    "The 2020 DOR exemptions list was used for the food and prescription rules (latest list linked by DOR)."
+  ]
+}

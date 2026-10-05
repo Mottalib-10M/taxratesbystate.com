@@ -1,0 +1,156 @@
+{
+  "name": "Oklahoma",
+  "abbr": "OK",
+  "slug": "oklahoma",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4.5,
+    "rateNote": "State rate 4.5% of gross receipts; county and municipal sales taxes are added where the sale is sourced (point of delivery).",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "counties and incorporated cities and towns (voter-approved sales and use taxes)",
+      "cap": null,
+      "capNote": "The general county sales tax under 68 O.S. §1370 may not exceed 2% and needs voter approval; other statutes authorize additional county levies, and municipalities set their own rates, so no single overall cap.",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://taxproject.csa.ou.edu/Rate_Locator",
+      "url": "https://oklahoma.gov/tax/businesses/sales-use-tax.html"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "State rate on food and food ingredients is 0% since August 29, 2024 (HB 1955 and SB 1283, 2024); local city and county sales taxes still apply. Prepared food, alcohol and dietary supplements stay taxable at 4.5%.",
+      "url": "https://oklahoma.gov/tax/businesses/state-sales-tax-on-food-and-food-ingredients.html"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable except during the August back-to-school holiday (articles under $100).",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os68.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os68.pdf"
+    },
+    "otherRates": [
+      {
+        "item": "new motor vehicles",
+        "rate": 3.25,
+        "note": "Motor vehicle excise tax of 3.25% of value on new vehicles, plus a 1.25% portion of state sales tax; vehicles are not subject to city or county sales taxes.",
+        "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os68.pdf"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Back-to-school sales tax holiday",
+        "start": "2026-08-07",
+        "end": "2026-08-09",
+        "items": "articles of clothing or footwear priced under $100 (not athletic/protective gear, accessories or rentals)",
+        "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os68.pdf"
+      }
+    ],
+    "holidayNote": "Dates follow 68 O.S. §1357.10 (first Friday in August through the following Sunday); the holiday exempts the state 4.5% portion only.",
+    "useTax": {
+      "rate": 4.5,
+      "note": "State use tax of 4.5% on goods brought into Oklahoma untaxed, plus any county or city use tax.",
+      "url": "https://oklahoma.gov/tax/businesses/sales-use-tax.html"
+    },
+    "facts": [
+      {
+        "text": "Since August 29, 2024 grocery food carries a 0% state sales tax, but local sales taxes still apply to it.",
+        "url": "https://oklahoma.gov/tax/businesses/state-sales-tax-on-food-and-food-ingredients.html"
+      },
+      {
+        "text": "Rotisserie chicken, deli sandwiches, fountain drinks, pet food, vitamins and over-the-counter medicine remain taxable at the 4.5% state rate.",
+        "url": "https://oklahoma.gov/tax/businesses/state-sales-tax-on-food-and-food-ingredients.html"
+      },
+      {
+        "text": "A seller whose prepared-food sales exceed 75% of food sales and who makes utensils available must charge state tax on all its food items.",
+        "url": "https://oklahoma.gov/tax/businesses/state-sales-tax-on-food-and-food-ingredients.html"
+      },
+      {
+        "text": "A general county sales tax may not exceed 2% and must first be approved by county voters.",
+        "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os68.pdf"
+      },
+      {
+        "text": "Veterans with a 100% service-connected disability can get a sales tax exemption permit covering up to $25,000 of purchases per year.",
+        "url": "https://oklahoma.gov/tax/individuals/exemptions.html"
+      },
+      {
+        "text": "Retailers must still compute sales tax to the cent even if cash totals are rounded to the nickel after the end of penny production.",
+        "url": "https://oklahoma.gov/tax/businesses/sales-use-tax.html"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local only (ad valorem): counties, school districts, cities and other local districts; assessed by county assessors, with the Oklahoma Tax Commission valuing public service property",
+    "assessment": {
+      "text": "Real property is assessed at a county-set percentage of fair cash value between 11% and 13.5% (State Board of Equalization range). The fair cash value of homestead and agricultural land may not rise more than 3% a year (5% for other property) unless the property is sold or improved (Okla. Const. art. X §8B).",
+      "ratio": null,
+      "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/ad-valorem/2024StatBook.pdf",
+      "capped": true,
+      "capText": "Real property is assessed at a county-set percentage of fair cash value between 11% and 13.5% (State Board of Equalization range). The fair cash value of homestead and agricultural land may not rise more than 3% a year (5% for other property) unless the property is sold or improved (Okla. Const. art. X §8B).",
+      "capUrl": "https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/ad-valorem/2024StatBook.pdf"
+    },
+    "homestead": {
+      "name": "Homestead Exemption",
+      "amountType": "value-exemption",
+      "amount": 1000,
+      "text": "Each owner-occupied homestead is exempt from all ad valorem taxes on $1,000 of assessed value (68 O.S. §2889). An additional $1,000 of assessed value is exempt for heads of household with gross household income of $30,000 or less (68 O.S. §2890).",
+      "applyBy": "Apply to the county assessor (OTC Form 921) on or before March 15, or within 30 days of a notice of valuation increase; no need to reapply while you keep living there.",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os68.pdf"
+    },
+    "otherRelief": [
+      {
+        "name": "Senior valuation limitation (freeze)",
+        "text": "Homeowners 65+ whose gross household income is at or below the HUD-based limit for their county (e.g. $99,000 in Cleveland County for 2026) can have their home's value frozen.",
+        "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/ad-valorem/2026PropertyValuationLimitations.pdf"
+      },
+      {
+        "name": "Additional homestead exemption",
+        "text": "Extra $1,000 of assessed value exempt when household income is $30,000 or less; applied for on OTC Form 994 by March 15.",
+        "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/994.pdf"
+      },
+      {
+        "name": "100% disabled veteran exemption",
+        "text": "Full exemption of the homestead's fair cash value for veterans rated 100% permanently disabled by the VA, extending to the surviving spouse (OTC Form 998).",
+        "url": "https://oklahoma.gov/tax/individuals/exemptions.html"
+      }
+    ],
+    "dueDates": {
+      "text": "Taxes are due November 1. If at least half is paid before January 1, the remainder is due before April 1; otherwise the whole bill is delinquent January 1. Delinquent taxes bear 1.5% interest per month.",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os68.pdf"
+    },
+    "facts": [
+      {
+        "text": "State Board of Equalization sets the assessment level at 11%-13.5% of fair cash value for real property and 10%-15% for personal property.",
+        "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/ad-valorem/2024StatBook.pdf"
+      },
+      {
+        "text": "Fair cash value of homesteads and farmland cannot rise more than 3% per year, other property 5%, except after a sale or improvement.",
+        "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/ad-valorem/2024StatBook.pdf"
+      },
+      {
+        "text": "Bills of $25 or less must be paid in full before January 1; installments are capped at two.",
+        "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os68.pdf"
+      },
+      {
+        "text": "Homestead exemption is cancelled if the owner has delinquent personal property taxes on the county lien docket.",
+        "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/921.pdf"
+      },
+      {
+        "text": "Public service property is valued by the OTC: 11.84% for railroads and airlines, 12% for video service providers and 22.85% for other public service companies.",
+        "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/ad-valorem/2024StatBook.pdf"
+      }
+    ]
+  },
+  "uncertain": [
+    "effectiveSince of the 4.5% state rate not found on a page read (left null).",
+    "The rate locator (taxproject.csa.ou.edu) is hosted by the University of Oklahoma but is the tool linked from the OTC sales and use tax page.",
+    "OTC Form 994 instructions say the head of household must be 65+ for the additional homestead exemption, while 68 O.S. §2890 as read only sets the $30,000 income test; age requirement left out of the main rule.",
+    "2026 holiday dates computed from 68 O.S. §1357.10 (statute compiled with 2025 amendments); no OTC 2026 holiday page found.",
+    "Used vehicle excise tax schedule not reproduced (only the new-vehicle 3.25% rate)."
+  ]
+}

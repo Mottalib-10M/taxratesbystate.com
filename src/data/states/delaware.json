@@ -1,0 +1,136 @@
+{
+  "name": "Delaware",
+  "abbr": "DE",
+  "slug": "delaware",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": false,
+    "stateRate": 0,
+    "rateNote": "Delaware has no sales tax at the state or local level. Instead, sellers pay a gross receipts tax (a business license tax on their receipts, not itemized to buyers), e.g. 0.7468% for general retailers after a $100,000 monthly deduction.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": false,
+      "levies": "none: no city or county sales tax",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://revenuefiles.delaware.gov/docs/gr_rates.pdf"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "No sales tax. Grocery supermarkets pay a 0.3267% gross receipts tax on their receipts.",
+      "url": "https://revenuefiles.delaware.gov/docs/gr_rates.pdf"
+    },
+    "clothing": {
+      "treatment": "exempt",
+      "threshold": null,
+      "note": "No sales tax on any retail purchase.",
+      "url": "https://revenuefiles.delaware.gov/docs/gr_rates.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://revenuefiles.delaware.gov/docs/gr_rates.pdf"
+    },
+    "otherRates": [
+      {
+        "item": "motor vehicle document fee",
+        "rate": 5.25,
+        "note": "Paid at titling: $5.25 per $100 of purchase price above $500 ($8 under $400; $13.75 from $400 to $500).",
+        "url": "https://delcode.delaware.gov/title30/c030/index.html"
+      },
+      {
+        "item": "hotel, motel and tourist home rooms",
+        "rate": 8,
+        "note": "8% tax collected from the guest and remitted to the Division of Revenue.",
+        "url": "https://revenuefiles.delaware.gov/docs/gr_rates.pdf"
+      },
+      {
+        "item": "lessee use of tangible personal property (leases)",
+        "rate": 1.9914,
+        "note": "Lessee use tax rate on leased goods and leased motor vehicles.",
+        "url": "https://revenuefiles.delaware.gov/docs/gr_rates.pdf"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "No sales tax, so no sales tax holiday.",
+    "useTax": {
+      "rate": 0,
+      "note": "No general consumer use tax. A lessee use tax of 1.9914% applies to leases of tangible personal property.",
+      "url": "https://revenuefiles.delaware.gov/docs/gr_rates.pdf"
+    },
+    "facts": [
+      {
+        "text": "Delaware has no state or local sales tax; businesses pay a gross receipts tax instead.",
+        "url": "https://revenue.delaware.gov/"
+      },
+      {
+        "text": "General retailers pay a 0.7468% gross receipts tax, after a $100,000 deduction per month for the whole enterprise (30 Del. C. ch. 29).",
+        "url": "https://delcode.delaware.gov/title30/c029/index.html"
+      },
+      {
+        "text": "Gross receipts tax rates vary by business type: 0.3267% for grocery supermarkets, 0.6472% for restaurants and contractors, 0.3983% for services and wholesalers, 0.0945% to 0.1260% for manufacturers.",
+        "url": "https://revenuefiles.delaware.gov/docs/gr_rates.pdf"
+      },
+      {
+        "text": "Buying a car in Delaware costs a 5.25% document fee ($5.25 per $100 of price) instead of a sales tax.",
+        "url": "https://delcode.delaware.gov/title30/c030/index.html"
+      },
+      {
+        "text": "Hotel and motel rooms carry an 8% state lodging tax paid by the guest.",
+        "url": "https://revenuefiles.delaware.gov/docs/gr_rates.pdf"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local: the three counties (New Castle, Kent, Sussex), municipalities and school districts levy real property taxes; school district taxes are the largest part. There is no state property tax.",
+    "assessment": {
+      "text": "Real property is assessed at fair market value as of the county's most recent reassessment base year (9 Del. C. 8306); each county must reassess at least once every 5 years from the date its general reassessment is certified.",
+      "ratio": 100,
+      "url": "https://delcode.delaware.gov/title9/c083/sc01/index.html"
+    },
+    "homestead": {
+      "name": "Senior School Property Tax Credit",
+      "amountType": "credit",
+      "amount": 500,
+      "text": "Homeowners aged 65+ get a credit against school district property tax on their principal residence equal to the lesser of 50% of the school tax or $500. Those who moved to Delaware after 2017 need 10 consecutive years of domicile (3 years for 2013-2017 arrivals). There is no general homestead exemption for all owners.",
+      "applyBy": "Apply to the county receiver of taxes or treasurer by April 30 before the tax year.",
+      "url": "https://delcode.delaware.gov/title14/c019/sc01/index.html"
+    },
+    "otherRelief": [],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "Every county must reassess all real property at least once every 5 years, counted from the certification of its last general reassessment.",
+        "url": "https://delcode.delaware.gov/title9/c083/sc01/index.html"
+      },
+      {
+        "text": "After a general reassessment, school boards must reset tax rates so that revenue does not exceed the prior year's operating revenue plus allowed growth.",
+        "url": "https://delcode.delaware.gov/title14/c019/sc01/index.html"
+      },
+      {
+        "text": "School districts entirely in New Castle County may set a higher nonresidential rate, up to 1.85 times the residential rate.",
+        "url": "https://delcode.delaware.gov/title14/c019/sc01/index.html"
+      },
+      {
+        "text": "The senior school tax credit is withdrawn the following year if the property tax bill is not paid in full.",
+        "url": "https://delcode.delaware.gov/title14/c019/sc01/index.html"
+      },
+      {
+        "text": "Kent and Sussex Boards of Assessment Review hear appeals from March 1 to May 31.",
+        "url": "https://delcode.delaware.gov/title9/c083/sc01/index.html"
+      }
+    ]
+  },
+  "uncertain": [
+    "Property tax due dates differ by county (and some municipalities bill separately); no statewide due date, left null.",
+    "Dates of each county's most recent general reassessment (base year) were not read on county sites.",
+    "County-specific senior or disability exemptions (e.g. county ordinances under Title 9) not compiled.",
+    "The revenue.delaware.gov gross receipts rate page URL listed in older links returns 404; the official rate PDF (revenuefiles.delaware.gov) was used."
+  ]
+}

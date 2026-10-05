@@ -1,0 +1,156 @@
+{
+  "name": "Nevada",
+  "abbr": "NV",
+  "slug": "nevada",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6.85,
+    "rateNote": "6.85% is the minimum statewide rate, and every county charges at least that much. It combines the 2.00% state sales tax (NRS 372, State General Fund), the 2.60% Local School Support Tax (NRS 374, State Education Fund), the 0.50% Basic City-County Relief Tax and the 1.75% Supplemental City-County Relief Tax (NRS 377). The part kept for state purposes is 4.60%; the 2.25% relief taxes are levied statewide but go to local governments.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "Counties can add option taxes on top of the 6.85% minimum, under NRS 377A (public transit, roads, tourism), NRS 377B (infrastructure), NRS 377D, NRS 543 (flood control), NRS 374A (school capital) or special acts and ballot initiatives. Rates are set county-wide, and the minimum rate applies in counties with no option tax.",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://tax.nv.gov/wp-content/uploads/2024/05/ADM-T047-State-Sales-Tax-Map.pdf",
+      "url": "https://tax.nv.gov/wp-content/uploads/2024/12/Components-of-Sales-Tax.pdf"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Unprepared food for home consumption is exempt. Prepared food intended for immediate consumption is taxable; regulation R056-18 sets the rules.",
+      "url": "https://tax.nv.gov/faqs/sales-tax-faqs/"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is tangible personal property and is taxed at the county's full combined rate; the DOT's list of non-taxable items does not include clothing.",
+      "url": "https://tax.nv.gov/faqs/sales-tax-faqs/"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://tax.nv.gov/tax-types/sales-tax-use-tax/"
+    },
+    "otherRates": [],
+    "holidays2026": [],
+    "holidayNote": "No general sales tax holiday. Only active Nevada National Guard members and the relatives who live with them can get a refund of sales tax paid during the Nevada Day observance, October 30 to November 1, 2026, with an exemption letter.",
+    "useTax": {
+      "rate": 6.85,
+      "note": "The Consumer Use Tax rate equals the sales tax rate in the buyer's area, including local option taxes (6.85% minimum). It applies to items bought out of state without Nevada sales tax; sales tax paid to another state is credited.",
+      "url": "https://tax.nv.gov/tax-types/sales-tax-use-tax/"
+    },
+    "facts": [
+      {
+        "text": "The 2.60% Local School Support Tax, part of the 6.85% minimum, goes to the State Education Fund; the 0.50% Basic City-County Relief Tax goes to the county where the sale was made.",
+        "url": "https://tax.nv.gov/wp-content/uploads/2024/12/Components-of-Sales-Tax.pdf"
+      },
+      {
+        "text": "Nevada's sales and use tax laws were first enacted in 1955.",
+        "url": "https://tax.nv.gov/tax-types/sales-tax-use-tax/"
+      },
+      {
+        "text": "Vehicles, aircraft and off-highway vehicles bought in another state for use in Nevada owe Nevada use tax if no sales tax was paid. Proof of tax paid is required to register them.",
+        "url": "https://tax.nv.gov/faqs/sales-tax-faqs/"
+      },
+      {
+        "text": "Separately stated delivery, shipping and postage charges have been non-taxable since May 2009, as are separately listed installation and repair labor.",
+        "url": "https://tax.nv.gov/faqs/sales-tax-faqs/"
+      },
+      {
+        "text": "Nevada National Guard members deployed abroad for at least 30 days can get a letter exempting their purchases from Nevada sales tax for the deployment period.",
+        "url": "https://tax.nv.gov/faqs/nevada-national-guard-exemption-faqs/"
+      },
+      {
+        "text": "Nevada became a full member of the Streamlined Sales and Use Tax Governing Board on April 1, 2008.",
+        "url": "https://tax.nv.gov/tax-types/sales-tax-use-tax/"
+      },
+      {
+        "text": "Sales tax is owed on gross receipts even when a retailer rounds a cash sale to the nearest five cents after the end of penny production in 2025.",
+        "url": "https://tax.nv.gov/tax-types/sales-tax-use-tax/"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local: counties, cities, school districts and special districts set tax rates within a statutory cap, plus a state debt rate. County assessors value property and county treasurers bill and collect.",
+    "assessment": {
+      "text": "All taxable property is assessed at 35% of its taxable value (NRS 361.225): a home with a $200,000 taxable value has a $70,000 assessed value. The combined rate is capped at $3.64 per $100 of assessed value, plus 2 cents for state debt outside the cap ($3.66 total). The 2005 abatements (AB 489) also limit the yearly increase in each tax bill.",
+      "ratio": 35,
+      "url": "https://tax.nv.gov/wp-content/uploads/2024/04/2024-Property-Tax-Elements-and-Applications.pdf",
+      "capped": true,
+      "capText": "Nevada has no flat homestead value exemption on the property tax bill. Instead, the tax on an owner-occupied single-family home that is the owner's primary residence cannot rise more than 3% over the prior year's bill (or less, if the county's general abatement is lower). Any amount above that is abated. The cap does not apply to new construction or to a change of use.",
+      "capUrl": "https://tax.nv.gov/wp-content/uploads/2024/04/2024-Property-Tax-Elements-and-Applications.pdf"
+    },
+    "homestead": {
+      "name": "Primary residence partial abatement (3% cap)",
+      "amountType": "freeze",
+      "amount": null,
+      "text": "Nevada has no flat homestead value exemption on the property tax bill. Instead, the tax on an owner-occupied single-family home that is the owner's primary residence cannot rise more than 3% over the prior year's bill (or less, if the county's general abatement is lower). Any amount above that is abated. The cap does not apply to new construction or to a change of use.",
+      "applyBy": null,
+      "url": "https://tax.nv.gov/wp-content/uploads/2024/04/2024-Property-Tax-Elements-and-Applications.pdf"
+    },
+    "otherRelief": [
+      {
+        "name": "General abatement (all other property)",
+        "text": "Other parcels, including second homes and commercial property, get a cap on tax-bill growth set county by county: the higher of twice the CPI or the county's 9-year average growth in assessed value, but never above 8%.",
+        "url": "https://tax.nv.gov/wp-content/uploads/2024/04/2024-Property-Tax-Elements-and-Applications.pdf"
+      },
+      {
+        "name": "Veterans' Exemption",
+        "text": "Exempts the first $2,000 of assessed value, indexed to CPI since July 2003, for Nevada-resident veterans with 90 consecutive days of active duty in qualifying periods.",
+        "url": "https://tax.nv.gov/wp-content/uploads/2024/04/Veterans-Exemption-FAQs.pdf"
+      },
+      {
+        "name": "Disabled Veterans' Exemption",
+        "text": "For a permanent service-connected disability: $20,000 of assessed value at 100%, $15,000 at 80-99% and $10,000 at 60-79%, all CPI-indexed since 2003. Surviving spouses also qualify.",
+        "url": "https://tax.nv.gov/wp-content/uploads/2024/04/Veterans-Exemption-FAQs.pdf"
+      },
+      {
+        "name": "Blind persons and surviving spouses",
+        "text": "Property of blind persons is exempt up to $3,000 of assessed value (CPI-adjusted, NRS 361.085); surviving spouses have a partial exemption (NRS 361.080).",
+        "url": "https://tax.nv.gov/wp-content/uploads/2024/04/2024-Property-Tax-Elements-and-Applications.pdf"
+      }
+    ],
+    "dueDates": {
+      "text": "The tax can be paid in four installments: 3rd Monday in August, 1st Monday in October, 1st Monday in January and 1st Monday in March (NRS 361.483). The fiscal year starts July 1 (lien date).",
+      "url": "https://tax.nv.gov/faqs/locally-assessed-property-tax-faqs/"
+    },
+    "facts": [
+      {
+        "text": "Nevada's constitution caps the property tax rate at $5.00 per $100 of assessed value. After the 1979 reform (SB 204, a response to California's Prop 13) the statutory cap became $3.64.",
+        "url": "https://tax.nv.gov/wp-content/uploads/2024/04/2024-Property-Tax-Elements-and-Applications.pdf"
+      },
+      {
+        "text": "Local government property tax revenue may grow by at most 6% a year (NRS 354.59811): the prior year's revenue x 1.06 is divided by the new assessed value to set the rate.",
+        "url": "https://tax.nv.gov/wp-content/uploads/2024/04/2024-Property-Tax-Elements-and-Applications.pdf"
+      },
+      {
+        "text": "The state debt rate is 15 cents per $100, inside the cap, plus 2 cents outside the cap added by SB 507 (2003).",
+        "url": "https://tax.nv.gov/wp-content/uploads/2024/04/2024-Property-Tax-Elements-and-Applications.pdf"
+      },
+      {
+        "text": "Household goods and furniture and business inventories are fully exempt from Nevada property tax.",
+        "url": "https://tax.nv.gov/wp-content/uploads/2024/04/2024-Property-Tax-Elements-and-Applications.pdf"
+      },
+      {
+        "text": "The Department of Taxation runs a ratio study of each county's assessments every third year and can order a reappraisal if values fall outside the guidelines.",
+        "url": "https://tax.nv.gov/tax-types/property-tax-on-interstate-and-inter-county-properties/"
+      },
+      {
+        "text": "The real property transfer tax base rate is $1.95 for every $500 of value in all counties; some counties add a surcharge.",
+        "url": "https://tax.nv.gov/tax-types/real-property-transfer-tax/"
+      }
+    ]
+  },
+  "uncertain": [
+    "The Nevada Legislature's site (leg.state.nv.us, NRS text) returned 403 (Cloudflare), so no figure was checked against the statute itself; everything comes from Department of Taxation pages and PDFs.",
+    "The 6.85% breakdown comes from the DOT 'Components of Sales and Use Tax Rates' PDF (county list dated 07/01/2020, uploaded 12/2024). The DOT sales tax page (2026) confirms 6.85% as the base rate and shows no later change.",
+    "The 'Property Tax Elements and Applications' PDF is the 2024 edition (latest online). The $3.64/$3.66 cap, 35% ratio, 15+2 cent state debt rate and abatement rules may have been amended by the 2025 Legislature, which was not checked.",
+    "No legal cap on combined county option sales tax rates was found on the DOT site, so cap = null.",
+    "The DOT FAQ mentions a 'homestead exemption' among property tax exemptions without describing it; no DOT document describes a homestead value exemption, so the 3% primary-residence abatement is shown as the main relief.",
+    "The veterans', disabled veterans' and blind exemption amounts are base figures; the CPI-indexed amounts for fiscal year 2026-27 were not found on the DOT site.",
+    "Clothing marked 'taxed' because it is not on the DOT's list of non-taxable items; no explicit DOT statement was found."
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "name": "Minnesota",
+  "abbr": "MN",
+  "slug": "minnesota",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6.875,
+    "rateNote": "State general rate of 6.875%, plus any applicable local taxes, special local taxes and special taxes; the Department of Revenue administers many local sales taxes.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "city and county local sales taxes (many in the Twin Cities metro area), plus special local taxes on admissions, entertainment, food and beverages, liquor and lodging; some special local taxes are administered by the city or county itself",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://www.revenue.state.mn.us/sales-tax-rate-calculator",
+      "url": "https://www.revenue.state.mn.us/local-sales-tax-information"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food and food ingredients (groceries for human consumption) are exempt; candy, soft drinks, alcoholic beverages, prepared food, dietary supplements and vending machine food are taxable.",
+      "url": "https://www.revenue.state.mn.us/guide/food-and-food-ingredients"
+    },
+    "clothing": {
+      "treatment": "exempt",
+      "threshold": null,
+      "note": "Clothing suitable for general use is exempt with no price limit. Clothing accessories or equipment (backpacks, bags, cosmetics, jewelry, etc.), protective equipment and sports gear not suitable for general use are taxable.",
+      "url": "https://www.revenue.state.mn.us/clothing"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.revenue.state.mn.us/guide/drugs"
+    },
+    "otherRates": [
+      {
+        "item": "retail delivery fee",
+        "rate": null,
+        "note": "Flat $0.50 fee on retail deliveries in Minnesota when taxable goods and clothing in the transaction total $100 or more (Minn. Stat. ch. 168E).",
+        "url": "https://www.revenue.state.mn.us/retail-delivery-fee"
+      },
+      {
+        "item": "liquor, cannabis, motor vehicle sales and short-term rentals, manufactured homes, solid waste services",
+        "rate": null,
+        "note": "Subject to special tax rates in addition to (or instead of) the general rate; see the respective DOR guides.",
+        "url": "https://www.revenue.state.mn.us/guide/taxes-and-rates"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "Minnesota has no sales tax holiday.",
+    "useTax": {
+      "rate": 6.875,
+      "note": "Use tax at the state rate (plus applicable local use taxes) is due on taxable goods and services used in Minnesota when no sales tax was paid.",
+      "url": "https://www.revenue.state.mn.us/sales-and-use-tax"
+    },
+    "facts": [
+      {
+        "text": "Clothing is fully exempt in Minnesota with no price cap, but accessories like backpacks, handbags and jewelry are taxable.",
+        "url": "https://www.revenue.state.mn.us/clothing"
+      },
+      {
+        "text": "Over-the-counter drugs are exempt as well as prescription drugs; vitamins and minerals are taxable dietary supplements.",
+        "url": "https://www.revenue.state.mn.us/guide/drugs"
+      },
+      {
+        "text": "A 50-cent Retail Delivery Fee applies to deliveries of $100 or more of taxable items or clothing.",
+        "url": "https://www.revenue.state.mn.us/retail-delivery-fee"
+      },
+      {
+        "text": "Restaurant meals, liquor, lodging and admissions can carry special local taxes on top of the 6.875% state rate and general local taxes.",
+        "url": "https://www.revenue.state.mn.us/guide/taxes-and-rates"
+      },
+      {
+        "text": "The Department of Revenue provides a sales tax rate calculator by address because many cities and counties add their own local tax.",
+        "url": "https://www.revenue.state.mn.us/sales-tax-rate-calculator"
+      }
+    ]
+  },
+  "property": {
+    "levied": "counties, cities, towns, school districts and special taxing districts, plus a State General Tax on commercial-industrial and seasonal recreational property (not on homesteads)",
+    "assessment": {
+      "text": "Property tax is based on market value times a class rate ('net tax capacity'). For taxes payable in 2026, residential homesteads (class 1a) are taxed at 1.00% of the first $500,000 and 1.25% above; nonhomestead residential 1-3 units at 1.25%; commercial-industrial at 1.50% of the first $150,000 and 2.00% above. Homesteads are not subject to the State General Tax.",
+      "ratio": null,
+      "url": "https://www.revenue.state.mn.us/sites/default/files/2026-01/classification-rates-taxes-payable-2026.pdf"
+    },
+    "homestead": {
+      "name": "Homestead classification (class 1a) + Homestead Credit Refund",
+      "amountType": "credit",
+      "amount": null,
+      "text": "A home classified as homestead with the county is taxed at the lower 1a class rate. Homeowners can also claim the Homestead Credit Refund: the regular refund requires 2025 household income under $142,490 and ownership and occupancy on January 2, 2026; a special refund applies when net property tax rose more than 12% (and at least $100) from 2025 to 2026.",
+      "applyBy": "Homestead classification: apply with the county assessor. Refund: Form M1PR filed with the Department of Revenue.",
+      "url": "https://www.revenue.state.mn.us/homeowners-homestead-credit-refund"
+    },
+    "otherRelief": [
+      {
+        "name": "Homestead of blind or disabled persons (class 1b)",
+        "text": "Class rate of 0.45% on the first $50,000 of market value.",
+        "url": "https://www.revenue.state.mn.us/sites/default/files/2026-01/classification-rates-taxes-payable-2026.pdf"
+      },
+      {
+        "name": "Property Tax Deferral for Senior Citizens",
+        "text": "Program allowing qualifying seniors to defer part of their property tax.",
+        "url": "https://www.revenue.state.mn.us/property-tax-deferral-senior-citizens"
+      },
+      {
+        "name": "Renter's Credit",
+        "text": "Since 2024 renters claim the Renter's Credit on the income tax return instead of filing a Renter's Property Tax Refund (M1PR).",
+        "url": "https://www.revenue.state.mn.us/property-tax-refund"
+      }
+    ],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "A 2026 law raised the 2025 Homestead Credit Refund for homeowners by nearly 15%; refunds filed before July 15, 2026 are adjusted automatically.",
+        "url": "https://www.revenue.state.mn.us/property-tax-refund"
+      },
+      {
+        "text": "Homes pay a 1.00% class rate on the first $500,000 of value and 1.25% above, for taxes payable in 2026.",
+        "url": "https://www.revenue.state.mn.us/sites/default/files/2026-01/classification-rates-taxes-payable-2026.pdf"
+      },
+      {
+        "text": "Homeowners whose net property tax jumps more than 12% (and at least $100) in a year can claim a special refund, whatever their income.",
+        "url": "https://www.revenue.state.mn.us/homeowners-homestead-credit-refund"
+      },
+      {
+        "text": "The regular Homestead Credit Refund requires 2025 household income under $142,490.",
+        "url": "https://www.revenue.state.mn.us/homeowners-homestead-credit-refund"
+      },
+      {
+        "text": "Since 2024 renters get the Renter's Credit on their income tax return rather than a separate property tax refund.",
+        "url": "https://www.revenue.state.mn.us/property-tax-refund"
+      }
+    ]
+  },
+  "uncertain": [
+    "revenue.state.mn.us blocks automated requests (Radware CAPTCHA); pages were read in a real browser session.",
+    "Homestead Market Value Exclusion amounts were not found on an accessible DOR page; not recorded.",
+    "Motor vehicle sales tax rate and liquor tax rate pages were not opened; left without figures (rate null in otherRates).",
+    "Local sales tax rates and any statutory cap not recorded (rates come from the DOR calculator).",
+    "Property tax due dates (May 15 / October 15 customarily) not read on an official page; left null.",
+    "effectiveSince of the 6.875% rate not shown on the pages read."
+  ]
+}

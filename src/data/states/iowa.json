@@ -1,0 +1,105 @@
+{
+  "name": "Iowa",
+  "abbr": "IA",
+  "slug": "iowa",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6,
+    "rateNote": "6% state sales and use tax on tangible personal property, specified digital products and enumerated services; most jurisdictions add a 1% local option sales tax (LOST).",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "local option sales tax (LOST) approved by voters in counties, cities or unincorporated areas of a county",
+      "cap": 1,
+      "capNote": "LOST is 1% where authorized; it cannot apply to anything exempt from state sales tax, and there is no local option use tax.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://tax-mapper.iowa.gov/",
+      "url": "https://tax.iowa.gov/taxes/tax-guidance/general/iowa-taxfee-descriptions-and-rates"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food and food ingredients are generally exempt (Iowa Code 423.3(57)); candy, soft drinks and prepared food are taxable. SNAP purchases are exempt.",
+      "url": "https://tax.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/iowa-sales-tax-food"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable except during the annual August holiday (articles under $100).",
+      "url": "https://tax.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/iowas-annual-sales-tax-holiday"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://tax.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/medical-clinics-and-related-businesses-iowa-sales-and-use-tax-information"
+    },
+    "otherRates": [
+      {"item": "motor vehicles subject to registration", "rate": 5, "note": "Exempt from sales tax; instead a fee for new registration of $10 plus 5% of the sales or lease price, also on private-party sales.", "url": "https://tax.iowa.gov/taxes/tax-guidance/general/iowa-taxfee-descriptions-and-rates"},
+      {"item": "hotel and motel lodging", "rate": 5, "note": "State hotel and motel tax of 5% (not 6%), plus a local hotel/motel tax of up to 7%; local option sales tax does not apply.", "url": "https://tax.iowa.gov/taxes/tax-guidance/general/iowa-taxfee-descriptions-and-rates"},
+      {"item": "short-term car rentals (60 days or less)", "rate": 5, "note": "5% automobile rental excise tax in addition to sales tax and LOST.", "url": "https://tax.iowa.gov/taxes/tax-guidance/general/iowa-taxfee-descriptions-and-rates"}
+    ],
+    "holidays2026": [
+      {
+        "name": "Iowa Sales Tax Holiday",
+        "start": "2026-08-07",
+        "end": "2026-08-08",
+        "items": "articles of clothing and footwear with a selling price under $100 each; both state sales tax and local option tax are waived",
+        "url": "https://tax.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/iowas-annual-sales-tax-holiday"
+      }
+    ],
+    "holidayNote": "Held every year on the first Friday and Saturday of August (Iowa Code 423.3(68)); 2026 dates derived from that rule.",
+    "useTax": {
+      "rate": 6,
+      "note": "6% use tax on taxable purchases when the seller did not collect Iowa sales tax; no local option use tax.",
+      "url": "https://tax.iowa.gov/taxes/tax-guidance/general/iowa-taxfee-descriptions-and-rates"
+    },
+    "facts": [
+      {"text": "Cars and trucks are not subject to Iowa sales tax: buyers pay a one-time fee for new registration of $10 plus 5% of the price instead.", "url": "https://tax.iowa.gov/taxes/tax-guidance/general/iowa-taxfee-descriptions-and-rates"},
+      {"text": "Local option sales tax is a flat 1% approved by voters; it can be repealed only by another vote and not before it has been in effect for one year.", "url": "https://tax.iowa.gov/taxes/frequently-asked-questions/local-option-sales-tax-lost"},
+      {"text": "Where a local option tax is in force, a 1% local excise tax also applies to residential gas and electricity, which are exempt from state sales tax.", "url": "https://tax.iowa.gov/taxes/frequently-asked-questions/local-option-sales-tax-lost"},
+      {"text": "Iowa's clothing holiday is every first Friday and Saturday of August: no state or local tax on clothing and shoes priced under $100 per item.", "url": "https://tax.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/iowas-annual-sales-tax-holiday"},
+      {"text": "Hotel stays carry a 5% state hotel and motel tax rather than the 6% sales tax, plus up to 7% local hotel tax.", "url": "https://tax.iowa.gov/taxes/tax-guidance/general/iowa-taxfee-descriptions-and-rates"},
+      {"text": "Ibuprofen filled and labeled by a pharmacist on a prescription is exempt, but the same pill bought over the counter is taxable.", "url": "https://tax.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/medical-clinics-and-related-businesses-iowa-sales-and-use-tax-information"}
+    ]
+  },
+  "property": {
+    "levied": "local only: more than 2,000 levying authorities (counties, cities, school districts, etc.); the local assessor values property, the county auditor sets levy rates and the county treasurer collects; the Department of Revenue equalizes values and assesses utilities and railroads",
+    "assessment": {
+      "text": "Residential, commercial and industrial property is assessed at market value (farmland at a statewide productivity value) and reassessed every odd-numbered year. The county auditor then applies an 'assessment limitation' (rollback) that holds statewide growth in residential and agricultural taxable value to 3% a year; for assessment year 2025 the residential limitation was 44.5345% of assessed value.",
+      "ratio": 44.5345,
+      "url": "https://tax.iowa.gov/taxes/tax-guidance/property-tax/iowa-property-tax-overview"
+    },
+    "homestead": {
+      "name": "Homestead Tax Exemption (SF 2472, 2026)",
+      "amountType": "value-exemption",
+      "amount": null,
+      "text": "From assessment year 2026 (taxes paid September 2027 and March 2028), SF 2472 replaces the homestead credit (tax on the first $4,850 of value) with an exemption of 10% of the homestead's taxable value, at least $5,500 and at most $20,000 of taxable value; the maximum is indexed to inflation from 2027. Owners 65 or older get an additional $6,500 exemption.",
+      "applyBy": "Claim with the local assessor; owners who had the credit or exemption before July 1, 2026 receive the new exemption automatically.",
+      "url": "https://tax.iowa.gov/taxes/tax-guidance/property-tax/homestead-tax-credit-and-exemption"
+    },
+    "otherRelief": [
+      {"name": "Homestead exemption for claimants 65 or older", "text": "Additional $6,500 of taxable value exempt; once allowed, it continues without refiling.", "url": "https://tax.iowa.gov/taxes/tax-guidance/property-tax/homestead-tax-credit-and-exemption"},
+      {"name": "Disabled Veteran Homestead Property Tax Credit", "text": "Credit equal to the entire tax on the homestead for qualifying disabled veterans, surviving spouses or children; for applications from July 1, 2026 the homestead is limited to one-half acre.", "url": "https://tax.iowa.gov/taxes/tax-guidance/tax-credits-deductions-exemption/disabled-veteran-homestead-property-tax-credit"},
+      {"name": "Property Tax Credit (elderly and disabled)", "text": "Income-based credit; claimants 70+ qualify with household income under 250% of the federal poverty level. File with the county treasurer between January 1 and June 1, every year.", "url": "https://tax.iowa.gov/taxes/tax-guidance/tax-credits-deductions-exemption/property-tax-credit-expanded"}
+    ],
+    "dueDates": {
+      "text": "First half due September 30, second half due March 31, for taxes based on the assessment of January 1 of the previous year (an 18-month cycle).",
+      "url": "https://tax.iowa.gov/taxes/tax-guidance/property-tax/iowa-property-tax-overview"
+    },
+    "facts": [
+      {"text": "In 2026 Iowa switched from a homestead credit to a homestead exemption worth 10% of taxable value ($5,500 minimum, $20,000 maximum), starting with taxes paid in September 2027.", "url": "https://tax.iowa.gov/taxes/tax-guidance/property-tax/homestead-tax-credit-and-exemption"},
+      {"text": "Iowa homes are taxed on only part of their value: for assessment year 2025 the residential rollback was 44.5345%, so a $300,000 home had a taxable value of $133,603.", "url": "https://tax.iowa.gov/taxes/tax-guidance/property-tax/homestead-tax-credit-and-exemption"},
+      {"text": "The property tax cycle takes 18 months: the January 2023 assessment produced bills due in fall 2024 and spring 2025.", "url": "https://tax.iowa.gov/taxes/tax-guidance/property-tax/iowa-property-tax-overview"},
+      {"text": "The rollback limits growth of total statewide residential taxable value to 3% a year; it does not cap an individual home's assessment.", "url": "https://tax.iowa.gov/taxes/tax-guidance/property-tax/iowa-property-tax-overview"},
+      {"text": "Taxpayers can request an informal review from the assessor from April 2 to 25 and protest to the local board of review from April 2 to 30.", "url": "https://tax.iowa.gov/taxes/tax-guidance/property-tax/iowa-property-tax-overview"},
+      {"text": "Commercial and industrial property gets the residential rollback on its first $150,000 of value and 90% above that.", "url": "https://tax.iowa.gov/taxes/tax-guidance/property-tax/iowa-property-tax-overview"}
+    ]
+  },
+  "uncertain": [
+    "effectiveSince of the 6% rate not on the pages read (the hotel note implies the general rate rose to 6% on July 1, 2008, but this is not stated directly); left null.",
+    "Homestead amount left null because the new exemption is a percentage (10% of taxable value, $5,500-$20,000) rather than a fixed sum; amountType kept as value-exemption.",
+    "Assessment limitation percentage for assessment year 2026 is certified by November 1, 2026 and was not yet published; 44.5345% is the 2025 figure.",
+    "2026 holiday dates (August 7-8) computed from the statutory rule (first Friday and Saturday of August) on the IDR page; IDR does not print the 2026 dates."
+  ]
+}

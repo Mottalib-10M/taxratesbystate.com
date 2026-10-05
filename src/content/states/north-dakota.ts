@@ -1,0 +1,34 @@
+import { defineState } from '../../lib/page-types';
+import { st, usd, rate, eff, tx, ptx, rank } from '../../lib/kit';
+
+const s = st('north-dakota');
+const S = s.sales, C = s.census, PR = s.property, HS = s.property.homestead;
+const prc = HS.amount ?? 0;
+const ratio = PR.assessment?.ratio ?? 0;
+const alcohol = S.otherRates?.[0]?.rate ?? 0;
+const farm = S.otherRates?.[1]?.rate ?? 0;
+const home = 300000;
+const bill = ptx('north-dakota', home);
+const afterCredit = Math.max(0, bill - prc);
+const tractor = 250000;
+const effRank = rank(s, (x) => x.census.effectiveRate);
+
+export default defineState({
+  slug: 'north-dakota',
+  title: `North Dakota Sales Tax 2026: ${rate(S.stateRate)} Rate, ${usd(prc)} Home Credit`,
+  description: `North Dakota sales tax in 2026: ${rate(S.stateRate)} state rate plus city and county taxes, ${rate(alcohol)} on alcohol, and a ${usd(prc)} Primary Residence Credit on property tax for every owner.`,
+  intro: `A plain ${rate(S.stateRate)} state rate with local caps on big purchases, and a property tax credit that every homeowner can claim, whatever their age or income.`,
+  resume: `North Dakota charges a ${rate(S.stateRate)} state sales tax on most retail sales, and cities and counties add their own sales and use taxes, which the Office of State Tax Commissioner collects for them. A few goods have their own gross receipts rates: ${rate(alcohol)} on alcohol and ${rate(farm)} on new farm machinery and new mobile homes. Groceries for home and prescription drugs are exempt; candy, soft drinks, prepared food, over-the-counter medicine and clothing are taxed. Property tax is mid-range: the median owner paid ${usd(C.medianTax)} in 2024 on a ${usd(C.medianValue)} home (Census ACS), an effective rate of ${eff(C.effectiveRate)}, ranked ${effRank} of 51. Since the 2025 session's HB 1176, the state's Primary Residence Credit pays up to ${usd(prc)} a year toward the tax on any owner-occupied home, with no age or income test. Owners apply online between January 1 and April 1, and the credit shows up on the December statement.`,
+  sales: (h) => `<p>The local layer is administered by the state but chosen locally. Cities and counties levy sales and use taxes and can add lodging, restaurant and car rental taxes, with local lodging tax capped at 2%. The North Dakota quirk is the refund cap: some cities and counties set a maximum local tax per purchase, so a buyer who paid local tax above that ceiling on a large invoice can claim the excess back within three years. Rate changes start only on the first day of a calendar quarter and are posted 60 days ahead, and the Tax Commissioner's rate lookup gives the exact combined rate for an address.</p>
+<p>The special rates follow the state's economy. New farm machinery used only for agricultural production pays a ${h.rate(farm)} gross receipts tax instead of ${h.rate(S.stateRate)}, so a ${h.usd(tractor)} combine owes ${h.usd(tractor * farm / 100)} rather than ${h.usd(tx('north-dakota', tractor).stateTax)}. Alcohol pays ${h.rate(alcohol)}. Cars pay a separate ${h.rate(S.otherRates?.[3]?.rate ?? 0)} motor vehicle excise tax, and rental cars carry ${h.rate(S.stateRate)} plus a 3% surcharge on the fee.</p>
+<p>Some exemptions are narrower than visitors expect. Churches, charities and nonprofits pay sales tax on their purchases, except bibles, hymnals and religious textbooks bought by churches. Bottled water is exempt as food, but sweetened water is a taxable soft drink, as are fruit drinks with 50% juice or less. Montana residents can buy tax free in North Dakota on a single purchase of $50 or more taken out of the state for use there. Remote sellers collect once their sales into the state pass $100,000 in a year, and goods brought in untaxed, or taxed at a lower rate elsewhere, owe use tax.</p>`,
+  property: (h) => `<p>Counties run property tax in North Dakota: they collect it and pass the money to cities, townships, school districts and other districts, while the State Tax Commissioner assesses railroads, pipelines and utilities directly. Assessed value is ${h.num(ratio)}% of market value for all real property, and property is classed as residential, commercial or agricultural, with farmland valued from soil surveys and use. Mills are applied to the resulting taxable value.</p>
+<p>At the Census ratio of ${h.eff(C.effectiveRate)}, a ${h.usd(home)} house would pay about ${h.usd(bill)} a year before credits. The Primary Residence Credit then takes up to ${h.usd(prc)} off, which would leave about ${h.usd(afterCredit)}, and paying the bill in full by February 15 earns a further 5% discount. The tax is due January 1 after the year of assessment and can be paid without penalty until March 1. The credit is applied for online at tax.nd.gov/prc between January 1 and April 1 and appears as a deduction on the statement mailed in December. It covers houses, condos, townhomes, duplexes and mobile homes; owners of mobile homes on leased lots, who pay in advance, see a 2026 approval on their 2027 tax.</p>
+<p>Older and disabled owners can stack it with the Homestead Property Tax Credit: with income of $40,000 or less, taxable value is cut 100% up to $9,000 (about $200,000 of true and full value), and between $40,001 and $70,000, by half. Veterans with a service-connected disability of 50% or more have a credit in proportion to the rating. Both are filed with the local assessor by April 1, and the Primary Residence Credit then applies to any tax that remains.</p>`,
+  faqs: [
+    { q: 'How do I apply for the North Dakota Primary Residence Credit?', a: `Apply online at tax.nd.gov/prc between January 1 and April 1. The credit is worth up to ${usd(prc)} per household against the property tax on the home you own and live in as your primary residence, with no age or income limit, and it cannot exceed the tax due. Approved credits appear as a deduction on the property tax statement mailed in December.` },
+    { q: 'Can Montana residents shop tax free in North Dakota?', a: `Yes, on purchases of $50 or more. A Montana resident making a single purchase of $50 or more that is taken out of North Dakota for use only outside the state can buy it free of North Dakota's ${rate(S.stateRate)} sales tax and local taxes. Smaller purchases, and items used in North Dakota, are taxed at the normal combined rate.` },
+    { q: 'Is there a discount for paying North Dakota property tax early?', a: `Yes. Real property tax is due on January 1 after the assessment year and can be paid without penalty until March 1, but paying the whole bill by February 15 earns a 5% discount. On a ${usd(3000)} bill, that saves ${usd(150)}. The Primary Residence Credit, worth up to ${usd(prc)}, is shown as a deduction on the statement mailed in December.` },
+  ],
+  related: ['south-dakota', 'minnesota', 'montana', 'homestead-exemption-by-state', 'local-sales-tax-rates'],
+});

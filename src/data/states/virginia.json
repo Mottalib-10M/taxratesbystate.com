@@ -1,0 +1,142 @@
+{
+  "name": "Virginia",
+  "abbr": "VA",
+  "slug": "virginia",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4.3,
+    "rateNote": "State retail sales and use tax of 4.3% (Code of Virginia 58.1-603) plus a 1% local tax levied by every city and county, giving the 5.3% general rate that applies in most of Virginia. Regional add-ons raise it to 6% (Central Virginia, Hampton Roads, Northern Virginia), 6.3% (eight southside localities) or 7% (Historic Triangle).",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "every city and county (1% local option, 58.1-605) plus regional taxes in Northern Virginia, Hampton Roads, Central Virginia, the Historic Triangle and certain southside localities",
+      "cap": 1,
+      "capNote": "The general local tax is 1%; regional taxes on top bring the combined general rate to a maximum of 7% (James City County, Williamsburg, York County).",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://rrpl.maps.arcgis.com/apps/instant/lookup/index.html?appid=2c27121c640a4926ae4286cdd3eb5e78",
+      "url": "https://www.tax.virginia.gov/retail-sales-and-use-tax",
+      "groceriesLocalRate": 1,
+      "groceriesLocalAlways": true
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Since January 1, 2023 there is no state tax on food for home consumption and essential personal hygiene products; only the 1% local tax remains, so groceries are taxed at 1% throughout Virginia. Hot prepared food is fully taxable.",
+      "url": "https://www.tax.virginia.gov/grocery-tax"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable except during the August sales tax holiday ($100 or less per item).",
+      "url": "https://www.tax.virginia.gov/virginia-sales-tax-holiday"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-609.10/"
+    },
+    "otherRates": [
+      {
+        "item": "food for home consumption and essential personal hygiene products",
+        "rate": 1,
+        "note": "Local 1% only; the state portion was eliminated on January 1, 2023.",
+        "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-611.1/"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Virginia's 3-Day Sales Tax Holiday",
+        "start": "2026-08-07",
+        "end": "2026-08-09",
+        "items": "school supplies $20 or less per item; clothing and footwear $100 or less; portable generators $1,000 or less; gas chainsaws $350 or less; chainsaw accessories and other hurricane items $60 or less; Energy Star and WaterSense products for home use $2,500 or less",
+        "url": "https://www.tax.virginia.gov/virginia-sales-tax-holiday"
+      }
+    ],
+    "holidayNote": null,
+    "useTax": {
+      "rate": 5.3,
+      "note": "Consumer use tax at the same rate as sales tax where the item is used (5.3% in most localities, higher in regional-tax areas).",
+      "url": "https://www.tax.virginia.gov/retail-sales-and-use-tax"
+    },
+    "facts": [
+      {
+        "text": "Virginia's holiday combines back-to-school, hurricane preparedness and Energy Star items in one weekend: the first Friday to Sunday in August.",
+        "url": "https://www.tax.virginia.gov/virginia-sales-tax-holiday"
+      },
+      {
+        "text": "Essential personal hygiene products (such as diapers and feminine hygiene products) get the same 1% rate as groceries.",
+        "url": "https://www.tax.virginia.gov/grocery-tax"
+      },
+      {
+        "text": "Nonprescription drugs and proprietary medicines are exempt, not just prescriptions.",
+        "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-609.10/"
+      },
+      {
+        "text": "Rates range from 5.3% to 7% depending on the locality; the 7% rate applies in James City County, Williamsburg and York County.",
+        "url": "https://www.tax.virginia.gov/retail-sales-and-use-tax"
+      },
+      {
+        "text": "Eight southside localities, including Danville and Pittsylvania County, charge 6.3%.",
+        "url": "https://www.tax.virginia.gov/retail-sales-and-use-tax"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local only (counties, cities and towns); no state real estate tax",
+    "assessment": {
+      "text": "Real estate is assessed at 100% of fair market value. Counties must reassess every four years (or three by board vote; counties of 50,000 or fewer people may choose five or six years); many cities reassess annually.",
+      "ratio": 100,
+      "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3201/"
+    },
+    "homestead": {
+      "name": "No general homestead exemption",
+      "amountType": "none",
+      "amount": null,
+      "text": "Virginia has no statewide homestead exemption for all owners. Localities may adopt exemptions or deferrals for owners aged 65+ or permanently and totally disabled, on conditions they set by ordinance.",
+      "applyBy": "Apply with the local commissioner of the revenue or assessor under the locality's ordinance.",
+      "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3210/"
+    },
+    "otherRelief": [
+      {
+        "name": "Disabled veteran exemption",
+        "text": "Full exemption of the principal residence of a veteran rated 100% service-connected, permanent and total disability (constitutional exemption since 2011).",
+        "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.5/"
+      },
+      {
+        "name": "Elderly and disabled tax relief (local option)",
+        "text": "Localities may grant exemptions, deferrals or both to owners 65+ or permanently disabled who live in the home, with income and net worth limits set locally.",
+        "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3210/"
+      }
+    ],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "Assessment at 100% of fair market value is required by state law for every general reassessment.",
+        "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3201/"
+      },
+      {
+        "text": "Small counties (50,000 people or fewer) can stretch reassessments to every five or six years, so assessed values may lag the market.",
+        "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3252/"
+      },
+      {
+        "text": "A 100% disabled veteran's home is fully exempt, including property held jointly with a spouse.",
+        "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.5/"
+      },
+      {
+        "text": "Senior and disability relief is a local choice, so its amount and income limits differ between localities.",
+        "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3210/"
+      }
+    ]
+  },
+  "uncertain": [
+    "Grocery treatment: state portion is 0% and the 1% local tax applies; recorded as 'exempt' (state) with groceriesTaxedLocally true. Could also be modelled as 'reduced' at 1%.",
+    "Motor vehicle sales and use tax (administered by the DMV) not verified.",
+    "Property tax due dates are set by each locality; no statewide schedule (dueDates null).",
+    "The size of each regional add-on was not read separately; only the combined rates (5.3%, 6%, 6.3%, 7%) published by Virginia Tax are used.",
+    "No change to the 4.3% state rate in 2025-2026 was found on Virginia Tax's pages."
+  ]
+}

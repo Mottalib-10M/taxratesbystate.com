@@ -1,0 +1,33 @@
+import { defineState } from '../../lib/page-types';
+import { st, usd, rate, eff, tx, ptx, rank } from '../../lib/kit';
+
+const s = st('nevada');
+const S = s.sales, C = s.census, PR = s.property;
+const ratio = PR.assessment?.ratio ?? 0;
+const tv = tx('nevada', 1500);
+const truck = tx('nevada', 30000);
+const taxable = 300000;
+const assessed = (taxable * ratio) / 100;
+const ceiling = (assessed / 100) * 3.66;
+const lastBill = 2400;
+const effRank = rank(s, (x) => x.census.effectiveRate);
+
+export default defineState({
+  slug: 'nevada',
+  title: `Nevada Sales Tax 2026: ${rate(S.stateRate)} Minimum Everywhere, 3% Cap`,
+  description: `Nevada sales tax in 2026: ${rate(S.stateRate)} is the lowest rate charged anywhere in the state, counties add more. Property tax: 3% cap on home bills, median ${usd(C.medianTax)}.`,
+  intro: `Four taxes stacked into one minimum rate, county add-ons on top, and a property tax bill that by law can barely move from one year to the next.`,
+  resume: `Nevada's ${rate(S.stateRate)} is best read as a floor: it is the minimum sales tax rate charged in every county, and many counties add option taxes for transit, roads, flood control or schools on top of it. The ${rate(S.stateRate)} itself is four taxes bundled together: a 2.00% state sales tax, the 2.60% Local School Support Tax and two city-county relief taxes of 0.50% and 1.75%. Only 4.60% stays with the state; the 2.25% relief taxes are levied everywhere but flow to local governments. Groceries for home and prescription drugs are exempt, clothing is taxed, and there is no general sales tax holiday. Property tax is light by national standards: the median owner paid ${usd(C.medianTax)} on a ${usd(C.medianValue)} home in 2024 (Census ACS), an effective rate of ${eff(C.effectiveRate)}, ranked ${effRank} of 51. For a primary residence the bill cannot rise more than 3% a year.`,
+  sales: (h) => `<p>Most states have a state rate and then local rates. Nevada works the other way around: the Department of Taxation publishes ${h.rate(S.stateRate)} as the base, and that base already contains taxes that belong to cities, counties and schools. A ${h.usd(1500)} television bought in a county with no option tax costs ${h.usd(tv.stateTax, 2)} in tax, and the receipt will not split it into four lines. Counties can then raise the rate under several chapters of state law (NRS 377A for transit, roads and tourism, NRS 377B for infrastructure, NRS 543 for flood control, NRS 374A for school buildings), always for the whole county, which is why the Department's sales tax map is drawn county by county rather than by city.</p>
+<p>The exemptions are short. Food bought to prepare at home is exempt, food prepared to eat right away is not, and regulation R056-18 decides the cases in between. Prescription drugs are exempt. Clothing and shoes are taxed at the full county rate all year. Delivery and shipping charges listed separately on the invoice have been exempt since May 2009, and so is installation or repair labor listed on its own line.</p>
+<p>Use tax catches what crosses the state line untaxed. A pickup bought for ${h.usd(30000)} in a state that charged no sales tax owes at least ${h.usd(truck.stateTax)} of Nevada use tax, and proof that the tax was paid is required to register it. Sales tax paid to the other state is credited. The one holiday-like rule is narrow: members of the Nevada National Guard, and relatives living with them, can claim back the sales tax paid during the Nevada Day observance, October 30 to November 1, 2026, with an exemption letter.</p>`,
+  property: (h) => `<p>Nevada assesses every property at ${h.num(ratio)}% of its taxable value, so a home with a taxable value of ${h.usd(taxable)} carries an assessed value of ${h.usd(assessed)}. Counties, cities, school districts and special districts then share a combined rate capped at $3.64 per $100 of assessed value, plus 2 cents for state debt outside the cap, $3.66 in all. Even at that ceiling, the same home would owe no more than ${h.usd(ceiling)}. The state constitution allows up to $5.00 per $100; the lower statutory cap dates from the 1979 reform passed in response to California's Proposition 13.</p>
+<p>The rule that matters most to homeowners came later, in 2005. A single-family home that is the owner's primary residence gets a partial abatement: its bill cannot grow more than 3% over the previous year's, whatever happens to values. If last year's bill was ${h.usd(lastBill)}, this year's is at most ${h.usd(lastBill * 1.03)}. Second homes, rentals and commercial buildings get a looser county cap of up to 8%. The cap does not cover new construction or a change of use, so a newly built house is not protected by it in its first assessment.</p>
+<p>At the Census ratio of ${h.eff(C.effectiveRate)}, a ${h.usd(450000)} home pays about ${h.usd(ptx('nevada', 450000))} a year. Furniture, household goods and business inventories are not taxed at all. The fiscal year starts July 1, and the bill can be paid in four installments: the third Monday in August, then the first Monday in October, January and March. Veterans, disabled veterans, blind owners and surviving spouses have exemptions measured in assessed value. On a sale, the transfer tax base is $1.95 per $500 of value.</p>`,
+  faqs: [
+    { q: 'Why is Nevada sales tax 6.85% when the state rate is 4.6%?', a: `Because ${rate(S.stateRate)} bundles four taxes levied statewide: the 2.00% state sales tax and the 2.60% Local School Support Tax, which make up the 4.60% kept for state purposes, plus the 0.50% and 1.75% city-county relief taxes, which go to local governments. No county charges less than ${rate(S.stateRate)}, and many add their own option taxes on top.` },
+    { q: 'How much can my Nevada property tax go up each year?', a: `If the home is a single-family house you own and live in as your primary residence, the bill cannot rise more than 3% over the prior year's, or less if your county's general cap is lower. Other property, such as second homes and rentals, has a county cap of up to 8%. New construction and a change of use are not covered by the cap.` },
+    { q: 'Do I pay Nevada use tax on a car bought in another state?', a: `Yes, if no sales tax was paid where you bought it. Vehicles, aircraft and off-highway vehicles brought into Nevada owe use tax at the rate of the area where they are used, at least ${rate(S.stateRate)}, and proof the tax was paid is required to register them. Sales tax paid to the other state is credited against the Nevada amount.` },
+  ],
+  related: ['california', 'arizona', 'utah', 'oregon', 'use-tax', 'property-tax-assessment-caps'],
+});

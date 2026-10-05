@@ -1,0 +1,167 @@
+{
+  "name": "Arkansas",
+  "abbr": "AR",
+  "slug": "arkansas",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6.5,
+    "rateNote": "State sales and use tax rate of 6.5% since July 1, 2013. Food and food ingredients carry a 0% state rate since January 1, 2026, but city and county taxes still apply to them.",
+    "effectiveSince": "2013-07-01",
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "city and county sales and use taxes, collected by DFA and sourced to the point of delivery",
+      "cap": null,
+      "capNote": "Since 2008, local tax on a single transaction is capped (taxed on the first $2,500) only for motor vehicles licensed for highway use, aircraft, watercraft and manufactured housing; businesses can claim rebates of local tax paid on invoices above $2,500.",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/local-tax-lookup-tools/",
+      "url": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/sales-and-use-tax-faqs/"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": 0,
+      "note": "State Reduced Food Tax rate is 0.000% effective January 1, 2026 (Act 1008 of 2025). Food and food ingredients remain subject to city and county sales taxes.",
+      "url": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/sales-use-tax-rates/state-sales-use-tax-rates/"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable except during the August sales tax holiday (items under $100).",
+      "url": "https://www.dfa.arkansas.gov/wp-content/uploads/Sales_Tax_Holiday_Instructions_2026.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.dfa.arkansas.gov/wp-content/uploads/SalesTaxExemptionsFY2025.pdf"
+    },
+    "otherRates": [
+      {
+        "item": "used motor vehicles, trailers and semitrailers ($4,000 to under $10,000)",
+        "rate": 3.5,
+        "note": "Reduced state rate (Ark. Code § 26-52-510); vehicles sold for less than $4,000 are exempt.",
+        "url": "https://www.dfa.arkansas.gov/wp-content/uploads/SalesTaxExemptionsFY2025.pdf"
+      },
+      {
+        "item": "electricity for manufacturing",
+        "rate": 1.625,
+        "note": "State Electricity Manufacturing Tax since January 1, 2015.",
+        "url": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/sales-use-tax-rates/state-sales-use-tax-rates/"
+      },
+      {
+        "item": "short-term vehicle rental",
+        "rate": 10,
+        "note": "Additional state Short Term Rental Vehicle Tax.",
+        "url": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/sales-use-tax-rates/state-sales-use-tax-rates/"
+      },
+      {
+        "item": "Parks and Tourism tax",
+        "rate": 2,
+        "note": "Additional state tax listed by DFA (code 80-01) on top of the general rate for the covered activities.",
+        "url": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/sales-use-tax-rates/state-sales-use-tax-rates/"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Arkansas Sales Tax Holiday",
+        "start": "2026-08-01",
+        "end": "2026-08-02",
+        "items": "Clothing and footwear under $100 per item; clothing accessories under $50 per item; school supplies, school art supplies, school instructional materials and electronic devices used for study. Exempt from both state and local sales tax.",
+        "url": "https://www.dfa.arkansas.gov/wp-content/uploads/Sales_Tax_Holiday_Instructions_2026.pdf"
+      }
+    ],
+    "holidayNote": null,
+    "useTax": {
+      "rate": 6.5,
+      "note": "State use tax equals the 6.5% sales tax rate, plus the city and/or county tax where items are first delivered; credit is given for sales tax legally paid to another state.",
+      "url": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/sales-and-use-tax-faqs/"
+    },
+    "facts": [
+      {
+        "text": "Act 1008 of 2025 removed the last state sales tax on groceries: the state food rate is 0% from January 1, 2026, while local taxes continue to apply.",
+        "url": "https://www.dfa.arkansas.gov/wp-content/uploads/Whatsnew2025_1.pdf"
+      },
+      {
+        "text": "Arkansas's sales tax holiday falls on the first weekend of August (Act 757 of 2011) and also suspends local taxes; retailers must participate.",
+        "url": "https://www.dfa.arkansas.gov/wp-content/uploads/Sales_Tax_Holiday_Instructions_2026.pdf"
+      },
+      {
+        "text": "Used cars priced $4,000 to under $10,000 are taxed at a reduced 3.5% state rate; vehicles under $4,000 are exempt.",
+        "url": "https://www.dfa.arkansas.gov/wp-content/uploads/SalesTaxExemptionsFY2025.pdf"
+      },
+      {
+        "text": "Selling your old car within 60 days before or after buying another one reduces the taxable amount, like a trade-in (Act 277 of 2021).",
+        "url": "https://www.dfa.arkansas.gov/office/taxes/tax-credits-special-refunds/sales-tax-credit-for-sale-of-a-used-vehicle/"
+      },
+      {
+        "text": "Local sales tax on boats, cars and other capped items applies only to the first $2,500; state tax applies to the full price.",
+        "url": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/sales-and-use-tax-faqs/"
+      },
+      {
+        "text": "Arkansas is a Streamlined Sales Tax member and sources local tax to the delivery address since January 1, 2008.",
+        "url": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/sales-and-use-tax-faqs/"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local: county quorum courts formally levy millage for counties, cities and school districts; taxes are collected by the county collector the year after assessment. The Assessment Coordination Division (DFA) supervises assessment in all 75 counties.",
+    "assessment": {
+      "text": "Assessed value is 20% of market value (Ark. Code § 26-26-303). Counties reappraise on a 3-, 4- or 5-year cycle. Under Amendment 79, the taxable value of a homestead may rise by at most 5% a year and other real property by 10% a year after reappraisal, except for new construction and substantial improvements.",
+      "ratio": 20,
+      "url": "https://www.dfa.arkansas.gov/wp-content/uploads/faqs-2023.pdf",
+      "capped": true,
+      "capText": "Assessed value is 20% of market value (Ark. Code § 26-26-303). Counties reappraise on a 3-, 4- or 5-year cycle. Under Amendment 79, the taxable value of a homestead may rise by at most 5% a year and other real property by 10% a year after reappraisal, except for new construction and substantial improvements.",
+      "capUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/faqs-2023.pdf"
+    },
+    "homestead": {
+      "name": "Homestead Property Tax Credit",
+      "amountType": "credit",
+      "amount": 600,
+      "text": "Credit of up to $600 a year on the property tax of a principal residence for assessment year 2025 (tax bills payable in 2026, Act 330 of 2025), raised to $675 for assessment years from January 1, 2026 (Act 174 of 2026). One credit per owner per year.",
+      "applyBy": "Apply with the county assessor; the application deadline is October 15.",
+      "url": "https://www.dfa.arkansas.gov/office/arkansas-assessment-coordination-division/real-property/property-tax-relief/"
+    },
+    "otherRelief": [
+      {
+        "name": "Age 65 or disabled assessment freeze",
+        "text": "Homestead owners aged 65+ or disabled can freeze the taxable assessed value at the value on the next assessment date; the freeze does not pass to a buyer, and millage changes still apply.",
+        "url": "https://www.dfa.arkansas.gov/office/arkansas-assessment-coordination-division/real-property/property-tax-relief/"
+      },
+      {
+        "name": "Amendment 79 caps",
+        "text": "Reappraisal increases are capped at 5% a year for homesteads and 10% a year for other real property until full assessed value is reached.",
+        "url": "https://www.dfa.arkansas.gov/office/arkansas-assessment-coordination-division/real-property/property-tax-relief/"
+      }
+    ],
+    "dueDates": {
+      "text": "Property taxes are payable to the county collector by October 15 each year (next business day if it falls on a weekend or holiday).",
+      "url": "https://www.dfa.arkansas.gov/office/arkansas-assessment-coordination-division/real-property/residential-real-estate/"
+    },
+    "facts": [
+      {
+        "text": "The homestead credit was raised from $500 to $600 for assessment year 2025 and to $675 for assessment years starting in 2026.",
+        "url": "https://arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2026F%2FPublic%2F&file=174.pdf&ddBienniumSession=2025%2F2026F"
+      },
+      {
+        "text": "Property tax runs on a two-year cycle: values and millage are set in the assessment year, and taxes are collected the following year.",
+        "url": "https://www.dfa.arkansas.gov/office/arkansas-assessment-coordination-division/"
+      },
+      {
+        "text": "Personal property, including vehicles, must be assessed by May 31 each year.",
+        "url": "https://www.dfa.arkansas.gov/office/arkansas-assessment-coordination-division/"
+      },
+      {
+        "text": "The deadline to appeal to the county Board of Equalization is the third Monday in August.",
+        "url": "https://www.dfa.arkansas.gov/office/arkansas-assessment-coordination-division/real-property/residential-real-estate/"
+      },
+      {
+        "text": "A 'substantial improvement' that ends the cap or freeze is a renovation adding 25% or more to the property's value.",
+        "url": "https://www.dfa.arkansas.gov/office/arkansas-assessment-coordination-division/real-property/property-tax-relief/"
+      }
+    ]
+  },
+  "uncertain": [
+    "Contradiction: the DFA Property Tax Relief web page still says 'up to $500 ... up to $600 beginning with 2026 tax bills', while the 2026 AACD Annual Report and Act 174 of 2026 set $675 for assessment years beginning January 1, 2026 (bills payable in 2027). amount=600 reflects bills payable in 2026.",
+    "Prescription drug exemption read in the DFA biennial tax-exemption report (Ark. Code § 26-52-406), not on a dedicated DFA page; the Arkansas Code itself is not hosted on a .gov site.",
+    "Local option to tax groceries: DFA states food remains subject to city and county taxes; per-locality rates not recorded."
+  ]
+}

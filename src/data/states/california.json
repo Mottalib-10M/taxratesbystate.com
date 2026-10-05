@@ -1,0 +1,139 @@
+{
+  "name": "California",
+  "abbr": "CA",
+  "slug": "california",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 7.25,
+    "rateNote": "Statewide base rate of 7.25% since January 1, 2017: 6.00% state portion plus 1.25% local (Bradley-Burns) portion levied everywhere. Voter-approved district taxes of 0.10% to 2.00% each are added in most areas.",
+    "effectiveSince": "2017-01-01",
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "district taxes adopted by cities, counties and special districts (transportation, public safety, general purpose), on top of the statewide 1.25% Bradley-Burns local tax",
+      "cap": 2,
+      "capNote": "The combined rate of district taxes in a county may not exceed 2% (R&T Code 7251.1), but specific statutes authorize some jurisdictions to exceed it.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://maps.cdtfa.ca.gov/",
+      "url": "https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-rates.htm"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food products for human consumption are exempt (Regulation 1602, R&T Code 6359); hot prepared food and meals are taxable.",
+      "url": "https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1602.html"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable at the full rate; California has no clothing exemption or sales tax holiday.",
+      "url": "https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-rates.htm"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1591.html"
+    },
+    "otherRates": [],
+    "holidays2026": [],
+    "holidayNote": "California has no sales tax holiday.",
+    "useTax": {
+      "rate": 7.25,
+      "note": "Use tax applies at the same rate (plus district tax where applicable) to items bought without California tax from out-of-state sellers; individuals can report it on their state income tax return, using CDTFA's lookup table if they wish. Vehicles, vessels and aircraft cannot be reported there.",
+      "url": "https://www.cdtfa.ca.gov/taxes-and-fees/use-tax.htm"
+    },
+    "facts": [
+      {
+        "text": "The 7.25% base splits into 6.00% for the state and 1.25% for cities and counties; it has been unchanged since January 1, 2017, when it fell from 7.50%.",
+        "url": "https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-rates-history.htm"
+      },
+      {
+        "text": "District taxes range from 0.10% to 2.00% each, and some areas have more than one.",
+        "url": "https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-rates.htm"
+      },
+      {
+        "text": "CDTFA publishes a new city and county rate table each quarter; the current table is effective October 1, 2026.",
+        "url": "https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-rates.htm"
+      },
+      {
+        "text": "The statewide rate peaked at 8.25% from April 2009 to June 2011.",
+        "url": "https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-rates-history.htm"
+      },
+      {
+        "text": "Use tax on purchases from out-of-state sellers can be paid on the California income tax return.",
+        "url": "https://www.cdtfa.ca.gov/taxes-and-fees/use-tax.htm"
+      },
+      {
+        "text": "Use tax also applies to goods bought abroad and brought into California.",
+        "url": "https://www.cdtfa.ca.gov/taxes-and-fees/use-tax.htm"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local: counties assess and collect; the revenue goes to counties, cities, schools and special districts. The State Board of Equalization oversees assessment practices.",
+    "assessment": {
+      "text": "Proposition 13: real property is assessed at its base-year value (purchase price or value at new construction), which may rise by no more than 2% a year; reassessment to market value on change of ownership or new construction. The general tax rate is 1% of taxable value plus voter-approved debt rates.",
+      "ratio": 100,
+      "url": "https://www.boe.ca.gov/proptaxes/pdf/pub29.pdf",
+      "capped": true,
+      "capText": "Proposition 13: real property is assessed at its base-year value (purchase price or value at new construction), which may rise by no more than 2% a year; reassessment to market value on change of ownership or new construction. The general tax rate is 1% of taxable value plus voter-approved debt rates.",
+      "capUrl": "https://www.boe.ca.gov/proptaxes/pdf/pub29.pdf"
+    },
+    "homestead": {
+      "name": "Homeowners' Exemption",
+      "amountType": "value-exemption",
+      "amount": 7000,
+      "text": "The California Constitution reduces the taxable value of a qualifying owner-occupied home by $7,000. The home must be the owner's principal residence on the January 1 lien date.",
+      "applyBy": "One-time claim (BOE-266) with the county assessor; file by February 15 for the full exemption that year.",
+      "url": "https://www.boe.ca.gov/proptaxes/homeowners_exemption.htm"
+    },
+    "otherRelief": [
+      {
+        "name": "Proposition 19 base-year value transfer",
+        "text": "Homeowners aged 55+, severely disabled or disaster victims can move their taxable value to a replacement home anywhere in California, up to three times.",
+        "url": "https://www.boe.ca.gov/prop19/"
+      },
+      {
+        "name": "Proposition 19 parent-child exclusion",
+        "text": "A family home passed to a child avoids reassessment only if it becomes the child's principal residence, and only up to its factored base-year value plus $1 million (adjusted every other February 16).",
+        "url": "https://www.boe.ca.gov/prop19/"
+      },
+      {
+        "name": "Active solar exclusion",
+        "text": "New active solar energy systems are not assessed until a change of ownership; the exclusion is scheduled to sunset January 1, 2027.",
+        "url": "https://www.boe.ca.gov/proptaxes/pdf/pub29.pdf"
+      }
+    ],
+    "dueDates": {
+      "text": "Secured tax bills are mailed by November 1 and paid in two installments: the first is due November 1 and delinquent after December 10; the second is due February 1 and delinquent after April 10.",
+      "url": "https://www.boe.ca.gov/proptaxes/pdf/pub29.pdf"
+    },
+    "facts": [
+      {
+        "text": "Because assessed values rise by at most 2% a year until a sale, long-time owners usually pay much less than recent buyers of similar homes.",
+        "url": "https://www.boe.ca.gov/proptaxes/pdf/pub29.pdf"
+      },
+      {
+        "text": "The base property tax rate is 1% of taxable value; voter-approved bonds add to it.",
+        "url": "https://www.boe.ca.gov/proptaxes/pdf/pub29.pdf"
+      },
+      {
+        "text": "BOE example: a family home with a $300,000 factored base-year value and a $1,500,000 market value is excluded up to $1,300,000, so $200,000 is added to the taxable value.",
+        "url": "https://www.boe.ca.gov/prop19/"
+      },
+      {
+        "text": "December 10 is the last day to cancel the Homeowners' Exemption without penalty after a home stops being your principal residence.",
+        "url": "https://www.boe.ca.gov/proptaxes/homeowners_exemption.htm"
+      },
+      {
+        "text": "February 15 is the legal deadline for most property tax exemption claims.",
+        "url": "https://www.boe.ca.gov/proptaxes/pdf/pub29.pdf"
+      }
+    ]
+  },
+  "uncertain": [
+    "No dedicated CDTFA page read stating that clothing is taxable; 'taxed' reflects the absence of any clothing exemption in the pages read.",
+    "The current biennially adjusted Prop 19 amount (base $1,000,000, adjusted February 16, 2025) was not read on the BOE page.",
+    "Some jurisdictions exceed the 2% district-tax cap under special legislation; the list was not compiled."
+  ]
+}

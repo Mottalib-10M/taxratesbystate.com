@@ -1,0 +1,155 @@
+{
+  "name": "Indiana",
+  "abbr": "IN",
+  "slug": "indiana",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 7,
+    "rateNote": "Single statewide 7% gross retail tax; there is no general local sales tax in Indiana, so 7% is the rate everywhere (local food and beverage taxes apply only to prepared food and drinks).",
+    "effectiveSince": "2008-04-01",
+    "scheduledChanges": [],
+    "local": {
+      "allowed": false,
+      "levies": "no local general sales tax; counties and municipalities that adopt it levy a food and beverage tax on prepared food and drinks (generally 1%, up to 2% where both county and city impose it), plus county innkeeper's taxes on short stays",
+      "cap": null,
+      "capNote": "Food and beverage tax: generally 1% of gross retail income, 2% inside a municipality when county and municipality both adopted it (Commissioner's Directive #30).",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://www.in.gov/dor/i-am-a/business-corp/county-tax-information",
+      "url": "https://www.in.gov/dor/files/cd30.pdf"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food and food ingredients sold unheated and without utensils are exempt; candy, soft drinks, dietary supplements, alcohol and prepared food are taxable at 7%.",
+      "url": "https://www.in.gov/dor/files/reference/sib29.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption: clothing is tangible personal property taxed at 7%.",
+      "url": "https://www.in.gov/dor/i-am-a/business-corp/business-faq/"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.in.gov/dor/files/reference/sib48.pdf"
+    },
+    "otherRates": [
+      {
+        "item": "prepared food and beverages in adopting counties/cities",
+        "rate": null,
+        "note": "Local food and beverage tax of generally 1% (2% where county and city both levy it) on top of the 7% sales tax.",
+        "url": "https://www.in.gov/dor/files/cd30.pdf"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "Indiana has no sales tax holiday; none is listed by the Department of Revenue for 2026.",
+    "useTax": {
+      "rate": 7,
+      "note": "7% use tax on purchases where at least 7% sales tax was not paid; individuals report it on Form IT-40 (Schedule 4) or on Form ST-115.",
+      "url": "https://www.in.gov/dor/i-am-a/business-corp/business-faq/"
+    },
+    "facts": [
+      {
+        "text": "Indiana's sales tax has been 7% since April 1, 2008 (6% from December 2002 to March 2008); it was first adopted on October 24, 1963.",
+        "url": "https://www.in.gov/dor/resources/tax-rates-and-reports/rates-fees-and-penalties/corporate-sales-tax-history"
+      },
+      {
+        "text": "There is no county or city sales tax: the 7% rate is the same in every store in the state.",
+        "url": "https://www.in.gov/dor/i-am-a/business-corp/sales-tax"
+      },
+      {
+        "text": "Restaurant meals can carry an extra local food and beverage tax of 1%, or 2% where both the county and the city adopted it.",
+        "url": "https://www.in.gov/dor/files/cd30.pdf"
+      },
+      {
+        "text": "Indiana's candy definition excludes anything with flour on the label or needing refrigeration, so many candy bars are exempt as food.",
+        "url": "https://www.in.gov/dor/files/reference/sib29.pdf"
+      },
+      {
+        "text": "Remote sellers must register once their Indiana gross revenue exceeds $100,000 in the current or previous calendar year.",
+        "url": "https://www.in.gov/dor/i-am-a/business-corp/business-faq/"
+      },
+      {
+        "text": "Bundled or unitary transactions of seven cents or less are exempt from sales tax.",
+        "url": "https://www.in.gov/dor/resources/tax-library/information-bulletins"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local only: counties, cities and towns, townships, school corporations, libraries and special districts; bills are issued and collected by the county treasurer; the Department of Local Government Finance (DLGF) oversees assessments and budgets",
+    "assessment": {
+      "text": "Property is taxed on its net assessed value (gross assessed value minus deductions) times the local rate. Indiana's constitutional circuit-breaker caps limit the bill to 1% of gross assessed value for homesteads, 2% for other residential property and farmland, and 3% for other real and personal property; voter-approved referendum levies sit outside the caps.",
+      "ratio": null,
+      "url": "https://www.in.gov/dlgf/understanding-your-tax-bill/tax-bill-101",
+      "capped": true,
+      "capText": "Property is taxed on its net assessed value (gross assessed value minus deductions) times the local rate. Indiana's constitutional circuit-breaker caps limit the bill to 1% of gross assessed value for homesteads, 2% for other residential property and farmland, and 3% for other real and personal property; voter-approved referendum levies sit outside the caps.",
+      "capUrl": "https://www.in.gov/dlgf/understanding-your-tax-bill/tax-bill-101"
+    },
+    "homestead": {
+      "name": "Homestead Standard Deduction + Supplemental Homestead Deduction (SEA 1-2025)",
+      "amountType": "value-exemption",
+      "amount": 40000,
+      "text": "Under SEA 1-2025 the standard deduction is fixed at $48,000 for the 2025 assessment date, $40,000 for 2026, $30,000 for 2027, $20,000 for 2028, $10,000 for 2029 and $0 from 2030, while the supplemental homestead deduction rises from 40% of the remaining assessed value (pay 2026) to 66.7% (pay 2031). A Supplemental Homestead Credit of 10% of the homestead tax bill, up to $300, applies automatically from taxes payable in 2026.",
+      "applyBy": "File with the county auditor; applications made by January 15 apply to that year's tax bill (e.g. by January 15, 2026 for the 2025 pay 2026 bill). No yearly reapplication.",
+      "url": "https://www.in.gov/dlgf/files/2026-memos/260527-Cockerill-Memo-Legislation-Affecting-Deductions,-Credits,-and-Exemptions.pdf"
+    },
+    "otherRelief": [
+      {
+        "name": "Over 65 Credit",
+        "text": "SEA 1-2025 replaced the Over 65 Deduction (from the January 1, 2025 assessment date) with a credit of up to $150, subject to income limits (AGI over $60,000 single / $70,000 joint disqualifies).",
+        "url": "https://www.in.gov/dlgf/files/2025-memos/250612-Cockerill-Memo-Legislation-Affecting-Deductions,-Exemptions,-and-Credits.pdf"
+      },
+      {
+        "name": "Over 65 Circuit Breaker Credit",
+        "text": "Eligible seniors' homestead tax cannot rise more than 2% over the previous year.",
+        "url": "https://www.in.gov/dlgf/understanding-your-tax-bill/tax-bill-101"
+      },
+      {
+        "name": "Deduction for 2% circuit breaker properties",
+        "text": "Automatic deduction for non-homestead residential property, long-term care property and farmland: 6% of AV for 2025 pay 2026, 12% for 2026 pay 2027, rising to 33.4% for 2030 pay 2031.",
+        "url": "https://www.in.gov/dlgf/files/2026-memos/260527-Cockerill-Memo-Legislation-Affecting-Deductions,-Credits,-and-Exemptions.pdf"
+      },
+      {
+        "name": "Veterans, blind/disabled and other credits",
+        "text": "Disabled veteran deductions/credit and blind/disabled credit, filed with the county auditor.",
+        "url": "https://www.in.gov/dlgf/deductions-and-credits"
+      }
+    ],
+    "dueDates": {
+      "text": "Property taxes are due twice a year; the statement with the due dates arrives in the spring. Late payment within 30 days: 5% penalty; after 30 days: 10%.",
+      "url": "https://www.in.gov/dlgf/understanding-your-tax-bill/property-tax-due-dates"
+    },
+    "facts": [
+      {
+        "text": "Indiana caps homestead tax bills at 1% of gross assessed value, other residential and farmland at 2%, and all other property at 3%.",
+        "url": "https://www.in.gov/dlgf/understanding-your-tax-bill/tax-bill-101"
+      },
+      {
+        "text": "The 2025 reform (SEA 1) phases the $48,000 homestead standard deduction down to $0 by 2030 while raising the supplemental deduction to 66.7% of assessed value by 2031.",
+        "url": "https://www.in.gov/dlgf/files/2026-memos/260527-Cockerill-Memo-Legislation-Affecting-Deductions,-Credits,-and-Exemptions.pdf"
+      },
+      {
+        "text": "Since taxes payable in 2026, homeowners automatically get a credit of 10% of their homestead tax bill, capped at $300.",
+        "url": "https://www.in.gov/dlgf/files/2025-memos/250612-Cockerill-Memo-Legislation-Affecting-Deductions,-Exemptions,-and-Credits.pdf"
+      },
+      {
+        "text": "Taxes approved by voters in a referendum are outside the 1%/2%/3% caps.",
+        "url": "https://www.in.gov/dlgf/understanding-your-tax-bill/tax-bill-101"
+      },
+      {
+        "text": "Deductions and credits do not need to be renewed every year, only after a sale or title change.",
+        "url": "https://www.in.gov/dlgf/deductions-and-credits"
+      },
+      {
+        "text": "The Over 65 Deduction was repealed from the January 1, 2025 assessment date and replaced by an Over 65 Credit of up to $150.",
+        "url": "https://www.in.gov/dlgf/files/2025-memos/250612-Cockerill-Memo-Legislation-Affecting-Deductions,-Exemptions,-and-Credits.pdf"
+      }
+    ]
+  },
+  "uncertain": [
+    "Exact property tax due dates (customarily May 10 and November 10) were not printed on the DLGF due-date page read; only 'twice a year' was confirmed.",
+    "Assessment ratio left null: the DLGF pages read describe gross and net assessed value but no percentage of market value.",
+    "No DOR page explicitly stating 'no sales tax holiday'; the holiday note reflects the absence of any holiday in DOR publications."
+  ]
+}

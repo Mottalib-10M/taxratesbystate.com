@@ -1,0 +1,149 @@
+{
+  "name": "Rhode Island",
+  "abbr": "RI",
+  "slug": "rhode-island",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 7,
+    "rateNote": "Single statewide 7% sales and use tax on tangible goods, certain utility services and enumerated services. There is no general local sales tax; meals carry an extra 1% local meals and beverage tax and lodging carries state and local hotel taxes.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": false,
+      "levies": "no local general sales tax; a statewide 1% local meals and beverage tax (collected by the state, distributed to the city or town) and a local hotel tax apply instead",
+      "cap": null,
+      "capNote": "Not applicable: cities and towns do not levy their own general sales tax.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://rules.sos.ri.gov/regulations/Part/280-20-70-4"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food and food ingredients for human consumption are exempt (R.I. Gen. Laws 44-18-30(9)); candy, soft drinks and prepared food are taxable.",
+      "url": "https://rules.sos.ri.gov/regulations/Part/280-20-70-4"
+    },
+    "clothing": {
+      "treatment": "exempt-under-threshold",
+      "threshold": 250,
+      "note": "Clothing and footwear are exempt up to $250 per item; only the part of the price above $250 is taxed (a $275 coat is taxed on $25). Items normally sold as a unit, like a suit, cannot be split to qualify.",
+      "url": "https://rules.sos.ri.gov/regulations/Part/280-20-70-6",
+      "thresholdMode": "excess"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://rules.sos.ri.gov/regulations/Part/280-20-70-47"
+    },
+    "otherRates": [
+      {
+        "item": "meals and beverages (local meals and beverage tax)",
+        "rate": 1,
+        "note": "Charged by every eating and drinking establishment on top of the 7% sales tax, for 8% in total.",
+        "url": "https://rules.sos.ri.gov/regulations/Part/280-20-70-4"
+      },
+      {
+        "item": "hotel room rentals (hotel tax)",
+        "rate": 7,
+        "note": "Hotel tax of 7% on room rentals for the first 30 days, in addition to the 7% sales tax. Since January 1, 2026 the local share rose from 1% to 2%.",
+        "url": "https://tax.ri.gov/tax-sections/sales-excise-taxes/hotel-tax"
+      },
+      {
+        "item": "whole-home short-term rentals",
+        "rate": 5,
+        "note": "New 5% whole home short-term rental tax since January 1, 2026, on top of sales tax and the 2% local hotel tax.",
+        "url": "https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/ADV_2026_02_Tax-Changes.pdf"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "No sales tax holiday found in Division of Taxation guidance for 2026.",
+    "useTax": {
+      "rate": 7,
+      "note": "Use tax of 7% on goods stored, used or consumed in Rhode Island when sales tax was not paid.",
+      "url": "https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax"
+    },
+    "facts": [
+      {
+        "text": "The $250 clothing threshold applies per item: five $60 shirts bought together ($300) are all tax-free.",
+        "url": "https://rules.sos.ri.gov/regulations/Part/280-20-70-6"
+      },
+      {
+        "text": "Restaurants may show sales tax and meals tax combined as a single 8% line if separate lines cause hardship.",
+        "url": "https://rules.sos.ri.gov/regulations/Part/280-20-70-4"
+      },
+      {
+        "text": "Insulin and medical oxygen are exempt whether or not sold on prescription; over-the-counter drugs and dietary supplements are taxable unless prescribed.",
+        "url": "https://rules.sos.ri.gov/regulations/Part/280-20-70-47"
+      },
+      {
+        "text": "Since January 1, 2026, the local hotel tax on all short-term rentals is 2% (up from 1%), and renting a whole home adds a new 5% tax.",
+        "url": "https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/ADV_2026_02_Tax-Changes.pdf"
+      },
+      {
+        "text": "Remote sellers must collect Rhode Island tax once they reach $100,000 in gross receipts or 200 transactions; Rhode Island is a Streamlined Sales Tax member state.",
+        "url": "https://tax.ri.gov/tax-sections/sales-excise-taxes"
+      },
+      {
+        "text": "Lodging is taxed only for the first 30 consecutive days of a stay; a check-out restarts the count.",
+        "url": "https://rules.sos.ri.gov/regulations/Part/280-20-70-51"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local (39 cities and towns, plus fire districts); the state levies a separate Non-Owner Occupied Property Tax on high-value second homes since July 1, 2026",
+    "assessment": {
+      "text": "Each city or town sets assessed values as of December 31. Municipalities must perform a statistical update every third and sixth year and a full revaluation every ninth year (R.I. Gen. Laws 44-5-11.6). Rates are set per $1,000 of assessed value and can differ by class (residential, commercial, personal property).",
+      "ratio": null,
+      "url": "https://municipalfinance.ri.gov/financial-tax-data/property-revaluation"
+    },
+    "homestead": {
+      "name": "No statewide homestead exemption",
+      "amountType": "none",
+      "amount": null,
+      "text": "The state sets no uniform homestead exemption; tax rates and any owner-occupied treatment are decided by each city or town (some use separate rates by class, as shown in the Division of Municipal Finance's FY2026 rate table).",
+      "applyBy": null,
+      "url": "https://municipalfinance.ri.gov/sites/g/files/xkgbur546/files/2025-11/2025-Tax-Rates-12-31-24%20Final.pdf"
+    },
+    "otherRelief": [
+      {
+        "name": "Non-Owner Occupied Property Tax exemptions",
+        "text": "Homes rented long-term or as taxable short-term rentals for 183 days or more in the privilege year are exempt from the state's new tax on non-owner-occupied homes.",
+        "url": "https://tax.ri.gov/tax-sections/sales-excise-taxes/non-owner-occupied-property-tax"
+      }
+    ],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "Since July 1, 2026, Rhode Island taxes residential properties assessed above $1,000,000 that are not the owner's primary residence: $2.50 per $500 of assessed value above $1 million. The first payment was due September 15, 2026.",
+        "url": "https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-07/ADV_2026_16_Non-Owner_Occupied_Payment.pdf"
+      },
+      {
+        "text": "Cities and towns may not raise their total property tax levy by more than 4% over the previous fiscal year, unless an exception applies.",
+        "url": "https://municipalfinance.ri.gov/sites/g/files/xkgbur546/files/2025-11/Report%20on%20the%20Property%20Tax%20Cap%202026.pdf"
+      },
+      {
+        "text": "The motor vehicle excise tax column shows $0.00 for every municipality in the FY2026 rate table: Rhode Island cities and towns no longer tax cars.",
+        "url": "https://municipalfinance.ri.gov/sites/g/files/xkgbur546/files/2025-11/2025-Tax-Rates-12-31-24%20Final.pdf"
+      },
+      {
+        "text": "The assessment date is December 31; the FY2026 tax roll is based on values as of December 31, 2024.",
+        "url": "https://municipalfinance.ri.gov/sites/g/files/xkgbur546/files/2025-11/2025-Tax-Rates-12-31-24%20Final.pdf"
+      },
+      {
+        "text": "West Warwick taxes real property at four different rates depending on the type of property, an example of classified local rates.",
+        "url": "https://municipalfinance.ri.gov/sites/g/files/xkgbur546/files/2025-11/2025-Tax-Rates-12-31-24%20Final.pdf"
+      }
+    ]
+  },
+  "uncertain": [
+    "tax.ri.gov (and dor.ri.gov, municipalfinance.ri.gov) answer 403 to curl because of a Cloudflare bot check, but all cited pages load normally in a browser (read via Chrome on 2026-10-05). The RI General Assembly statute site (webserver.rilegislature.gov) did not respond at all, so statutes were read through the Division of Taxation regulations on rules.sos.ri.gov.",
+    "Contradiction: the Division's Hotel Tax page still says '1% for whole house rentals', while ADV 2026-02 says that since January 1, 2026 the local hotel tax is 2% and whole-home rentals also owe a new 5% tax. The advisory (newer) was used.",
+    "The date the 7% rate took effect was not found on a reachable official page (effectiveSince left null).",
+    "Property tax due dates are set by each municipality (often quarterly); no statewide schedule found, so dueDates is null.",
+    "State Property Tax Relief Credit (Form RI-1040H, circuit breaker for low-income homeowners and renters) exists but its current amount could not be read on tax.ri.gov; omitted.",
+    "Municipal homestead exemptions (offered by some cities under local enabling laws) could not be verified on a state source."
+  ]
+}

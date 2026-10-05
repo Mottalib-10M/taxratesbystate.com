@@ -1,0 +1,34 @@
+import { defineState } from '../../lib/page-types';
+import { st, usd, rate, eff, ptx, rank } from '../../lib/kit';
+
+const s = st('oregon');
+const S = s.sales, C = s.census;
+const vehicle = S.otherRates?.[0]?.rate ?? 0;
+const lodging = S.otherRates?.[1]?.rate ?? 0;
+const next = S.scheduledChanges?.[0];
+const lodging27 = next?.rate ?? lodging;
+const car = 45000;
+const stay = 600;
+const av = 250000;
+const avBill = (av / 1000) * 17.52;
+const effRank = rank(s, (x) => x.census.effectiveRate);
+
+export default defineState({
+  slug: 'oregon',
+  title: `Oregon Sales Tax 2026: None Statewide, ${rate(vehicle)} New Car Tax`,
+  description: `Oregon sales tax in 2026: none on goods, only a ${rate(vehicle)} tax on new cars and a ${rate(lodging)} state lodging tax (${rate(lodging27)} in 2027). Property tax: 3% value cap, median ${usd(C.medianTax)}.`,
+  intro: `No sales tax for residents or visitors, a handful of narrow taxes in its place, and a property tax built on two ballot measures from the 1990s.`,
+  resume: `Oregon has no general sales tax and no general use tax, at the state or local level, so a ${usd(1000)} phone, a week of groceries or a winter jacket costs the shelf price for residents and visitors alike. What stands in its place is narrow. New cars pay a ${rate(vehicle)} vehicle privilege tax when bought from an Oregon dealer, or a matching use tax when bought from a dealer in another state. Hotel stays pay a ${rate(lodging)} state transient lodging tax, which rises to ${rate(lodging27)} on January 1, 2027, plus the city or county lodging tax. Larger businesses pay the Corporate Activity Tax on their receipts, but it is not itemized on a receipt. Property tax carries more weight: the median owner paid ${usd(C.medianTax)} in 2024 on a ${usd(C.medianValue)} home (Census ACS), an effective rate of ${eff(C.effectiveRate)}, ranked ${effRank} of 51. Under Measure 50, a home's taxable value grows by no more than 3% a year.`,
+  sales: (h) => `<p>The Department of Revenue states the rule without qualification: Oregon levies no general sales, use or transaction tax, and local governments do not levy one either. There is no tax holiday, because there is nothing to suspend, and residents who pay sales tax in another state cannot deduct it from their Oregon taxes. The calculator above therefore shows zero for every category bought in Oregon.</p>
+<p>Three narrow taxes do reach consumers. The first, in place since January 1, 2018, is the ${h.rate(vehicle)} vehicle privilege tax on new vehicles with 7,500 miles or less, up to 26,000 pounds, never titled in Oregon. A ${h.usd(car)} new SUV from an Oregon dealer carries ${h.usd(car * vehicle / 100)}. Buy the same car from a dealer in another state and the vehicle use tax at the same rate is due within 30 days and before titling, which is the only use tax Oregon has. A used car with more than 7,500 miles falls outside both.</p>
+<p>The second is lodging. The state transient lodging tax is ${h.rate(lodging)} on stays ending on or before December 31, 2026; from January 1, 2027, it becomes ${h.rate(lodging27)}, and receipts must show the extra 1.25% as a nature conservation fee. Cities and counties add their own lodging tax at rates they set. A ${h.usd(stay)} weekend pays ${h.usd(stay * lodging / 100)} of state tax in 2026 and ${h.usd(stay * lodging27 / 100, 2)} in 2027, and a stay that starts in late December 2026 and ends in January pays the new rate on the whole stay. The third is the Corporate Activity Tax: since 2020, businesses pay $250 plus 0.57% of Oregon commercial activity above $1 million, a tax on the business that never appears as a line on a receipt.</p>`,
+  property: (h) => `<p>Two voter measures shape every Oregon tax bill. Measure 5, from 1990, caps operating taxes at $5 per $1,000 of real market value for schools and $10 per $1,000 for general government. Measure 50, from 1997, gave each property a maximum assessed value that can grow by no more than 3% a year unless the property changes, through a new structure, an improvement or a partition. The tax is charged on the lower of real market value and maximum assessed value, and for many long-held homes that is the capped figure. When a bill would break the Measure 5 limits, taxes are compressed, local option levies first.</p>
+<p>More than 1,200 taxing districts levy on top of those rules, and county assessors value property and collect. In fiscal 2025-26, taxes averaged $17.52 per $1,000 of assessed value but only $9.40 per $1,000 of real market value, which shows how far the cap has pulled assessed values below the market. A home with an assessed value of ${h.usd(av)} would pay about ${h.usd(avBill)} at the average rate. At the Census ratio of ${h.eff(C.effectiveRate)}, a ${h.usd(500000)} home pays about ${h.usd(ptx('oregon', 500000))}. Small projects, under $18,200 in a year or $45,000 over five years, do not lift the cap.</p>
+<p>Oregon has no homestead exemption and no exemption based on age or income alone. Seniors and disabled owners with household income up to $70,000 in 2026 can defer instead: the state pays the county each November 15 and records a lien that accrues 6% simple interest, applied for with the county assessor from January 1 to April 15. Bills are due November 15, with a 3% discount for paying in full and 2% for paying two-thirds; otherwise thirds fall on November 15, February 15 and May 15. Value appeals go to the county Property Value Appeals Board by December 31.</p>`,
+  faqs: [
+    { q: 'Do I pay tax on a new car in Oregon?', a: `Yes, a small one. Oregon dealers pay a ${rate(vehicle)} vehicle privilege tax on new vehicles with 7,500 miles or less that weigh up to 26,000 pounds, and buyers from out-of-state dealers owe the same ${rate(vehicle)} as a vehicle use tax within 30 days, before titling. On a ${usd(car)} new car, that is ${usd(car * vehicle / 100)}. Oregon has no general sales tax on used cars.` },
+    { q: 'How much is the Oregon hotel tax in 2027?', a: `The state transient lodging tax rises from ${rate(lodging)} to ${rate(lodging27)} on January 1, 2027, and the extra 1.25% must appear on receipts as a nature conservation fee. A stay that starts in 2026 and ends in 2027 pays the new rate on the whole stay. Cities and counties charge their own lodging taxes on top, at rates each sets locally.` },
+    { q: 'How does Measure 50 limit Oregon property taxes?', a: `Measure 50 gives every property a maximum assessed value that may grow by no more than 3% a year, and tax is charged on the lower of that value and real market value. The cap is lifted only by changes such as a new structure, an improvement or a partition; minor construction under $18,200 in a year does not count. In 2025-26, taxes averaged $17.52 per $1,000 of assessed value.` },
+  ],
+  related: ['washington', 'california', 'idaho', 'nevada', 'states-without-sales-tax', 'property-tax-assessment-caps'],
+});

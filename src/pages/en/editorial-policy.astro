@@ -1,0 +1,27 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, REVIEW_CYCLE_MONTHS, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title={`Editorial policy of ${SITE_NAMES[lang]}: state sources, corrections`} description="Which official pages the state sales tax rates and property tax figures come from, which sources we refuse, how often each state is re-read and how a reported error is corrected." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Editorial and corrections policy</h1>
+    <p>A sales tax rate looks like a small number, but it is applied to every purchase a household or a shop makes, and a property tax estimate can decide whether a home is affordable. This page says where our figures come from and how we fix one that is wrong.</p>
+    <h2>Who is responsible</h2><p>Content and calculations: {AUTHOR_NAME}, <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Sources we use</h2>
+    <ul>
+      <li>the department of revenue, taxation or finance (or the comptroller) of each state and of the District of Columbia: rate pages, publications, bulletins and holiday notices;</li>
+      <li>state statutes and legislative sites, when a rate or an exemption is set by law and the department page is silent;</li>
+      <li>county assessor and state property tax divisions for assessment rules and homestead exemptions;</li>
+      <li>the U.S. Census Bureau (American Community Survey) for median property taxes and home values.</li>
+    </ul>
+    <h2>Sources we do not use</h2>
+    <p>Rate tables published by sales tax software vendors, think tanks, media and other calculators can guide a search, never a figure. When one of them disagrees with a state page, the state page wins and the data file records the official address.</p>
+    <h2>Review cycle</h2><p>Every state is re-read at least every {REVIEW_CYCLE_MONTHS} months, before the January 1 and July 1 effective dates, and before each summer holiday season. Census figures are replaced when a new American Community Survey year is published.</p>
+    <h2>Corrections</h2>
+    <ol><li>We check the report against the official page.</li><li>We fix the data file or the engine and add a test for the case.</li><li>The state page shows its new reading date.</li></ol>
+    <h2>Independence</h2><p>No retailer, software vendor, lender or adviser pays to appear here. If that ever changed, it would be written next to the link.</p>
+    <p>See also the <a href={route('method', lang)}>method page</a>. Policy version: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

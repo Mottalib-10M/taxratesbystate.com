@@ -1,0 +1,27 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, REVIEW_CYCLE_MONTHS, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'en';
+const description = 'Write to State Tax Calc to report a state rate or exemption that changed, question a property tax estimate, or embed the sales tax calculator on your own website.';
+---
+<PageLayout title={`Contact ${SITE_NAMES[lang]}: rate changes, questions, embedding`} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Contact', description, path: route('contact', lang), lang })]} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Contact</h1>
+    <p>One address, read every working day: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>A state changed its rate or an exemption</h2>
+    <p>Legislatures change grocery rates, add holidays or move a rate on January 1 or July 1. Send the link to the official notice (department of revenue bulletin, enrolled bill) and the state page here that needs updating. We re-read the source, change the data file and date the page.</p>
+    <h2>Your receipt or tax bill disagrees with us</h2>
+    <p>Send the share link of the calculation, which carries the state, the amount, the local rate and the category you used, with the figure on the receipt or the county bill. For a receipt, tell us the address of the store: the local part is usually the explanation.</p>
+    <h2>Embedding the calculator</h2>
+    <p>Retailers, bookkeepers, real estate agents and newsrooms can embed the sales tax calculator for free; the code is on the <a href={route('widget', lang)}>embed page</a>.</p>
+    <h2>What we cannot do</h2>
+    <p>We do not register businesses for sales tax, file returns, appeal assessments or tell you whether a particular sale is exempt. Your state's department of revenue, your county assessor or a tax professional can.</p>
+    <h2>Response time</h2><p>Usually within five working days, corrections first. Every state is re-read at least every {REVIEW_CYCLE_MONTHS} months, and before each January 1 and July 1, when most rate changes take effect.</p>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+    <p>Content owner: {AUTHOR_NAME}. See the <a href={route('terms', lang)}>legal notice</a>. Updated: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

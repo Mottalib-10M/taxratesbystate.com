@@ -1,0 +1,76 @@
+{
+  "name": "Texas",
+  "abbr": "TX",
+  "slug": "texas",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6.25,
+    "rateNote": "6.25% state sales and use tax on retail sales, leases and rentals of most goods and on taxable services. Local jurisdictions can add up to 2%, for a maximum combined rate of 8.25%.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "cities, counties, special purpose districts and transit authorities",
+      "cap": 2,
+      "capNote": "Total local sales and use tax is capped at 2%, so the combined rate never exceeds 8.25%.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://gis.cpa.texas.gov/search/",
+      "url": "https://comptroller.texas.gov/taxes/sales/"
+    },
+    "groceries": {"treatment": "exempt", "rate": null, "note": "Food products such as flour, sugar, bread, milk, eggs, fruit and vegetables are not taxed; soft drinks, candy, beer and wine, and prepared food are taxable.", "url": "https://comptroller.texas.gov/taxes/publications/96-280.php"},
+    "clothing": {"treatment": "taxed", "threshold": null, "note": "Clothing is taxable except during the August sales tax holiday (items under $100).", "url": "https://comptroller.texas.gov/taxes/publications/96-280.php"},
+    "prescriptionDrugs": {"treatment": "exempt", "url": "https://comptroller.texas.gov/taxes/publications/94-155.php"},
+    "otherRates": [
+      {"item": "motor vehicles", "rate": 6.25, "note": "Motor vehicle sales tax of 6.25% of the sales price minus trade-in; new residents pay a flat $90 new resident tax instead of use tax.", "url": "https://comptroller.texas.gov/taxes/motor-vehicle/sales-use.php"}
+    ],
+    "holidays2026": [
+      {"name": "Emergency Preparation Supplies Sales Tax Holiday", "start": "2026-04-25", "end": "2026-04-27",
+       "items": "portable generators under $3,000; certain emergency supplies under $300 (e.g. rescue ladders); batteries, flashlights, portable radios, phone chargers and similar items under $75", "url": "https://comptroller.texas.gov/taxes/publications/98-1017.php"},
+      {"name": "ENERGY STAR Sales Tax Holiday", "start": "2026-05-23", "end": "2026-05-25",
+       "items": "ENERGY STAR air conditioners ($6,000 or less), refrigerators ($2,000 or less), ceiling fans, light bulbs, clothes washers, dishwashers and dehumidifiers", "url": "https://comptroller.texas.gov/taxes/publications/96-1331.php"},
+      {"name": "Water-Efficient Products Sales Tax Holiday", "start": "2026-05-23", "end": "2026-05-25",
+       "items": "WaterSense products and water-conserving items such as rain barrels", "url": "https://comptroller.texas.gov/taxes/publications/98-1018.php"}
+    ],
+    "holidayNote": "Texas also holds an annual back-to-school holiday in August (clothing, footwear, school supplies and backpacks under $100). The Comptroller's page now shows the 2027 dates (Friday, August 6 to Sunday, August 8, 2027); the 2026 dates are no longer displayed.",
+    "useTax": {"rate": 6.25, "note": "State use tax at 6.25% plus applicable local use tax on taxable items bought without Texas tax.", "url": "https://comptroller.texas.gov/taxes/sales/"},
+    "facts": [
+      {"text": "Texas holds several sales tax holidays a year: emergency supplies in April, ENERGY STAR and water-efficient products on Memorial Day weekend, and back to school in August.", "url": "https://comptroller.texas.gov/taxes/publications/98-1017.php"},
+      {"text": "Over-the-counter drugs and medicines with an FDA 'Drug Facts' label are exempt, even without a prescription.", "url": "https://comptroller.texas.gov/taxes/publications/94-155.php"},
+      {"text": "Bakery items are tax-free when sold by a bakery (over 50% of sales from a display case), but taxable elsewhere when sold heated or with utensils.", "url": "https://comptroller.texas.gov/taxes/publications/96-280.php"},
+      {"text": "During the back-to-school holiday the $100 limit applies per item: two $80 shirts both qualify even though the total is $160.", "url": "https://comptroller.texas.gov/taxes/publications/98-490/"},
+      {"text": "New Texas residents bringing a vehicle registered in their name elsewhere pay a flat $90 instead of 6.25% use tax.", "url": "https://comptroller.texas.gov/taxes/motor-vehicle/sales-use.php"}
+    ]
+  },
+  "property": {
+    "levied": "local only (school districts, counties, cities, junior colleges and special districts); Texas has no state property tax",
+    "assessment": {"text": "County appraisal districts appraise property at market value as of January 1 each year; each local government then sets its own tax rate. Property owners can protest values before the appraisal review board.", "ratio": 100, "url": "https://comptroller.texas.gov/taxes/property-tax/basics.php"},
+    "homestead": {
+      "name": "Residence Homestead Exemption",
+      "amountType": "value-exemption",
+      "amount": 140000,
+      "text": "School districts must exempt $140,000 of the appraised value of a principal residence (Tax Code 11.13(b)). Any taxing unit may add a local option exemption of up to 20% of value (at least $5,000). A home appraised at $300,000 pays school tax on $160,000.",
+      "applyBy": "File Form 50-114 with the county appraisal district; the general deadline for exemptions is before May 1.",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/"
+    },
+    "otherRelief": [
+      {"name": "Age 65 or older / disabled exemption", "text": "School districts must provide an additional $60,000 exemption; other taxing units may add a local option of at least $3,000.", "url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/"},
+      {"name": "School tax ceiling (freeze) for 65+ and disabled", "text": "Homeowners receiving the 65+ or disabled exemption have a ceiling on school district taxes; it can transfer to a new home and continues for a surviving spouse aged 55+.", "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-1740.pdf"},
+      {"name": "Disabled veteran exemptions", "text": "Partial exemptions of $5,000 to $12,000 by disability rating; a 100% disabled veteran's homestead is totally exempt.", "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-1740.pdf"}
+    ],
+    "dueDates": {"text": "Property taxes are generally due by January 31 of the following year; unpaid taxes become delinquent on February 1 with a 6% penalty plus 1% interest, rising to 12% penalty by July 1.", "url": "https://comptroller.texas.gov/taxes/property-tax/pay/index.php"},
+    "facts": [
+      {"text": "The mandatory school homestead exemption is now $140,000, with an extra $60,000 for owners aged 65+ or disabled ($200,000 in total).", "url": "https://comptroller.texas.gov/taxes/property-tax/docs/residence-homestead-exemptions.pdf"},
+      {"text": "Counties that collect farm-to-market or flood control taxes must give a $3,000 homestead exemption.", "url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/"},
+      {"text": "Whoever owns the property on January 1 is liable for that year's tax, even if the property is sold later in the year.", "url": "https://comptroller.texas.gov/taxes/property-tax/pay/index.php"},
+      {"text": "If a bill is mailed after January 10, the delinquency date moves so the owner always has at least 21 days to pay.", "url": "https://comptroller.texas.gov/taxes/property-tax/pay/index.php"},
+      {"text": "The Comptroller does not set rates or collect property tax; it runs a biennial School District Property Value Study used for state school funding.", "url": "https://comptroller.texas.gov/taxes/property-tax/basics.php"}
+    ]
+  },
+  "uncertain": [
+    "Back-to-school holiday 2026 dates are no longer shown by the Comptroller (page updated for 2027: Aug 6-8, 2027); not listed in holidays2026.",
+    "The 10% annual cap on homestead appraisal increases (Tax Code 23.23) and the 20% 'circuit breaker' for non-homestead property up to a value limit were not found in readable form on the Comptroller pages; the statute site (statutes.capitol.texas.gov) renders by JavaScript and could not be read with curl.",
+    "Date the 6.25% state rate took effect not verified (effectiveSince null).",
+    "The $140,000 school homestead amount is confirmed on the Comptroller's site; the year it took effect (2025 constitutional amendment) is not stated on the pages read."
+  ]
+}

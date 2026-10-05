@@ -1,0 +1,150 @@
+{
+  "name": "New Hampshire",
+  "abbr": "NH",
+  "slug": "new-hampshire",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": false,
+    "stateRate": 0,
+    "rateNote": "No general sales tax. Instead, an 8.5% Meals and Rooms (Rentals) Tax is charged to patrons of restaurants and lodging and on motor vehicle rentals.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": false,
+      "levies": "No local sales tax; the Department of Revenue Administration does not list any local sales or meals tax among New Hampshire's taxes.",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://www.revenue.nh.gov/taxes-glance"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "No sales tax applies to groceries; only meals served by restaurants (including bakery items sold in quantities under six by a bakery that acts as a restaurant) fall under the 8.5% Meals and Rooms Tax.",
+      "url": "https://www.revenue.nh.gov/resource-center/frequently-asked-questions/meals-rooms-rentals-tax"
+    },
+    "clothing": {
+      "treatment": "exempt",
+      "threshold": null,
+      "note": "No sales tax in New Hampshire.",
+      "url": "https://www.revenue.nh.gov/taxes-glance"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.revenue.nh.gov/taxes-glance"
+    },
+    "otherRates": [
+      {
+        "item": "Meals (restaurants and other taxable meal sellers)",
+        "rate": 8.5,
+        "note": "Meals and Rooms (Rentals) Tax on meals costing $0.36 or more; paid by the consumer, remitted by the operator by the 15th of the following month.",
+        "url": "https://www.revenue.nh.gov/resource-center/frequently-asked-questions/meals-rooms-rentals-tax"
+      },
+      {
+        "item": "Rooms (hotels, short-term rentals and any facility with sleeping accommodations)",
+        "rate": 8.5,
+        "note": "Same Meals and Rooms (Rentals) Tax; room and motor vehicle rental facilitators (platforms) count as operators and must collect it.",
+        "url": "https://www.revenue.nh.gov/resource-center/frequently-asked-questions/meals-rooms-rentals-tax"
+      },
+      {
+        "item": "Motor vehicle rentals",
+        "rate": 8.5,
+        "note": "Meals and Rooms (Rentals) Tax also applies to motor vehicle rentals.",
+        "url": "https://www.revenue.nh.gov/taxes-glance/meals-rooms-rentals-tax"
+      },
+      {
+        "item": "Two-way communications services",
+        "rate": 7,
+        "note": "Communications Services Tax on the gross charge for two-way communications services, collected by providers.",
+        "url": "https://www.revenue.nh.gov/taxes-glance/communications-services-tax"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "Not applicable: New Hampshire has no sales tax.",
+    "useTax": {
+      "rate": 0,
+      "note": "No sales or use tax on general purchases.",
+      "url": "https://www.revenue.nh.gov/taxes-glance"
+    },
+    "facts": [
+      {
+        "text": "The Meals and Rooms (Rentals) Tax rate is 8.5% for taxable periods beginning October 1, 2021.",
+        "url": "https://www.revenue.nh.gov/taxes-glance/meals-rooms-rentals-tax"
+      },
+      {
+        "text": "The Meals and Rooms Tax applies only to meals and rooms costing $0.36 or more.",
+        "url": "https://www.revenue.nh.gov/resource-center/frequently-asked-questions/meals-rooms-rentals-tax"
+      },
+      {
+        "text": "Short-term rental platforms ('room and motor vehicle rental facilitators') must hold a Meals and Rentals license and collect the tax.",
+        "url": "https://www.revenue.nh.gov/resource-center/frequently-asked-questions/meals-rooms-rentals-tax"
+      },
+      {
+        "text": "The Interest and Dividends Tax was repealed for taxable periods beginning after December 31, 2024 (it had been cut from 5% to 4% and then 3%), leaving no tax on individual income.",
+        "url": "https://www.revenue.nh.gov/taxes-glance/interest-dividends-tax"
+      },
+      {
+        "text": "Real estate transfers are taxed at $0.75 per $100 of price, charged to both the buyer and the seller.",
+        "url": "https://www.revenue.nh.gov/taxes-glance/real-estate-transfer-tax"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local: municipalities assess, levy and collect property taxes, including county and school portions, plus the State Education Property Tax (SWEPT), which is set at a uniform state rate but assessed and collected by municipalities.",
+    "assessment": {
+      "text": "Property is taxed on assessed valuation set by local assessing officials (RSA 76, Rev 600). Each year DRA's equalization and ratio studies determine each municipality's total equalized value, used to apportion county taxes, cooperative school taxes and the state education property tax.",
+      "ratio": null,
+      "url": "https://www.revenue.nh.gov/about-dra/municipal-and-property-division/property-bureau/equalization"
+    },
+    "homestead": {
+      "name": "Low and Moderate Income Homeowners Property Tax Relief",
+      "amountType": "credit",
+      "amount": null,
+      "text": "No general homestead exemption. Homeowners subject to the state education property tax who lived in the home on April 1 and have household income of $37,000 or less (single) or $47,000 or less (married or head of household) can claim relief on part of the state education tax.",
+      "applyBy": "Form DP-8 or Granite Tax Connect, filed with DRA between May 1 and June 30 after the final tax bill (late claims to November 1 in limited cases).",
+      "url": "https://www.revenue.nh.gov/resource-center/frequently-asked-questions/low-moderate-property-tax-relief"
+    },
+    "otherRelief": [
+      {
+        "name": "Local exemptions and veterans' tax credits",
+        "text": "Elderly, blind, disabled and other exemptions and veterans' tax credits are adopted and granted town by town; DRA publishes a summary of what each municipality offers.",
+        "url": "https://www.revenue.nh.gov/taxes-glance/tax-credit-programs/exemptions-and-veterans-tax-credits"
+      },
+      {
+        "name": "Abatement",
+        "text": "Owners can ask local assessing officials for an abatement (description errors, damage, value disagreement), then appeal to the Board of Tax and Land Appeals or Superior Court.",
+        "url": "https://www.revenue.nh.gov/about-dra/municipal-and-property-division/property-bureau/property-tax-abatement-appeal-process"
+      }
+    ],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "Each municipality's share of the State Education Property Tax is its tax base multiplied by the uniform education tax rate (RSA 76:3 and 76:8); DRA has already posted 2027 education tax warrants.",
+        "url": "https://www.revenue.nh.gov/taxes-glance/statewide-education-property-tax"
+      },
+      {
+        "text": "With no sales or income tax, local property taxes are assessed, levied and collected by municipalities, under oversight of DRA's Property Bureau.",
+        "url": "https://www.revenue.nh.gov/taxes-glance/property-tax"
+      },
+      {
+        "text": "DRA publishes municipal, village district and education tax rate reports each year.",
+        "url": "https://www.revenue.nh.gov/property-tax-rates-related-data"
+      },
+      {
+        "text": "For low and moderate income relief, the net assessed value used is after exemptions such as elderly or blind, but before any veterans' credit.",
+        "url": "https://www.revenue.nh.gov/resource-center/frequently-asked-questions/low-moderate-property-tax-relief"
+      }
+    ]
+  },
+  "uncertain": [
+    "revenue.nh.gov returns HTTP 403 to curl/WebFetch (Akamai bot block); all DRA pages cited were read in a real browser session where they return 200.",
+    "gc.nh.gov (RSA statutes) blocked to curl and not readable in the browser: veterans' credit amounts (RSA 72:28) and elderly exemption amounts not recorded.",
+    "The uniform State Education Property Tax rate is not stated on the DRA page read; the 2026/2027 warrant PDFs were not parsed, so no rate is given.",
+    "Low and Moderate Income relief thresholds ($37,000 / $47,000) are as stated on the DRA FAQ; it was not checked whether they were recently indexed.",
+    "Property tax due dates vary by municipality (billing schedules are local); no statewide date recorded."
+  ]
+}

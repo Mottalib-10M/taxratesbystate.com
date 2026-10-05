@@ -1,0 +1,134 @@
+{
+  "name": "Wyoming",
+  "abbr": "WY",
+  "slug": "wyoming",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4,
+    "rateNote": "Statewide 4% sales and use tax (a 3% base plus 1% added on July 1, 1993, W.S. 39-15-104). Counties may add voter-approved 'pennies'; combined rates generally run from 4% to 8%. About 69% of the 4% goes to the state and 30% back to local governments.",
+    "effectiveSince": "1993-07-01",
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "counties (general purpose up to 2%, specific purpose up to 2%, economic development up to 1%), cities and towns (up to 1%), and resort districts (up to 3%), all subject to voter approval",
+      "cap": 3,
+      "capNote": "County general purpose, specific purpose and economic development taxes together may not exceed 3% (W.S. 39-15-204(a)(iv)); resort districts may levy up to 3% and cities up to 1% under separate paragraphs.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food for domestic home consumption is exempt; restaurant (prepared) food, alcohol and tobacco are taxable. Local taxes follow the same exemptions (W.S. 39-15-205).",
+      "url": "https://excise-tax-div.wyo.gov/general-administrative/excise-tax-faqs"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption.",
+      "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+    },
+    "otherRates": [
+      {
+        "item": "lodging (statewide lodging assessment)",
+        "rate": 5,
+        "note": "Mandatory 5% statewide lodging tax (3% to the state, 2% to the local jurisdiction), plus optional local lodging tax up to 2% and sales tax.",
+        "url": "https://excise-tax-div.wyo.gov/general-administrative/excise-tax-faqs"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "Wyoming has no sales tax holiday.",
+    "useTax": {
+      "rate": 4,
+      "note": "Use tax at the same rate as the sales tax of the jurisdiction (state 4% plus local), self-reported on goods bought outside Wyoming for use in the state.",
+      "url": "https://excise-tax-div.wyo.gov/general-administrative/excise-tax-faqs"
+    },
+    "facts": [
+      {
+        "text": "Wyoming's sales tax is destination-based: the rate is that of the county where the customer takes possession, generally between 4% and 8%.",
+        "url": "https://excise-tax-div.wyo.gov/general-administrative/excise-tax-faqs"
+      },
+      {
+        "text": "Each local 'penny' must be approved by county voters; a defeated proposal cannot return to the ballot for at least 11 months.",
+        "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+      },
+      {
+        "text": "Over-the-counter drugs are taxable; only prescribed drugs, insulin, oxygen and medical devices sold under prescription are exempt.",
+        "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+      },
+      {
+        "text": "Refunds of sales tax paid in error must be requested from the vendor, not the Department of Revenue, within three years.",
+        "url": "https://excise-tax-div.wyo.gov/general-administrative/excise-tax-faqs"
+      },
+      {
+        "text": "Resort districts can levy up to 3% of their own for general revenue.",
+        "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local (counties, school districts, cities and special districts), billed and collected by the county treasurer",
+    "assessment": {
+      "text": "Residential and most other property is assessed at 9.5% of fair market value (industrial property 11.5%). The assessed value of a single family home and its land may not rise more than 4% a year over the prior year (the excess is exempt), unless the owner bought it the prior year or made structural changes.",
+      "ratio": 9.5,
+      "url": "https://wyoleg.gov/statutes/compress/title39.pdf",
+      "capped": true,
+      "capText": "Residential and most other property is assessed at 9.5% of fair market value (industrial property 11.5%). The assessed value of a single family home and its land may not rise more than 4% a year over the prior year (the excess is exempt), unless the owner bought it the prior year or made structural changes.",
+      "capUrl": "https://wyoleg.gov/statutes/compress/title39.pdf"
+    },
+    "homestead": {
+      "name": "Homeowner tax exemption",
+      "amountType": "percent",
+      "amount": 25,
+      "text": "25% of the fair market value of a single family home and its land is exempt, on the first $1,000,000 of value (W.S. 39-11-105(a)(xlvi)). From tax year 2026 the owner must live in the home at least 8 months a year (active-duty military excepted). It cannot be combined with the long-term homeowner exemption on the same property.",
+      "applyBy": null,
+      "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+    },
+    "otherRelief": [
+      {
+        "name": "Long-term homeowner exemption",
+        "text": "Owners 65+ (or spouse) who have paid Wyoming residential property tax for 25 years or more: 50% of the fair market value of the primary residence exempt, on the first $3,000,000. Claim with the county assessor by March 1. This paragraph is repealed effective July 1, 2027.",
+        "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+      },
+      {
+        "name": "Property Tax Refund Program",
+        "text": "State refund program for qualifying homeowners, based on median household income and median property tax figures published by the Department of Revenue (2025 tables).",
+        "url": "https://revenue.wyo.gov/property-tax-refund-program"
+      }
+    ],
+    "dueDates": {
+      "text": "Half of the tax is payable by November 10 and the other half by May 10 of the next year; paying the whole tax by December 31 avoids interest and penalty.",
+      "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+    },
+    "facts": [
+      {
+        "text": "Residential property is assessed at 9.5% of value: a $400,000 home has an assessed value of $38,000 before exemptions.",
+        "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+      },
+      {
+        "text": "The 4% annual cap on assessed value of homes resets when the property is bought: the new owner is valued at full value the following year.",
+        "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+      },
+      {
+        "text": "The 50% long-term homeowner exemption for seniors is scheduled to be repealed on July 1, 2027.",
+        "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+      },
+      {
+        "text": "The first $75,000 of business personal property per owner in each county is exempt.",
+        "url": "https://wyoleg.gov/statutes/compress/title39.pdf"
+      }
+    ]
+  },
+  "uncertain": [
+    "Source for statutes: the Wyoming Legislature's compiled Title 39 PDF (wyoleg.gov), generated May 8, 2026, so it includes the 2026 session.",
+    "No official address-level rate lookup tool was found; the Excise Tax Division publishes rate sheets as Google Drive files (not used as sources).",
+    "The 25% homeowner exemption's first tax year and application process are not stated in the extracted text (applyBy null).",
+    "Property Tax Refund Program eligibility amounts are in linked tables not read."
+  ]
+}

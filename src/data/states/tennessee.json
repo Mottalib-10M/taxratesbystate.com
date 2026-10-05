@@ -1,0 +1,155 @@
+{
+  "name": "Tennessee",
+  "abbr": "TN",
+  "slug": "tennessee",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 7,
+    "rateNote": "7% state rate on most goods and taxable services; food and food ingredients are taxed at a reduced 4% state rate. Counties and some cities add a local rate of up to 2.75%, applied only to the first $1,600 of a single article; a state single article tax of 2.75% applies to the part between $1,600 and $3,200.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "counties and some incorporated cities (local option sales tax)",
+      "cap": 2.75,
+      "capNote": "Local rates cannot exceed 2.75%, and apply only to the first $1,600 of the price of a single article.",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": null,
+      "url": "https://revenue.support.tn.gov/hc/en-us/articles/360058139672-SUT-13-Sales-and-Use-Tax-Rates-Overview"
+    },
+    "groceries": {
+      "treatment": "reduced",
+      "rate": 4,
+      "note": "Food and food ingredients are taxed at a reduced 4% state rate plus the full local rate. Prepared food, candy, dietary supplements, alcohol and tobacco pay the general 7% rate.",
+      "url": "https://revenue.support.tn.gov/hc/en-us/articles/360058680751--SUT-53-Food-and-Food-Ingredients-Definition-and-Tax-Rate"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable except during the July sales tax holiday ($100 or less per item).",
+      "url": "https://revenue.support.tn.gov/hc/en-us/articles/360057399112-STH-2-Sales-Tax-Holiday-Qualifying-Items"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://revenue.support.tn.gov/hc/en-us/articles/360058688011-SUT-125-Sales-of-Prescription-Drugs"
+    },
+    "otherRates": [
+      {
+        "item": "single article state tax (portion of price from $1,600 to $3,200)",
+        "rate": 2.75,
+        "note": "Added state tax on the part of a single item's price above $1,600 up to $3,200, replacing the local tax on that portion.",
+        "url": "https://revenue.support.tn.gov/hc/en-us/articles/360058138992-SUT-6-Single-Article-Tax-Overview-and-Application"
+      },
+      {
+        "item": "digital videos, books and music (local use tax)",
+        "rate": 2.5,
+        "note": "Fixed local rate of 2.5% on these specified digital products regardless of location.",
+        "url": "https://revenue.support.tn.gov/hc/en-us/articles/360057569011-CUT-3-Consumer-Use-Tax-Rate"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Sales tax holiday",
+        "start": "2026-07-31",
+        "end": "2026-08-02",
+        "items": "clothing $100 or less per item; school and school art supplies $100 or less per item; computers $1,500 or less per item",
+        "url": "https://revenue.support.tn.gov/hc/en-us/articles/360057399112-STH-2-Sales-Tax-Holiday-Qualifying-Items"
+      }
+    ],
+    "holidayNote": "By law the holiday runs from 12:01 a.m. on the last Friday in July to 11:59 p.m. the following Sunday; in 2026 that is July 31 to August 2 (dates computed from the rule).",
+    "useTax": {
+      "rate": 7,
+      "note": "Use tax at the same rate as sales tax: 7% state (4% on food) plus the local rate, on the purchase price including delivery charges.",
+      "url": "https://revenue.support.tn.gov/hc/en-us/articles/360057569011-CUT-3-Consumer-Use-Tax-Rate"
+    },
+    "facts": [
+      {
+        "text": "On a big-ticket item, local tax stops at the first $1,600 of the price, and a 2.75% state single article tax applies only to the next $1,600 (up to $3,200).",
+        "url": "https://revenue.support.tn.gov/hc/en-us/articles/360058138992-SUT-6-Single-Article-Tax-Overview-and-Application"
+      },
+      {
+        "text": "Groceries are not exempt: they pay a 4% state rate plus the full local rate.",
+        "url": "https://revenue.support.tn.gov/hc/en-us/articles/360058680751--SUT-53-Food-and-Food-Ingredients-Definition-and-Tax-Rate"
+      },
+      {
+        "text": "During the holiday, an item priced above $100 (or $1,500 for a computer) is taxed on its entire price: there is no partial exemption.",
+        "url": "https://revenue.support.tn.gov/hc/en-us/articles/360057877471-STH-6-Partial-Exemptions-Do-Not-Apply-Total-Cost-of-Item-Must-Meet-Price-Limitation"
+      },
+      {
+        "text": "Over-the-counter drugs are taxable unless bought with a prescription.",
+        "url": "https://revenue.support.tn.gov/hc/en-us/articles/360058688011-SUT-125-Sales-of-Prescription-Drugs"
+      },
+      {
+        "text": "Prepared food is taxed at the general 7% state rate plus local tax, not the 4% food rate.",
+        "url": "https://revenue.support.tn.gov/hc/en-us/articles/360058231192-SUT-54-Prepared-Food-Definition-and-Tax-Rate"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local (counties and cities set rates; county assessors appraise; county trustees collect)",
+    "assessment": {
+      "text": "Assessed value is a fixed share of appraised value set by state law: 25% for residential and farm property, 40% for commercial and industrial. Rates are per $100 of assessed value. Each county reappraises all real property on a 4, 5 or 6-year cycle.",
+      "ratio": 25,
+      "url": "https://comptroller.tn.gov/office-functions/pa/property-taxes/how-to-figure-your-tax-bill.html"
+    },
+    "homestead": {
+      "name": "No general homestead exemption",
+      "amountType": "none",
+      "amount": null,
+      "text": "Tennessee has no general homestead exemption. Help for homeowners comes from the state Tax Relief program (low-income elderly and disabled owners, disabled veterans) and the local option Property Tax Freeze for owners 65+.",
+      "applyBy": "Apply with the county trustee; Tax Relief and Tax Freeze deadlines are 35 days after the local delinquency date.",
+      "url": "https://comptroller.tn.gov/office-functions/pa/property-taxes/property-tax-programs.html"
+    },
+    "otherRelief": [
+      {
+        "name": "Property Tax Relief (elderly and disabled)",
+        "text": "State-funded credit for owners 65+ or disabled with 2025 income of $38,470 or less; relief is calculated on up to $33,600 of market value (2026 program).",
+        "url": "https://comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TaxReliefBrochure.pdf"
+      },
+      {
+        "name": "Property Tax Relief (disabled veterans)",
+        "text": "Qualifying disabled veterans or surviving spouses: relief calculated on up to $175,000 of market value, no income limit stated.",
+        "url": "https://comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TaxReliefBrochure.pdf"
+      },
+      {
+        "name": "Property Tax Freeze",
+        "text": "Local option (adopted county by county or city by city): freezes the tax on the home of owners 65+ whose income is under the county limit set yearly by the Comptroller.",
+        "url": "https://comptroller.tn.gov/office-functions/pa/property-taxes/property-tax-programs/property-tax-freeze.html"
+      }
+    ],
+    "dueDates": {
+      "text": "Taxes become due on the first Monday in October; the last day to pay without interest is the end of February (they are delinquent on March 1).",
+      "url": "https://comptroller.tn.gov/office-functions/pa/property-taxes/assessment-schedule.html"
+    },
+    "facts": [
+      {
+        "text": "Official example: a house appraised at $400,000 is assessed at $100,000 (25%); at a $2.50 rate per $100, the bill is $2,500.",
+        "url": "https://comptroller.tn.gov/office-functions/pa/property-taxes/how-to-figure-your-tax-bill.html"
+      },
+      {
+        "text": "Commercial and industrial property is assessed at 40% of value versus 25% for homes, so a business pays more on the same value.",
+        "url": "https://comptroller.tn.gov/office-functions/pa/property-taxes/how-to-figure-your-tax-bill.html"
+      },
+      {
+        "text": "The tax freeze was enabled by a 2006 constitutional amendment and the 2007 Property Tax Freeze Act; each county or city decides whether to adopt it.",
+        "url": "https://comptroller.tn.gov/office-functions/pa/property-taxes/property-tax-programs/property-tax-freeze.html"
+      },
+      {
+        "text": "County boards of equalization meet from June 1 (May 1 in Shelby County) to hear appeals of assessments.",
+        "url": "https://comptroller.tn.gov/office-functions/pa/property-taxes/assessment-schedule.html"
+      },
+      {
+        "text": "Personal property is revalued every year, while real property is revalued only every 4 to 6 years.",
+        "url": "https://comptroller.tn.gov/office-functions/pa/property-taxes/understanding-tennessee-property-assessments.html"
+      }
+    ]
+  },
+  "uncertain": [
+    "www.tn.gov (Department of Revenue main site) did not respond from this machine (timeout in Chrome, 403 via curl); sales tax facts come from the Department's official help center (revenue.support.tn.gov, which returns 403 to curl but loads in a browser). No official address-based rate lookup URL could be confirmed, so lookupUrl is null.",
+    "Holiday 2026 dates computed from the rule (last Friday in July to Sunday); no 2026 announcement page read.",
+    "No 2025-2026 change to the 7% / 4% rates was found in the help center; the July 2026 general announcements on tn.gov could not be read.",
+    "The Tax Relief brochure layout pairs $38,470 (income limit) and $33,600 (market value cap) with the elderly/disabled program; the pairing is read from the PDF text order.",
+    "Motor vehicle taxation (sales tax with the single article rules) not verified separately."
+  ]
+}

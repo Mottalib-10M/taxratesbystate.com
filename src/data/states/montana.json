@@ -1,0 +1,160 @@
+{
+  "name": "Montana",
+  "abbr": "MT",
+  "slug": "montana",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": false,
+    "stateRate": 0,
+    "rateNote": "Montana does not have a general sales tax. Selective state taxes apply instead: a combined 8% lodging facility sales and use tax and a 4% rental vehicle sales and use tax. Designated resort communities may levy a voter-approved resort tax of up to 3%.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "Resort tax only, in incorporated resort communities or unincorporated resort areas designated by the Montana Department of Commerce and approved by local voters (7-6-1501 to 7-6-1507, MCA). It applies to lodging and camping, restaurants and food service, bars, destination ski or recreational facilities, and luxuries sold in the resort area.",
+      "cap": 3,
+      "capNote": "Maximum resort tax rate is 3% (7-6-1503, MCA). A resort community must have fewer than 5,500 residents (2,500 for an unincorporated area) and an economy based mainly on tourism. At least 5% of resort tax revenue must offset municipal property taxes.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://mtrevenue.gov/taxes/miscellaneous/local-resort-tax"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "No general sales tax in Montana, so groceries carry no state sales tax.",
+      "url": "https://mtrevenue.gov/taxes/general-sales-tax"
+    },
+    "clothing": {
+      "treatment": "exempt",
+      "threshold": null,
+      "note": "No general sales tax in Montana; clothing is not taxed by the state.",
+      "url": "https://mtrevenue.gov/taxes/general-sales-tax"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://mtrevenue.gov/taxes/general-sales-tax"
+    },
+    "otherRates": [
+      {
+        "item": "lodging (hotels, motels, campgrounds, vacation rentals, short-term rental platforms)",
+        "rate": 8,
+        "note": "Combined lodging facility tax: 4% lodging sales tax + 4% lodging facility use tax. Stays of 30 continuous days or more are exempt.",
+        "url": "https://mtrevenue.gov/taxes/miscellaneous/lodging-facility"
+      },
+      {
+        "item": "rental vehicles (rented for less than 30 days)",
+        "rate": 4,
+        "note": "4% sales and use tax on base rental charges for cars, motorcycles, motorboats, off-highway vehicles and light trucks/trailers.",
+        "url": "https://mtrevenue.gov/taxes/miscellaneous/rental-vehicle-tax"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "No sales tax holiday: Montana has no general sales tax.",
+    "useTax": {
+      "rate": 0,
+      "note": "No general use tax. The Wayfair decision does not affect Montanans buying online because Montana has no general sales tax; Montana residents cannot claim another state's sales tax on their Montana income tax return.",
+      "url": "https://mtrevenue.gov/taxes/general-sales-tax"
+    },
+    "facts": [
+      {
+        "text": "Montana has no sales tax exemption certificate. Residents shopping in another state must check that state's rules for nonresident exemptions.",
+        "url": "https://mtrevenue.gov/taxes/general-sales-tax"
+      },
+      {
+        "text": "The Montana Department of Revenue does not administer the local resort tax. The Department of Commerce designates resort areas, and local voters approve the rate, duration and allocation.",
+        "url": "https://mtrevenue.gov/taxes/miscellaneous/local-resort-tax"
+      },
+      {
+        "text": "The DOR lists 10 current resort areas, including Big Sky, West Yellowstone, Whitefish and Red Lodge; the oldest resort tax (West Yellowstone) dates from 1986.",
+        "url": "https://mtrevenue.gov/taxes/miscellaneous/local-resort-tax"
+      },
+      {
+        "text": "Short-term rental marketplaces and online hosting platforms must register and collect the 8% lodging taxes on stays they facilitate (Senate Bill 52).",
+        "url": "https://mtrevenue.gov/taxes/miscellaneous/lodging-facility"
+      },
+      {
+        "text": "HB 45, signed May 8, 2025, dedicates lodging facility use tax revenue to specific purposes and makes the emergency lodging program for victims of domestic violence or human trafficking permanent.",
+        "url": "https://mtrevenue.gov/taxes/miscellaneous/lodging-facility"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local: counties, cities and towns, school districts and other local taxing jurisdictions set mill levies; the Department of Revenue sets market values and the Legislature sets the tax rates (percentages) that convert market value into taxable value. County treasurers collect the tax.",
+    "assessment": {
+      "text": "The Department of Revenue values all taxable property at 100% of market value. Tax = market value x tax rate (set by the Legislature) = taxable value, then taxable value x mill levy. Residential, commercial and agricultural/forest land are revalued every 2 years (15-7-111, MCA). For 2026, primary residences and long-term rentals use tiered rates: 0.76% on the first $378,000 of market value, 0.90% from $378,001 to $756,000, 1.10% from $756,001 to $1,511,999 and 1.90% above $1,512,000. Second homes, short-term rentals and vacant residential lots pay a flat 1.90%.",
+      "ratio": null,
+      "url": "https://mtrevenue.gov/property/property-tax-changes/2026-property-tax-information"
+    },
+    "homestead": {
+      "name": "Homestead Reduced Tax Rate",
+      "amountType": "percent",
+      "amount": null,
+      "text": "A principal residence, owned by an individual, couple or revocable grantor trust and lived in for at least 7 months a year, is taxed at the tiered reduced rates (0.76% on the first $378,000 of market value in 2026) instead of the flat 1.90% that applies to second homes and short-term rentals. The owner must be current on property taxes. Owners who received the 2025 rebate and still live in the same home were enrolled automatically.",
+      "applyBy": "2027 tax year: enroll between May 4, 2026 and March 1, 2027 with the Department of Revenue at homestead.mt.gov (the 2026 enrollment closed March 20, 2026).",
+      "url": "https://mtrevenue.gov/property/property-tax-changes/homestead-faqs"
+    },
+    "otherRelief": [
+      {
+        "name": "Long-term Rental Reduced Rate",
+        "text": "Homes rented to tenants as their residence for 28+ days at a time and at least 7 months a year get the same tiered reduced rate; LLC- or corporate-owned rentals also qualify. Multifamily long-term rentals pay a flat 1.10% in 2026.",
+        "url": "https://mtrevenue.gov/property/property-tax-changes/homesteads-and-long-term-rentals"
+      },
+      {
+        "name": "Property Tax Assistance Program (PTAP)",
+        "text": "Reduces the tax rate on the home by 80%, 50% or 30% depending on income. Tax year 2027 limits: 2025 federal AGI up to $29,943 (single) or $40,131 (married/head of household). Apply by April 15.",
+        "url": "https://mtrevenue.gov/property/property-tax-help/ptap"
+      },
+      {
+        "name": "Montana Disabled Veteran Assistance Program (MDV)",
+        "text": "For veterans rated 100% service-connected disabled (or an unmarried surviving spouse): reduction of 100%, 80%, 70% or 50% of the tax rate depending on income. Tax year 2027 income limits are $64,551 (single), $74,482 (married/head of household) and $56,276 (surviving spouse).",
+        "url": "https://mtrevenue.gov/property/property-tax-help/mdv"
+      },
+      {
+        "name": "Montana Elderly Homeowner/Renter Credit",
+        "text": "Refundable income tax credit of up to $1,150 for homeowners or renters aged 62+ with total household income under $45,000 who lived in Montana at least nine months.",
+        "url": "https://mtrevenue.gov/property/property-tax-help/montana-elderly-homeowner-renter-credit"
+      }
+    ],
+    "dueDates": {
+      "text": "Half of the tax is due by 5 p.m. on November 30 (or within 30 days after the tax notice is postmarked, if later), and the other half by 5 p.m. on May 31. Owners of a primary residence can use an optional schedule of seven monthly payments from November 30 to May 31. Late payments draw interest at 5/6 of 1% a month plus a 2% penalty.",
+      "url": "https://leg.mt.gov/bills/mca/title_0150/chapter_0160/part_0010/section_0020/0150-0160-0010-0020.html"
+    },
+    "facts": [
+      {
+        "text": "The 2025 Legislature passed HB 231 and SB 542 to lower taxes on certain residential property. 2025 was a transition year, and about 80% of properties paid less tax in 2025 than in 2024.",
+        "url": "https://mtrevenue.gov/property/understanding-mt-property-taxes"
+      },
+      {
+        "text": "Tax year 2025 used one tiered schedule for all residential property: 0.76% on the first $400,000 of market value, 1.10% up to $1.5 million and 2.20% above.",
+        "url": "https://mtrevenue.gov/property/property-tax-changes/2025-property-tax-information"
+      },
+      {
+        "text": "A one-time rebate of up to $400 on property taxes paid in 2025 was available to homeowners who lived in their home at least 7 months in 2024 (applications August 15 to October 1, 2025).",
+        "url": "https://mtrevenue.gov/property/property-tax-changes/2025-property-tax-information"
+      },
+      {
+        "text": "In 2026, commercial and industrial property is taxed at 1.50% below $2,274,000 of value (six times the estimated statewide median of $379,000) and at 1.90% above.",
+        "url": "https://mtrevenue.gov/property/property-tax-changes/2026-property-tax-information"
+      },
+      {
+        "text": "Land tax rates for 2026: qualified agricultural land 2.05%, non-qualified agricultural land 14.35% and forest land 0.37%. A home and its 1-acre homesite on that land get the tiered residential rate if it is a primary residence.",
+        "url": "https://mtrevenue.gov/property/property-tax-changes/2026-property-tax-information"
+      },
+      {
+        "text": "Mill levies move opposite to taxable value: local budgets are capped by state law, so when taxable value rises, the number of mills needed to fund the same budget falls.",
+        "url": "https://mtrevenue.gov/property/understanding-mt-property-taxes"
+      },
+      {
+        "text": "A buyer whose new home was not enrolled can pay at the 1.90% rate for 2026 and then claim a refund of the difference between January 1 and May 31, 2027, if the home was the principal residence for 7 months.",
+        "url": "https://mtrevenue.gov/property/property-tax-changes/homestead-faqs"
+      }
+    ]
+  },
+  "uncertain": [
+    "The 2026 information page gives a homestead application window of Dec. 1, 2025 to Mar. 1, 2026, but the homestead FAQ says 2026 enrollment closed March 20, 2026 (deadline apparently extended). The FAQ (the later source) was used.",
+    "The 2026 page states the top bracket as '$756,001 to $1,511,999' and 'over $1,512,000', which leaves a $1 gap ($1,512,000 itself); figures copied exactly as published.",
+    "The DOR has no address-lookup tool for resort tax areas (it does not administer the tax), so lookupUrl is null. Resort tax rates by area are listed on the DOR page but not repeated here (local rates).",
+    "It is not stated whether resort taxes apply to groceries; the statute lists lodging, food service, bars, recreational facilities and 'luxuries', so groceriesTaxedLocally is null.",
+    "Statewide school mill levies (state levy) were not checked on an official page, so the 'levied' field does not give a state mill figure."
+  ]
+}

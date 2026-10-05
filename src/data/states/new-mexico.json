@@ -1,0 +1,159 @@
+{
+  "name": "New Mexico",
+  "abbr": "NM",
+  "slug": "new-mexico",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4.875,
+    "rateNote": "New Mexico has a gross receipts tax (GRT), not a sales tax: it is imposed on the seller, who commonly passes it on to the buyer as a separately stated charge. 4.875% is the state portion; counties and municipalities add local option increments.",
+    "effectiveSince": "2023-07-01",
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "county and municipal local option gross receipts tax increments (set by county commissions and municipal councils), collected by the state and distributed back",
+      "cap": null,
+      "capNote": "Since July 1, 2025, local rate changes take effect only in July (January only in special situations such as a natural disaster).",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://www.tax.newmexico.gov/governments/gross-receipts-location-code-and-tax-rate-map/",
+      "url": "https://www.tax.newmexico.gov/businesses/gross-receipts-overview/"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Retail food stores certified under the federal SNAP definition deduct qualifying food sales from gross receipts (Section 7-9-92); alcohol, tobacco and hot prepared food for immediate consumption are not deductible.",
+      "url": "https://realfile.tax.newmexico.gov/FYI-105.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is subject to GRT except during the annual back-to-school holiday (items under $100).",
+      "url": "https://realfile.tax.newmexico.gov/FYI-105.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://realfile.tax.newmexico.gov/FYI-105.pdf"
+    },
+    "otherRates": [
+      {
+        "item": "Leased vehicle gross receipts tax (short-term passenger car rentals)",
+        "rate": 5,
+        "note": "Imposed in addition to GRT on qualifying short-term leases of passenger cars from fleets of five or more, plus a $2-per-day leased vehicle surcharge.",
+        "url": "https://realfile.tax.newmexico.gov/FYI-105.pdf"
+      },
+      {
+        "item": "Motor vehicles",
+        "rate": null,
+        "note": "Sales of vehicles subject to the motor vehicle excise tax are exempt from GRT (Section 7-9-22); the excise tax is administered separately.",
+        "url": "https://realfile.tax.newmexico.gov/FYI-105.pdf"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Back-to-school gross receipts tax holiday",
+        "start": "2026-07-31",
+        "end": "2026-08-02",
+        "items": "clothing and shoes under $100; computers and e-readers up to $1,000 and related peripherals up to $500; school supplies under $30 (book bags, backpacks, maps, globes under $100; calculators under $200)",
+        "url": "https://realfile.tax.newmexico.gov/FYI-105.pdf"
+      }
+    ],
+    "holidayNote": "Statutory holiday (Section 7-9-95): from 12:01 a.m. on the last Friday in July to midnight the following Sunday; 2026 dates derived from that rule.",
+    "useTax": {
+      "rate": 4.875,
+      "note": "Compensating tax at the state rate of 4.875% plus any local option, due on property or services bought without GRT and used in New Mexico.",
+      "url": "https://realfile.tax.newmexico.gov/FYI-105.pdf"
+    },
+    "facts": [
+      {
+        "text": "The state GRT rate went from 5.0% (January–June 2023) to 4.875% on July 1, 2023, and the July 2026–June 2027 rate schedule keeps it at 4.875%.",
+        "url": "https://www.tax.newmexico.gov/all-nm-taxes/current-historic-tax-rates-overview/gross-receipts-tax-rates/"
+      },
+      {
+        "text": "GRT also applies to most services, not just goods; there is no deduction for a business's own expenses.",
+        "url": "https://www.tax.newmexico.gov/businesses/gross-receipts-overview/"
+      },
+      {
+        "text": "Remote sellers and marketplace providers owe GRT once they have $100,000 of taxable New Mexico receipts in the previous calendar year.",
+        "url": "https://www.tax.newmexico.gov/businesses/gross-receipts-overview/"
+      },
+      {
+        "text": "If the business passes GRT on to the customer, it must be separately stated on the invoice.",
+        "url": "https://www.tax.newmexico.gov/businesses/gross-receipts-overview/"
+      },
+      {
+        "text": "Feminine hygiene products have been deductible from GRT since July 1, 2022 (Section 7-9-120).",
+        "url": "https://realfile.tax.newmexico.gov/FYI-105.pdf"
+      },
+      {
+        "text": "Rate changes effective July 1, 2026 raised local GRT in locations including Los Ranchos de Albuquerque and much of Colfax County (Raton, Angel Fire, Cimarron and others).",
+        "url": "https://klvg4oyd4j.execute-api.us-west-2.amazonaws.com/prod/PublicFiles/34821a9573ca43e7b06dfad20f5183fd/6b9a5047-3e5a-45c4-9986-4685eda09921/2026%20July%20to%20June%202027%20GRT%20Filer%27s%20Kit.pdf"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local: county assessors value property and county treasurers bill and collect taxes for counties, municipalities, school districts and other districts; the state Taxation and Revenue Department's Property Tax Division oversees assessors and values certain state-assessed property.",
+    "assessment": {
+      "text": "Property is valued at current and correct value as of January 1; the New Mexico Constitution caps the taxable share at 33 1/3% of value. Residential valuation increases are limited to the higher of 3% over the prior year or 6.1% over two years (Section 7-36-21.2), except for new construction and improvements.",
+      "ratio": 33.33,
+      "url": "https://www.tax.newmexico.gov/businesses/wp-content/uploads/sites/4/2024/04/2024-Protest-Pamphlet.pdf",
+      "capped": true,
+      "capText": "Property is valued at current and correct value as of January 1; the New Mexico Constitution caps the taxable share at 33 1/3% of value. Residential valuation increases are limited to the higher of 3% over the prior year or 6.1% over two years (Section 7-36-21.2), except for new construction and improvements.",
+      "capUrl": "https://www.tax.newmexico.gov/businesses/wp-content/uploads/sites/4/2024/04/2024-Protest-Pamphlet.pdf"
+    },
+    "homestead": {
+      "name": "Homeowner exemptions",
+      "amountType": "value-exemption",
+      "amount": null,
+      "text": "TRD states that exemptions are available for qualifying homeowners; they reduce full value to the net taxable value shown on the county assessor's Notice of Valuation, which is the basis of the county treasurer's bill.",
+      "applyBy": null,
+      "url": "https://www.tax.newmexico.gov/individuals/personal-income-tax-information-overview/property-tax/"
+    },
+    "otherRelief": [
+      {
+        "name": "Valuation freeze for low-income owners 65+ or disabled",
+        "text": "Single-family homes owned and occupied by people 65+ or disabled with modified gross income up to $42,900 (tax year 2025 order) have their value limited (Section 7-36-21.3).",
+        "url": "https://www.tax.newmexico.gov/businesses/wp-content/uploads/sites/4/2024/12/PTD-Order-No-24-36-Limitation-on-increase-in-value-for-Single-family-dwellings-rev.-10.29.2024-for-2025.pdf"
+      },
+      {
+        "name": "Veteran exemption",
+        "text": "Up to $10,000 of taxable value is exempt for New Mexico resident veterans or their unmarried surviving spouses; 100% service-connected disabled veterans' principal residence can be fully exempt.",
+        "url": "https://www.dvs.nm.gov/benefits/"
+      },
+      {
+        "name": "Low-income property tax rebate (county option)",
+        "text": "Counties may adopt a rebate for residents with modified gross income up to $24,000, claimed on the state income tax return (PIT-RC); currently Los Alamos, Santa Fe and Doña Ana counties.",
+        "url": "https://www.tax.newmexico.gov/governments/municipal-county-governments/property-tax-rebate-for-personal-income-tax/"
+      }
+    ],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "County assessors mail Notices of Valuation around April 1; protests are due 30 days after the notice is mailed and are heard by a County Valuation Protests Board that includes a state Property Tax Division appraiser.",
+        "url": "https://www.tax.newmexico.gov/businesses/wp-content/uploads/sites/4/2024/04/2024-Protest-Pamphlet.pdf"
+      },
+      {
+        "text": "Owners must report certain changes in their property's value to the assessor by the last day of February each year (Section 7-38-8).",
+        "url": "https://www.tax.newmexico.gov/individuals/personal-income-tax-information-overview/property-tax/"
+      },
+      {
+        "text": "The 3%-a-year residential cap does not apply in the first year a property is valued or to physical improvements (except solar installations).",
+        "url": "https://www.tax.newmexico.gov/businesses/wp-content/uploads/sites/4/2024/04/2024-Protest-Pamphlet.pdf"
+      },
+      {
+        "text": "Delinquent property taxes are collected by the state Property Tax Division, which offers installment agreements and ultimately auctions properties.",
+        "url": "https://www.tax.newmexico.gov/businesses/property-tax-overview/"
+      }
+    ]
+  },
+  "uncertain": [
+    "Head of Family exemption amount (statute 7-37-4) not read on an official page reachable here (nmonesource not readable, no TRD page states it); amount left null.",
+    "Property tax due dates (statutory November/April installments) not read on a state page; left null.",
+    "Clothing and prescription-drug detail and the holiday rules come from FYI-105 dated 08/11/2025 (covering July 2025–June 2026); the FY2027 Filer's Kit still lists deduction D0-023 (holiday) and D0-034 (prescription drugs), so treated as current. No 2026-specific TRD holiday announcement was read.",
+    "2025 valuation-freeze income limit ($42,900) is from the tax-year 2025 order; the tax-year 2026 order was not found.",
+    "The FY2027 Filer's Kit is served from TRD's RealFile document host (amazonaws URL) linked from the TRD GRT overview page.",
+    "Motor vehicle excise tax rate not recorded (MVD source not read)."
+  ]
+}

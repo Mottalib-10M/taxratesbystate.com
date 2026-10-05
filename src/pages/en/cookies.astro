@@ -1,0 +1,14 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title={`Cookies on ${SITE_NAMES[lang]}: none set by the calculators`} description="The sales tax and property tax calculators set no cookie: they run in your browser and load no analytics or advertising. What would change, and how you would be told, if that changed." lang={lang} noindex={true} breadcrumbs={[{ label: 'Cookies' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Cookies</h1>
+    <p>The calculators work without cookies. No analytics, advertising or social network script is loaded today, so your browser receives nothing from us to store.</p>
+    <h2>If that changes</h2><p>Should audience measurement or advertising be added, a notice will appear before anything loads, with a way to refuse and to change your mind later, and this page will list each cookie, its purpose and its lifetime.</p>
+    <p>More in the <a href={route('privacy', lang)}>privacy policy</a>. Questions: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Updated: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

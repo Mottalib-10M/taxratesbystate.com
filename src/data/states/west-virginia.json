@@ -1,0 +1,71 @@
+{
+  "name": "West Virginia",
+  "abbr": "WV",
+  "slug": "west-virginia",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6,
+    "rateNote": "6% consumers sales and service tax and use tax on goods and services. Municipalities that qualify may add a municipal sales and use tax of up to 1%; in a few economic opportunity development districts a special district excise tax replaces the state sales tax at the same 6% rate.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "qualifying municipalities (municipal sales and use tax, administered by the state Tax Division)",
+      "cap": 1,
+      "capNote": "Municipal sales tax may not exceed 1% (W. Va. Code 8-13C-4).",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://tax.wv.gov/Business/SalesAndUseTax/MunicipalSalesAndUseTax/Pages/MunicipalSalesAndUseTax.aspx"
+    },
+    "groceries": {"treatment": "exempt", "rate": null, "note": "The tax on food and food ingredients for human consumption ceased after June 30, 2013 (W. Va. Code 11-15-3a), after being cut to 3% in 2008 and 2% in 2012.", "url": "https://code.wvlegislature.gov/11-15-3A/"},
+    "clothing": {"treatment": "taxed", "threshold": null, "note": "Clothing is taxable except during the summer sales tax holiday ($125 or less per item).", "url": "https://tax.wv.gov/Business/Pages/SalesTaxHoliday.aspx"},
+    "prescriptionDrugs": {"treatment": "exempt", "url": "https://tax.wv.gov/Documents/TSD/tsd300.pdf"},
+    "otherRates": [
+      {"item": "factory-built homes used as a principal year-round residence", "rate": 6, "note": "6% applied to half of the sale price; other factory-built home sales pay 6% on the full price.", "url": "https://tax.wv.gov/Business/SalesAndUseTax/Pages/SalesAndUseTax.aspx"}
+    ],
+    "holidays2026": [
+      {"name": "West Virginia Sales Tax Holiday", "start": "2026-07-31", "end": "2026-08-03",
+       "items": "clothing $125 or less; laptops and tablets $500 or less; school instructional material $20 or less; school supplies $50 or less; sports equipment $150 or less", "url": "https://tax.wv.gov/Business/Pages/SalesTaxHoliday.aspx"}
+    ],
+    "holidayNote": "The holiday runs from the Friday before the first Sunday in August to the following Monday (four days).",
+    "useTax": {"rate": 6, "note": "6% state use tax, plus municipal use tax where imposed, when sales tax was not paid.", "url": "https://tax.wv.gov/Documents/TSD/tsd369.pdf"},
+    "facts": [
+      {"text": "West Virginia's holiday lasts four days (Friday to Monday) and includes sports equipment up to $150, an unusual category.", "url": "https://tax.wv.gov/Business/Pages/SalesTaxHoliday.aspx"},
+      {"text": "Nonprescription medications are taxable; only drugs dispensed on prescription are exempt.", "url": "https://tax.wv.gov/Documents/TSD/tsd300.pdf"},
+      {"text": "Groceries were taxed at 6% before 2008; the rate fell to 3%, then 2%, and the food tax ended on July 1, 2013.", "url": "https://code.wvlegislature.gov/11-15-3A/"},
+      {"text": "Since April 7, 2025 (SB 615), businesses no longer make an accelerated sales tax payment each June.", "url": "https://tax.wv.gov/Business/SalesAndUseTax/Pages/SalesAndUseTax.aspx"},
+      {"text": "Four developments (Charles Pointe, The Ridges, University Town Center, The Highlands) collect a 6% special district excise tax instead of state sales tax.", "url": "https://tax.wv.gov/Business/SalesAndUseTax/Pages/SalesAndUseTax.aspx"}
+    ]
+  },
+  "property": {
+    "levied": "county boards of education, county commissions, municipalities and the State",
+    "assessment": {"text": "All property is assessed annually as of July 1 at 60% of its true and actual value (W. Va. Code 11-3-1). The state constitution divides property into four classes with different maximum levy rates.", "ratio": 60, "url": "https://code.wvlegislature.gov/11-3-1/"},
+    "homestead": {
+      "name": "Homestead Exemption",
+      "amountType": "value-exemption",
+      "amount": 20000,
+      "text": "The first $20,000 of assessed value of a home occupied by its owner is exempt when the owner is 65 or older or permanently and totally disabled and a West Virginia resident (W. Va. Code 11-6B-3). There is no general exemption for other homeowners.",
+      "applyBy": "Apply with the county assessor; the exemption attaches to the home occupied on the July 1 assessment date and applies to the following tax year.",
+      "url": "https://code.wvlegislature.gov/11-6B-3/"
+    },
+    "otherRelief": [
+      {"name": "Motor Vehicle Property Tax Adjustment Credit", "text": "Income tax credit for personal property taxes paid on time on eligible vehicles (cars, trucks, motorcycles, buses, trailers); leasing companies must pass it on.", "url": "https://tax.wv.gov/Individuals/Pages/MotorVehiclePropertyTaxAdjustmentCredit.aspx"}
+    ],
+    "dueDates": {"text": "Payable in two installments: first half due September 1 of the tax year, second half due March 1 of the next year. A 2.5% discount applies to each half paid before its due date; delinquent taxes accrue 9% interest per year.", "url": "https://tax.wv.gov/Business/PropertyTax/Pages/PropertyTaxDueDates.aspx"},
+    "facts": [
+      {"text": "Paying early earns a 2.5% discount on each half of the property tax bill.", "url": "https://tax.wv.gov/Business/PropertyTax/Pages/PropertyTaxDueDates.aspx"},
+      {"text": "Unlike most states, West Virginia itself levies a small share of property tax, alongside counties, school boards and cities.", "url": "https://tax.wv.gov/Business/PropertyTax/Pages/PropertyTax.aspx"},
+      {"text": "Assessment is at 60% of market value: a home worth $200,000 is assessed at $120,000 before any exemption.", "url": "https://code.wvlegislature.gov/11-3-1/"},
+      {"text": "Vehicles are taxed as personal property, but owners can recover the tax through the Motor Vehicle Property Tax Adjustment Credit on their income tax return.", "url": "https://tax.wv.gov/Individuals/Pages/MotorVehiclePropertyTaxAdjustmentCredit.aspx"},
+      {"text": "The homestead exemption for seniors and disabled owners is $20,000 of assessed value, which equals about $33,333 of market value at the 60% ratio.", "url": "https://code.wvlegislature.gov/11-6B-3/"}
+    ]
+  },
+  "uncertain": [
+    "No official address-based sales tax rate lookup was found on tax.wv.gov (lookupUrl null); the Tax Division publishes a list of municipalities imposing sales taxes instead.",
+    "Whether municipal sales taxes exempt groceries was not read explicitly (groceriesTaxedLocally set to false on the basis that the municipal tax follows the state base).",
+    "Motor vehicle purchases pay a DMV privilege tax rather than sales tax; its rate was not verified.",
+    "The amount of the Motor Vehicle Property Tax Adjustment Credit (share of tax refunded) was not read; omitted.",
+    "Class rates (Class II owner-occupied vs Class III/IV) were not quantified."
+  ]
+}

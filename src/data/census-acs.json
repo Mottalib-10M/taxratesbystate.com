@@ -1,0 +1,419 @@
+{
+ "source": "U.S. Census Bureau, American Community Survey 2024 1-year estimates, tables B25103 and B25077",
+ "year": 2024,
+ "retrieved_at": "2026-10-05",
+ "urls": {
+  "B25103": "https://data.census.gov/table/ACSDT1Y2024.B25103",
+  "B25077": "https://data.census.gov/table/ACSDT1Y2024.B25077"
+ },
+ "states": {
+  "Alabama": {
+   "medianTax": 890,
+   "medianTaxMoe": 17,
+   "medianTaxWithMortgage": 1064,
+   "medianTaxNoMortgage": 679,
+   "medianValue": 233300,
+   "effectiveRate": 0.00381
+  },
+  "Alaska": {
+   "medianTax": 3976,
+   "medianTaxMoe": 149,
+   "medianTaxWithMortgage": 4117,
+   "medianTaxNoMortgage": 3610,
+   "medianValue": 376500,
+   "effectiveRate": 0.01056
+  },
+  "Arizona": {
+   "medianTax": 1828,
+   "medianTaxMoe": 17,
+   "medianTaxWithMortgage": 1918,
+   "medianTaxNoMortgage": 1654,
+   "medianValue": 426000,
+   "effectiveRate": 0.00429
+  },
+  "Arkansas": {
+   "medianTax": 1113,
+   "medianTaxMoe": 21,
+   "medianTaxWithMortgage": 1308,
+   "medianTaxNoMortgage": 860,
+   "medianValue": 215600,
+   "effectiveRate": 0.00516
+  },
+  "California": {
+   "medianTax": 5369,
+   "medianTaxMoe": 34,
+   "medianTaxWithMortgage": 6071,
+   "medianTaxNoMortgage": 3956,
+   "medianValue": 759500,
+   "effectiveRate": 0.00707
+  },
+  "Colorado": {
+   "medianTax": 2828,
+   "medianTaxMoe": 25,
+   "medianTaxWithMortgage": 2928,
+   "medianTaxNoMortgage": 2586,
+   "medianValue": 574600,
+   "effectiveRate": 0.00492
+  },
+  "Connecticut": {
+   "medianTax": 6573,
+   "medianTaxMoe": 47,
+   "medianTaxWithMortgage": 6688,
+   "medianTaxNoMortgage": 6378,
+   "medianValue": 396900,
+   "effectiveRate": 0.01656
+  },
+  "Delaware": {
+   "medianTax": 1750,
+   "medianTaxMoe": 40,
+   "medianTaxWithMortgage": 1852,
+   "medianTaxNoMortgage": 1566,
+   "medianValue": 371600,
+   "effectiveRate": 0.00471
+  },
+  "District of Columbia": {
+   "medianTax": 4594,
+   "medianTaxMoe": 245,
+   "medianTaxWithMortgage": 4745,
+   "medianTaxNoMortgage": 3984,
+   "medianValue": 733400,
+   "effectiveRate": 0.00626
+  },
+  "Florida": {
+   "medianTax": 2993,
+   "medianTaxMoe": 20,
+   "medianTaxWithMortgage": 3353,
+   "medianTaxNoMortgage": 2550,
+   "medianValue": 396900,
+   "effectiveRate": 0.00754
+  },
+  "Georgia": {
+   "medianTax": 2554,
+   "medianTaxMoe": 26,
+   "medianTaxWithMortgage": 2957,
+   "medianTaxNoMortgage": 1743,
+   "medianValue": 343300,
+   "effectiveRate": 0.00744
+  },
+  "Hawaii": {
+   "medianTax": 2385,
+   "medianTaxMoe": 58,
+   "medianTaxWithMortgage": 2358,
+   "medianTaxNoMortgage": 2429,
+   "medianValue": 875900,
+   "effectiveRate": 0.00272
+  },
+  "Idaho": {
+   "medianTax": 1912,
+   "medianTaxMoe": 27,
+   "medianTaxWithMortgage": 1942,
+   "medianTaxNoMortgage": 1850,
+   "medianValue": 446400,
+   "effectiveRate": 0.00428
+  },
+  "Illinois": {
+   "medianTax": 5399,
+   "medianTaxMoe": 43,
+   "medianTaxWithMortgage": 5901,
+   "medianTaxNoMortgage": 4591,
+   "medianValue": 280700,
+   "effectiveRate": 0.01923
+  },
+  "Indiana": {
+   "medianTax": 1798,
+   "medianTaxMoe": 19,
+   "medianTaxWithMortgage": 1882,
+   "medianTaxNoMortgage": 1636,
+   "medianValue": 243500,
+   "effectiveRate": 0.00738
+  },
+  "Iowa": {
+   "medianTax": 2937,
+   "medianTaxMoe": 34,
+   "medianTaxWithMortgage": 3113,
+   "medianTaxNoMortgage": 2702,
+   "medianValue": 227300,
+   "effectiveRate": 0.01292
+  },
+  "Kansas": {
+   "medianTax": 2983,
+   "medianTaxMoe": 45,
+   "medianTaxWithMortgage": 3329,
+   "medianTaxNoMortgage": 2568,
+   "medianValue": 238700,
+   "effectiveRate": 0.0125
+  },
+  "Kentucky": {
+   "medianTax": 1611,
+   "medianTaxMoe": 26,
+   "medianTaxWithMortgage": 1872,
+   "medianTaxNoMortgage": 1247,
+   "medianValue": 226000,
+   "effectiveRate": 0.00713
+  },
+  "Louisiana": {
+   "medianTax": 1187,
+   "medianTaxMoe": 31,
+   "medianTaxWithMortgage": 1451,
+   "medianTaxNoMortgage": 805,
+   "medianValue": 223200,
+   "effectiveRate": 0.00532
+  },
+  "Maine": {
+   "medianTax": 3103,
+   "medianTaxMoe": 56,
+   "medianTaxWithMortgage": 3318,
+   "medianTaxNoMortgage": 2818,
+   "medianValue": 341900,
+   "effectiveRate": 0.00908
+  },
+  "Maryland": {
+   "medianTax": 4144,
+   "medianTaxMoe": 40,
+   "medianTaxWithMortgage": 4255,
+   "medianTaxNoMortgage": 3893,
+   "medianValue": 436300,
+   "effectiveRate": 0.0095
+  },
+  "Massachusetts": {
+   "medianTax": 6080,
+   "medianTaxMoe": 39,
+   "medianTaxWithMortgage": 6089,
+   "medianTaxNoMortgage": 6062,
+   "medianValue": 607400,
+   "effectiveRate": 0.01001
+  },
+  "Michigan": {
+   "medianTax": 2988,
+   "medianTaxMoe": 19,
+   "medianTaxWithMortgage": 3264,
+   "medianTaxNoMortgage": 2685,
+   "medianValue": 254200,
+   "effectiveRate": 0.01175
+  },
+  "Minnesota": {
+   "medianTax": 3501,
+   "medianTaxMoe": 24,
+   "medianTaxWithMortgage": 3615,
+   "medianTaxNoMortgage": 3299,
+   "medianValue": 344600,
+   "effectiveRate": 0.01016
+  },
+  "Mississippi": {
+   "medianTax": 1221,
+   "medianTaxMoe": 29,
+   "medianTaxWithMortgage": 1482,
+   "medianTaxNoMortgage": 867,
+   "medianValue": 186500,
+   "effectiveRate": 0.00655
+  },
+  "Missouri": {
+   "medianTax": 2021,
+   "medianTaxMoe": 29,
+   "medianTaxWithMortgage": 2255,
+   "medianTaxNoMortgage": 1725,
+   "medianValue": 254400,
+   "effectiveRate": 0.00794
+  },
+  "Montana": {
+   "medianTax": 2939,
+   "medianTaxMoe": 57,
+   "medianTaxWithMortgage": 3143,
+   "medianTaxNoMortgage": 2674,
+   "medianValue": 425400,
+   "effectiveRate": 0.00691
+  },
+  "Nebraska": {
+   "medianTax": 3739,
+   "medianTaxMoe": 49,
+   "medianTaxWithMortgage": 3966,
+   "medianTaxNoMortgage": 3371,
+   "medianValue": 263100,
+   "effectiveRate": 0.01421
+  },
+  "Nevada": {
+   "medianTax": 2143,
+   "medianTaxMoe": 48,
+   "medianTaxWithMortgage": 2220,
+   "medianTaxNoMortgage": 1982,
+   "medianValue": 455500,
+   "effectiveRate": 0.0047
+  },
+  "New Hampshire": {
+   "medianTax": 6707,
+   "medianTaxMoe": 88,
+   "medianTaxWithMortgage": 6909,
+   "medianTaxNoMortgage": 6333,
+   "medianValue": 458800,
+   "effectiveRate": 0.01462
+  },
+  "New Jersey": {
+   "medianTax": 9358,
+   "medianTaxMoe": 53,
+   "medianTaxWithMortgage": 9435,
+   "medianTaxNoMortgage": 9222,
+   "medianValue": 496000,
+   "effectiveRate": 0.01887
+  },
+  "New Mexico": {
+   "medianTax": 1776,
+   "medianTaxMoe": 45,
+   "medianTaxWithMortgage": 2153,
+   "medianTaxNoMortgage": 1356,
+   "medianValue": 279900,
+   "effectiveRate": 0.00635
+  },
+  "New York": {
+   "medianTax": 6542,
+   "medianTaxMoe": 47,
+   "medianTaxWithMortgage": 6877,
+   "medianTaxNoMortgage": 6038,
+   "medianValue": 449800,
+   "effectiveRate": 0.01454
+  },
+  "North Carolina": {
+   "medianTax": 2044,
+   "medianTaxMoe": 20,
+   "medianTaxWithMortgage": 2285,
+   "medianTaxNoMortgage": 1690,
+   "medianValue": 333000,
+   "effectiveRate": 0.00614
+  },
+  "North Dakota": {
+   "medianTax": 2550,
+   "medianTaxMoe": 64,
+   "medianTaxWithMortgage": 2946,
+   "medianTaxNoMortgage": 2108,
+   "medianValue": 266100,
+   "effectiveRate": 0.00958
+  },
+  "Ohio": {
+   "medianTax": 2937,
+   "medianTaxMoe": 20,
+   "medianTaxWithMortgage": 3156,
+   "medianTaxNoMortgage": 2647,
+   "medianValue": 239800,
+   "effectiveRate": 0.01225
+  },
+  "Oklahoma": {
+   "medianTax": 1672,
+   "medianTaxMoe": 24,
+   "medianTaxWithMortgage": 2068,
+   "medianTaxNoMortgage": 1204,
+   "medianValue": 222100,
+   "effectiveRate": 0.00753
+  },
+  "Oregon": {
+   "medianTax": 3895,
+   "medianTaxMoe": 40,
+   "medianTaxWithMortgage": 4023,
+   "medianTaxNoMortgage": 3636,
+   "medianValue": 497500,
+   "effectiveRate": 0.00783
+  },
+  "Pennsylvania": {
+   "medianTax": 3214,
+   "medianTaxMoe": 26,
+   "medianTaxWithMortgage": 3569,
+   "medianTaxNoMortgage": 2730,
+   "medianValue": 277600,
+   "effectiveRate": 0.01158
+  },
+  "Rhode Island": {
+   "medianTax": 4886,
+   "medianTaxMoe": 76,
+   "medianTaxWithMortgage": 4984,
+   "medianTaxNoMortgage": 4713,
+   "medianValue": 455700,
+   "effectiveRate": 0.01072
+  },
+  "South Carolina": {
+   "medianTax": 1337,
+   "medianTaxMoe": 15,
+   "medianTaxWithMortgage": 1559,
+   "medianTaxNoMortgage": 982,
+   "medianValue": 299500,
+   "effectiveRate": 0.00446
+  },
+  "South Dakota": {
+   "medianTax": 2940,
+   "medianTaxMoe": 67,
+   "medianTaxWithMortgage": 3220,
+   "medianTaxNoMortgage": 2581,
+   "medianValue": 289600,
+   "effectiveRate": 0.01015
+  },
+  "Tennessee": {
+   "medianTax": 1488,
+   "medianTaxMoe": 17,
+   "medianTaxWithMortgage": 1661,
+   "medianTaxNoMortgage": 1297,
+   "medianValue": 332600,
+   "effectiveRate": 0.00447
+  },
+  "Texas": {
+   "medianTax": 4108,
+   "medianTaxMoe": 42,
+   "medianTaxWithMortgage": 5273,
+   "medianTaxNoMortgage": 2771,
+   "medianValue": 313200,
+   "effectiveRate": 0.01312
+  },
+  "Utah": {
+   "medianTax": 2648,
+   "medianTaxMoe": 22,
+   "medianTaxWithMortgage": 2638,
+   "medianTaxNoMortgage": 2671,
+   "medianValue": 545200,
+   "effectiveRate": 0.00486
+  },
+  "Vermont": {
+   "medianTax": 5026,
+   "medianTaxMoe": 131,
+   "medianTaxWithMortgage": 5260,
+   "medianTaxNoMortgage": 4719,
+   "medianValue": 352800,
+   "effectiveRate": 0.01425
+  },
+  "Virginia": {
+   "medianTax": 2872,
+   "medianTaxMoe": 25,
+   "medianTaxWithMortgage": 3100,
+   "medianTaxNoMortgage": 2458,
+   "medianValue": 403500,
+   "effectiveRate": 0.00712
+  },
+  "Washington": {
+   "medianTax": 4729,
+   "medianTaxMoe": 41,
+   "medianTaxWithMortgage": 4814,
+   "medianTaxNoMortgage": 4556,
+   "medianValue": 602200,
+   "effectiveRate": 0.00785
+  },
+  "West Virginia": {
+   "medianTax": 881,
+   "medianTaxMoe": 19,
+   "medianTaxWithMortgage": 1134,
+   "medianTaxNoMortgage": 699,
+   "medianValue": 170800,
+   "effectiveRate": 0.00516
+  },
+  "Wisconsin": {
+   "medianTax": 3680,
+   "medianTaxMoe": 23,
+   "medianTaxWithMortgage": 3796,
+   "medianTaxNoMortgage": 3501,
+   "medianValue": 294700,
+   "effectiveRate": 0.01249
+  },
+  "Wyoming": {
+   "medianTax": 1947,
+   "medianTaxMoe": 50,
+   "medianTaxWithMortgage": 2042,
+   "medianTaxNoMortgage": 1833,
+   "medianValue": 339500,
+   "effectiveRate": 0.00573
+  }
+ }
+}

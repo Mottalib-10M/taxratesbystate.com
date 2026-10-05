@@ -1,0 +1,148 @@
+{
+  "name": "Utah",
+  "abbr": "UT",
+  "slug": "utah",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4.85,
+    "rateNote": "State sales and use tax of 4.85% (the rate chart splits it into the general state tax and a Medicaid expansion component). Every location adds a 1% local option tax and a 0.25% county option tax, plus other local taxes depending on the area.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "counties, cities and towns (local option 1%, county option 0.25%, resort community, rural health care, public transit, highways, recreation/zoo/arts and other special taxes)",
+      "cap": null,
+      "capNote": "No single overall cap; each local tax has its own legal rate (e.g. resort communities up to 1.60%, rural health care up to 1%, public transit up to 0.30%).",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://tap.tax.utah.gov/TaxExpress/_/",
+      "url": "https://tax.utah.gov/forms-pubs/pubs/pub-25/"
+    },
+    "groceries": {
+      "treatment": "reduced",
+      "rate": 1.75,
+      "note": "Grocery food is taxed at a 1.75% state rate; with the 1% local option and 0.25% county option taxes, the combined grocery rate is 3% everywhere in Utah. Other local taxes do not apply to grocery food.",
+      "url": "https://tax.utah.gov/forms-pubs/pubs/pub-25/"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption.",
+      "url": "https://tax.utah.gov/forms-pubs/pubs/pub-25/"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://tax.utah.gov/forms-pubs/pubs/pub-25/"
+    },
+    "otherRates": [
+      {
+        "item": "residential fuel (state portion)",
+        "rate": 2,
+        "note": "Reduced state rate on home heating fuels, giving a combined rate of 2.85% less than the general rate.",
+        "url": "https://tax.utah.gov/forms-pubs/pubs/pub-25/"
+      },
+      {
+        "item": "restaurant and customized food tax",
+        "rate": null,
+        "note": "County tax on restaurant food, imposed by all counties, on top of sales tax; since January 1, 2026 it also covers food prepared or heated to order at grocery stores, convenience stores and gas stations (SB 91, 2025).",
+        "url": "https://tax.utah.gov/tax-bulletins/"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "Utah does not hold a sales tax holiday; none appears in the Tax Commission's 2025-2026 tax bulletins.",
+    "useTax": {
+      "rate": 4.85,
+      "note": "Use tax has the same rates and exemptions as sales tax (state plus local); either sales or use tax applies to a transaction, never both.",
+      "url": "https://tax.utah.gov/business/sales-tax/sales/"
+    },
+    "facts": [
+      {
+        "text": "Groceries are taxed at a flat 3% combined rate everywhere in Utah, whatever the local rate on other goods.",
+        "url": "https://tax.utah.gov/forms-pubs/pubs/pub-25/"
+      },
+      {
+        "text": "Since January 1, 2026, food prepared or heated at a customer's request in grocery stores, convenience stores and gas stations pays the county restaurant tax (SB 91, 2025).",
+        "url": "https://tax.utah.gov/tax-bulletins/"
+      },
+      {
+        "text": "Resort communities can add up to 1.60%, but sales of vehicles, boats, aircraft and manufactured homes are exempt from that resort tax.",
+        "url": "https://tax.utah.gov/forms-pubs/pubs/pub-25/"
+      },
+      {
+        "text": "Local rate changes take effect at the start of a calendar quarter: on October 1, 2026, Washington City and Hildale imposed an emergency services tax.",
+        "url": "https://tax.utah.gov/tax-bulletins/"
+      },
+      {
+        "text": "Sales tax returns are due on the last day of the month after the period; businesses with $50,000 or less of annual tax file quarterly.",
+        "url": "https://tax.utah.gov/business/sales-tax/sales/"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local (counties, cities, school districts and special districts); the county assessor values property and the county treasurer collects",
+    "assessment": {
+      "text": "Property is valued at market value as of January 1 each year. A primary residence (including rentals used as full-time homes, with up to one acre of land) receives a 45% exemption, so it is taxed on 55% of market value; vacation homes and cabins are taxed on 100%.",
+      "ratio": 55,
+      "url": "https://tax.utah.gov/forms-pubs/pubs/pub-27/"
+    },
+    "homestead": {
+      "name": "Primary Residential Exemption",
+      "amountType": "percent",
+      "amount": 45,
+      "text": "45% of the market value of a qualifying primary residence is exempt (Utah Code 59-2-103). The home must be occupied as a primary domicile for at least 183 consecutive days a year by the owner or a full-time tenant; only one exemption per household.",
+      "applyBy": "Handled by the county assessor; a declaration may be required.",
+      "url": "https://tax.utah.gov/propertytax/tax-relief/primary-residential-exemption/"
+    },
+    "otherRelief": [
+      {
+        "name": "Homeowner low-income abatement / Homeowner's Credit",
+        "text": "For owners with 2025 household income under $44,221 who are 67+ or surviving spouses (or qualified in 2025): up to $1,412 abated based on income, plus a credit equal to the tax on 20% of the home's value. Apply to the county by September 1.",
+        "url": "https://tax.utah.gov/forms-pubs/pubs/pub-36/"
+      },
+      {
+        "name": "Veterans with a Disability Exemption",
+        "text": "Veterans with at least 10% service-connected disability: exemption of up to $535,459 of taxable value, in proportion to the disability rating.",
+        "url": "https://tax.utah.gov/forms-pubs/pubs/pub-36/"
+      },
+      {
+        "name": "Other programs",
+        "text": "Renter refund, active or reserve duty armed forces exemption, blind exemption, and low-income or elderly deferral.",
+        "url": "https://tax.utah.gov/forms-pubs/pubs/pub-36/"
+      }
+    ],
+    "dueDates": {
+      "text": "Property taxes become delinquent if not paid by November 30; the penalty is 2.5% or $10 per parcel (reduced to 1% or $10 if paid by January 31).",
+      "url": "https://tax.utah.gov/forms-pubs/pubs/pub-27/"
+    },
+    "facts": [
+      {
+        "text": "Rental homes and apartments used as full-time residences also get the 45% primary residential exemption; second homes and cabins do not.",
+        "url": "https://tax.utah.gov/forms-pubs/pubs/pub-27/"
+      },
+      {
+        "text": "Home furnishings and furniture are not subject to property tax.",
+        "url": "https://tax.utah.gov/forms-pubs/pubs/pub-27/"
+      },
+      {
+        "text": "Only one primary residential exemption is allowed per household anywhere in the state.",
+        "url": "https://tax.utah.gov/propertytax/tax-relief/primary-residential-exemption/"
+      },
+      {
+        "text": "The state and federal government receive none of Utah's property tax revenue; it funds schools, counties, cities and districts.",
+        "url": "https://tax.utah.gov/forms-pubs/pubs/pub-27/"
+      },
+      {
+        "text": "Utah offers six types of property tax relief to individuals, administered through county governments.",
+        "url": "https://tax.utah.gov/forms-pubs/pubs/pub-36/"
+      }
+    ]
+  },
+  "uncertain": [
+    "tax.utah.gov returns 403 to curl (Cloudflare check) but loads in a browser; pages were read via Chrome. The current Pub 25 (Rev. 08/26) and Pub 36 (Rev. 09/26) are marked 'DRAFT PENDING PUBLIC MEETING'.",
+    "Grocery tax: Pub 25 (Rev. 08/26) still shows 1.75% state / 3% combined; no tax bulletin from 2025-2026 announces its repeal, so the grocery tax appears unchanged. The Utah Code site (le.utah.gov) renders statutes by JavaScript and could not be read directly.",
+    "The split of the 4.85% state rate (general rate vs Medicaid expansion component) was not quantified on a page read today.",
+    "The county restaurant tax rate is not stated in the bulletin read (rate omitted).",
+    "Motor vehicle sales taxation and fees not verified separately.",
+    "The Tax Relief Table PDF linked by the Tax Commission (files.tax.utah.gov/propertytax/media/tax-relief.pdf) returns 404."
+  ]
+}

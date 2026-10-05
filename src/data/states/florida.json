@@ -1,0 +1,159 @@
+{
+  "name": "Florida",
+  "abbr": "FL",
+  "slug": "florida",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6,
+    "rateNote": "General state sales and use tax rate of 6%. Most counties add a discretionary sales surtax (currently 0.5% to 2%), which applies only to the first $5,000 of a sale of tangible personal property.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "county discretionary sales surtaxes (e.g. infrastructure, school capital outlay, transportation), collected by the Department of Revenue; counties may also levy tourist development (transient rental) taxes",
+      "cap": null,
+      "capNote": "Surtax applies only to the first $5,000 of the sales price of an item of tangible personal property (not to services, admissions or transient rentals). For motor vehicles and mobile homes, the buyer's home county surtax applies.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://pointmatch.floridarevenue.com/Default.aspx",
+      "url": "https://floridarevenue.com/taxes/taxesfees/Pages/discretionary.aspx"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food products for human consumption are exempt (s. 212.08(1), F.S.); meals and food served for consumption at tables or counters are taxable.",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2025/212.08"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable except during the annual Back-to-School holiday (items of $100 or less).",
+      "url": "https://floridarevenue.com/taxes/tips/Documents/TIP_26A01-11.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2025/212.08"
+    },
+    "otherRates": [],
+    "holidays2026": [
+      {
+        "name": "Back-to-School Sales Tax Holiday",
+        "start": "2026-07-20",
+        "end": "2026-08-20",
+        "items": "Clothing, footwear, wallets and bags (including backpacks) $100 or less per item; school supplies $50 or less; learning aids and jigsaw puzzles $30 or less; personal computers and accessories $1,500 or less for personal use. Dealers cannot opt out.",
+        "url": "https://floridarevenue.com/taxes/tips/Documents/TIP_26A01-11.pdf"
+      },
+      {
+        "name": "Hunting, Fishing, and Camping Sales Tax Holiday",
+        "start": "2026-09-01",
+        "end": "2026-12-31",
+        "items": "Certain hunting, fishing and camping items; not rentals or commercial purchases.",
+        "url": "https://floridarevenue.com/taxes/tips/Documents/TIP_26A01-06.pdf"
+      }
+    ],
+    "holidayNote": "Since 2025 the Back-to-School holiday is annual (August 1-31 in 2025). Chapter 2026-239, Laws of Florida, moved it to July 20 - August 20 each year starting in 2026. Disaster-preparedness items once covered by holidays (batteries, fire extinguishers, carbon monoxide alarms, etc.) have been permanently exempt since August 1, 2025.",
+    "useTax": {
+      "rate": 6,
+      "note": "Use tax is due on taxable items bought outside Florida or online without Florida tax, plus the surtax of the county where the item is delivered.",
+      "url": "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx"
+    },
+    "facts": [
+      {
+        "text": "County surtax applies only to the first $5,000 of a single item of tangible personal property, which limits local tax on big purchases such as cars and boats.",
+        "url": "https://floridarevenue.com/taxes/taxesfees/Pages/discretionary.aspx"
+      },
+      {
+        "text": "Florida repealed its unique state sales tax on commercial rent for rental periods beginning on or after October 1, 2025.",
+        "url": "https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-04.pdf"
+      },
+      {
+        "text": "Since August 1, 2025, items such as AA to D batteries, all bicycle helmets, carbon monoxide alarms and fire extinguishers are always tax-exempt.",
+        "url": "https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-05.pdf"
+      },
+      {
+        "text": "From 2026 the Back-to-School holiday runs every year from July 20 to August 20; in 2025 it covered all of August.",
+        "url": "https://floridarevenue.com/taxes/tips/Documents/TIP_26A01-11.pdf"
+      },
+      {
+        "text": "Impact-resistant windows, doors and garage doors installed on eligible homes are exempt from July 1, 2026 through June 30, 2029.",
+        "url": "https://floridarevenue.com/taxes/tips/Documents/TIP_26A01-09.pdf"
+      },
+      {
+        "text": "Gold and silver coins recognized as legal tender in Florida are exempt from sales tax since July 1, 2026.",
+        "url": "https://floridarevenue.com/taxes/tips/Documents/TIP_26A01-08.pdf"
+      },
+      {
+        "text": "SB 1074 (signed May 11, 2026) lets businesses round in-person cash sales to the nearest nickel after the end of penny production.",
+        "url": "https://floridarevenue.com/taxes/tips/Documents/TIP_26A01-03.pdf"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local: counties, municipalities, school districts and special districts levy millage; the county property appraiser sets values and exemptions and the county tax collector bills and collects. There is no state property tax on real estate.",
+    "assessment": {
+      "text": "Property is assessed at just (market) value as of January 1. After the first homestead year, Save Our Homes limits the annual increase in a homestead's assessed value to 3% or the CPI change, whichever is less; the benefit is lost on a change of ownership but can be 'ported' to a new Florida homestead.",
+      "ratio": 100,
+      "url": "https://floridarevenue.com/property/Documents/pt112.pdf",
+      "capped": true,
+      "capText": "Property is assessed at just (market) value as of January 1. After the first homestead year, Save Our Homes limits the annual increase in a homestead's assessed value to 3% or the CPI change, whichever is less; the benefit is lost on a change of ownership but can be 'ported' to a new Florida homestead.",
+      "capUrl": "https://floridarevenue.com/property/Documents/pt112.pdf"
+    },
+    "homestead": {
+      "name": "Homestead Exemption",
+      "amountType": "value-exemption",
+      "amount": 50000,
+      "text": "Up to $50,000: the first $25,000 applies to all property taxes including school taxes; a second exemption of up to $25,000 applies to assessed value between $50,000 and $75,000 for non-school taxes only, and is indexed each January 1 to the CPI when positive.",
+      "applyBy": "File Form DR-501 with the county property appraiser by March 1; you must own and live in the home on January 1.",
+      "url": "https://floridarevenue.com/property/Documents/pt113.pdf"
+    },
+    "otherRelief": [
+      {
+        "name": "Save Our Homes portability",
+        "text": "Owners moving to a new Florida homestead can transfer all or part of their accumulated Save Our Homes benefit if they establish the new homestead within three years of January 1 of the year they left the old one (Form DR-501T, by March 1).",
+        "url": "https://floridarevenue.com/property/Documents/pt112.pdf"
+      },
+      {
+        "name": "Additional exemption for persons 65 or older",
+        "text": "Counties and cities may adopt an extra homestead exemption of up to $50,000 for low-income owners aged 65+, or a full exemption for long-time low-income owners of homes under $250,000.",
+        "url": "https://floridarevenue.com/property/Documents/pt110.pdf"
+      },
+      {
+        "name": "Homestead tax deferral",
+        "text": "Homestead owners may defer part of their taxes by filing Form DR-570 with the tax collector by March 31.",
+        "url": "https://floridarevenue.com/property/Pages/Taxpayers.aspx"
+      }
+    ],
+    "dueDates": {
+      "text": "Bills are mailed in November. Early-payment discounts: 4% in November, 3% in December, 2% in January, 1% in February. Taxes become delinquent on April 1, and tax certificates are sold on unpaid bills by June 1.",
+      "url": "https://floridarevenue.com/property/Pages/Taxpayers.aspx"
+    },
+    "facts": [
+      {
+        "text": "Paying in November earns a 4% discount on the property tax bill.",
+        "url": "https://floridarevenue.com/property/Pages/Taxpayers.aspx"
+      },
+      {
+        "text": "Florida DOR example: on a $65,000 assessed home, the first $25,000 is exempt from all taxes, the next $25,000 is taxable and the remaining $15,000 is exempt from non-school taxes.",
+        "url": "https://floridarevenue.com/property/Documents/pt113.pdf"
+      },
+      {
+        "text": "The second $25,000 homestead exemption (non-school taxes) is adjusted for inflation each January 1 when the CPI change is positive.",
+        "url": "https://floridarevenue.com/property/Documents/pt113.pdf"
+      },
+      {
+        "text": "Save Our Homes caps a homestead's assessed value growth at 3% or CPI, whichever is lower, even when market value falls.",
+        "url": "https://floridarevenue.com/property/Documents/pt112.pdf"
+      },
+      {
+        "text": "Unpaid taxes become delinquent April 1 and the county sells tax certificates on them by June 1.",
+        "url": "https://floridarevenue.com/property/Pages/Taxpayers.aspx"
+      }
+    ]
+  },
+  "uncertain": [
+    "Effective date of the 6% state rate not stated on the DOR page read.",
+    "Current CPI-adjusted amount of the second homestead exemption for 2026 not read (DOR guide states only 'up to $25,000' adjusted for inflation); amount=50000 is the DOR headline figure.",
+    "The user brief said the August holiday was made permanent in 2025: confirmed for 2025 (August 1-31, TIP 25A01-08), but Chapter 2026-239 changed the annual window to July 20 - August 20 from 2026 (TIP 26A01-11, DOR back-to-school page).",
+    "The 10% assessment cap on non-homestead property was not read on a DOR page and is not included."
+  ]
+}

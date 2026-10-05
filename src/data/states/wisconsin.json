@@ -1,0 +1,142 @@
+{
+  "name": "Wisconsin",
+  "abbr": "WI",
+  "slug": "wisconsin",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 5,
+    "rateNote": "5% state sales and use tax on tangible personal property, certain digital goods and taxable services. Seventy counties add 0.5% (Milwaukee County 0.9%), and the city of Milwaukee adds 2%.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "counties (county tax), the city of Milwaukee (the only city sales tax), premier resort area municipalities, and local exposition districts (Milwaukee County lodging, food and beverage, rental car taxes)",
+      "cap": null,
+      "capNote": "County tax 0.5% (0.9% in Milwaukee County since January 1, 2024); city of Milwaukee 2% since January 1, 2024; premier resort area tax 0.5% to 1.25% in designated municipalities.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://www.revenue.wi.gov/Pages/Apps/strb.aspx",
+      "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "All food and food ingredients are exempt except candy, dietary supplements, prepared food and soft drinks.",
+      "url": "https://www.revenue.wi.gov/DOR%20Publications/pb220.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption.",
+      "url": "https://www.revenue.wi.gov/DOR%20Publications/pb201.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.revenue.wi.gov/DOR%20Publications/pb220.pdf"
+    },
+    "otherRates": [
+      {
+        "item": "premier resort area tax (Wisconsin Dells, Lake Delton)",
+        "rate": 1.25,
+        "note": "Local tax on certain sellers in designated resort municipalities; 0.5% in Ephraim, Sister Bay, Rhinelander, Stockholm, Eagle River, Bayfield, and since July 1, 2026 Sturgeon Bay and Minocqua.",
+        "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-premier.aspx"
+      },
+      {
+        "item": "Milwaukee County exposition taxes: food and beverage",
+        "rate": 0.5,
+        "note": "Local exposition district tax on food and beverages sold in Milwaukee County municipalities; also a 3% basic room tax, 7% additional room tax (city of Milwaukee) and 3% rental car tax.",
+        "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-expo.aspx"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "Wisconsin has no sales tax holiday.",
+    "useTax": {
+      "rate": 5,
+      "note": "5% state use tax on items used, stored or consumed in Wisconsin on which no Wisconsin sales or use tax was paid, plus county/city use tax where applicable.",
+      "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx"
+    },
+    "facts": [
+      {
+        "text": "The city of Milwaukee is the only Wisconsin municipality with its own sales tax: 2% since January 1, 2024, when Milwaukee County's rate also rose from 0.5% to 0.9%. Total in Milwaukee: 7.9%.",
+        "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx"
+      },
+      {
+        "text": "Sturgeon Bay and Minocqua adopted a 0.5% premier resort area tax effective July 1, 2026.",
+        "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-premier.aspx"
+      },
+      {
+        "text": "Seventy Wisconsin counties levy the 0.5% county sales tax.",
+        "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx"
+      },
+      {
+        "text": "Hotels in the city of Milwaukee charge an extra 7% room tax on top of the 3% basic room tax and sales taxes.",
+        "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-expo.aspx"
+      },
+      {
+        "text": "Candy and soft drinks are taxable even at grocery stores.",
+        "url": "https://www.revenue.wi.gov/DOR%20Publications/pb220.pdf"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local (counties, cities, villages and towns, school districts, technical colleges and special districts); bills are prepared by the municipality",
+    "assessment": {
+      "text": "Local assessors value property at market value as of January 1. Each municipality must be within 10% of market value at least once every five years (full value law); the DOR equalizes values to apportion county and school levies.",
+      "ratio": 100,
+      "url": "https://www.revenue.wi.gov/DOR%20Publications/pb060.pdf"
+    },
+    "homestead": {
+      "name": "No homestead exemption (credits instead)",
+      "amountType": "none",
+      "amount": null,
+      "text": "Wisconsin does not exempt part of a home's value. Tax bills show state-funded credits (school levy tax credit, first dollar credit, and the lottery and gaming credit for a primary residence), and low- and moderate-income residents can claim the income-based Homestead tax credit.",
+      "applyBy": null,
+      "url": "https://www.revenue.wi.gov/DOR%20Publications/pb060.pdf"
+    },
+    "otherRelief": [
+      {
+        "name": "Homestead tax credit",
+        "text": "Income-based credit paid directly to low- and moderate-income homeowners and renters; the amount depends on household income and property tax (renters count part of their rent).",
+        "url": "https://www.revenue.wi.gov/DOR%20Publications/pb060.pdf"
+      },
+      {
+        "name": "Veterans and surviving spouses property tax credit",
+        "text": "Refundable credit administered by the Department of Veterans Affairs; Wisconsin offers no property tax exemption for veterans.",
+        "url": "https://www.revenue.wi.gov/DOR%20Publications/pb060.pdf"
+      },
+      {
+        "name": "Property tax deferral loan program",
+        "text": "WHEDA loans to qualifying elderly homeowners, repaid when the home is sold or vacated.",
+        "url": "https://www.revenue.wi.gov/DOR%20Publications/pb060.pdf"
+      }
+    ],
+    "dueDates": {
+      "text": "Unless the municipality sets another schedule: pay in full by January 31, or in installments with the first due January 31 and the second due July 31. A missed first installment makes the whole balance delinquent as of February 1.",
+      "url": "https://www.revenue.wi.gov/DOR%20Publications/pb060.pdf"
+    },
+    "facts": [
+      {
+        "text": "Tax bills are mailed by the third Monday in December and show the lottery and gaming credit and first dollar credit as deductions.",
+        "url": "https://www.revenue.wi.gov/DOR%20Publications/pb060.pdf"
+      },
+      {
+        "text": "If a municipality stays outside the 10% full-value range for six consecutive years, the DOR orders a state-supervised revaluation.",
+        "url": "https://www.revenue.wi.gov/DOR%20Publications/pb060.pdf"
+      },
+      {
+        "text": "Manufacturing property is assessed by the DOR, not by local assessors.",
+        "url": "https://www.revenue.wi.gov/DOR%20Publications/pb060.pdf"
+      },
+      {
+        "text": "Some municipalities allow more than two installments; the local clerk confirms the schedule.",
+        "url": "https://www.revenue.wi.gov/DOR%20Publications/pb060.pdf"
+      }
+    ]
+  },
+  "uncertain": [
+    "Publication 201 (general sales tax guide) on the DOR site is an older edition still listing the 0.1% baseball stadium tax; current rates were taken from the DOR Tax Rates FAQ, which no longer lists a stadium tax.",
+    "Amounts of the lottery and gaming credit and school levy tax credit are not given in the 2026 Guide for Property Owners (omitted).",
+    "Whether local (county/city) sales taxes also exempt food is assumed from the base rule (local taxes apply to sales subject to state tax); not read explicitly.",
+    "The Wisconsin Legislature statute site (docs.legis.wisconsin.gov) did not respond; statutes were not read directly."
+  ]
+}

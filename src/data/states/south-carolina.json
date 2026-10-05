@@ -1,0 +1,162 @@
+{
+  "name": "South Carolina",
+  "abbr": "SC",
+  "slug": "south-carolina",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6,
+    "rateNote": "Statewide 6% sales and use tax on goods and certain services: a 5% base tax (SC Code 12-36-910) plus an additional 1% imposed since June 1, 2007 (12-36-1110). Voter-approved county taxes come on top.",
+    "effectiveSince": "2007-06-01",
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "counties (Local Option, Capital Projects, Transportation, School District, Education Capital Improvement, County Green Space, Catawba Tribal) and municipalities (Tourism Development, Myrtle Beach); most require voter approval",
+      "cap": null,
+      "capNote": "Each local tax is generally 1% (Transportation and Green Space taxes up to 1%); combined county rates listed by the SCDOR range from 6% to 9% in total.",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://rfa.maps.arcgis.com/apps/instant/lookup/index.html?appid=689fd82b343045988251f0cbad8f1620",
+      "url": "https://dor.sc.gov/sales-use-tax-index/local-sales-taxes"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Unprepared food eligible for SNAP is exempt from the 6% state tax only (SC Code 12-36-2120(75)); local sales taxes can still apply, though Capital Projects, Education Capital Improvement and some Transportation taxes exempt it.",
+      "url": "https://www.scstatehouse.gov/code/t12c036.php"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable except during the August sales tax holiday.",
+      "url": "https://www.scstatehouse.gov/code/t12c036.php"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.scstatehouse.gov/code/t12c036.php"
+    },
+    "otherRates": [
+      {
+        "item": "accommodations (rooms rented under 90 days)",
+        "rate": 7,
+        "note": "5% sales tax plus 2% state accommodations tax; local governments can add up to 3% more.",
+        "url": "https://dor.sc.gov/sales-use-tax-index/accommodations"
+      },
+      {
+        "item": "Max Tax items (boats, aircraft, certain light construction equipment)",
+        "rate": 5,
+        "note": "Taxed at 5% with a maximum of $500 per item; local sales taxes do not apply.",
+        "url": "https://dor.sc.gov/sales-use-tax-index/maximum-tax-max-tax"
+      },
+      {
+        "item": "casual excise tax on boat, motor and airplane titles",
+        "rate": 5,
+        "note": "5% of fair market value when a title or registration is issued.",
+        "url": "https://dor.sc.gov/sales-use-tax-index"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Sales tax holiday (back to school)",
+        "start": "2026-08-07",
+        "end": "2026-08-09",
+        "items": "clothing, clothing accessories, footwear, school supplies, computers, printers and software, bed and bath linens; excludes jewelry, cosmetics, eyewear, watches, furniture, layaway and business purchases. No price cap.",
+        "url": "https://www.scstatehouse.gov/code/t12c036.php"
+      }
+    ],
+    "holidayNote": "Dates derived from the statute (12:01 a.m. on the first Friday in August through midnight the following Sunday), which falls on August 7-9 in 2026.",
+    "useTax": {
+      "rate": 6,
+      "note": "Use tax is due on goods used in South Carolina when South Carolina sales tax has not been paid; local use taxes also apply.",
+      "url": "https://dor.sc.gov/sales-use-tax-index"
+    },
+    "facts": [
+      {
+        "text": "Groceries escape the 6% state tax but not necessarily local taxes: in counties with a Local Option tax, food remains taxed at the local rate.",
+        "url": "https://www.scstatehouse.gov/code/t12c036.php"
+      },
+      {
+        "text": "Lexington County extended its School District tax on March 1, 2026; Williamsburg County added a Capital Projects tax on May 1, 2026, bringing its total rate to 8%.",
+        "url": "https://dor.sc.gov/sales-use-tax-index"
+      },
+      {
+        "text": "The 1% Local Option Sales Tax is used to reduce property taxes in the counties that adopt it.",
+        "url": "https://dor.sc.gov/sales-use-tax-index/local-sales-taxes"
+      },
+      {
+        "text": "Max Tax: boats and airplanes pay 5% capped at $500 per item, and local taxes do not apply.",
+        "url": "https://dor.sc.gov/sales-use-tax-index/maximum-tax-max-tax"
+      },
+      {
+        "text": "The August holiday has no price limit per item, unlike most other states' back-to-school holidays.",
+        "url": "https://www.scstatehouse.gov/code/t12c036.php"
+      },
+      {
+        "text": "Calls to 900 and 976 telephone numbers are taxed at 11%.",
+        "url": "https://dor.sc.gov/sales-use-tax-index"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local (counties, municipalities, school districts and special districts); collected by the county treasurer",
+    "assessment": {
+      "text": "Taxable value = fair market value x assessment ratio. A legal residence (owner's domicile, up to 5 acres) is assessed at 4%; other property, such as second homes and rentals, at 6%. Counties reappraise every fifth year, and increases from reappraisal are capped at 15% over five years (Act 388) unless the property is sold.",
+      "ratio": 4,
+      "url": "https://www.scstatehouse.gov/code/t12c043.php",
+      "capped": true,
+      "capText": "Taxable value = fair market value x assessment ratio. A legal residence (owner's domicile, up to 5 acres) is assessed at 4%; other property, such as second homes and rentals, at 6%. Counties reappraise every fifth year, and increases from reappraisal are capped at 15% over five years (Act 388) unless the property is sold.",
+      "capUrl": "https://www.scstatehouse.gov/code/t12c043.php"
+    },
+    "homestead": {
+      "name": "Homestead Exemption",
+      "amountType": "value-exemption",
+      "amount": 50000,
+      "text": "The first $50,000 of fair market value of the legal residence is exempt from county, municipal, school and special assessment taxes for residents aged 65+, totally and permanently disabled, or legally blind. For tax year 2026, the state temporarily authorized an additional homestead exemption for certain recipients.",
+      "applyBy": "Apply through the county auditor's office.",
+      "url": "https://dor.sc.gov/property/property-tax-exemptions"
+    },
+    "otherRelief": [
+      {
+        "name": "School operating millage exemption",
+        "text": "Owner-occupied homes receiving the 4% legal residence ratio are 100% exempt from property taxes levied for school operations (not school debt).",
+        "url": "https://www.scstatehouse.gov/code/t12c037.php"
+      },
+      {
+        "name": "Disabled veteran exemption",
+        "text": "Veterans with a total and permanent service-connected disability are exempt on their home and up to five acres, provided it receives the 4% legal residence ratio.",
+        "url": "https://dor.sc.gov/property/property-tax-exemptions"
+      }
+    ],
+    "dueDates": {
+      "text": "Property taxes are due between September 30 and January 15 following assessment; counties may offer installment plans.",
+      "url": "https://www.scstatehouse.gov/code/t12c045.php"
+    },
+    "facts": [
+      {
+        "text": "The 4% legal residence ratio must be applied for with the county assessor before the first penalty date; it is lost if the home is rented more than 72 days a year.",
+        "url": "https://www.scstatehouse.gov/code/t12c043.php"
+      },
+      {
+        "text": "The 15% cap on reassessment increases resets when the property is sold (an 'assessable transfer of interest'), so buyers are taxed on the full current value.",
+        "url": "https://www.scstatehouse.gov/code/t12c037.php"
+      },
+      {
+        "text": "Owner-occupied homes pay no school operating millage, which shifts that cost to second homes, rentals and businesses assessed at 6%.",
+        "url": "https://www.scstatehouse.gov/code/t12c037.php"
+      },
+      {
+        "text": "The state reimburses counties and school districts for the homestead exemption through the Trust Fund for Tax Relief.",
+        "url": "https://www.scstatehouse.gov/code/t12c037.php"
+      },
+      {
+        "text": "Reappraisal values are completed at the end of December of the fourth year and owners are notified of changes of $1,000 or more.",
+        "url": "https://www.scstatehouse.gov/code/t12c043.php"
+      }
+    ]
+  },
+  "uncertain": [
+    "The amount of the temporary additional homestead exemption for tax year 2026 is not stated on the SCDOR page.",
+    "Motor vehicles are subject to the Infrastructure Maintenance Fee (SCDMV), not sales tax; its rate and cap were not verified.",
+    "Whether local sales taxes are also suspended during the August holiday was not verified.",
+    "Holiday dates are computed from the statute; no 2026 SCDOR holiday page was found (URLs tried returned 404)."
+  ]
+}

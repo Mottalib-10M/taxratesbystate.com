@@ -1,0 +1,140 @@
+{
+  "name": "New York",
+  "abbr": "NY",
+  "slug": "new-york",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4,
+    "rateNote": "Statewide rate of 4%, plus local taxes imposed by counties, cities or school districts, plus a 0.375% Metropolitan Commuter Transportation District (MCTD) rate on taxable sales made within the MCTD. Combined rates vary by county and by city.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "counties, cities and school districts; additional 0.375% MCTD rate in the Metropolitan Commuter Transportation District",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://www.tax.ny.gov/bus/st/rates.htm",
+      "url": "https://www.tax.ny.gov/bus/st/rates.htm"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food and food products sold by food stores are generally exempt; food sold heated, for consumption on the premises, or prepared by the seller and ready to eat is taxable. Candy and confectionery are taxable.",
+      "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/food_sold_by_food_stores.htm"
+    },
+    "clothing": {
+      "treatment": "exempt-under-threshold",
+      "threshold": 110,
+      "note": "Clothing and footwear sold for less than $110 per item or pair are exempt from the 4% state tax. The local tax applies unless the county or city has elected to provide the exemption; the 0.375% MCTD tax is exempt only in MCTD localities that elected the exemption. Localities may change their election only on March 1 of each year.",
+      "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/clothing_and_footwear.htm",
+      "thresholdMode": "item",
+      "localFollows": false
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/drugstores.htm"
+    },
+    "otherRates": [
+      {
+        "item": "hotel and short-term rental occupancy",
+        "rate": null,
+        "note": "State and local sales tax applies when the rental rate is more than $2.00 per day; in New York City a $1.50 per unit per day fee is added. Guests staying at least 90 consecutive days (180 days for the New York City local tax) are permanent residents and owe no sales tax.",
+        "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/hotel_and_motel_occupancy.htm"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": null,
+    "useTax": {
+      "rate": 4,
+      "note": "Use tax applies when taxable goods or services are bought outside New York State and used within the state; the applicable local rate is added to the 4% state rate.",
+      "url": "https://www.tax.ny.gov/bus/st/stidx.htm"
+    },
+    "facts": [
+      {
+        "text": "New York's sales tax is a destination tax: the point of delivery determines the rate collected, and sales delivered outside New York State are exempt.",
+        "url": "https://www.tax.ny.gov/bus/st/rates.htm"
+      },
+      {
+        "text": "The clothing exemption is per item, not per purchase: five items each under $110 totalling $190 are all exempt from the state tax.",
+        "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/clothing_and_footwear.htm"
+      },
+      {
+        "text": "Costumes, rented formal wear, jewelry, watches, sport helmets, ice skates and fielders' gloves do not qualify for the clothing exemption, even under $110.",
+        "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/clothing_and_footwear.htm"
+      },
+      {
+        "text": "Both prescription and nonprescription drugs and medicines used to treat or prevent illness are exempt from sales tax, as are contraceptive products.",
+        "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/drugstores.htm"
+      },
+      {
+        "text": "Snack items such as potato chips, pretzels and cookies are exempt when sold by food stores, but become taxable if sugar-, chocolate- or candy-coated.",
+        "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/food_sold_by_food_stores.htm"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local only: counties, cities, towns, villages, school districts and special districts; the state itself does not collect property tax. School districts are the largest users of the property tax.",
+    "assessment": {
+      "text": "The local assessor estimates market value; assessments may be at 100% of market value or at a uniform fraction of it (level of assessment) set by each municipality, e.g. $100,000 market value x 27% level = $27,000 assessment. Only real property is taxed: New York has no personal property tax.",
+      "ratio": null,
+      "url": "https://www.tax.ny.gov/pit/property/learn/howassess.htm"
+    },
+    "homestead": {
+      "name": "STAR (School Tax Relief)",
+      "amountType": "value-exemption",
+      "amount": 30000,
+      "text": "Basic STAR is based on the first $30,000 of the full value of an owner-occupied primary residence (income limit $500,000 for the STAR credit, $250,000 for the STAR exemption). Enhanced STAR, for owners 65 and older with income of $110,750 or less, is based on the first $88,500 of full value for the 2026-2027 school year. STAR applies only to school taxes, except in New York City, Buffalo, Rochester, Yonkers and Syracuse.",
+      "applyBy": "New homeowners register with the NYS Tax Department for the STAR credit (the STAR exemption is closed to new homeowners); owner and primary residence on July 1 of the benefit year.",
+      "url": "https://www.tax.ny.gov/pit/property/star/types.htm"
+    },
+    "otherRelief": [
+      {
+        "name": "Senior citizens exemption",
+        "text": "Local option: reduces the taxable assessment of a qualifying senior (65+) home by up to 50%; each locality sets the income limit between $3,000 and $50,000, with sliding-scale options up to $58,400. Applications are generally due March 1 to the assessor.",
+        "url": "https://www.tax.ny.gov/pit/property/exemption/seniorexempt.htm"
+      },
+      {
+        "name": "Veterans, disabilities and agricultural exemptions",
+        "text": "Partial exemptions for veterans and persons with disabilities, and agricultural exemptions; most are offered at the local option of the municipality, county or school district.",
+        "url": "https://www.tax.ny.gov/pit/property/exemption/index.htm"
+      }
+    ],
+    "dueDates": {
+      "text": "No single statewide due date. In most communities school tax bills are mailed at the beginning of September and municipal and county bills at the beginning of January; payment deadlines vary by school district and municipality.",
+      "url": "https://www.tax.ny.gov/pit/property/learn/proptaxcal.htm"
+    },
+    "facts": [
+      {
+        "text": "Enhanced STAR income limit: $110,750 for 2026 benefits and $113,550 for 2027 benefits, counting only resident owners and their resident spouses.",
+        "url": "https://www.tax.ny.gov/pit/property/star/eligibility.htm"
+      },
+      {
+        "text": "Since 2026 only one resident owner must be 65 by December 31 for Enhanced STAR, and STAR exemption recipients are upgraded automatically when they turn 65.",
+        "url": "https://www.tax.ny.gov/star/changes/"
+      },
+      {
+        "text": "The STAR credit (a check or direct deposit) can rise by up to 2% a year, whereas STAR exemption savings cannot exceed the prior year's savings.",
+        "url": "https://www.tax.ny.gov/pit/property/star/starcalculation.htm"
+      },
+      {
+        "text": "Key assessment dates in most communities: Taxable Status Date March 1, tentative roll May 1, Grievance Day on the fourth Tuesday in May, final roll July 1.",
+        "url": "https://www.tax.ny.gov/pit/property/learn/proptaxcal.htm"
+      },
+      {
+        "text": "Outside New York City, schools levied 62% of local property taxes, counties 17% and towns, special districts, cities and villages the rest (fiscal years ending 2009, latest figures published by the Tax Department).",
+        "url": "https://www.tax.ny.gov/pit/property/learn/proptax.htm"
+      }
+    ]
+  },
+  "uncertain": [
+    "effectiveSince: the date the 4% state rate took effect is not stated on the pages read; left null.",
+    "The official address lookup tool (https://www8.tax.ny.gov/JRLA/jrlaStart) resets the connection from our scripts; lookupUrl points to the DTF rates page that links to it.",
+    "Local cap: no statutory cap on the local rate was read on an official page; left null.",
+    "Use tax for individuals (TB-ST-913) is marked 'being updated' on the DTF site; use tax described from the sales tax index page only.",
+    "Motor vehicle rates not recorded (bulletin TB-ST-590 not read in detail).",
+    "No sales tax holiday in 2026 found on the DTF site, but no official page explicitly states it; holidayNote left null.",
+    "Assessment ratio varies by municipality (fractional assessment allowed); no single statewide ratio, ratio left null."
+  ]
+}

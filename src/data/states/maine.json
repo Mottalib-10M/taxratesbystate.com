@@ -1,0 +1,96 @@
+{
+  "name": "Maine",
+  "abbr": "ME",
+  "slug": "maine",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 5.5,
+    "rateNote": "General 5.5% state rate (unchanged since October 1, 2013 in the MRS rate table). Higher state rates: 8% prepared food and on-premises alcohol, 9% lodging, 10% short-term auto rental, 14% adult use cannabis (since January 1, 2026). No local sales tax.",
+    "effectiveSince": "2013-10-01",
+    "scheduledChanges": [],
+    "local": {
+      "allowed": false,
+      "levies": "none: Maine sales and use tax is a single state tax reported directly to the State",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/Business%20Guide%20for%20December%202025%20FINAL.pdf"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "'Grocery staples' are exempt; candy and confections (including confectionery spreads), soft drinks and prepared food are taxable, prepared food at 8%.",
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/IB12%20FINAL%20Retailers%20of%20Food%20Products_2025_12_22.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption; clothing is tangible personal property taxed at 5.5%.",
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/Business%20Guide%20for%20December%202025%20FINAL.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/IB41%20FINAL%20Medicines%20Medical%20Equipment%20and%20Prosthetic%20Devices%202026_08_19.pdf"
+    },
+    "otherRates": [
+      {"item": "prepared food and alcoholic drinks in licensed establishments", "rate": 8, "note": "", "url": "https://www.maine.gov/revenue/taxes/sales-use-service-provider-tax/rates-due-dates"},
+      {"item": "rentals of lodging (living quarters)", "rate": 9, "note": "9% since January 1, 2016 (8% before).", "url": "https://www.maine.gov/revenue/taxes/sales-use-service-provider-tax/rates-due-dates"},
+      {"item": "short-term auto rental", "rate": 10, "note": "", "url": "https://www.maine.gov/revenue/taxes/sales-use-service-provider-tax/rates-due-dates"},
+      {"item": "adult use cannabis and cannabis products", "rate": 14, "note": "Raised from 10% on January 1, 2026; medical cannabis stays at 5.5% (8% for prepared food containing it).", "url": "https://www.maine.gov/revenue/taxes/sales-use-service-provider-tax/rates-due-dates"}
+    ],
+    "holidays2026": [],
+    "holidayNote": "Maine has no sales tax holiday; retailers are even prohibited from advertising a 'tax holiday' or absorbing the tax.",
+    "useTax": {
+      "rate": 5.5,
+      "note": "Use tax, generally 5.5% (or the rate that would have applied, e.g. 8% for prepared food), is reported directly to the State when the retailer did not charge Maine tax.",
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/Business%20Guide%20for%20December%202025%20FINAL.pdf"
+    },
+    "facts": [
+      {"text": "Since January 1, 2026 streaming video and music subscriptions ('digital audiovisual and digital audio services') are taxed at 5.5% in Maine.", "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/GIB%20115_FINAL_2025_10_17_0.pdf"},
+      {"text": "Maine repealed its separate Service Provider Tax on January 1, 2026; cable, satellite and telecom services moved into the 5.5% sales tax.", "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/SPT%20Repeal_Notice_FINAL_11212025.pdf"},
+      {"text": "Adult use cannabis is taxed at 14% since January 1, 2026, up from 10%.", "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/GIB%20115_FINAL_2025_10_17_0.pdf"},
+      {"text": "Durable medical equipment, breast pumps and mobility-enhancing equipment for home use became exempt on January 1, 2026.", "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/GIB%20115_FINAL_2025_10_17_0.pdf"},
+      {"text": "Hotel and short-term lodging stays are taxed at 9%, restaurant meals at 8%, and short-term car rentals at 10%.", "url": "https://www.maine.gov/revenue/taxes/sales-use-service-provider-tax/rates-due-dates"},
+      {"text": "A $1.00 recycling assistance fee applies to each new tire and new lead-acid battery, on top of sales tax.", "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/Business%20Guide%20for%20December%202025%20FINAL.pdf"},
+      {"text": "It is illegal for a Maine retailer to advertise that it will not collect sales tax or hold a 'tax holiday'.", "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/Business%20Guide%20for%20December%202025%20FINAL.pdf"}
+    ]
+  },
+  "property": {
+    "levied": "local: 482 municipalities assess and bill property tax (including county and school shares); Maine Revenue Services acts as assessor for the Unorganized Territory and sets the annual state valuation",
+    "assessment": {
+      "text": "Municipal assessors value property at 'just value' as of April 1. Each year Maine Revenue Services studies sales in all municipalities to set the state valuation (full equalized value), used to allocate school aid, revenue sharing and county taxes. Partial exemptions are adjusted by each municipality's certified assessment ratio.",
+      "ratio": null,
+      "url": "https://www.maine.gov/revenue/taxes/property-tax"
+    },
+    "homestead": {
+      "name": "Homestead Exemption",
+      "amountType": "value-exemption",
+      "amount": 25000,
+      "text": "Owners who have owned homestead property in Maine for at least 12 months and occupy it as their permanent residence on April 1 get up to $25,000 of just value exempt (adjusted by the town's certified assessment ratio).",
+      "applyBy": "Application to the local assessor's office no later than April 1.",
+      "url": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs/property-tax-exemptions"
+    },
+    "otherRelief": [
+      {"name": "Veteran Exemption", "text": "$6,000 of just value for wartime veterans 62+ or 100% disabled veterans; $50,000 for veterans with a federal specially adapted housing grant.", "url": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs/property-tax-exemptions"},
+      {"name": "Blind Exemption", "text": "$4,000 of just value for legally blind owners.", "url": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs/property-tax-exemptions"},
+      {"name": "Property Tax Fairness Credit", "text": "Refundable income tax credit for part of the property tax or rent paid by eligible Maine residents, claimed on Form 1040ME, Schedule PTFC/STFC.", "url": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/income-tax-credits/property-tax-fairness-credit"},
+      {"name": "State Property Tax Deferral Program", "text": "The State pays the homestead's property taxes (plus up to two years of delinquent taxes) until withdrawal, then the deferred amount is repaid with interest; 2026 applications were accepted January 1 - April 1, 2026.", "url": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs/deferral-program"}
+    ],
+    "dueDates": {"text": null, "url": null},
+    "facts": [
+      {"text": "The homestead exemption requires 12 months of ownership in Maine and an application to the town by April 1.", "url": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs/property-tax-exemptions"},
+      {"text": "Maine Revenue Services is the local assessor for the Unorganized Territory, the parts of the state with no organized town.", "url": "https://www.maine.gov/revenue/taxes/property-tax"},
+      {"text": "Solar panels and other renewable energy equipment are exempt from property tax if the owner applies by April 1.", "url": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs/property-tax-exemptions"},
+      {"text": "Towns may adopt their own senior property tax deferral or property tax assistance programs by ordinance.", "url": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs"},
+      {"text": "Under the state deferral program, the State pays a qualifying owner's homestead taxes and is repaid when the owner withdraws or the home changes hands.", "url": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs/deferral-program"}
+    ]
+  },
+  "uncertain": [
+    "Maximum amounts and income limits of the Property Tax Fairness Credit are not shown on the MRS summary page; not recorded.",
+    "Property tax due dates are set by each municipality; no statewide date, left null.",
+    "No explicit MRS statement that 'clothing is taxable': follows from the 5.5% tax on all tangible personal property and the absence of a clothing exemption.",
+    "No explicit MRS statement 'there is no local sales tax'; the Business Guide describes only state rates and says use tax is reported directly to the State."
+  ]
+}

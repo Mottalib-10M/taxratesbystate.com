@@ -1,0 +1,92 @@
+{
+  "name": "Kentucky",
+  "abbr": "KY",
+  "slug": "kentucky",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6,
+    "rateNote": "Single statewide 6% sales and use tax on tangible personal property, digital property and a growing list of services. The Department of Revenue states there are no local sales and use taxes in Kentucky.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": false,
+      "levies": "none: Kentucky has no local sales and use taxes",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food and food ingredients for human consumption are exempt (KRS 139.485); alcoholic beverages, tobacco, candy, dietary supplements, soft drinks and prepared food are taxable.",
+      "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=28898"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption; clothing is taxed at 6% like other tangible personal property.",
+      "url": "https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=53349"
+    },
+    "otherRates": [
+      {"item": "motor vehicles (Motor Vehicle Usage Tax)", "rate": 6, "note": "Vehicles pay a separate 6% usage tax collected by the county clerk at transfer or first registration, instead of sales tax.", "url": "https://revenue.ky.gov/Property/Motor-Vehicles/Pages/Motor-Vehicle-Usage-Tax.aspx"}
+    ],
+    "holidays2026": [],
+    "holidayNote": "Kentucky has no sales tax holiday; none appears in Department of Revenue publications for 2026.",
+    "useTax": {
+      "rate": 6,
+      "note": "Use tax applies at 6% to property and digital property bought outside Kentucky for use in the state when no Kentucky tax was paid.",
+      "url": "https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx"
+    },
+    "facts": [
+      {"text": "Kentucky has no city or county sales tax: the rate is 6% everywhere in the state.", "url": "https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx"},
+      {"text": "Since August 1, 2026, 'data brokering services' (collecting and analyzing personal data for sale) are subject to the 6% sales tax.", "url": "https://revenue.ky.gov/News/Publications/Sales%20Tax%20Newsletters/Sales%20Tax%20Facts%20-%20Summer%202026.pdf"},
+      {"text": "From August 1, 2026, remote sellers must register only once they exceed $100,000 of Kentucky sales; the former 200-transaction threshold was repealed.", "url": "https://revenue.ky.gov/News/Publications/Sales%20Tax%20Newsletters/Sales%20Tax%20Facts%20-%20Summer%202026.pdf"},
+      {"text": "Because of the penny shortage, Kentucky law requires cash totals (tax included) to be rounded to the nearest five cents since July 15, 2026, but the retailer still owes the exact tax.", "url": "https://revenue.ky.gov/News/Publications/Sales%20Tax%20Newsletters/Sales%20Tax%20Facts%20-%20Summer%202026.pdf"},
+      {"text": "Sales made directly by religious institutions became exempt on August 1, 2026.", "url": "https://revenue.ky.gov/News/Publications/Sales%20Tax%20Newsletters/Sales%20Tax%20Facts%20-%20Summer%202026.pdf"},
+      {"text": "An over-the-counter drug is exempt when a prescription is issued for it, in addition to all prescription drugs and home medical oxygen.", "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=53349"}
+    ]
+  },
+  "property": {
+    "levied": "state and local: the Commonwealth levies a small state real property rate set each year by the Department of Revenue, on top of county, city, school district and special district rates; bills are mailed and collected by the county sheriff",
+    "assessment": {
+      "text": "All real property is assessed at 100% of its fair cash value by the elected county Property Valuation Administrator (PVA); farmland may be assessed at agricultural value. PVAs must physically inspect every parcel at least once every four years. If statewide assessments grow more than 4%, the state rate must be cut to hold state real property revenue growth to 4%.",
+      "ratio": 100,
+      "url": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/default.aspx"
+    },
+    "homestead": {
+      "name": "Homestead Exemption (age 65+ or totally disabled)",
+      "amountType": "value-exemption",
+      "amount": 49100,
+      "text": "Homeowners aged 65 or older, or classified as totally disabled and receiving disability payments, deduct $49,100 from the assessed value of their home for the 2025-2026 assessment years (e.g. a $200,000 home is taxed on $150,900). There is no general homestead exemption for other owners.",
+      "applyBy": "Apply with the county Property Valuation Administrator; disability-based claims must be renewed annually except in listed cases.",
+      "url": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/Homestead-Exemption.aspx"
+    },
+    "otherRelief": [
+      {"name": "Exemptions under Section 170 of the Constitution", "text": "Churches, schools, purely public charities, public property, libraries and non-profit cemeteries can be exempt; application on Form 62A023 to the PVA.", "url": "https://revenue.ky.gov/Property/Pages/Property-Tax-Exemptions.aspx"}
+    ],
+    "dueDates": {
+      "text": "Bills are mailed in the fall by the sheriff. Typical schedule: 2% discount if paid October 1 - November 1; face amount November 2 - December 31; 5% penalty January 1-31; 21% penalty February 1 - April 15, after which the bill becomes a certificate of delinquency.",
+      "url": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/default.aspx"
+    },
+    "facts": [
+      {"text": "Kentucky still has a state property tax: the state real property rate was 10.9 cents per $100 of assessed value in 2024, down from 12.2 cents in 2020.", "url": "https://revenue.ky.gov/News/Pages/Rate-decreases-to-10.9-cents-per-$100-of-assessed-value.aspx"},
+      {"text": "Paying the property tax bill by November 1 earns a 2% discount; waiting until February costs a 21% penalty.", "url": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/default.aspx"},
+      {"text": "The senior and disability homestead exemption is $49,100 of assessed value for 2025 and 2026.", "url": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/Homestead-Exemption.aspx"},
+      {"text": "Assessment appeals start with a conference with the PVA during the tax roll inspection period (first to third Monday of May), then go to the local board of assessment appeals.", "url": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/default.aspx"},
+      {"text": "Unpaid bills become liens sold to third-party purchasers from mid-July, with 1% monthly interest plus clerk and county attorney fees.", "url": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/default.aspx"}
+    ]
+  },
+  "uncertain": [
+    "effectiveSince of the 6% rate not stated on the DOR pages read; left null.",
+    "State real property tax rate for 2025 and 2026 not found on the DOR site (latest press release read covers 2024: 10.9 cents per $100).",
+    "Clothing: no page explicitly says 'clothing is taxable'; the treatment follows from the general 6% tax on tangible personal property and the absence of any clothing exemption.",
+    "Local restaurant/transient room taxes levied by some Kentucky cities are not administered as sales tax by DOR and were not documented here."
+  ]
+}

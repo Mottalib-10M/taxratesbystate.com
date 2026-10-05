@@ -1,0 +1,165 @@
+{
+  "name": "North Dakota",
+  "abbr": "ND",
+  "slug": "north-dakota",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 5,
+    "rateNote": "State sales tax of 5% for most retail sales; gross receipts tax rates of 7% on alcohol and 3% on new farm machinery and new mobile homes. Cities and counties may add local sales and use taxes.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "cities and counties (sales and use taxes, plus special lodging, lodging and restaurant, and motor vehicle rental taxes), administered by the Office of State Tax Commissioner",
+      "cap": null,
+      "capNote": "Certain cities and counties set a maximum local tax per purchase (refund cap): tax paid above it can be refunded within three years. Local lodging tax may not exceed 2%.",
+      "groceriesTaxedLocally": null,
+      "lookupUrl": "https://tap.tax.nd.gov/?link=RateLookup",
+      "url": "https://www.tax.nd.gov/sales-and-use-tax/local-taxes-city-and-county-taxes"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food and food ingredients for home consumption are exempt; prepared food, candy, chewing gum and soft drinks (including fruit drinks with 50% or less juice) are taxable.",
+      "url": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/business/sales-use/gl-22062-1.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable tangible personal property.",
+      "url": "https://www.tax.nd.gov/business/sales-and-use-tax"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/business/sales-use/gl-21818.pdf"
+    },
+    "otherRates": [
+      {
+        "item": "alcohol",
+        "rate": 7,
+        "note": "Gross receipts tax rate.",
+        "url": "https://www.tax.nd.gov/business/sales-and-use-tax"
+      },
+      {
+        "item": "new farm machinery used exclusively for agricultural production",
+        "rate": 3,
+        "note": "Gross receipts tax rate.",
+        "url": "https://www.tax.nd.gov/business/sales-and-use-tax"
+      },
+      {
+        "item": "new mobile homes",
+        "rate": 3,
+        "note": "Gross receipts tax rate.",
+        "url": "https://www.tax.nd.gov/business/sales-and-use-tax"
+      },
+      {
+        "item": "motor vehicles",
+        "rate": 5,
+        "note": "Motor vehicle excise tax on the taxable purchase price, separate from the sales tax.",
+        "url": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/business/sales-use/gl-21963.pdf"
+      },
+      {
+        "item": "motor vehicle rentals",
+        "rate": 5,
+        "note": "5% sales tax plus a 3% rental surcharge on the rental fee.",
+        "url": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/business/sales-use/gl-21963.pdf"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": null,
+    "useTax": {
+      "rate": 5,
+      "note": "Use tax plus applicable local taxes is due on goods brought into North Dakota when sales tax was not collected, or when the other state's tax was lower than the North Dakota state plus local rate.",
+      "url": "https://www.tax.nd.gov/business/sales-and-use-tax"
+    },
+    "facts": [
+      {
+        "text": "Residents of Montana can buy tax-free in North Dakota on a single purchase of $50 or more that is taken out of the state for use exclusively outside it.",
+        "url": "https://www.tax.nd.gov/business/sales-and-use-tax"
+      },
+      {
+        "text": "Over-the-counter drugs bought without a prescription are taxable; prescription drugs and medical oxygen sold on prescription are exempt.",
+        "url": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/business/sales-use/gl-21818.pdf"
+      },
+      {
+        "text": "North Dakota does not exempt churches, charities or non-profits from sales tax on their purchases; bibles, hymnals and religious textbooks bought by churches are exempt.",
+        "url": "https://www.tax.nd.gov/business/sales-and-use-tax"
+      },
+      {
+        "text": "New local taxes and local rate changes take effect only on the first day of a calendar quarter and are posted 60 days in advance.",
+        "url": "https://www.tax.nd.gov/sales-and-use-tax/local-taxes-city-and-county-taxes"
+      },
+      {
+        "text": "Bottled water is exempt as food, but water with natural or artificial sweeteners is a taxable soft drink.",
+        "url": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/business/sales-use/gl-22062-1.pdf"
+      },
+      {
+        "text": "Remote sellers must collect state and local tax once their taxable sales into North Dakota exceed $100,000 in the current or previous calendar year.",
+        "url": "https://www.tax.nd.gov/business/sales-and-use-tax"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local: counties determine and collect real property taxes and distribute them to the county, cities, townships, school districts and other taxing districts; railroads, pipelines and utilities are centrally assessed by the State Tax Commissioner.",
+    "assessment": {
+      "text": "Assessed value of all real property equals 50% of market value; property is classed as residential, commercial or agricultural (agricultural land valued from soil surveys and use). The tax is set by mills (tax rate) applied to taxable value.",
+      "ratio": 50,
+      "url": "https://www.tax.nd.gov/property-tax"
+    },
+    "homestead": {
+      "name": "Primary Residence Credit",
+      "amountType": "credit",
+      "amount": 1600,
+      "text": "State credit of up to $1,600 per household against the property tax on an owner-occupied primary residence (house, mobile home, townhome, duplex or condo), with no age or income limit; it cannot exceed the tax due.",
+      "applyBy": "Online at tax.nd.gov/prc between January 1 and April 1 each year.",
+      "url": "https://www.tax.nd.gov/prc"
+    },
+    "otherRelief": [
+      {
+        "name": "Homestead Property Tax Credit",
+        "text": "Owners 65+ or permanently and totally disabled with income up to $70,000: taxable value reduced 100% (max $9,000, i.e. $200,000 of true and full value) if income is $40,000 or less, 50% (max $4,500 / $100,000) between $40,001 and $70,000. Apply to the local assessor by April 1.",
+        "url": "https://www.tax.nd.gov/homestead-property-tax-credit"
+      },
+      {
+        "name": "Disabled Veteran's Property Tax Credit",
+        "text": "For veterans with a service-connected disability of 50% or more (or paid at the 100% rate); credit proportional to the disability, combined credits of a married couple capped at 100% or $9,000 of taxable value. Apply by April 1.",
+        "url": "https://www.tax.nd.gov/disabled-veterans-property-tax-credit"
+      }
+    ],
+    "dueDates": {
+      "text": "Real property tax is due January 1 following the year of assessment and payable without penalty until March 1; a 5% discount applies if paid in full by February 15.",
+      "url": "https://www.tax.nd.gov/property-tax"
+    },
+    "facts": [
+      {
+        "text": "Paying the full real property tax bill by February 15 earns a 5% discount.",
+        "url": "https://www.tax.nd.gov/property-tax"
+      },
+      {
+        "text": "A homeowner already receiving the Homestead or Disabled Veteran credit can also get the Primary Residence Credit on any remaining tax.",
+        "url": "https://www.tax.nd.gov/prc"
+      },
+      {
+        "text": "HB 1176 (2025 session) amended the primary residence credit, created a legacy property tax relief fund and a limitation on property tax levies without voter approval.",
+        "url": "https://ndlegis.gov/assembly/69-2025/regular/bill-overview/bo1176.html"
+      },
+      {
+        "text": "Mobile home owners on leased lots pay property tax in advance, so a Primary Residence Credit approved in the January-April 2026 window applies to their 2027 tax.",
+        "url": "https://www.tax.nd.gov/prc"
+      },
+      {
+        "text": "Approved Primary Residence Credits appear as a deduction on the property tax statement mailed in December.",
+        "url": "https://www.tax.nd.gov/prc"
+      }
+    ]
+  },
+  "uncertain": [
+    "effectiveSince of the 5% state rate not stated on the pages read; left null.",
+    "groceriesTaxedLocally left null: the pages read do not say whether local sales taxes follow the state food exemption.",
+    "Previous amount of the Primary Residence Credit (before HB 1176) and the exact levy-limit percentage were not read on an official page; only the bill's title and the current $1,600 amount are recorded.",
+    "Ratio of taxable value to assessed value for residential property (a further percentage of assessed value) not read on an official page.",
+    "No sales tax holiday found on the Tax Commissioner site, but no page states it explicitly; holidayNote left null.",
+    "Exact HB 1176 effective dates not read (overview shows signature and filing in May 2025)."
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "name": "Hawaii",
+  "abbr": "HI",
+  "slug": "hawaii",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4,
+    "rateNote": "Hawaii has no sales tax: it levies a General Excise Tax (GET) on businesses' gross receipts, 4% for retail sales and most services (0.5% wholesale, 0.15% insurance commissions). All four counties (Honolulu, Hawaii, Kauai, Maui) add a 0.5% surcharge, so retail activity is taxed at 4.5%. Businesses may visibly pass the tax on to customers, up to a maximum pass-on rate of 4.712% (because the pass-on amount is itself taxable).",
+    "effectiveSince": null,
+    "scheduledChanges": [
+      {
+        "date": "2031-01-01",
+        "rate": null,
+        "what": "The 0.5% county surcharges in all four counties are authorized through December 31, 2030.",
+        "url": "https://tax.hawaii.gov/geninfo/countysurcharge/"
+      }
+    ],
+    "local": {
+      "allowed": true,
+      "levies": "county surcharge on GET and use tax (maximum 0.5%), adopted by Honolulu (since 2007), Kauai and Hawaii County (since 2019; 0.5% in Hawaii County since 2020) and Maui (since 2024); applies only to activities taxed at the 4% rate",
+      "cap": 0.5,
+      "capNote": "The Legislature authorized county surcharges of no more than 0.5%. Maximum visible pass-on rate including the surcharge: 4.712%.",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://tax.hawaii.gov/geninfo/countysurcharge/",
+      "url": "https://tax.hawaii.gov/geninfo/countysurcharge/"
+    },
+    "groceries": {
+      "treatment": "taxed",
+      "rate": 4,
+      "note": "Food is not exempt from GET (4% plus 0.5% county surcharge); only purchases paid with SNAP or WIC benefits are deductible. Low- and moderate-income residents can claim the refundable Food/Excise Tax Credit on their income tax return to offset it.",
+      "url": "https://files.hawaii.gov/tax/legal/brochures/GE_brochure-25.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing sales are subject to GET like other retail sales.",
+      "url": "https://tax.hawaii.gov/geninfo/get/"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://files.hawaii.gov/tax/forms/2025/g45ins.pdf"
+    },
+    "otherRates": [
+      {
+        "item": "wholesaling, manufacturing, producing, wholesale services, imports for resale",
+        "rate": 0.5,
+        "note": "No county surcharge on 0.5% activities.",
+        "url": "https://tax.hawaii.gov/geninfo/get/"
+      },
+      {
+        "item": "insurance commissions",
+        "rate": 0.15,
+        "note": "",
+        "url": "https://tax.hawaii.gov/geninfo/get/"
+      },
+      {
+        "item": "Transient Accommodations Tax (TAT)",
+        "rate": 11,
+        "note": "Raised from 10.25% to 11% on January 1, 2026 by Act 96 (2025), and extended to cruise fares (enforcement on cruise ships enjoined, per Announcement 2026-01).",
+        "url": "https://files.hawaii.gov/tax/news/announce/ann25-03.pdf"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "Hawaii has no GET holiday.",
+    "useTax": {
+      "rate": 4,
+      "note": "Use tax complements GET at the same rates on goods, services and contracting imported for use in Hawaii (4% for consumption, 0.5% for resale), plus the county surcharge where it applies.",
+      "url": "https://files.hawaii.gov/tax/legal/brochures/GE_brochure-25.pdf"
+    },
+    "facts": [
+      {
+        "text": "Hawaii's GET is a tax on the business, not the customer: sellers may pass it on but are not required to.",
+        "url": "https://files.hawaii.gov/tax/legal/taxfacts/tf2025-37-1.pdf"
+      },
+      {
+        "text": "Because the passed-on amount is itself taxable, the maximum pass-on rate is 4.712%, not 4.5%.",
+        "url": "https://tax.hawaii.gov/geninfo/countysurcharge/"
+      },
+      {
+        "text": "Maui County became the last of the four counties to add the 0.5% surcharge, on January 1, 2024.",
+        "url": "https://tax.hawaii.gov/geninfo/countysurcharge/"
+      },
+      {
+        "text": "Unlike most states, Hawaii taxes groceries; the refundable Food/Excise Tax Credit (up to $220 per exemption for AGI under $15,000) compensates low-income households.",
+        "url": "https://files.hawaii.gov/tax/geninfo/info/flyer-Food-Excise-Tax-Credit-May2024.pdf"
+      },
+      {
+        "text": "Prescription drugs sold by pharmacies, hospitals and licensed practitioners are exempt from GET (HRS 237-24.3(6)).",
+        "url": "https://files.hawaii.gov/tax/forms/2025/g45ins.pdf"
+      },
+      {
+        "text": "Hotel stays carry the 11% state Transient Accommodations Tax since January 1, 2026, in addition to GET.",
+        "url": "https://files.hawaii.gov/tax/news/announce/ann25-03.pdf"
+      },
+      {
+        "text": "Even sales to nonprofits and churches are generally subject to GET, since the tax falls on the seller.",
+        "url": "https://files.hawaii.gov/tax/legal/brochures/GE_brochure-25.pdf"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Counties only: under the Hawaii Constitution (Art. VIII, sec. 3), all powers over real property taxation are exercised exclusively by the counties (Honolulu, Hawaii, Kauai, Maui), each setting its own valuation, classes, rates, exemptions and due dates. There is no state property tax.",
+    "assessment": {
+      "text": "Each county assesses real property and sets tax rates by property class; there is no statewide assessment ratio or cap.",
+      "ratio": null,
+      "url": "https://lrb.hawaii.gov/constitution/"
+    },
+    "homestead": {
+      "name": "County home exemptions",
+      "amountType": "value-exemption",
+      "amount": null,
+      "text": "No statewide homestead exemption: each county grants its own home exemption for owner-occupants (with larger amounts for seniors in some counties). In Honolulu, claims are filed with the Real Property Assessment Division.",
+      "applyBy": "File with the county; in Honolulu the deadline currently shown for home exemption claims is June 30, 2027.",
+      "url": "https://www.realpropertyhonolulu.com/tax-relief-and-forms/exemptions/home-exemption/"
+    },
+    "otherRelief": [],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "The Hawaii Constitution gives the counties (except Kalawao) exclusive power over real property taxation, so rates and exemptions differ by island.",
+        "url": "https://lrb.hawaii.gov/constitution/"
+      },
+      {
+        "text": "Honolulu offers residential owners whose home is assessed around $1 million or more information on the 'Residential A' class.",
+        "url": "https://www.realpropertyhonolulu.com/tax-relief-and-forms/exemptions/home-exemption/"
+      }
+    ]
+  },
+  "uncertain": [
+    "County home exemption amounts, tax rates and due dates were not read (county pages render content dynamically); left null.",
+    "Only 2 property facts: all property tax rules are county-level and the brief excludes local rates.",
+    "Kalawao County has no county government or surcharge; not covered.",
+    "Effective date of the 4% GET rate not stated on the pages read.",
+    "TAT on cruise fares: Announcement 2026-01 reports a court enjoinment as applied to cruise ships; details not read."
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Kansas",
+  "abbr": "KS",
+  "slug": "kansas",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6.5,
+    "rateNote": "State retailers' sales tax of 6.5% (K.S.A. 79-3603); since January 1, 2025, 18% of it goes to the state highway fund. The state rate on food and food ingredients is 0% since January 1, 2025 (K.S.A. 79-3603d). Cities and counties add local sales taxes.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "city retailers' sales taxes (general and special purpose) and countywide retailers' sales taxes, administered and collected by the state",
+      "cap": null,
+      "capNote": "K.S.A. 12-189: a city rate may not exceed 2% for general purposes plus 1% for special purposes (special-purpose city taxes expire after 10 years); a countywide rate may not exceed 1%, with statutory exceptions allowing 1.25% to 2% or more in named counties.",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": null,
+      "url": "https://www.kslegislature.gov/b2025_26/laws/012_000_0000_chapter/012_001_0000_article/012_001_0089_section/012_001_0089_k/"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": 0,
+      "note": "The state rate on food and food ingredients fell from 6.5% to 4% on January 1, 2023, 2% on January 1, 2024 and 0% on January 1, 2025. Prepared food stays taxable, except bakery items, unheated food sold by weight or volume and food needing further cooking when sold without utensils. The state 0% rate does not by itself remove local sales taxes.",
+      "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_036_0000_article/079_036_0003d_section/079_036_0003d_k/"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption; clothing is tangible personal property taxed at 6.5% plus local tax.",
+      "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_036_0000_article/079_036_0003_section/079_036_0003_k/"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_036_0000_article/079_036_0006_section/079_036_0006_k/"
+    },
+    "otherRates": [
+      {
+        "item": "residential gas, electricity, heat and heating fuels (propane, LP gas, coal, wood)",
+        "rate": 0,
+        "note": "State rate 0% for noncommercial residential use and agricultural use.",
+        "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_036_0000_article/079_036_0003_section/079_036_0003_k/"
+      },
+      {
+        "item": "sales within a redevelopment district established under K.S.A. 74-8921",
+        "rate": 2,
+        "note": "Additional 2% tax until the district's bonds are paid.",
+        "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_036_0000_article/079_036_0003_section/079_036_0003_k/"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "Kansas has no sales tax holiday.",
+    "useTax": {
+      "rate": 6.5,
+      "note": "Compensating use tax of 6.5% on items used, stored or consumed in Kansas without Kansas sales tax (K.S.A. 79-3703).",
+      "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_037_0000_article/079_037_0003_section/079_037_0003_k/"
+    },
+    "facts": [
+      {
+        "text": "Kansas phased its state grocery tax down from 6.5% to 4% (2023), 2% (2024) and 0% on January 1, 2025.",
+        "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_036_0000_article/079_036_0003d_section/079_036_0003d_k/"
+      },
+      {
+        "text": "Bread, bagels, cakes, cookies and other bakery items count as groceries at 0% when sold without eating utensils.",
+        "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_036_0000_article/079_036_0003d_section/079_036_0003d_k/"
+      },
+      {
+        "text": "A city can levy up to 2% general plus 1% special-purpose sales tax, and special-purpose taxes expire after 10 years.",
+        "url": "https://www.kslegislature.gov/b2025_26/laws/012_000_0000_chapter/012_001_0000_article/012_001_0089_section/012_001_0089_k/"
+      },
+      {
+        "text": "Since January 1, 2025, 18% of the state sales tax is dedicated to the state highway fund.",
+        "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_036_0000_article/079_036_0003_section/079_036_0003_k/"
+      },
+      {
+        "text": "Home heating (residential gas, electricity, propane, wood) is exempt from the state sales tax.",
+        "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_036_0000_article/079_036_0003_section/079_036_0003_k/"
+      }
+    ]
+  },
+  "property": {
+    "levied": "counties, cities, townships, school districts (including the statewide school levy under K.S.A. 72-5142) and special districts",
+    "assessment": {
+      "text": "Assessed value is a percentage of appraised value set by class: residential real property 11.5%; commercial and industrial real property 25%; agricultural land 30% of its use value; vacant lots 12%; other real property 30%.",
+      "ratio": 11.5,
+      "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_014_0000_article/079_014_0039_section/079_014_0039_k/"
+    },
+    "homestead": {
+      "name": "Residential exemption from the statewide school levy",
+      "amountType": "value-exemption",
+      "amount": 75000,
+      "text": "Since tax year 2024, the first $75,000 of appraised value of residential property is exempt from the statewide school levy (K.S.A. 72-5142); local levies still apply to the full value.",
+      "applyBy": "Automatic.",
+      "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_002_0000_article/079_002_0001x_section/079_002_0001x_k/"
+    },
+    "otherRelief": [],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "Kansas homes are assessed at 11.5% of appraised value, versus 25% for commercial and industrial property.",
+        "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_014_0000_article/079_014_0039_section/079_014_0039_k/"
+      },
+      {
+        "text": "The first $75,000 of a home's appraised value has been exempt from the statewide school levy since tax year 2024 (2024 special session law).",
+        "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_002_0000_article/079_002_0001x_section/079_002_0001x_k/"
+      },
+      {
+        "text": "Farmland is taxed on its agricultural use value, not its market value.",
+        "url": "https://www.kslegislature.gov/b2025_26/laws/079_000_0000_chapter/079_014_0000_article/079_014_0039_section/079_014_0039_k/"
+      }
+    ]
+  },
+  "uncertain": [
+    "ksrevenue.gov (Kansas Department of Revenue) was unreachable on 2026-10-05 (connection timeout from curl, WebFetch and a real browser); all facts come from the Kansas Statutes on kslegislature.gov. No DOR rate lookup URL could be verified (lookupUrl null).",
+    "Homestead Property Tax Refund and the senior/veteran SAFE refund (administered by KDOR) not documented because the KDOR site was down.",
+    "Property tax due dates (customarily December 20 and May 10 halves) not read on an official page; left null.",
+    "effectiveSince of the 6.5% rate not recorded.",
+    "groceriesTaxedLocally set to true on 2026-10-05 from the statute note: the 0% state food rate does not by itself remove local sales taxes."
+  ]
+}

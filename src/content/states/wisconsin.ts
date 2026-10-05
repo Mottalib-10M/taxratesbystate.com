@@ -1,0 +1,36 @@
+import { defineState } from '../../lib/page-types';
+import { st, usd, rate, eff, tx, ptx, rank } from '../../lib/kit';
+
+const s = st('wisconsin');
+const S = s.sales, C = s.census;
+// County and city rates, as written in the Department of Revenue rate note: 0.5% in most counties,
+// 0.9% in Milwaukee County, 2% for the city of Milwaukee.
+const COUNTY = 0.5, MKE_COUNTY = 0.9, MKE_CITY = 2;
+const mkeLocal = Math.round((MKE_COUNTY + MKE_CITY) * 100) / 100;
+const mke = Math.round((S.stateRate + mkeLocal) * 100) / 100;
+const resort = S.otherRates?.[0]?.rate ?? 0;
+const phone = 900;
+const phoneCounty = tx('wisconsin', phone, 'general', COUNTY);
+const phoneMke = tx('wisconsin', phone, 'general', mkeLocal);
+const v = C.medianValue;
+const effRank = rank(s, (x) => x.census.effectiveRate);
+
+export default defineState({
+  slug: 'wisconsin',
+  title: `Wisconsin Sales Tax 2026: ${rate(S.stateRate)} State, ${rate(mke)} in Milwaukee`,
+  description: `Wisconsin sales tax in 2026: ${rate(S.stateRate)} state rate, ${rate(COUNTY)} in most counties, ${rate(mke)} in the city of Milwaukee, resort taxes up north, and property tax at ${eff(C.effectiveRate)} of value.`,
+  intro: `A ${rate(S.stateRate)} state rate plus a ${rate(COUNTY)} county tax in most places, one city with a sales tax of its own, and property tax bills that arrive with state credits already subtracted.`,
+  resume: `Wisconsin charges a ${rate(S.stateRate)} state sales tax, and seventy counties add a ${rate(COUNTY)} county tax, so ${rate(S.stateRate + COUNTY)} is what most shoppers pay. Milwaukee is the outlier: since January 1, 2024, Milwaukee County charges ${rate(MKE_COUNTY)} and the city of Milwaukee, the only Wisconsin municipality with a sales tax of its own, ${rate(MKE_CITY)}, for ${rate(mke)} in all. Designated resort areas such as Wisconsin Dells and Lake Delton add a premier resort area tax of up to ${rate(resort)} on certain sellers. Groceries and prescription drugs are exempt, though candy, soft drinks, supplements and prepared food are taxed; clothing is taxed, and there is no holiday. Property tax runs above the national middle, with a 2024 Census median of ${usd(C.medianTax)} on a ${usd(C.medianValue)} home, ${eff(C.effectiveRate)} of value, ranked ${effRank} of 51. Wisconsin has no homestead exemption; instead, bills show state-funded credits, and an income-based Homestead credit goes to low- and moderate-income homeowners and renters.`,
+  sales: (h) => `<p>Wisconsin's local sales tax is mostly a county matter, and the county rate is the same nearly everywhere it applies. A ${h.usd(phone)} phone costs ${h.usd(phoneCounty.tax, 2)} in tax in a county charging ${h.rate(COUNTY)}, and ${h.usd(phoneMke.tax, 2)} inside the city of Milwaukee, where the county's ${h.rate(MKE_COUNTY)} and the city's ${h.rate(MKE_CITY)} stack on the state rate. Both Milwaukee increases date from January 1, 2024. The Department of Revenue's address tool confirms which county and city taxes apply; enter the local part, ${h.num(COUNTY, 1)} or ${h.num(mkeLocal, 1)}, in the calculator above.</p>
+<p>Tourism towns carry a third layer. The premier resort area tax is charged by designated municipalities on certain sellers: ${h.rate(resort)} in Wisconsin Dells and Lake Delton, 0.5% in Ephraim, Sister Bay, Rhinelander, Stockholm, Eagle River and Bayfield, and since July 1, 2026 in Sturgeon Bay and Minocqua as well. Milwaukee County has its own exposition district taxes on visitors: ${h.rate(S.otherRates?.[1]?.rate ?? 0)} on food and beverages, a 3% basic room tax, a 3% rental car tax, and an extra 7% room tax inside the city of Milwaukee.</p>
+<p>At the grocery store, the exemption covers food and food ingredients but stops at candy, soft drinks, dietary supplements and prepared food, which all pay the full combined rate. There is no sales tax holiday. Goods bought out of state without Wisconsin tax owe ${h.rate(S.useTax?.rate ?? S.stateRate)} use tax plus the county or city part.</p>`,
+  property: (h) => `<p>Local assessors value property at market value as of January 1, and the full value law keeps them honest: each municipality must come within 10% of market value at least once every five years, and one that stays outside that range for six years in a row faces a revaluation supervised by the state. The Department of Revenue then equalizes values across municipalities to divide county and school levies fairly, and it assesses manufacturing property itself. Counties, cities, villages, towns, school districts and technical colleges all levy, and the municipality prepares the bill.</p>
+<p>That bill arrives by the third Monday in December with credits already subtracted: the school levy tax credit, the first dollar credit, and the lottery and gaming credit for a primary residence. Using the Census ratio of ${h.eff(C.effectiveRate)}, a ${h.usd(320000)} house lands near ${h.usd(ptx('wisconsin', 320000))} a year, and the median home of ${h.usd(v)} near ${h.usd(ptx('wisconsin', v))}.</p>
+<p>Unless the municipality sets another schedule, pay in full by January 31, or pay the first installment by January 31 and the second by July 31; miss the first, and the whole balance becomes delinquent on February 1. Some places allow more installments, which the local clerk confirms. Separate from the bill, the Homestead credit is paid directly to low- and moderate-income homeowners and renters, based on household income and property tax or rent. Veterans and surviving spouses receive a refundable credit rather than an exemption, and WHEDA lends to qualifying older homeowners who need to defer their taxes.</p>`,
+  faqs: [
+    { q: 'Why is sales tax higher in Milwaukee than in the rest of Wisconsin?', a: `Because the city of Milwaukee is the only Wisconsin municipality with its own sales tax, ${rate(MKE_CITY)}, and Milwaukee County charges ${rate(MKE_COUNTY)} instead of the usual ${rate(COUNTY)}, both since January 1, 2024. Added to the ${rate(S.stateRate)} state rate, that makes ${rate(mke)}. A ${usd(phone)} purchase in the city carries ${usd(phoneMke.tax, 2)} of tax, against ${usd(phoneCounty.tax, 2)} in a county with the standard ${rate(COUNTY)} rate.` },
+    { q: 'What is the premier resort area tax in Wisconsin?', a: `A local sales tax charged on certain sellers in designated tourist municipalities. It is ${rate(resort)} in Wisconsin Dells and Lake Delton and 0.5% in Ephraim, Sister Bay, Rhinelander, Stockholm, Eagle River and Bayfield. Sturgeon Bay and Minocqua joined at 0.5% on July 1, 2026. It comes on top of Wisconsin's ${rate(S.stateRate)} state rate and the county tax.` },
+    { q: 'Does Wisconsin have a homestead exemption on property tax?', a: `No. Wisconsin does not exempt any part of a home's value. Instead, property tax bills subtract state-funded credits, including the lottery and gaming credit for a primary residence, the first dollar credit and the school levy tax credit. Low- and moderate-income homeowners and renters can also claim the separate Homestead credit, an income-based payment from the state, not a reduction of assessed value.` },
+  ],
+  related: ['minnesota', 'illinois', 'michigan', 'iowa', 'local-sales-tax-rates', 'property-tax-by-state'],
+});

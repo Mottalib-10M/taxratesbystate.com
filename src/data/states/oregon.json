@@ -1,0 +1,163 @@
+{
+  "name": "Oregon",
+  "abbr": "OR",
+  "slug": "oregon",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": false,
+    "stateRate": 0,
+    "rateNote": "Oregon has no general sales or use/transaction tax. It levies a 0.5% vehicle privilege tax (on dealers selling new vehicles) and a matching vehicle use tax on new vehicles bought out of state.",
+    "effectiveSince": null,
+    "scheduledChanges": [
+      {
+        "date": "2027-01-01",
+        "rate": 2.75,
+        "what": "State transient lodging tax (not a sales tax) rises from 1.5% to 2.75%; the extra 1.25% must appear on receipts as a 'nature conservation fee'.",
+        "url": "https://www.oregon.gov/dor/programs/businesses/Pages/lodging.aspx"
+      }
+    ],
+    "local": {
+      "allowed": false,
+      "levies": "No general local sales tax per the Department of Revenue; cities and counties levy their own transient lodging taxes.",
+      "cap": null,
+      "capNote": "Local lodging tax rates are set by each city or county.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://www.oregon.gov/dor/programs/businesses/Pages/lodging.aspx"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "No general sales tax, so groceries are not taxed.",
+      "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx"
+    },
+    "clothing": {
+      "treatment": "exempt",
+      "threshold": null,
+      "note": "No general sales tax, so clothing is not taxed.",
+      "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx"
+    },
+    "otherRates": [
+      {
+        "item": "new vehicles (vehicle privilege tax / vehicle use tax)",
+        "rate": 0.5,
+        "note": "0.5% of the retail price of taxable vehicles (7,500 miles or less, 26,000 lb GVWR or less, never titled in Oregon); privilege tax on Oregon dealers, use tax on out-of-state dealer purchases, due within 30 days.",
+        "url": "https://www.oregon.gov/dor/programs/businesses/Pages/vehicle-privilege-and-use-taxes.aspx"
+      },
+      {
+        "item": "state transient lodging tax",
+        "rate": 1.5,
+        "note": "1.5% for stays ending on or before December 31, 2026; 2.75% from January 1, 2027. Local lodging taxes are additional.",
+        "url": "https://www.oregon.gov/dor/programs/businesses/Pages/lodging.aspx"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "Not applicable: Oregon has no general sales tax.",
+    "useTax": {
+      "rate": 0,
+      "note": "No general use tax; only the 0.5% vehicle use tax applies to new vehicles bought from out-of-state dealers.",
+      "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx"
+    },
+    "facts": [
+      {
+        "text": "Oregon has no general sales or use tax; the only use tax is the vehicle use tax on new vehicles bought out of state, which must be paid before titling.",
+        "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx"
+      },
+      {
+        "text": "The 0.5% vehicle privilege tax and vehicle use tax both began on January 1, 2018.",
+        "url": "https://www.oregon.gov/dor/programs/businesses/Pages/vehicle-privilege-and-use-taxes.aspx"
+      },
+      {
+        "text": "Corporate Activity Tax (since 2020): $250 plus 0.57% of Oregon taxable commercial activity above $1 million, paid by the business, not itemized as a sales tax.",
+        "url": "https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx"
+      },
+      {
+        "text": "Businesses must register for the CAT within 30 days of reaching $750,000 of Oregon commercial activity in a year.",
+        "url": "https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx"
+      },
+      {
+        "text": "The state lodging tax is 1.5% through 2026 and 2.75% from January 1, 2027; stays that start in 2026 and end in 2027 pay the new rate on the whole stay.",
+        "url": "https://www.oregon.gov/dor/programs/businesses/Pages/lodging.aspx"
+      },
+      {
+        "text": "Oregon law does not let residents reduce Oregon taxes for sales tax paid in another state.",
+        "url": "https://www.oregon.gov/dor/programs/businesses/Pages/sales-tax.aspx"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local only: more than 1,200 local taxing districts (counties, cities, school districts, special districts); county assessors value most property and collect the tax",
+    "assessment": {
+      "text": "Each property is taxed on the lesser of its real market value (RMV) and its maximum assessed value (MAV). Under Measure 50 (1997) MAV can grow no more than 3% a year unless the property changes (new structure, improvement, partition). Measure 5 (1990) caps operating taxes at $5 per $1,000 of RMV for schools and $10 per $1,000 for general government.",
+      "ratio": null,
+      "url": "https://www.oregon.gov/dor/programs/property/Pages/Personal-Property.aspx",
+      "capped": true,
+      "capText": "Each property is taxed on the lesser of its real market value (RMV) and its maximum assessed value (MAV). Under Measure 50 (1997) MAV can grow no more than 3% a year unless the property changes (new structure, improvement, partition). Measure 5 (1990) caps operating taxes at $5 per $1,000 of RMV for schools and $10 per $1,000 for general government.",
+      "capUrl": "https://www.oregon.gov/dor/programs/property/Pages/Personal-Property.aspx"
+    },
+    "homestead": {
+      "name": "None (no statewide homestead exemption)",
+      "amountType": "none",
+      "amount": null,
+      "text": "Oregon has no statewide general homestead exemption and no exemption based only on age or income; seniors and disabled homeowners can instead defer taxes.",
+      "applyBy": null,
+      "url": "https://www.oregon.gov/dor/programs/property/Pages/exemptions.aspx"
+    },
+    "otherRelief": [
+      {
+        "name": "Senior and Disabled Property Tax Deferral",
+        "text": "The state pays the county taxes each November 15 and places a lien accruing 6% simple interest. 2026 household income limit $70,000; RMV minimum cap $301,000. Apply to the county assessor January 1-April 15 (late until December 1 with a fee).",
+        "url": "https://www.oregon.gov/dor/programs/property/Pages/deferral.aspx"
+      },
+      {
+        "name": "Disabled Veteran or Surviving Spouse Exemption",
+        "text": "Exempts a portion of the homestead's assessed value for disabled veterans and surviving spouses or registered domestic partners.",
+        "url": "https://www.oregon.gov/dor/programs/property/Pages/exemptions.aspx"
+      },
+      {
+        "name": "Active-Duty Military Exemption",
+        "text": "Deployed Oregon National Guard or Reserve members may exempt part of their primary residence's assessed value.",
+        "url": "https://www.oregon.gov/dor/programs/property/Pages/exemptions.aspx"
+      }
+    ],
+    "dueDates": {
+      "text": "Due November 15. Full payment by November 15 earns a 3% discount and two-thirds payment a 2% discount; otherwise thirds are due November 15, February 15 and May 15.",
+      "url": "https://www.oregon.gov/dor/programs/gov-research/Documents/FY%202025-26%20Oregon%20Property%20Tax%20Statistics%20Report-UA.pdf"
+    },
+    "facts": [
+      {
+        "text": "In FY 2025-26 property taxes imposed averaged $17.52 per $1,000 of assessed value and $9.40 per $1,000 of real market value.",
+        "url": "https://www.oregon.gov/dor/programs/gov-research/Documents/FY%202025-26%20Oregon%20Property%20Tax%20Statistics%20Report-UA.pdf"
+      },
+      {
+        "text": "When Measure 5 limits are exceeded, taxes are 'compressed': local option levies are reduced first.",
+        "url": "https://www.oregon.gov/dor/programs/property/Pages/Personal-Property.aspx"
+      },
+      {
+        "text": "Minor construction under $18,200 in one year or $45,000 over five years doesn't trigger an exception to the 3% MAV cap; those thresholds are CPI-indexed after 2024.",
+        "url": "https://www.oregon.gov/dor/programs/property/Pages/Personal-Property.aspx"
+      },
+      {
+        "text": "Household furnishings, personal belongings, automobiles, crops and business inventories are not subject to property tax.",
+        "url": "https://www.oregon.gov/dor/programs/property/Pages/Personal-Property.aspx"
+      },
+      {
+        "text": "Value appeals go to the county Property Value Appeals Board and must be filed by December 31.",
+        "url": "https://www.oregon.gov/dor/programs/property/Pages/Personal-Property.aspx"
+      },
+      {
+        "text": "Local option taxes are limited to five years for operations and ten years for capital construction.",
+        "url": "https://www.oregon.gov/dor/programs/property/Pages/Personal-Property.aspx"
+      }
+    ]
+  },
+  "uncertain": [
+    "Some Oregon cities may levy local taxes on specific items (e.g. meals); not verified on an official page, so local.allowed reflects only the DOR statement that Oregon has no general sales tax.",
+    "Disabled veteran exemption dollar amounts for 2025-26 not read.",
+    "Oregon Legislature ORS site was unreachable from this network."
+  ]
+}

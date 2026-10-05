@@ -1,0 +1,55 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { breadcrumbSchema, webPageSchema } from '../../lib/seo';
+import { STATES, CENSUS, FACTS_VERIFIED } from '../../lib/engine/states';
+import { salesTax, preTaxFromTotal } from '../../lib/engine/sales';
+import { propertyTax } from '../../lib/engine/property';
+import { table, ext } from '../../lib/helpers';
+import { usd, rate, eff, day } from '../../lib/fmt';
+import { SOURCES } from '../../lib/engine/params';
+const lang = 'en';
+const title = 'Sales Tax and Property Tax Method 2026: Rules and Sources';
+const description = 'How State Tax Calc works out sales and property tax in 2026: state rates, the local rate you enter, grocery and clothing rules, reverse tax, mills, Census data.';
+const path = route('method', lang);
+const ny = STATES.find((s) => s.slug === 'new-york');
+const ex1 = ny ? salesTax({ state: ny, price: 95, category: 'clothing', localRate: 4.5 }) : null;
+const ex2 = ny ? salesTax({ state: ny, price: 120, category: 'clothing', localRate: 4.5 }) : null;
+const tx = STATES.find((s) => s.slug === 'texas');
+const rev = tx ? preTaxFromTotal(108.25, { state: tx, localRate: 2 }) : null;
+const thr = STATES.filter((s) => s.sales.clothing.treatment === 'exempt-under-threshold');
+const nEx = thr.filter((s) => s.sales.clothing.thresholdMode === 'excess').length;
+const pb = propertyTax({ marketValue: 300000, assessmentRatio: 40, exemption: 2000, millRate: 30 });
+const rows = STATES.map((s) => [s.name, s.sales.hasStateSalesTax ? rate(s.sales.stateRate) : 'none', s.sales.local.url ? ext(s.sales.local.url, new URL(s.sales.local.url).hostname.replace(/^www\./, '')) : '', day(s.verified), eff(s.census.effectiveRate)]);
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: 'How we calculate', description, path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'How we calculate', path }])]} breadcrumbs={[{ label: 'How we calculate' }]}>
+  <header class="mb-6"><h1 class="font-serif text-3xl font-bold text-navy-900 md:text-4xl">How State Tax Calc calculates</h1>
+  <p class="mt-3 text-lg text-navy-700">Two engines, one rule: every rate comes from a dated official page, and every figure in a sentence is computed, not typed.</p></header>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h2>Sales tax: the state part</h2>
+    <p>For each of the 50 states and the District of Columbia, a data file holds the statewide rate, whether local governments may add their own tax, what happens to groceries, clothing and prescription drugs, the 2026 sales tax holidays, and the address of the official page each fact was read on. The latest reading is dated {day(FACTS_VERIFIED)}. The calculator multiplies the taxable part of the price by the state rate that applies to the category you choose: zero for an exempt category, the reduced rate where a state taxes food at a lower rate, the full rate otherwise.</p>
+    <h2>Sales tax: the local part, entered by you</h2>
+    <p>Counties, cities, transit districts and special districts add their own rates in most states, and they change them at the start of a quarter, often with a few weeks' notice. We do not publish those rates: a city rate copied from a third-party table is the error we see most often elsewhere. The calculator asks for the local part and links to the address lookup that the state itself maintains. Where a state exempts groceries from its own tax but allows localities to tax them, the local rate you enter is applied to groceries; where the exemption covers local taxes too, it is not.</p>
+    <h2>Clothing thresholds, per item</h2>
+    <p>{thr.length} states ({thr.map((s) => s.name).join(', ')}) exempt clothing up to a price per item. {nEx} of them tax only the part of the price above the threshold; {thr.length - nEx === 1 ? 'the other one exempts the whole item below the threshold and taxes the whole item at or above it.' : `the other ${thr.length - nEx} exempt the whole item below the threshold and tax the whole item at or above it.`} The engine applies the rule of the state you pick, item by item.{ex1 && ex2 && ` In New York, a $95 shirt owes no state tax (state part ${usd(ex1.stateTax, 2)}) while a $120 coat owes the 4% state tax on its full price (${usd(ex2.stateTax, 2)}); the local part depends on whether the county elected the exemption.`}</p>
+    <h2>Reverse calculation</h2>
+    <p>From a receipt total, the calculator finds the pre-tax price by solving the same forward calculation, so thresholds and exempt categories are handled exactly as in the forward direction. For a single rate it amounts to total ÷ (1 + rate).{rev && ` Example: $108.25 paid in Texas with a 2% local rate gives a price of ${usd(rev.price, 2)} before tax.`}</p>
+    <h2>Rounding</h2>
+    <p>Sales tax is shown to the cent, because that is how it is charged; state and local parts are each rounded to the cent. Registers round on the whole receipt and some states publish bracket tables, so a receipt can differ from our figure by a cent or two. Property tax is shown in whole dollars.</p>
+    <h2>Property tax: two ways to estimate a bill</h2>
+    <p><strong>Typical rate.</strong> For each state we divide the median real estate taxes paid by owner-occupants by the median value of their homes, both from the {SOURCES.censusB25103.label.split(',')[0]}'s American Community Survey {CENSUS.year} 1-year estimates (tables B25103 and B25077, read on {day(CENSUS.retrieved_at)}). The ratio says what a typical owner pays as a share of value, homestead exemptions and assessment caps included. It is a statewide median: two neighboring counties can differ by a factor of two.</p>
+    <p><strong>Your own bill.</strong> Market value × assessment ratio = assessed value; minus exemptions = taxable value; × mill rate ÷ 1,000 = tax; minus credits. One mill is one dollar per $1,000 of taxable value, or 0.1%. Example: a $300,000 home assessed at 40%, with a $2,000 exemption and a 30-mill levy, pays {usd(pb.tax)} a year ({eff(pb.effectiveRate / 100)} of market value). Your bill or your assessor's site gives the assessed value and the combined mill rate.</p>
+    <h2>What the tools do not do</h2>
+    <ul>
+      <li>They do not know the local sales tax of an address; you type it.</li>
+      <li>They do not cover special excise taxes (fuel, tobacco, alcohol, lodging, rental cars) unless a state page mentions them.</li>
+      <li>They do not apply every local property tax exemption, freeze or circuit breaker: the state pages list the main ones and the bill mode lets you enter yours.</li>
+      <li>They do not file anything and are not tax advice.</li>
+    </ul>
+    <h2>Tests</h2>
+    <p>The engines are pure functions tested on every build: the general rate of each state, exempt and reduced grocery rates, the clothing threshold rules, the reverse calculation on each state, and property bills computed by hand from assessed value and mills. A failing test blocks publication.</p>
+    <h2>Every state, its source and its reading date</h2>
+    <Fragment set:html={table(['State', 'State rate', 'Official page', 'Read on', 'Property tax (Census)'], rows, `Property tax: ${SOURCES.censusB25103.label}; ${SOURCES.censusB25077.label}.`, ['l', 'r', 'l', 'l', 'r'])} />
+    <p>Census tables: <a href={SOURCES.censusB25103.url} target="_blank" rel="nofollow noopener noreferrer">B25103</a>, <a href={SOURCES.censusB25077.url} target="_blank" rel="nofollow noopener noreferrer">B25077</a>, and the <a href={SOURCES.censusAcsMethod.url} target="_blank" rel="nofollow noopener noreferrer">ACS methodology</a>. Questions or corrections: <a href={route('contact', lang)}>contact page</a>.</p>
+  </div>
+</PageLayout>

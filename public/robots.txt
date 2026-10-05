@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /*?*
+
+Sitemap: https://us-sales-property-tax.example/sitemap-index.xml

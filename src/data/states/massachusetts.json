@@ -1,0 +1,158 @@
+{
+  "name": "Massachusetts",
+  "abbr": "MA",
+  "slug": "massachusetts",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6.25,
+    "rateNote": "6.25% state sales and use tax on tangible personal property and telecommunications services. There is no general local sales tax; cities and towns may add a 0.75% local option meals excise on restaurant meals.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": false,
+      "levies": "no local general sales tax; cities and towns may adopt a local option meals excise (0.75%) and a local room occupancy excise",
+      "cap": null,
+      "capNote": "Local option meals excise: 0.75% on top of the 6.25% sales tax on meals (7% total).",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://www.mass.gov/guides/sales-tax-on-meals"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food for human consumption is exempt (other than meals sold by restaurants, which are taxable including take-out). Baked goods sold in units of 6 or more for take-out and vending snacks under $3.50 are exempt; vitamins and dietary supplements are taxable.",
+      "url": "https://www.mass.gov/guides/sales-and-use-tax"
+    },
+    "clothing": {
+      "treatment": "exempt-under-threshold",
+      "threshold": 175,
+      "note": "Clothing and footwear are exempt up to $175 per item; above that, tax applies only to the amount over $175 (a $200 suit pays $1.56). Athletic or protective gear, handbags, jewelry and accessories are taxable.",
+      "url": "https://www.mass.gov/guides/sales-and-use-tax",
+      "thresholdMode": "excess"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.mass.gov/guides/sales-and-use-tax"
+    },
+    "otherRates": [
+      {
+        "item": "restaurant meals (including take-out)",
+        "rate": 6.25,
+        "note": "Plus 0.75% local option meals excise where adopted.",
+        "url": "https://www.mass.gov/guides/sales-tax-on-meals"
+      },
+      {
+        "item": "motor vehicles and trailers",
+        "rate": 6.25,
+        "note": "The buyer pays the tax directly to the Commonwealth (Form RTA) within 10 days of purchase, not to the dealer.",
+        "url": "https://www.mass.gov/guides/sales-and-use-tax"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Massachusetts Sales Tax Holiday",
+        "start": "2026-08-08",
+        "end": "2026-08-09",
+        "items": "most retail items of $2,500 or less bought for personal use; excludes meals, motor vehicles, motorboats, telecom, utilities, tobacco, marijuana and alcohol",
+        "url": "https://www.mass.gov/info-details/sales-tax-holiday-frequently-asked-questions"
+      }
+    ],
+    "holidayNote": null,
+    "useTax": {
+      "rate": 6.25,
+      "note": "6.25% on items used in Massachusetts on which no (or less) sales tax was paid; individuals report it on Form 1 (with an optional 'safe harbor' estimate for items under $1,000) or Form ST-11, due April 15.",
+      "url": "https://www.mass.gov/guides/sales-and-use-tax"
+    },
+    "facts": [
+      {
+        "text": "Clothing is tax-free up to $175 per item; above that only the excess is taxed, so a $200 suit carries $1.56 of tax.",
+        "url": "https://www.mass.gov/guides/sales-and-use-tax"
+      },
+      {
+        "text": "The 2026 sales tax holiday was Saturday August 8 and Sunday August 9: items up to $2,500 each were tax-free for personal use.",
+        "url": "https://www.mass.gov/info-details/sales-tax-holiday-frequently-asked-questions"
+      },
+      {
+        "text": "During the holiday, an item costing more than $2,500 is taxed on its full price, not just the excess.",
+        "url": "https://www.mass.gov/info-details/sales-tax-holiday-frequently-asked-questions"
+      },
+      {
+        "text": "Restaurant meals cost 7% in towns that adopted the 0.75% local option meals excise.",
+        "url": "https://www.mass.gov/guides/sales-tax-on-meals"
+      },
+      {
+        "text": "Digital music, video and e-books are not taxed when delivered electronically, but software and remote software access are.",
+        "url": "https://www.mass.gov/guides/sales-and-use-tax"
+      },
+      {
+        "text": "Residential electricity, gas and heating fuel are exempt, as is local residential phone service up to $30 a month.",
+        "url": "https://www.mass.gov/guides/sales-and-use-tax"
+      },
+      {
+        "text": "Remote sellers must register once their Massachusetts sales exceed $100,000 in a calendar year.",
+        "url": "https://www.mass.gov/guides/sales-and-use-tax"
+      }
+    ]
+  },
+  "property": {
+    "levied": "cities and towns only (local property tax); the Department of Revenue's Division of Local Services certifies assessments and enforces Proposition 2½",
+    "assessment": {
+      "text": "Local assessors must value all property at its full and fair cash value as of January 1 and classify it as residential, open space, commercial or industrial; communities may shift part of the tax burden from residential to commercial, industrial and personal property. DOR reviews each community's assessments every five years. Proposition 2½ (G.L. c. 59, s. 21C) limits each community's total levy; overrides and exclusions require voter approval.",
+      "ratio": 100,
+      "url": "https://www.mass.gov/guides/massachusetts-municipal-property-taxes"
+    },
+    "homestead": {
+      "name": "No statewide homestead exemption",
+      "amountType": "none",
+      "amount": null,
+      "text": "Massachusetts has no statewide homestead exemption. Relief comes from local exemptions under G.L. c. 59, s. 5 (seniors, surviving spouses, veterans, blind persons) granted by local assessors, and from the state Senior Circuit Breaker income tax credit.",
+      "applyBy": "Exemptions: apply to the local assessors.",
+      "url": "https://www.mass.gov/info-details/massachusetts-law-about-property-taxes"
+    },
+    "otherRelief": [
+      {
+        "name": "Senior Circuit Breaker Tax Credit",
+        "text": "Refundable income tax credit for homeowners and renters 65+ whose property tax (plus half of water/sewer) exceeds 10% of income; maximum $2,820 for tax year 2025; income limits $75,000 single, $94,000 head of household, $112,000 joint; home assessed at no more than $1,298,000.",
+        "url": "https://www.mass.gov/info-details/senior-circuit-breaker-tax-credit"
+      },
+      {
+        "name": "Local exemptions (G.L. c. 59, s. 5)",
+        "text": "Exemptions for blind persons, qualifying seniors, surviving spouses, minor children and elderly persons, and veterans, filed with local assessors.",
+        "url": "https://www.mass.gov/guides/massachusetts-municipal-property-taxes"
+      }
+    ],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "Seniors can get up to $2,820 back on their income tax (2025) when property tax exceeds 10% of their income.",
+        "url": "https://www.mass.gov/info-details/senior-circuit-breaker-tax-credit"
+      },
+      {
+        "text": "Since 1978, cities and towns may tax residential property at a lower rate than commercial and industrial property (classification).",
+        "url": "https://www.mass.gov/guides/massachusetts-municipal-property-taxes"
+      },
+      {
+        "text": "The Department of Revenue certifies each community's property values every five years.",
+        "url": "https://www.mass.gov/guides/massachusetts-municipal-property-taxes"
+      },
+      {
+        "text": "Proposition 2½ limits how much property tax a town can raise in total; going above requires an override or exclusion vote.",
+        "url": "https://www.mass.gov/info-details/proposition-2-12-and-tax-rate-process"
+      },
+      {
+        "text": "Since November 1, 2024, an owner whose home is foreclosed for unpaid taxes is entitled to the excess equity from the sale.",
+        "url": "https://www.mass.gov/info-details/massachusetts-law-about-property-taxes"
+      }
+    ]
+  },
+  "uncertain": [
+    "mass.gov and malegislature.gov block automated requests (HTTP 403 / connection refused); pages were read through a real browser session. URLs respond in a browser.",
+    "Proposition 2½ numeric limits (levy ceiling 2.5% of full and fair cash value, 2.5% annual levy growth) and the local-option residential exemption (up to 35% of average value) were not read on a readable official page (DLS primer PDF and videos not extractable): not stated as figures.",
+    "A 2026 state ballot question involves sales tax revenue (Nature for All Fund) per the mass.gov search snippet; the Secretary of State's page could not be read, so any effect on the rate is unverified.",
+    "Property tax due dates (quarterly or semiannual, set locally) not recorded."
+  ]
+}

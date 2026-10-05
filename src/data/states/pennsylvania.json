@@ -1,0 +1,153 @@
+{
+  "name": "Pennsylvania",
+  "abbr": "PA",
+  "slug": "pennsylvania",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6.0,
+    "rateNote": "State rate 6%. By law a 1% local tax is added in Allegheny County (total 7%) and a 2% local tax in Philadelphia (total 8%).",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "counties and the City of Philadelphia may impose a local sales, use and hotel occupancy tax; only Allegheny County (1%) and Philadelphia (2%) do",
+      "cap": null,
+      "capNote": "Local rates fixed by law: 1% Allegheny County, 2% Philadelphia. As of January 2010 only these two have imposed local tax.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food that is not ready-to-eat (grocery store food) is exempt, as are candy and gum; ready-to-eat food from restaurants and caterers is taxable.",
+      "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax"
+    },
+    "clothing": {
+      "treatment": "exempt",
+      "threshold": null,
+      "note": "Most clothing is exempt regardless of price; formal day or evening apparel, fur articles, sporting clothing, accessories and ornamental wear are taxable.",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax"
+    },
+    "otherRates": [
+      {
+        "item": "hotel occupancy (stays under 30 days)",
+        "rate": 6.0,
+        "note": "Same rate as sales tax, plus 1% local hotel occupancy tax where a local tax is imposed; also applies to rentals booked through online brokers.",
+        "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf"
+      },
+      {
+        "item": "motor vehicle leases (PTA tax)",
+        "rate": 3.0,
+        "note": "3% Public Transportation Assistance tax on total lease payments (30+ days), on top of sales tax.",
+        "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/tire-and-vehicle-rental-taxes"
+      },
+      {
+        "item": "motor vehicle rentals (Vehicle Rental Tax)",
+        "rate": 2.0,
+        "note": "2% Vehicle Rental Tax on rentals of 29 days or less by companies with 5+ vehicles, plus a $2 per day PTA fee and sales tax.",
+        "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/tire-and-vehicle-rental-taxes"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "No sales tax holiday is listed by the Department of Revenue; most clothing, groceries and school textbooks are exempt year-round.",
+    "useTax": {
+      "rate": 6.0,
+      "note": "Use tax equals the sales tax rate: 6% state plus 1% for items delivered to or used in Allegheny County and 2% for Philadelphia; individuals can report it on the PA-40.",
+      "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/use-tax"
+    },
+    "facts": [
+      {
+        "text": "Pennsylvania's sales tax is 6%, with a 1% local tax added by law in Allegheny County and 2% in Philadelphia.",
+        "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax"
+      },
+      {
+        "text": "Only Allegheny County and the City of Philadelphia impose a local sales tax; vendors located there must collect it.",
+        "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf"
+      },
+      {
+        "text": "Most clothing is exempt, but formal wear, bridal apparel, fur articles and sporting clothing are taxable.",
+        "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf"
+      },
+      {
+        "text": "Candy and gum, textbooks and residential heating fuels (oil, electricity, gas, coal, firewood) are exempt.",
+        "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax"
+      },
+      {
+        "text": "Digital products, including canned software and digital goods, are subject to sales and use tax.",
+        "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax"
+      },
+      {
+        "text": "Each new highway tire carries a $1 PTA fee, and car rentals pay $2 per day plus a 2% Vehicle Rental Tax.",
+        "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/tire-and-vehicle-rental-taxes"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local only: counties, municipalities and school districts; values set by county assessment offices",
+    "assessment": {
+      "text": "Property is assessed by the county assessment office; there is no statewide reassessment cycle or single statewide assessment ratio in the Department materials read. School districts cannot raise property tax rates faster than an annual inflation index without a voter referendum (Act 1 of 2006).",
+      "ratio": null,
+      "url": "https://www.pa.gov/agencies/education/programs-and-services/schools/grants-and-funding/property-tax-relief"
+    },
+    "homestead": {
+      "name": "Homestead and Farmstead Exclusion (Act 1 of 2006)",
+      "amountType": "value-exemption",
+      "amount": null,
+      "text": "Reduces the taxable assessed value of a primary residence for school property taxes, funded by state gaming revenue; the amount varies by school district. In Philadelphia the state relief lowers the wage tax instead.",
+      "applyBy": "Apply to the county assessment office by March 1; reapplication cannot be required more than once every three years.",
+      "url": "https://www.pa.gov/agencies/education/programs-and-services/schools/grants-and-funding/property-tax-relief"
+    },
+    "otherRelief": [
+      {
+        "name": "Property Tax/Rent Rebate (PTRR)",
+        "text": "Rebate of $380 to $1,000 for homeowners and renters 65+, widows and widowers 50+, and people with disabilities 18+, with household income of $48,110 or less; supplemental rebates of $190-$500 for some low-income homeowners and in Philadelphia, Pittsburgh and Scranton. 2025 claims accepted until December 31, 2026.",
+        "url": "https://www.pa.gov/agencies/revenue/ptrr"
+      },
+      {
+        "name": "Farmstead exclusion",
+        "text": "Covers agricultural buildings on a farm of at least 10 contiguous acres that is the owner's primary residence; can be combined with the homestead exclusion.",
+        "url": "https://www.pa.gov/agencies/education/programs-and-services/schools/grants-and-funding/property-tax-relief"
+      }
+    ],
+    "dueDates": null,
+    "facts": [
+      {
+        "text": "The PTRR maximum standard rebate rose to $1,000 (from $650) and the income limit is now indexed to cost of living; it is $48,110 for 2025 claims.",
+        "url": "https://www.pa.gov/agencies/revenue/newsroom/shapiro-administration-extends-deadline-for-property-tax-rent-rebate-program-to-december-31,-2026,-allowing-more-time-for-pennsylvanians-to-apply-for-tax-relief"
+      },
+      {
+        "text": "PTRR rebates are paid starting July 1 each year and applicants must reapply annually.",
+        "url": "https://www.pa.gov/agencies/revenue/ptrr"
+      },
+      {
+        "text": "School districts must notify residential owners by December 31 each year about the homestead exclusion application.",
+        "url": "https://www.pa.gov/agencies/education/programs-and-services/schools/grants-and-funding/property-tax-relief"
+      },
+      {
+        "text": "Under Act 1, a school district must hold a voter referendum to raise taxes beyond its inflation index unless a referendum exception applies.",
+        "url": "https://www.pa.gov/agencies/education/programs-and-services/schools/grants-and-funding/property-tax-relief"
+      },
+      {
+        "text": "The state realty transfer tax is 1% of the property value on transfer, often with an additional local realty transfer tax collected by county Recorders of Deeds.",
+        "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/realty-transfer-tax"
+      },
+      {
+        "text": "Since 1971 the PTRR program has delivered nearly $9 billion in relief, funded by gaming revenue.",
+        "url": "https://www.pa.gov/agencies/revenue/newsroom/shapiro-administration-extends-deadline-for-property-tax-rent-rebate-program-to-december-31,-2026,-allowing-more-time-for-pennsylvanians-to-apply-for-tax-relief"
+      }
+    ]
+  },
+  "uncertain": [
+    "effectiveSince of the 6% rate not on a page read (left null).",
+    "Pennsylvania General Assembly statute site (palegis.us / legis.state.pa.us) unreachable from this network; assessment rules (county assessment, common level ratio) not verified from statute.",
+    "No official statewide property tax due dates (they vary by county, municipality and school district); dueDates null.",
+    "No address-based rate lookup tool from the DOR; with only two local jurisdictions it is not needed (lookupUrl null).",
+    "Holiday note: absence of a holiday inferred from DOR pages, no explicit 'no holiday' statement found."
+  ]
+}

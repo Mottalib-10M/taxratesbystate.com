@@ -1,0 +1,123 @@
+{
+  "name": "Idaho",
+  "abbr": "ID",
+  "slug": "idaho",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6,
+    "rateNote": "Idaho's sales tax rate is 6% and its use tax rate is also 6% (Idaho State Tax Commission, Sales and Use Taxes: Basics Guide). Some resort cities add a voter-approved local option tax.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "resort cities with a voter-approved local option sales tax (23 listed by the Tax Commission, such as Ketchum, McCall, Sandpoint and Sun Valley), and auditorium districts",
+      "cap": null,
+      "capNote": "Resort cities choose what they tax: some tax everything subject to the state tax, others only lodging, alcohol by the drink and restaurant food.",
+      "groceriesTaxedLocally": null,
+      "lookupUrl": null,
+      "url": "https://web.archive.org/web/20260923002217/https://tax.idaho.gov/taxes/sales-use/sales-tax/local-sales-tax/city-sales-tax/"
+    },
+    "groceries": {
+      "treatment": "taxed",
+      "rate": 6,
+      "note": "Food is taxed at the general 6% rate; Idaho returns part of it through the food tax credit (formerly the grocery tax credit) on the income tax return: $155 per resident and per qualifying dependent for 2025, or up to $250 with receipts for residents who are not required to file.",
+      "url": "https://web.archive.org/web/20260418014709/https://tax.idaho.gov/pressrelease/claim-your-food-tax-credit-even-if-you-dont-earn-enough-to-file-income-taxes/"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption: sales tax applies to every retail sale of goods unless an exemption applies.",
+      "url": "https://web.archive.org/web/20260814165532/https://tax.idaho.gov/taxes/sales-use/online-guide/"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://web.archive.org/web/20250208043434/https://tax.idaho.gov/taxes/sales-use/exemptions/medical-products/introduction/",
+      "note": "Drugs and listed medical products are exempt when bought by a patient with a practitioner's prescription (Idaho Code 63-3622N)."
+    },
+    "otherRates": [],
+    "holidays2026": [],
+    "holidayNote": null,
+    "useTax": {
+      "rate": 6,
+      "note": "Use tax is due on goods used or stored in Idaho when the buyer did not pay at least 6% sales tax, including online and out-of-state purchases; Idaho adopted sales and use tax in 1965 and credits sales tax paid to another state.",
+      "url": "https://web.archive.org/web/20260317084224/https://tax.idaho.gov/taxes/sales-use/use-tax/"
+    },
+    "facts": [
+      {
+        "text": "Idaho adopted its sales tax and use tax in 1965.",
+        "url": "https://web.archive.org/web/20260317084224/https://tax.idaho.gov/taxes/sales-use/use-tax/"
+      },
+      {
+        "text": "Short-term rentals of 30 days or less, meals and drinks, admissions and digital books, videos, music or games bought with a permanent right of use are taxable sales.",
+        "url": "https://web.archive.org/web/20260814165532/https://tax.idaho.gov/taxes/sales-use/online-guide/"
+      },
+      {
+        "text": "Separately stated shipping to the buyer, installation labor and repair labor are not part of the taxable price; parts used in repairs are taxable.",
+        "url": "https://web.archive.org/web/20260814165532/https://tax.idaho.gov/taxes/sales-use/online-guide/"
+      },
+      {
+        "text": "A trade-in allowance reduces the taxable price: an $800 range with a $250 trade-in is taxed on $550.",
+        "url": "https://web.archive.org/web/20260814165532/https://tax.idaho.gov/taxes/sales-use/online-guide/"
+      },
+      {
+        "text": "For tax year 2024, more than 101,000 residents who were not required to file a return claimed a refund of sales tax paid on food.",
+        "url": "https://web.archive.org/web/20260418014709/https://tax.idaho.gov/pressrelease/claim-your-food-tax-credit-even-if-you-dont-earn-enough-to-file-income-taxes/"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local taxing districts (counties, cities, school, highway and other special districts) levy property tax on net taxable value; county assessors value property and county treasurers collect.",
+    "assessment": {
+      "text": "All taxable property is assessed at 100% of current market value as of January 1, less statutory exemptions such as the homeowner's exemption. Each taxing district can raise its property tax budget by only 3% a year, plus revenue from new construction and annexation, unless voters approve more.",
+      "ratio": 100,
+      "url": "https://www.canyoncounty.id.gov/elected-officials/assessor/assessor-faq/"
+    },
+    "homestead": {
+      "name": "Homeowner's Exemption",
+      "amountType": "percent",
+      "amount": 50,
+      "text": "Reduces the net taxable value of an owner-occupied primary residence and up to one acre of land by half, up to a maximum reduction of $125,000 (fixed since 2021 until the legislature changes it).",
+      "applyBy": "Apply to the county assessor by April 15 for the exemption to apply that year; it then renews automatically while the owner qualifies.",
+      "url": "https://www.canyoncounty.id.gov/elected-officials/assessor/exemptions/"
+    },
+    "otherRelief": [
+      {
+        "name": "Property Tax Reduction (Circuit Breaker)",
+        "text": "Reduces property tax on the primary home and up to one acre by up to $1,500 for qualifying owners (seniors, disabled, certain veterans, etc.) with prior-year household income of $39,130 or less after deductions; apply every year between January 1 and April 15. Since tax year 2022 the home's exemption-eligible value must be below 200% of the county median.",
+        "url": "https://www.canyoncounty.id.gov/elected-officials/assessor/exemptions/ptr/"
+      }
+    ],
+    "dueDates": {
+      "text": "Two installments: first half due by December 20 and second half by June 20. A 2% late charge applies to an unpaid half, plus 12% annual interest counted from January 1.",
+      "url": "https://www.canyoncounty.id.gov/elected-officials/treasurer/tax-payments/"
+    },
+    "facts": [
+      {
+        "text": "The homeowner's exemption halves the taxable value of a primary residence, capped at a $125,000 reduction since 2021.",
+        "url": "https://www.canyoncounty.id.gov/elected-officials/assessor/exemptions/"
+      },
+      {
+        "text": "Before 2021 the maximum homeowner's exemption was indexed each year to the Idaho house price index; it was $100,000 the year before it moved to $125,000.",
+        "url": "https://www.canyoncounty.id.gov/elected-officials/assessor/exemptions/"
+      },
+      {
+        "text": "Each taxing district's property tax budget can grow by only 3% a year plus new construction and annexation, unless voters approve bonds or overrides.",
+        "url": "https://www.canyoncounty.id.gov/elected-officials/assessor/assessor-faq/"
+      },
+      {
+        "text": "The Circuit Breaker can cut a qualifying owner's property tax by up to $1,500 and must be re-applied for every year by April 15.",
+        "url": "https://www.canyoncounty.id.gov/elected-officials/assessor/exemptions/ptr/"
+      },
+      {
+        "text": "Property taxes are paid in two halves, due December 20 and June 20.",
+        "url": "https://www.canyoncounty.id.gov/elected-officials/treasurer/tax-payments/"
+      }
+    ]
+  },
+  "uncertain": [
+    "Property facts come from the Canyon County Assessor and Treasurer (official county government site) describing statewide Idaho rules; the $39,130 circuit-breaker income limit is the figure shown there for the current cycle and is indexed. Due dates (December 20 / June 20) are statewide in Idaho Code but were read on the Canyon County page.",
+    "Property tax relief changes from the 2025-2026 legislative sessions could not be checked on the Idaho Legislature or Tax Commission sites.",
+    "2026-10-05: Idaho state servers refused connections from our network; the sales tax facts were read on the Tax Commission's own pages as captured by the Internet Archive (capture dates in the URLs, latest 2026-09-23). No 2026 sales tax holiday was found; no address lookup is published."
+  ]
+}

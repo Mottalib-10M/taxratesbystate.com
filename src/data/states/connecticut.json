@@ -1,0 +1,177 @@
+{
+  "name": "Connecticut",
+  "abbr": "CT",
+  "slug": "connecticut",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6.35,
+    "rateNote": "Single statewide rate of 6.35%; no city or county sales taxes. Special rates apply to meals (7.35%), luxury items (7.75%), short-term car rentals (9.35%), vessels (2.99%) and business computer services (1%).",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": false,
+      "levies": "none: no additional sales taxes are imposed by local jurisdictions",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food products for human consumption are exempt; meals and certain beverages are taxed at 7.35%.",
+      "url": "https://portal.ct.gov/drs/sales-tax/exemptions-from-sales-and-use-taxes"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxed at 6.35%; items over $1,000 are taxed at the 7.75% luxury rate. During Sales Tax Free Week, clothing and footwear under $300 per item are exempt.",
+      "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://portal.ct.gov/drs/sales-tax/exemptions-from-sales-and-use-taxes"
+    },
+    "otherRates": [
+      {
+        "item": "meals and certain beverages",
+        "rate": 7.35,
+        "note": "See Policy Statement 2002(2).",
+        "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+      },
+      {
+        "item": "luxury goods: most motor vehicles over $50,000, jewelry over $5,000, clothing, footwear, handbags, luggage, umbrellas, wallets or watches over $1,000",
+        "rate": 7.75,
+        "note": "Luxury rate on the full sales price.",
+        "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+      },
+      {
+        "item": "passenger vehicle rental or lease of 30 days or less",
+        "rate": 9.35,
+        "note": "",
+        "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+      },
+      {
+        "item": "vessels, vessel motors and vessel trailers",
+        "rate": 2.99,
+        "note": "",
+        "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+      },
+      {
+        "item": "computer and data processing services; canned software for business use delivered electronically",
+        "rate": 1,
+        "note": "",
+        "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+      },
+      {
+        "item": "motor vehicle sold to nonresident active-duty military stationed in Connecticut",
+        "rate": 4.5,
+        "note": "Requires form CERT-135.",
+        "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Sales Tax Free Week",
+        "start": "2026-08-16",
+        "end": "2026-08-22",
+        "items": "Most clothing and footwear costing less than $300 per item, in stores and online (limit raised from $100; cleated shoes and backpacks now included).",
+        "url": "https://portal.ct.gov/drs/sales-tax/sales-tax-free-week"
+      }
+    ],
+    "holidayNote": "2026 was Connecticut's 27th Sales Tax Free Week.",
+    "useTax": {
+      "rate": 6.35,
+      "note": "Use tax rates are identical to the sales tax rates and apply to goods and taxable services bought for use in Connecticut without Connecticut tax.",
+      "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+    },
+    "facts": [
+      {
+        "text": "Connecticut has no local sales taxes: the 6.35% rate is the same in every town.",
+        "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+      },
+      {
+        "text": "A 7.75% luxury rate applies to cars over $50,000, jewelry over $5,000 and clothing, handbags or watches over $1,000.",
+        "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+      },
+      {
+        "text": "Sales Tax Free Week 2026 ran August 16-22 and covered clothing and footwear under $300 per item, up from $100.",
+        "url": "https://portal.ct.gov/drs/sales-tax/sales-tax-free-week"
+      },
+      {
+        "text": "Nonelectronic school supplies such as pens, pencils, notebooks, binders and rulers bought for non-business use are exempt year-round under Conn. Gen. Stat. 12-412(128).",
+        "url": "https://portal.ct.gov/-/media/drs/publications/pubsps/2026/ps-2026-1.pdf"
+      },
+      {
+        "text": "Retailers may not advertise that they will pay or absorb the sales tax; violations carry a $500 fine per offense.",
+        "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+      },
+      {
+        "text": "Meals are taxed at 7.35%, one point above the general rate.",
+        "url": "https://portal.ct.gov/drs/sales-tax/tax-information"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local only: each town or city (and some fire and special districts) assesses and levies property tax on real estate, business personal property and motor vehicles; Connecticut has no state property tax levy.",
+    "assessment": {
+      "text": "Municipalities assess all property at a uniform 70% of present true and actual value (Conn. Gen. Stat. 12-62a). Towns must carry out a revaluation at least every five years under a schedule set by the Office of Policy and Management.",
+      "ratio": 70,
+      "url": "https://www.cga.ct.gov/current/pub/chap_203.htm"
+    },
+    "homestead": {
+      "name": "No general homestead exemption",
+      "amountType": "none",
+      "amount": null,
+      "text": "Connecticut has no statewide homestead exemption for all homeowners. Relief is targeted: the state Elderly and Totally Disabled Homeowners program (circuit breaker) reduces the tax of eligible low-income owners by up to $1,250 (married) or $1,000 (unmarried), and towns may offer local options.",
+      "applyBy": "Apply to the local assessor; income limits are indexed each year by OPM.",
+      "url": "https://www.cga.ct.gov/current/pub/chap_204a.htm"
+    },
+    "otherRelief": [
+      {
+        "name": "Elderly and Totally Disabled Homeowners Tax Relief",
+        "text": "Owners aged 65+ or totally disabled with qualifying income under the indexed limits receive a property tax reduction of 10% to 50% of their tax, up to $1,250 for married owners.",
+        "url": "https://www.cga.ct.gov/current/pub/chap_204a.htm"
+      },
+      {
+        "name": "Motor vehicle mill rate cap",
+        "text": "Towns may not tax motor vehicles above 32.46 mills; since July 1, 2025 they may set a lower vehicle mill rate, down to zero.",
+        "url": "https://www.cga.ct.gov/current/pub/chap_203.htm"
+      }
+    ],
+    "dueDates": {
+      "text": "Due dates are set by each municipality. An installment becomes delinquent if not paid by the same day of the following month (one-month grace period); delinquent tax bears interest at 18% a year (1.5% per month).",
+      "url": "https://www.cga.ct.gov/current/pub/chap_204.htm"
+    },
+    "facts": [
+      {
+        "text": "Cars are subject to local property tax in Connecticut, but the motor vehicle mill rate is capped at 32.46 mills.",
+        "url": "https://www.cga.ct.gov/current/pub/chap_203.htm"
+      },
+      {
+        "text": "All property is assessed at 70% of market value, so a $400,000 home has a $280,000 assessment before the town's mill rate is applied.",
+        "url": "https://www.cga.ct.gov/current/pub/chap_203.htm"
+      },
+      {
+        "text": "Since October 1, 2023, towns revalue on a schedule set by OPM for each revaluation zone, at least every five years.",
+        "url": "https://www.cga.ct.gov/current/pub/chap_203.htm"
+      },
+      {
+        "text": "Late property tax accrues 18% annual interest, with each part of a month counted as a full month.",
+        "url": "https://www.cga.ct.gov/current/pub/chap_204.htm"
+      },
+      {
+        "text": "Connecticut assessment years start on October 1, and revaluations take effect on an October 1 assessment date.",
+        "url": "https://www.cga.ct.gov/current/pub/chap_203.htm"
+      }
+    ]
+  },
+  "uncertain": [
+    "Effective date of the 6.35% general rate not stated on the DRS page read.",
+    "Effective date of the year-round nonelectronic school supplies exemption (Conn. Gen. Stat. 12-412(128)) not stated in PS 2026(1).",
+    "Current indexed income limits for the elderly/disabled circuit breaker not read (statutory base table shows $11,700 for the top 50% bracket before indexing).",
+    "The OPM page for the elderly/disabled program returned 404; the statute was used instead."
+  ]
+}

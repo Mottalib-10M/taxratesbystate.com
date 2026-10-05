@@ -1,0 +1,150 @@
+{
+  "name": "Nebraska",
+  "abbr": "NE",
+  "slug": "nebraska",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 5.5,
+    "rateNote": "Statewide sales and use tax rate of 5.5%. Cities and counties may add a local sales and use tax. Inside Good Life Districts (GLDs) special rules apply: since October 1, 2025 the state rate is back to 5.5% in most GLDs, but retailers opting in within GLD Avenue One (Omaha) charge a 2.75% state rate.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "Cities, villages and counties, after voter approval (Local Option Revenue Act, Neb. Rev. Stat. 77-27,142 to 77-27,148). Only Dakota County currently levies a county sales tax, and it applies only outside municipalities that have their own local tax.",
+      "cap": 2,
+      "capNote": "Local rates can be set at 0.5%, 1%, 1.5%, 1.75% or 2%. DOR rate cards run from 5.5% up to 7.5% combined.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://revenue.nebraska.gov/businesses/local-sales-and-use-tax-rates",
+      "url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-sales-and-use-tax-faqs"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food and food ingredients for human consumption are exempt, including soft drinks, candy, chewing gum and bottled water. Prepared food, food sold through vending machines, alcoholic beverages and dietary supplements are taxable.",
+      "url": "https://revenue.nebraska.gov/sites/revenue.nebraska.gov/files/doc/legal/regs/1-087.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption appears in the DOR's list of Nebraska sales tax exemptions; clothing is taxed at the state rate plus any local rate.",
+      "url": "https://revenue.nebraska.gov/about/information-guides/nebraska-sales-tax-exemptions"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://revenue.nebraska.gov/about/information-guides/nebraska-sales-tax-exemptions"
+    },
+    "otherRates": [
+      {
+        "item": "lodging (state lodging tax)",
+        "rate": 1,
+        "note": "1% state lodging tax collected by hotels, on top of sales tax; some counties add a county lodging tax.",
+        "url": "https://revenue.nebraska.gov/businesses/sales-and-use-tax"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": null,
+    "useTax": {
+      "rate": 5.5,
+      "note": "Use tax (5.5% plus any local rate) is due on goods and taxable services used in Nebraska when no Nebraska sales tax was charged, e.g. purchases from an unlicensed out-of-state seller. Individuals report it on Form 1040N (line 38) or Form 3.",
+      "url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-sales-and-use-tax-faqs"
+    },
+    "facts": [
+      {
+        "text": "A city or county sales tax can only start, change or end on January 1, April 1, July 1 or October 1, at least 120 days after the DOR receives the voter-approved ordinance.",
+        "url": "https://revenue.nebraska.gov/businesses/sales-and-use-tax/local-sales-and-use-tax-information"
+      },
+      {
+        "text": "Dakota County's 0.5% county tax applies only outside cities with their own tax: a purchase in Homer pays 6% (5.5% + 0.5%), while one in South Sioux City pays 7% (5.5% + 1.5% city tax, no county tax).",
+        "url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-sales-and-use-tax-faqs"
+      },
+      {
+        "text": "LB 707 (2025) returned the state rate in most Good Life Districts to 5.5% on October 1, 2025 and cancelled the 2.75% GLD local option tax planned for Avenue One and Nebraska Crossing.",
+        "url": "https://revenue.nebraska.gov/businesses/sales-and-use-tax"
+      },
+      {
+        "text": "Nebraska taxes delivered goods at the rate in effect where they are delivered (state 5.5% plus the local rate at the delivery address).",
+        "url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-sales-and-use-tax-faqs"
+      },
+      {
+        "text": "LB 901 (2026) repealed several sales tax exemptions on July 1, 2026, including those for data center equipment, biochips, C-BED wind projects and game birds.",
+        "url": "https://revenue.nebraska.gov/about/2026-nebraska-legislative-changes"
+      },
+      {
+        "text": "Since January 1, 2025, tax-exempt bullion includes gold, silver, platinum and palladium coins, notes, leaf, foil and film whose value depends mainly on metal content.",
+        "url": "https://revenue.nebraska.gov/about/information-guides/nebraska-sales-tax-exemptions"
+      },
+      {
+        "text": "Repair labor on a used, worn or damaged motor vehicle part is not taxable, but labor to install new or upgraded parts or to paint a vehicle is taxable.",
+        "url": "https://revenue.nebraska.gov/about/frequently-asked-questions/nebraska-sales-and-use-tax-faqs"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local: counties, cities, villages, school districts, learning communities, natural resources districts, community colleges and other political subdivisions. County assessors value property and county treasurers collect; the State funds two credits that directly reduce bills.",
+    "assessment": {
+      "text": "All real property is valued at 100% of actual (market) value as of January 1, except agricultural and horticultural land, which is valued at 75% of actual value (special valuation land at 75% of its agricultural-use value). County assessors set values by March 19 and mail change-of-value notices by June 1; protests go to the county board of equalization from June 1 to June 30.",
+      "ratio": 100,
+      "url": "https://revenue.nebraska.gov/sites/revenue.nebraska.gov/files/doc/pad/info/Real_Property_Valuation_Protest_Info_Guide.pdf"
+    },
+    "homestead": {
+      "name": "Nebraska Homestead Exemption",
+      "amountType": "value-exemption",
+      "amount": null,
+      "text": "Income- and value-tested exemption for owner-occupants aged 65+, certain disabled veterans and disabled individuals; the State pays the exempt tax to the county. In 2026, homeowners 65+ get 100% relief with household income up to $37,000.99 (single) or $43,400.99 (married), phasing down 10% per step to zero at $54,301 / $64,501. Veterans with a 100% service-connected permanent disability (category 4V) have no income or value limit.",
+      "applyBy": "File Form 458 (and Schedule I if needed) with the county assessor between February 2 and June 30, 2026; the county board may extend to July 20.",
+      "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Homestead%20Exemption%20Information%20Guide.pdf"
+    },
+    "otherRelief": [
+      {
+        "name": "Real Property Tax Credit (Property Tax Credit Act)",
+        "text": "State-funded credit shown on every real property tax statement. For tax year 2026: $118.87 per $100,000 of taxable value for non-agricultural property and $142.64 per $100,000 for agricultural land ($495,526,087 in total).",
+        "url": "https://revenue.nebraska.gov/sites/default/files/doc/news-release/pad/2026/NewsRelease_2026_Real_Property_Tax_Credit_and_School_Dist_Prop_Tax_Relief_Credit.pdf"
+      },
+      {
+        "name": "School District Property Tax Relief Credit (SDPTRC)",
+        "text": "Created by LB 34 (2024 special session); directly reduces school district taxes on each parcel in proportion to school taxes levied. $809,538,045 is available for tax year 2026-2027.",
+        "url": "https://revenue.nebraska.gov/PAD/Property-Tax-Credits"
+      }
+    ],
+    "dueDates": null,
+    "facts": [
+      {
+        "text": "LB 34 (August 2024 special session) replaced the refundable income tax credit for school district property taxes (Property Tax Incentive Act), which ended after tax year 2023, with a credit applied directly on the property tax statement.",
+        "url": "https://revenue.nebraska.gov/about/2024-nebraska-legislative-changes"
+      },
+      {
+        "text": "Since fiscal years starting July 1, 2025, the Property Tax Growth Limitation Act caps the yearly growth in property tax requests by cities, villages and counties (with exceptions for bonds, emergencies, public safety and voter approval).",
+        "url": "https://revenue.nebraska.gov/about/2024-nebraska-legislative-changes"
+      },
+      {
+        "text": "From January 1, 2027 (LB 803), a political subdivision needs a two-thirds vote of its board to set a property tax request above the prior year's.",
+        "url": "https://revenue.nebraska.gov/about/2026-nebraska-legislative-changes"
+      },
+      {
+        "text": "The homestead exemption is cut 10% for each $2,500 by which the home's value exceeds the county maximum, and lost entirely at $20,000 over.",
+        "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Homestead%20Exemption%20Information%20Guide.pdf"
+      },
+      {
+        "text": "To qualify for the homestead exemption, the owner must occupy the home from January 1 through August 15 of the year; homes held only by an LLC, corporation or partnership do not qualify.",
+        "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Homestead%20Exemption%20Information%20Guide.pdf"
+      },
+      {
+        "text": "LB 1067 raises the documentary stamp tax on real estate transfers from $2.32 to $3.32 (operative July 18, 2026, until January 1, 2032).",
+        "url": "https://revenue.nebraska.gov/about/2026-nebraska-legislative-changes"
+      },
+      {
+        "text": "State credit money is paid to counties in two equal installments, by January 31 and by April 1; unused credits go back to the Property Tax Administrator.",
+        "url": "https://revenue.nebraska.gov/sites/default/files/doc/news-release/pad/2026/NewsRelease_2026_Real_Property_Tax_Credit_and_School_Dist_Prop_Tax_Relief_Credit.pdf"
+      }
+    ]
+  },
+  "uncertain": [
+    "The DOR's address-based Sales Tax Rate Finder (https://gis.ne.gov/rev/SalesTaxFinder) and the Legislature's statute site (nebraskalegislature.gov) timed out from this network (HTTP 000). lookupUrl therefore points to the DOR's local rates page, and the local cap (2%) comes from the DOR FAQ, not from the statute text.",
+    "No official statement on a sales tax holiday was found; Nebraska seems to have none, but without an official source holidays2026 is empty and holidayNote is null.",
+    "Clothing marked 'taxed' because no clothing exemption appears in the DOR exemptions guide; no DOR page says so explicitly.",
+    "Property tax due dates (statute 77-204) could not be read: the Legislature site was unreachable, and the DOR pages consulted do not give them. dueDates = null.",
+    "Documentary stamp tax: the DOR summary says the rate goes 'from $2.32 to $3.32' without restating the base (per $1,000 of value under prior law); copied as published.",
+    "The valuation dates (100%/75% rule, March 19, June 1 notices, June 1-30 protests) come from the DOR Real Property Valuation Protest guide revised September 2021, still the version online. LB 803 (2026) changes the content of change-of-value notices and requires protest documentation from January 1, 2027."
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "name": "Maryland",
+  "abbr": "MD",
+  "slug": "maryland",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6,
+    "rateNote": "General state sales and use tax of 6%, applied with a statutory bracket table (Tax-General 11-104). Since July 1, 2025 a separate 3% rate applies to data, IT and software publishing services (NAICS 518, 519, 5132, 5415). Other special rates: 9% alcoholic beverages, 12% cannabis, 8% peer-to-peer car sharing. Counties and cities cannot levy a sales tax.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": false,
+      "levies": "none: Tax-General 11-102(c) bars counties, municipalities and special taxing districts from imposing a retail sales or use tax (except taxes already in effect on January 1, 1971)",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-102&enactments=false"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food for consumption off the premises sold by a vendor operating a substantial grocery or market business is exempt; food for immediate consumption (heated food, salad bars, etc.) is taxable. Since July 1, 2025 vending-machine snack foods and cannabinoid beverages are no longer exempt.",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-206&enactments=false"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxed at 6% except during the August back-to-school tax-free week (items of $100 or less).",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-228&enactments=false"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-211&enactments=false"
+    },
+    "otherRates": [
+      {
+        "item": "data, information technology and software publishing services (NAICS 518, 519, 5132, 5415)",
+        "rate": 3,
+        "note": "New taxable services from July 1, 2025 (Chapter 604 of the Acts of 2025).",
+        "url": "https://www.marylandtaxes.gov/content/dam/mdcomp/tax/legal-publications/alerts/tax-alert-sales-and-use-tax-updates.pdf"
+      },
+      {
+        "item": "adult-use cannabis",
+        "rate": 12,
+        "note": "Raised from 9% on July 1, 2025.",
+        "url": "https://www.marylandtaxes.gov/content/dam/mdcomp/tax/legal-publications/alerts/tax-alert-sales-and-use-tax-updates.pdf"
+      },
+      {
+        "item": "alcoholic beverages",
+        "rate": 9,
+        "note": "",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104&enactments=false"
+      },
+      {
+        "item": "motor vehicles (vehicle excise / titling tax)",
+        "rate": 6.5,
+        "note": "6.5% of fair market value (3.5% for rental vehicles), collected at titling instead of sales tax.",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtr&section=13-809&enactments=false"
+      },
+      {
+        "item": "electronic smoking devices",
+        "rate": 20,
+        "note": "60% on vaping liquid in containers of 5 ml or less; 12% on tobacco pipes.",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104&enactments=false"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Energy Star tax-free weekend",
+        "start": "2026-02-14",
+        "end": "2026-02-16",
+        "items": "Energy Star air conditioners, clothes washers and dryers, furnaces, heat pumps, standard refrigerators, dehumidifiers, boilers, programmable thermostats, CFL bulbs, and solar water heaters",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-226&enactments=false"
+      },
+      {
+        "name": "Back-to-school tax-free week",
+        "start": "2026-08-09",
+        "end": "2026-08-15",
+        "items": "clothing and footwear priced $100 or less per item (accessories such as jewelry, watches and handbags excluded) and the first $40 of a backpack or bookbag",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-228&enactments=false"
+      }
+    ],
+    "holidayNote": "Dates derived from the statutory rules: Saturday before the third Monday in February through that Monday; second Sunday in August through the following Saturday.",
+    "useTax": {
+      "rate": 6,
+      "note": "Maryland's tax is a combined sales and use tax at the same rates; it is due on taxable items bought without Maryland tax for use in the state.",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104&enactments=false"
+    },
+    "facts": [
+      {
+        "text": "Since July 1, 2025 Maryland taxes data processing, web hosting, IT consulting and software publishing services at a reduced 3% rate.",
+        "url": "https://www.marylandtaxes.gov/content/dam/mdcomp/tax/legal-publications/alerts/tax-alert-sales-and-use-tax-updates.pdf"
+      },
+      {
+        "text": "The 2025 budget law repealed the sales tax exemptions for vending-machine snack foods and for bullion and coins sold for more than $1,000.",
+        "url": "https://www.marylandtaxes.gov/content/dam/mdcomp/tax/legal-publications/alerts/tax-alert-sales-and-use-tax-updates.pdf"
+      },
+      {
+        "text": "Cars pay a 6.5% excise tax at titling rather than the 6% sales tax.",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtr&section=13-809&enactments=false"
+      },
+      {
+        "text": "State law prohibits Maryland counties and cities from creating their own sales tax, so 6% applies statewide.",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-102&enactments=false"
+      },
+      {
+        "text": "Maryland has two tax-free periods a year: Energy Star appliances on Presidents' Day weekend and clothing under $100 in the second week of August.",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-228&enactments=false"
+      },
+      {
+        "text": "The cannabis sales tax rose from 9% to 12% on July 1, 2025.",
+        "url": "https://www.marylandtaxes.gov/content/dam/mdcomp/tax/legal-publications/alerts/tax-alert-sales-and-use-tax-updates.pdf"
+      }
+    ]
+  },
+  "property": {
+    "levied": "state, counties (and Baltimore City) and municipalities; assessments are made by the State Department of Assessments and Taxation (SDAT)",
+    "assessment": {
+      "text": "Real property is revalued by physical inspection on a 3-year cycle; increases are phased in over the three years (one-third, two-thirds, then the full increase); if value has not increased, the most recent valuation applies.",
+      "ratio": null,
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=8-103&enactments=false",
+      "capped": true,
+      "capText": "For an owner-occupied principal residence, the taxable assessment used for the State tax cannot rise more than 10% a year (homestead credit percentage of 110%); each county and Baltimore City sets its own cap between 0% and 10% (100%-110%), and municipalities may set theirs. Tax on any assessment increase above the cap is credited.",
+      "capUrl": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-105&enactments=false"
+    },
+    "homestead": {
+      "name": "Homestead Tax Credit (assessment cap)",
+      "amountType": "percent",
+      "amount": 10,
+      "text": "For an owner-occupied principal residence, the taxable assessment used for the State tax cannot rise more than 10% a year (homestead credit percentage of 110%); each county and Baltimore City sets its own cap between 0% and 10% (100%-110%), and municipalities may set theirs. Tax on any assessment increase above the cap is credited.",
+      "applyBy": "One-time application to SDAT; the homeowner must reside in the dwelling by July 1 of the taxable year.",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-105&enactments=false"
+    },
+    "otherRelief": [],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "Maryland caps yearly growth of a homeowner's taxable assessment at 10% for the State tax, and many counties choose a lower cap.",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-105&enactments=false"
+      },
+      {
+        "text": "Counties and Baltimore City must set their homestead credit percentage by law before March 15 for the year starting July 1.",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-105&enactments=false"
+      },
+      {
+        "text": "Assessment increases are phased in over a 3-year cycle: one-third of the increase each year.",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=8-103&enactments=false"
+      },
+      {
+        "text": "Willful misrepresentation to obtain the homestead credit carries a penalty of 25% of the credit received in each year of non-qualification.",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-105&enactments=false"
+      },
+      {
+        "text": "The Maryland property tax year runs from July 1 to June 30.",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-105&enactments=false"
+      }
+    ]
+  },
+  "uncertain": [
+    "The user brief mentions Maryland 'moving to 6%': the general rate is 6% (statutory bracket table); its original effective date (2008) was not read on an official page, effectiveSince left null. The 2025 change is the new 3% rate on IT/data services, verified.",
+    "SDAT (dat.maryland.gov) and MVA (mva.maryland.gov) return HTTP 403 to automated requests; property facts were taken from the Tax-Property Article on mgaleg.maryland.gov instead. Homeowners' Tax Credit (income-based) amounts, assessment ratio and payment due dates (July 1 bill, semiannual option) could not be read and are omitted.",
+    "Comptroller sales tax web pages (services.marylandcomptroller.gov) require JavaScript; statutes and the Comptroller's PDF alerts were used instead.",
+    "2026 holiday dates computed from the statutory rules, not from a Comptroller announcement."
+  ]
+}

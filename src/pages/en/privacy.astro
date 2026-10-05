@@ -1,0 +1,26 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title={`Privacy policy of ${SITE_NAMES[lang]}: your inputs stay in your browser`} description="What personal data this sales tax and property tax calculator processes (almost none), on what legal basis, for how long, and how US and EU visitors can use their rights." lang={lang} noindex={true} breadcrumbs={[{ label: 'Privacy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Privacy policy</h1>
+    <p>This policy covers {SITE_URL}. The publisher is established in France, so the EU General Data Protection Regulation applies to everything the site does, whoever the visitor is. Visitors in US states with a consumer privacy law (California and others) have at least the rights described below.</p>
+    <h2>1. Controller</h2>
+    <LegalIdentity lang={lang} />
+    <h2>2. What the calculators never send</h2>
+    <p>Prices, local rates, home values, mill rates and states you enter are processed in your browser only. They are not sent to a server, not stored by us and not linked to you. The share link writes your inputs into the page address: only send it to people you choose.</p>
+    <h2>3. What is processed</h2>
+    <h3>Server logs</h3><p>The host records the IP address, time, page requested and browser, for security. Legal basis: legitimate interest. Retention: according to GitHub's policy.</p>
+    <h3>Audience measurement</h3><p>None is loaded today. If one is added, a notice will tell you before it runs and let you refuse it, and this page will list it.</p>
+    <h3>E-mails</h3><p>If you write to us, your address and message are kept to answer you, for three years after the last exchange.</p>
+    <h2>4. Sale or sharing of personal information</h2><p>We do not sell or share personal information, for money or otherwise, and we do not use it for targeted advertising.</p>
+    <h2>5. Recipients and transfers</h2><p>The host, GitHub, Inc., is in the United States; logs may be processed there under the EU–US Data Privacy Framework.</p>
+    <h2>6. Your rights</h2><p>Access, correction, deletion, restriction, objection and portability: write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>; we reply within one month. You can complain to the {LEGAL.supervisoryAuthority} (<a href={LEGAL.supervisoryAuthorityUrl} rel="nofollow noopener" target="_blank">{LEGAL.supervisoryAuthorityUrl}</a>).</p>
+    <h2>7. Children</h2><p>The site is not directed at children under 13 and collects nothing from them.</p>
+    <p>See also the <a href={route('cookies', lang)}>cookies page</a>. Updated: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

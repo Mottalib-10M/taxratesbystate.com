@@ -1,0 +1,184 @@
+{
+  "name": "Alabama",
+  "abbr": "AL",
+  "slug": "alabama",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4,
+    "rateNote": "General state sales and use tax rate. Reduced state rates apply to food/groceries (2%), automotive sales (2%), manufacturing and farm machinery (1.5%). Cities and counties add their own sales taxes.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "city and county sales, use, rental and lodgings taxes; ALDOR administers over 200 local sales taxes, others are self-administered by the locality; cities may also levy a police-jurisdiction (PJ) rate, typically half the corporate-limits rate",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://www.alabamainteractive.org/ador_taxrate_lookup/welcome.action",
+      "url": "https://www.revenue.alabama.gov/sales-use/sales-tax/"
+    },
+    "groceries": {
+      "treatment": "reduced",
+      "rate": 2,
+      "note": "State rate on food/groceries is 2% since September 1, 2025 (3% from Sept. 1, 2023 to Aug. 31, 2025). City and county taxes still apply to food. Under Act 2026-604 the state portion on food was suspended from May 1 to June 30, 2026.",
+      "url": "https://www.revenue.alabama.gov/sales-use/state-sales-use-tax-rates/"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable at the general rate except during the July back-to-school holiday (items of $156 or less in 2026).",
+      "url": "https://www.revenue.alabama.gov/wp-content/uploads/2025/11/2026-Back-to-School-Sales-Tax-Holiday-Fact-Sheet.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.revenue.alabama.gov/sales-use/sales-tax/"
+    },
+    "otherRates": [
+      {
+        "item": "automotive (motor vehicles)",
+        "rate": 2,
+        "note": "State sales and use tax rate on automotive sales.",
+        "url": "https://www.revenue.alabama.gov/sales-use/state-sales-use-tax-rates/"
+      },
+      {
+        "item": "manufacturing machinery and farm machinery",
+        "rate": 1.5,
+        "note": "Reduced state rate.",
+        "url": "https://www.revenue.alabama.gov/sales-use/state-sales-use-tax-rates/"
+      },
+      {
+        "item": "Simplified Sellers Use Tax (remote sellers)",
+        "rate": 8,
+        "note": "Flat rate collected by eligible remote sellers in place of state and local use tax (§40-23-193(a)).",
+        "url": "https://www.revenue.alabama.gov/sales-use/state-sales-use-tax-rates/"
+      },
+      {
+        "item": "lodgings",
+        "rate": 4,
+        "note": "State lodgings tax; 5% in the 16 Alabama Mountain Lakes Area counties.",
+        "url": "https://www.revenue.alabama.gov/sales-use/state-sales-use-tax-rates/"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Severe Weather Preparedness Sales Tax Holiday",
+        "start": "2026-02-20",
+        "end": "2026-02-22",
+        "items": "Held by statute on the last full weekend of February (Friday 12:01 a.m. to Sunday midnight): batteries, weather radios, flashlights, tarps, first aid kits and similar items (per-item cap adjusted for inflation since Act 2025-309; $94 per item and $1,564 for portable generators in the 2027 edition). Local participation varies.",
+        "url": "https://www.revenue.alabama.gov/sales-use/alabama-severe-weather-preparedness-sales-tax-holiday/"
+      },
+      {
+        "name": "Back-to-School Sales Tax Holiday",
+        "start": "2026-07-17",
+        "end": "2026-07-19",
+        "items": "Clothing $156 or less per article; computers, software and school computer supplies, single purchase of $1,173 or less; school supplies, art supplies and instructional material $78 or less per item; books $47 or less. State tax only; local tax applies unless the locality opted in.",
+        "url": "https://www.revenue.alabama.gov/wp-content/uploads/2025/11/2026-Back-to-School-Sales-Tax-Holiday-Fact-Sheet.pdf"
+      }
+    ],
+    "holidayNote": "Act 2025-309 indexes the holiday price caps to the Consumer Price Index and requires localities to adopt the exemption at least 90 days before the holiday weekend.",
+    "useTax": {
+      "rate": 4,
+      "note": "Consumers use tax is due at the same 4% general state rate (2% automotive, 1.5% machinery) on items bought without Alabama tax, plus applicable local use tax.",
+      "url": "https://www.revenue.alabama.gov/sales-use/state-sales-use-tax-rates/"
+    },
+    "facts": [
+      {
+        "text": "The state food rate fell to 2% on September 1, 2025, after a cut from 4% to 3% on September 1, 2023.",
+        "url": "https://www.revenue.alabama.gov/sales-use/state-sales-use-tax-rates/"
+      },
+      {
+        "text": "Act 2026-604 suspended the state sales tax on food from May 1 through June 30, 2026; city and county food taxes were not affected.",
+        "url": "https://www.revenue.alabama.gov/wp-content/uploads/2026/04/260417_NOTICE_SUT_TemporarySuspensionStateFoodTax.pdf"
+      },
+      {
+        "text": "Remote sellers in the Simplified Sellers Use Tax program collect a flat 8% instead of the combined state and local rate.",
+        "url": "https://www.revenue.alabama.gov/sales-use/state-sales-use-tax-rates/"
+      },
+      {
+        "text": "ALDOR administers over 200 city and county sales taxes, but not all; some localities collect their own tax directly.",
+        "url": "https://www.revenue.alabama.gov/sales-use/sales-tax/"
+      },
+      {
+        "text": "Many cities also tax sales in their police jurisdiction outside city limits, usually at half the city rate.",
+        "url": "https://www.revenue.alabama.gov/sales-use/city-and-county-tax-rates/"
+      },
+      {
+        "text": "Sales tax returns are due on the 20th of the month following the sales.",
+        "url": "https://www.revenue.alabama.gov/sales-use/sales-tax/"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Ad valorem tax levied on assessed value by the state, counties, municipalities and school districts; millage rates are set by county commissions and other taxing agencies.",
+    "assessment": {
+      "text": "Assessed value = appraised value x class ratio: Class I utilities 30%, Class II other property 20%, Class III owner-occupied residential, agricultural and forest 10%, Class IV private cars and pickups 15%. Since tax year 2025 (Act 2024-344), the taxable assessed value of Class II and III real property may rise by at most 7% a year; the cap resets on a sale or new improvement and runs through the fiscal year beginning October 1, 2027.",
+      "ratio": 10,
+      "url": "https://www.revenue.alabama.gov/property-tax/property-tax-assessment/",
+      "capped": true,
+      "capText": "Assessed value = appraised value x class ratio: Class I utilities 30%, Class II other property 20%, Class III owner-occupied residential, agricultural and forest 10%, Class IV private cars and pickups 15%. Since tax year 2025 (Act 2024-344), the taxable assessed value of Class II and III real property may rise by at most 7% a year; the cap resets on a sale or new improvement and runs through the fiscal year beginning October 1, 2027.",
+      "capUrl": "https://www.revenue.alabama.gov/property-tax/property-tax-assessment/"
+    },
+    "homestead": {
+      "name": "Homestead Exemption (H-1)",
+      "amountType": "value-exemption",
+      "amount": 4000,
+      "text": "Owner-occupied single-family home on up to 160 acres: $4,000 of assessed value exempt from state tax and $2,000 from county tax (counties and cities may grant up to $4,000). Owners 65+ and disabled owners get larger or total exemptions (H-2, H-3, H-4).",
+      "applyBy": "Apply at the county office; residence must be occupied on the first day of the tax year (October 1).",
+      "url": "https://www.revenue.alabama.gov/property-tax/homestead-exemptions/"
+    },
+    "otherRelief": [
+      {
+        "name": "H-2 (65+ with AGI under $12,000, or retired disabled)",
+        "text": "Exempt from all state property tax and $5,000 of assessed value of county tax, including school taxes.",
+        "url": "https://www.revenue.alabama.gov/property-tax/homestead-exemptions/"
+      },
+      {
+        "name": "H-3 (65+ with taxable income of $12,000 or less, or permanently disabled)",
+        "text": "Exempt from all ad valorem taxes on the homestead.",
+        "url": "https://www.revenue.alabama.gov/property-tax/homestead-exemptions/"
+      },
+      {
+        "name": "H-4 (65+ with income over $12,000)",
+        "text": "Exempt from all state property tax and $2,000 of assessed value on county taxes.",
+        "url": "https://www.revenue.alabama.gov/property-tax/homestead-exemptions/"
+      },
+      {
+        "name": "Current use valuation",
+        "text": "Agricultural and timber land in Class III can be appraised on current use rather than market value on application.",
+        "url": "https://www.revenue.alabama.gov/property-tax/current-use/"
+      }
+    ],
+    "dueDates": {
+      "text": "Property taxes become due on October 1 and are delinquent if paid after December 31.",
+      "url": "https://www.revenue.alabama.gov/property-tax/7-cap-information-hb73-act-2024-344/"
+    },
+    "facts": [
+      {
+        "text": "ALDOR's worked example: a $100,000 home x 10% = $10,000 assessed value; at 32.5 mills the tax is $325 before exemptions.",
+        "url": "https://www.revenue.alabama.gov/property-tax/property-tax-assessment/"
+      },
+      {
+        "text": "Owner-occupied homes are assessed at 10% of value, half the 20% ratio of commercial property.",
+        "url": "https://www.revenue.alabama.gov/property-tax/property-tax-assessment/"
+      },
+      {
+        "text": "Under Act 2024-344, taxable assessed value of homes and commercial real estate can rise at most 7% per year, starting with taxes collected from October 1, 2025.",
+        "url": "https://www.revenue.alabama.gov/property-tax/7-cap-information-hb73-act-2024-344/"
+      },
+      {
+        "text": "A buyer's taxable value resets to full value after a sale, so the seller's tax bill is not a guide to future taxes.",
+        "url": "https://www.revenue.alabama.gov/property-tax/7-cap-information-hb73-act-2024-344/"
+      },
+      {
+        "text": "Private passenger cars and pickups are taxed as property in Class IV at 15% of value.",
+        "url": "https://www.revenue.alabama.gov/property-tax/property-tax-assessment/"
+      }
+    ]
+  },
+  "uncertain": [
+    "Effective date of the 4% general state rate not shown on the ALDOR rate page; effectiveSince left null.",
+    "The severe weather holiday dates for 2026 (Feb. 20-22) are derived from the statutory rule (last full weekend of February) stated by ALDOR; the 2026 per-item caps were not published on the page read (only the 2027 fact sheet: $94 / $1,564).",
+    "No further state food-tax reduction for 2027 found on ALDOR pages; not verified in the Code."
+  ]
+}

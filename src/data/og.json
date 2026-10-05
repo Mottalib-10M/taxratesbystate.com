@@ -1,0 +1,13 @@
+{
+ "accent": "#3C3B6E",
+ "symbol": "TAX",
+ "variants": [
+  {
+   "file": "og-en.png",
+   "title": "Sales tax & property tax\nfor every state",
+   "subtitle": "Official state rates, grocery and clothing rules, Census property tax",
+   "badge": "2026 rates",
+   "brand": "State Tax Calc"
+  }
+ ]
+}

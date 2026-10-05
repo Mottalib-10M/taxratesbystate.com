@@ -1,0 +1,100 @@
+{
+  "name": "Louisiana",
+  "abbr": "LA",
+  "slug": "louisiana",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 5,
+    "rateNote": "State rate raised from 4.45% to 5% on January 1, 2025 by Act 11 of the 2024 Third Extraordinary Session (the R.S. 47:321.1 levy went from 0.45% to 1%). The 5% rate runs through December 31, 2029; from January 1, 2030 total state levies drop to 4.75%. Parish, municipal and school board taxes come on top.",
+    "effectiveSince": "2025-01-01",
+    "scheduledChanges": [
+      {"date": "2030-01-01", "rate": 4.75, "what": "Act 11 (2024 3rd Ext. Session): the R.S. 47:321.1 levy falls from 1% to 0.75%, bringing total state sales and use tax to 4.75%.", "url": "https://legis.la.gov/legis/ViewDocument.aspx?d=1392517"}
+    ],
+    "local": {
+      "allowed": true,
+      "levies": "parishes, municipalities, school boards and other local governmental subdivisions, with voter approval; collected locally (not by the Department of Revenue)",
+      "cap": 3,
+      "capNote": "Constitution Art. VI, Sec. 29: combined local sales taxes may not exceed 3%, but the legislature may authorize additional local taxes by law, so many areas exceed 3%.",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": null,
+      "url": "https://legis.la.gov/Legis/Law.aspx?d=206501"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food for home consumption is exempt from the state sales tax (0% in the R-1002 rate table); the constitutional limit applies only to the state, so parish and municipal sales taxes can still apply to groceries.",
+      "url": "https://dam.ldr.la.gov/publications/1002-8-25.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable (listed among items subject to sales and use tax); hunting apparel is exempt only during the Second Amendment Weekend holiday.",
+      "url": "https://revenue.louisiana.gov/individuals/general-resources/consumer-use-tax/"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://dam.ldr.la.gov/publications/1002-8-25.pdf"
+    },
+    "otherRates": [
+      {"item": "cable and satellite TV services", "rate": 5, "note": "Subject to an additional 5% state tax on top of the general sales tax.", "url": "https://revenue.louisiana.gov/businesses/general-sales-and-use-taxes/general-sales-use-tax/"},
+      {"item": "residential electricity, natural gas and water", "rate": 0, "note": "Exempt from state sales tax under Art. VII, Sec. 2.2 of the Constitution.", "url": "https://dam.ldr.la.gov/publications/1002-8-25.pdf"}
+    ],
+    "holidays2026": [
+      {
+        "name": "Louisiana Second Amendment Weekend Sales Tax Holiday",
+        "start": "2026-09-04",
+        "end": "2026-09-06",
+        "items": "consumer purchases of firearms, ammunition and hunting supplies (archery items, hunting apparel, hunting knives, optics, etc.); exempt from state and local sales tax",
+        "url": "https://revenue.louisiana.gov/SecondAmendment"
+      }
+    ],
+    "holidayNote": "Act 11 of 2024 repealed the annual back-to-school holiday (R.S. 47:305.54) and the hurricane preparedness holiday (R.S. 47:305.58); only the Second Amendment Weekend remains.",
+    "useTax": {
+      "rate": 9,
+      "note": "For purchases on or after January 1, 2025, individuals pay a flat 9% consumer use tax (5% state + 4% distributed to local governments), regardless of the actual local rate, on the income tax return or Form R-1035.",
+      "url": "https://dam.ldr.la.gov/taxforms/1035-1-26-F.pdf"
+    },
+    "facts": [
+      {"text": "Louisiana's 5% state rate is temporary: Act 11 of 2024 sets it from January 1, 2025 to December 31, 2029, then 4.75% from 2030.", "url": "https://legis.la.gov/legis/ViewDocument.aspx?d=1392517"},
+      {"text": "Out-of-state purchases are taxed at a flat 9% consumer use tax (5% state, 4% local) whatever the local rate at home.", "url": "https://dam.ldr.la.gov/taxforms/1035-1-26-F.pdf"},
+      {"text": "The 2024 reform repealed the back-to-school and hurricane preparedness tax holidays; the Second Amendment Weekend (September 4-6 in 2026) survived.", "url": "https://legis.la.gov/legis/ViewDocument.aspx?d=1392517"},
+      {"text": "Groceries and prescription drugs are exempt from the state tax, but local parish and city sales taxes can still apply to them.", "url": "https://legis.la.gov/legis/ViewDocument.aspx?d=1392517"},
+      {"text": "The Constitution caps combined local sales taxes at 3%, unless the legislature authorizes more by law and voters approve.", "url": "https://legis.la.gov/Legis/Law.aspx?d=206501"},
+      {"text": "Cable and satellite TV are hit with an extra 5% state tax on top of the regular sales tax.", "url": "https://revenue.louisiana.gov/businesses/general-sales-and-use-taxes/general-sales-use-tax/"}
+    ]
+  },
+  "property": {
+    "levied": "parishes, municipalities, school boards, levee and other special districts (plus any state millage); property is valued by the elected parish assessor, reviewed by the parish governing authority and the Louisiana Tax Commission",
+    "assessment": {
+      "text": "Assessed value is a fixed percentage of fair market value set by the Constitution: 10% for land and for residential improvements, 15% for electric cooperative property, 25% for public service property (other property 15%). Farm, marsh and timber land is assessed at 10% of use value. Property must be reappraised at least every four years; homestead owners facing a reappraisal increase of more than 50% get a phase-in.",
+      "ratio": 10,
+      "url": "https://legis.la.gov/Legis/Law.aspx?d=206545"
+    },
+    "homestead": {
+      "name": "Homestead Exemption",
+      "amountType": "value-exemption",
+      "amount": 7500,
+      "text": "The owner-occupied bona fide homestead (up to 160 acres) is exempt from state, parish and special ad valorem taxes on the first $7,500 of assessed value, which equals $75,000 of market value at the 10% residential assessment ratio. The exemption does not extend to municipal taxes, except municipal school taxes and, in Orleans Parish, general city, school and levee taxes.",
+      "applyBy": "Apply with the parish assessor.",
+      "url": "https://legis.la.gov/Legis/Law.aspx?d=206550"
+    },
+    "otherRelief": [
+      {"name": "Special Assessment Level (assessment freeze)", "text": "Freezes the assessment of a homestead owned by people 65+, veterans with a 50%+ service-connected disability, permanently disabled people and families of service members killed or missing in action. Income limit: federal AGI of $100,000, indexed to CPI from tax year 2026; Acts 2025 No. 220 would raise it to $150,000 from January 1, 2027 if the constitutional amendment is ratified.", "url": "https://legis.la.gov/Legis/Law.aspx?d=206545"}
+    ],
+    "dueDates": {"text": null, "url": null},
+    "facts": [
+      {"text": "Louisiana homes are assessed at only 10% of market value, and the homestead exemption removes the first $7,500 of that assessed value.", "url": "https://legis.la.gov/Legis/Law.aspx?d=206545"},
+      {"text": "Farm, marsh and timber land is assessed at 10% of its use value rather than its market value.", "url": "https://legis.la.gov/Legis/Law.aspx?d=206545"},
+      {"text": "If a reappraisal raises a homestead's assessed value by more than 50%, the tax increase is phased in.", "url": "https://legis.la.gov/Legis/Law.aspx?d=206545"},
+      {"text": "Seniors 65+ and certain disabled owners can freeze their home's assessment if their income is under the $100,000 AGI limit (indexed from 2026).", "url": "https://legis.la.gov/Legis/Law.aspx?d=206545"},
+      {"text": "The homestead exemption also covers a mobile home used as the primary residence, even if the owner does not own the land under it.", "url": "https://legis.la.gov/Legis/Law.aspx?d=206550"}
+    ]
+  },
+  "uncertain": [
+    "Property tax due date (customarily December 31) not read on an official page: the Louisiana Tax Commission site is a JavaScript portal that could not be read; left null.",
+    "No official address-based local sales tax rate lookup could be verified (the Remote Sellers Commission site laremotesellers.com is a JavaScript app; the Uniform Local Sales Tax Board site did not respond); lookupUrl left null.",
+    "The LDR Consumer Use Tax web page still shows 8.45%, while the January 2026 Form R-1035 instructions give 9% for purchases from January 1, 2025: the form was followed.",
+    "Acts 2025 No. 220 (AGI limit $150,000 from 2027) depends on ratification of a constitutional amendment; outcome not verified."
+  ]
+}

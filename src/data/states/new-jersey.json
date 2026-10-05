@@ -1,0 +1,162 @@
+{
+  "name": "New Jersey",
+  "abbr": "NJ",
+  "slug": "new-jersey",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6.625,
+    "rateNote": "Single statewide rate: New Jersey has no general county or city sales tax. Reduced rates apply in Urban Enterprise Zones (3.3125% at certified sellers) and on qualifying in-person retail sales in Salem County (half rate).",
+    "effectiveSince": "2018-01-01",
+    "scheduledChanges": [],
+    "local": {
+      "allowed": false,
+      "levies": "No general local sales tax. Special-area levies exist on top of the state rate: Atlantic City Luxury Tax, Cape May County Tourism Sales Tax (Wildwood, Wildwood Crest, North Wildwood), and hotel-only charges (State Occupancy Fee, optional Municipal Occupancy Tax, Meadowlands hotel assessment).",
+      "cap": null,
+      "capNote": "In Atlantic City, when both taxes apply, the state rate is reduced so the combined Luxury Tax + Sales Tax cannot exceed 12.625% (Division of Taxation, S&U-4).",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://www.nj.gov/treasury/taxation/salestax.shtml",
+      "url": "https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Most food sold as grocery items is exempt; candy, soft drinks and prepared food are taxable. Items bought with SNAP benefits are exempt even if otherwise taxable.",
+      "url": "https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf"
+    },
+    "clothing": {
+      "treatment": "exempt",
+      "threshold": null,
+      "note": "Clothing and footwear for human use are exempt with no price cap. Fur clothing, accessories, sport/recreational equipment and most protective equipment remain taxable.",
+      "url": "https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf"
+    },
+    "otherRates": [
+      {
+        "item": "Urban Enterprise Zone (UEZ) purchases from certified sellers",
+        "rate": 3.3125,
+        "note": "Half the state rate on most taxable sales of tangible personal property by UEZ-certified businesses; order placed in person in the zone. Motor vehicles and energy excluded from UEZ benefits.",
+        "url": "https://www.nj.gov/treasury/taxation/businesses/salestax/uez-over.shtml"
+      },
+      {
+        "item": "Salem County in-person retail sales",
+        "rate": 3.3125,
+        "note": "Half the regular rate on qualifying in-person retail sales of goods in Salem County; excludes motor vehicles, alcohol, cigarettes, online/mail-order sales, services, prepared food, lodging and cannabis.",
+        "url": "https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf"
+      },
+      {
+        "item": "Zero emission vehicles (ZEVs)",
+        "rate": 6.625,
+        "note": "ZEV exemption repealed by P.L. 2024, c. 19: 3.3125% from Oct. 1, 2024 to June 30, 2025, full 6.625% from July 1, 2025.",
+        "url": "https://www.nj.gov/treasury/taxation/zevnotice.shtml"
+      },
+      {
+        "item": "Hotel occupancy, State Occupancy Fee",
+        "rate": 5,
+        "note": "Charged in addition to Sales Tax in most municipalities (lower rates in Wildwoods, Newark, Jersey City, Atlantic City).",
+        "url": "https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "No 2026 sales tax holiday appears in the Division of Taxation's 2026 news list (checked 2026-10-05).",
+    "useTax": {
+      "rate": 6.625,
+      "note": "Use Tax equals the Sales Tax rate in effect at purchase; due on out-of-state, online or mail purchases taxed at less than 6.625%. Residents may report it on the NJ-1040 using a published income-based table.",
+      "url": "https://www.nj.gov/treasury/taxation/su_10.shtml"
+    },
+    "facts": [
+      {
+        "text": "Rate history: 7% from July 15, 2006, 6.875% during 2017, and 6.625% since January 1, 2018.",
+        "url": "https://www.nj.gov/treasury/taxation/salestax.shtml"
+      },
+      {
+        "text": "Shoppers pay half the normal rate (3.3125%) on many purchases at UEZ-certified businesses; the program is run by the Department of Community Affairs' UEZ Authority.",
+        "url": "https://www.nj.gov/treasury/taxation/businesses/salestax/uez-over.shtml"
+      },
+      {
+        "text": "Electric cars lost their exemption: zero emission vehicles were taxed at 3.3125% from October 1, 2024 and at the full 6.625% from July 1, 2025.",
+        "url": "https://www.nj.gov/treasury/taxation/zevnotice.shtml"
+      },
+      {
+        "text": "Since January 1, 2026, a $3 per day surcharge applies to taxable hotel stays in first-class cities with an international airport, currently only Newark.",
+        "url": "https://www.nj.gov/treasury/taxation/airport-surcharge.shtml"
+      },
+      {
+        "text": "Atlantic City levies a 9% Luxury Tax (3% on drinks sold by the glass); combined with the state tax it cannot exceed 12.625%.",
+        "url": "https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf"
+      },
+      {
+        "text": "Disposable paper products (towels, napkins, toilet tissue, paper plates) are exempt when bought for household use.",
+        "url": "https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local: municipal tax assessors value property and municipalities levy and collect the tax for the municipality, county and school districts; the state Division of Taxation (Property Administration) and county boards of taxation oversee assessment. No state property tax levy.",
+    "assessment": {
+      "text": "Property is assessed at 'true value' (market value) as of October 1 of the pre-tax year. Because municipalities revalue at different times, the state publishes an annual equalization table; on appeal an assessment is tested against the district's average ratio within a common level range of plus or minus 15%.",
+      "ratio": null,
+      "url": "https://www.nj.gov/treasury/taxation/lpt/lpt-appeal.shtml"
+    },
+    "homestead": {
+      "name": "ANCHOR (Affordable New Jersey Communities for Homeowners and Renters)",
+      "amountType": "credit",
+      "amount": 1500,
+      "text": "New Jersey has no general homestead exemption on the bill; relief is paid as a benefit. For the 2025 ANCHOR year, homeowners with income of $150,000 or less get $1,500 and those with $150,001–$250,000 get $1,000; renters get $450 ($700 if 65+) with income up to $150,000.",
+      "applyBy": "2025 application deadline: November 2, 2026 (Division of Taxation; many under-65 applicants are filed automatically).",
+      "url": "https://www.nj.gov/treasury/taxation/anchor/calculated.shtml"
+    },
+    "otherRelief": [
+      {
+        "name": "Stay NJ (homeowners 65+)",
+        "text": "For the 2025 tax year, maximum benefit $6,500 (income up to $100,000), $5,000 ($100,000.01–$150,000), $4,000 ($150,000.01–$200,000); paid in February and May 2027. Applied for on combined Form PAS-1.",
+        "url": "https://www.nj.gov/treasury/taxation/staynj/index.shtml"
+      },
+      {
+        "name": "Senior Freeze (Property Tax Reimbursement)",
+        "text": "Reimburses eligible seniors and disabled persons for increases in property tax on their main home over their base year; part of the combined PAS-1 application.",
+        "url": "https://www.nj.gov/treasury/taxation/ptr/index.shtml"
+      },
+      {
+        "name": "$250 senior/disabled and $250 veteran deductions; 100% disabled veteran exemption",
+        "text": "Municipally administered deductions from the property tax bill, plus a full exemption for 100% disabled veterans.",
+        "url": "https://www.nj.gov/treasury/taxation/lpt/lpt-deductions.shtml"
+      }
+    ],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "The combined total of ANCHOR, Senior Freeze, Stay NJ and the senior/veteran deductions cannot exceed the property taxes paid on the main home for the year.",
+        "url": "https://www.nj.gov/treasury/taxation/anchor/calculated.shtml"
+      },
+      {
+        "text": "The FY2027 budget (signed June 30, 2026) split the remaining 2026 Stay NJ payment into halves paid in August and November 2026, lowering the total 2026 benefit.",
+        "url": "https://www.nj.gov/treasury/taxation/staynj/index.shtml"
+      },
+      {
+        "text": "Assessment appeals go to the County Board of Taxation by April 1 (May 1 after a revaluation; January 15 in Burlington, Gloucester and Monmouth); assessments over $1 million may go straight to the Tax Court.",
+        "url": "https://www.nj.gov/treasury/taxation/lpt/lpt-appeal.shtml"
+      },
+      {
+        "text": "Municipalities set property values on October 1 for the following tax year; improvements made later can trigger an 'added assessment'.",
+        "url": "https://www.nj.gov/treasury/taxation/lpt/lpt-appeal.shtml"
+      },
+      {
+        "text": "Stay NJ is limited to owners aged 65+ who lived in the home all 12 months of 2025 with income up to $200,000; renters are not eligible.",
+        "url": "https://www.nj.gov/treasury/taxation/staynj/index.shtml"
+      }
+    ]
+  },
+  "uncertain": [
+    "S&U-4 (Sales Tax Guide) is dated Rev. 07/22; its grocery, clothing, Salem County, Atlantic City and occupancy-fee rules were not contradicted by newer pages but the bulletin itself has not been reissued.",
+    "Statewide property tax due dates (quarterly installments) not found on a Division of Taxation page read for this file; left null.",
+    "No official Division of Taxation page explicitly states 'no sales tax holiday in 2026'; the note relies on the absence of any announcement in the 2026 news list.",
+    "Exact amounts of the Senior Freeze reimbursement and income limits not recorded (income standards page not read)."
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "name": "Mississippi",
+  "abbr": "MS",
+  "slug": "mississippi",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 7,
+    "rateNote": "7% on retail sales of tangible personal property; groceries 5% since July 1, 2025 (House Bill 1, 2025 session). Many reduced rates: 5% cars and light trucks, 3% heavy trucks, aircraft and manufactured homes, 1.5% farm and manufacturing machinery. There is no general local option sales tax; specific cities and counties levy tourism and economic development taxes authorized by the Legislature.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "city- and county-specific tourism and economic development taxes authorized by the Legislature (mostly on restaurants, hotels and motels, e.g. 1% to 3%), collected by the Department of Revenue; no general local sales tax",
+      "cap": null,
+      "capNote": "Each levy has its own rate and often a repeal date set by local and private legislation.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://www.dor.ms.gov/business/sales-and-use-tax/tourism-and-economic-development-taxes"
+    },
+    "groceries": {
+      "treatment": "reduced",
+      "rate": 5,
+      "note": "Since July 1, 2025 groceries (food or drink for human consumption eligible for SNAP but not bought with SNAP) are taxed at 5% instead of 7%; purchases made with SNAP benefits are exempt.",
+      "url": "https://www.dor.ms.gov/sites/default/files/notices-technical-bulletins/72-25-03%20New%205%25%20Sales%20Tax%20Rate%20on%20Groceries.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxed at the regular 7% rate except during the July sales tax holiday (items under $100).",
+      "url": "https://www.dor.ms.gov/sites/default/files/notices-technical-bulletins/2026%20Sales%20Tax%20Holiday.pdf"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.dor.ms.gov/business/sales-tax-exemptions"
+    },
+    "otherRates": [
+      {
+        "item": "automobiles and light trucks (10,000 lbs or less)",
+        "rate": 5,
+        "note": "",
+        "url": "https://www.dor.ms.gov/business/sales-tax-rates"
+      },
+      {
+        "item": "trucks over 10,000 lbs, aircraft, semitrailers, mobile and modular homes",
+        "rate": 3,
+        "note": "",
+        "url": "https://www.dor.ms.gov/business/sales-tax-rates"
+      },
+      {
+        "item": "farm tractors, farm implements and manufacturing machinery",
+        "rate": 1.5,
+        "note": "",
+        "url": "https://www.dor.ms.gov/business/sales-tax-rates"
+      },
+      {
+        "item": "residential electricity, fuels and water",
+        "rate": 0,
+        "note": "Commercial electricity and fuels stay at 7%.",
+        "url": "https://www.dor.ms.gov/business/sales-tax-rates"
+      },
+      {
+        "item": "short-term motor vehicle rentals (30 days or less, 10,000 lbs or less)",
+        "rate": 6,
+        "note": "In addition to the 5% sales tax.",
+        "url": "https://www.dor.ms.gov/business/sales-tax-rates"
+      },
+      {
+        "item": "food and drinks from full-service vending machines",
+        "rate": 8,
+        "note": "",
+        "url": "https://www.dor.ms.gov/business/sales-tax-rates"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Mississippi Sales Tax Holiday",
+        "start": "2026-07-10",
+        "end": "2026-07-12",
+        "items": "clothing, footwear and school supplies priced under $100 per item",
+        "url": "https://www.dor.ms.gov/sites/default/files/notices-technical-bulletins/2026%20Sales%20Tax%20Holiday.pdf"
+      }
+    ],
+    "holidayNote": "The Department published guides for a Second Amendment Sales Tax Holiday through 2025; no 2026 guide was found on the notices page.",
+    "useTax": {
+      "rate": 7,
+      "note": "Use tax rates are the same as sales tax rates (Miss. Code Ann. 27-67-5), with credit for sales tax paid to another state; groceries at 5% since July 2025.",
+      "url": "https://www.dor.ms.gov/business/sales-use-tax/use-tax"
+    },
+    "facts": [
+      {
+        "text": "Mississippi cut its grocery tax from 7% to 5% on July 1, 2025 under House Bill 1, but groceries remain taxed, unlike in most states.",
+        "url": "https://www.dor.ms.gov/sites/default/files/notices-technical-bulletins/72-25-03%20New%205%25%20Sales%20Tax%20Rate%20on%20Groceries.pdf"
+      },
+      {
+        "text": "The 2026 back-to-school holiday ran July 10-12: no tax on clothing, shoes and school supplies under $100 each.",
+        "url": "https://www.dor.ms.gov/sites/default/files/notices-technical-bulletins/2026%20Sales%20Tax%20Holiday.pdf"
+      },
+      {
+        "text": "Cars and light trucks are taxed at 5% rather than 7%; boats, motorcycles and ATVs pay the full 7%.",
+        "url": "https://www.dor.ms.gov/business/sales-tax-rates"
+      },
+      {
+        "text": "Alcoholic beverages have carried 0% sales tax since July 1, 2022 and beer since July 1, 2023 (taxed through other levies).",
+        "url": "https://www.dor.ms.gov/business/sales-tax-rates"
+      },
+      {
+        "text": "Many towns add their own 1% to 3% tourism tax on restaurant meals and hotel rooms, each created by a separate act of the Legislature.",
+        "url": "https://www.dor.ms.gov/business/sales-and-use-tax/tourism-and-economic-development-taxes"
+      },
+      {
+        "text": "Residential electricity, heating fuels and water are exempt, while commercial users pay 7%.",
+        "url": "https://www.dor.ms.gov/business/sales-tax-rates"
+      }
+    ]
+  },
+  "property": {
+    "levied": "counties, municipalities, school districts and special districts; the county Tax Assessor appraises property and the Department of Revenue (as Tax Commission) supervises uniformity",
+    "assessment": {
+      "text": "Property is appraised at true value and multiplied by a constitutional assessment ratio: Class I owner-occupied single-family homes 10%; Class II other real property 15%; Class III personal property 15%; Class IV public utility property 30%; Class V motor vehicles 30%. Real property must be revalued at least every four years.",
+      "ratio": 10,
+      "url": "https://www.dor.ms.gov/county-services/property-tax-frequently-asked-questions"
+    },
+    "homestead": {
+      "name": "Homestead Exemption",
+      "amountType": "credit",
+      "amount": 300,
+      "text": "Tier 1 (under 65): tax credit of up to $300 depending on property value. Tier 2 (65+ or totally disabled): exempt from taxes on the first $7,500 of assessed value ($75,000 of true value). Tier 3: total exemption for certain qualifying applicants, including honorably discharged veterans aged 90+ and their unremarried surviving spouses.",
+      "applyBy": "County Tax Assessor's office, between January 1 and April 1; ownership must be established before January 1 and the deed filed before January 7.",
+      "url": "https://www.dor.ms.gov/county-services/homestead-exemption"
+    },
+    "otherRelief": [
+      {
+        "name": "Age/disability homestead (Tier 2)",
+        "text": "Exempts the first $75,000 of true value for owners 65+ or totally disabled; after the first year it can grow to cover most future increases in value.",
+        "url": "https://www.dor.ms.gov/county-services/homestead-exemption"
+      }
+    ],
+    "dueDates": {
+      "text": "Taxes are due on or before February 1 for property assessed the preceding year (next business day if February 1 falls on a weekend or holiday).",
+      "url": "https://www.dor.ms.gov/county-services/property-tax-frequently-asked-questions"
+    },
+    "facts": [
+      {
+        "text": "An owner-occupied home is assessed at 10% of its true value, other real estate at 15%, and cars at 30%.",
+        "url": "https://www.dor.ms.gov/county-services/property-tax-frequently-asked-questions"
+      },
+      {
+        "text": "The regular homestead exemption is a credit of up to $300 a year; at 65 owners must reapply to move to the larger tier.",
+        "url": "https://www.dor.ms.gov/county-services/homestead-exemption"
+      },
+      {
+        "text": "Homestead exemption can be disallowed retroactively for failing to file or pay Mississippi income tax or to register vehicles properly.",
+        "url": "https://www.dor.ms.gov/county-services/homestead-exemption"
+      },
+      {
+        "text": "Property taxes for the previous year's assessment are due by February 1.",
+        "url": "https://www.dor.ms.gov/county-services/property-tax-frequently-asked-questions"
+      },
+      {
+        "text": "Veterans aged 90 or older (and their unremarried surviving spouses) pay no property tax on their homestead.",
+        "url": "https://www.dor.ms.gov/county-services/homestead-exemption"
+      }
+    ]
+  },
+  "uncertain": [
+    "Second Amendment Sales Tax Holiday 2026: the DOR notices page lists guides for 2023-2025 only; whether a 2026 holiday took place was not confirmed, so none is listed.",
+    "effectiveSince of the 7% general rate not stated on the DOR rates page.",
+    "Special city sales taxes beyond tourism levies (e.g. a special municipal sales tax in Jackson) not documented; no lookup tool by address found on the DOR site."
+  ]
+}

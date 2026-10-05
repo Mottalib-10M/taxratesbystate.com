@@ -1,0 +1,101 @@
+{
+  "name": "District of Columbia",
+  "abbr": "DC",
+  "slug": "district-of-columbia",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6,
+    "rateNote": "District-wide general rate of 6%; there are no separate local taxes. The scheduled increase to 7% has been postponed: OTR states the general rate remains 6% through September 30, 2027. Higher rates apply to restaurant meals (10%), off-premises alcohol and rental cars (10.25%), hotels (15.95%) and parking (18%).",
+    "effectiveSince": null,
+    "scheduledChanges": [
+      {"date": "2027-10-01", "rate": 7, "what": "Postponed increase of the general rate to 7%: OTR says 6% remains through September 30, 2027. (The codified D.C. Code § 47-2002 still reads 7% from October 1, 2026.)", "url": "https://otr.cfo.dc.gov/"},
+      {"date": "2027-10-01", "rate": null, "what": "The temporary 15.95% hotel rate is extended through September 30, 2027 (Hotel Surtax Amendment Act of 2025).", "url": "https://otr.cfo.dc.gov/release/notice-oct-1-2025-tax-changes"}
+    ],
+    "local": {
+      "allowed": false,
+      "levies": "none: DC is a single taxing jurisdiction",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": false,
+      "lookupUrl": null,
+      "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "SNAP-eligible food or drink is excluded from retail sales, except food prepared for immediate consumption and soft drinks (soft drinks are taxed at 8%).",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-2001"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxed at the 6% general rate.",
+      "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-2005"
+    },
+    "otherRates": [
+      {"item": "soft drinks", "rate": 8, "note": "", "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs"},
+      {"item": "restaurant meals, prepared food and on-premises alcohol", "rate": 10, "note": "", "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs"},
+      {"item": "rental vehicles; off-premises alcohol", "rate": 10.25, "note": "", "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs"},
+      {"item": "hotel rooms and transient lodging", "rate": 15.95, "note": "Temporary rate extended through September 30, 2027.", "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs"},
+      {"item": "parking or storing of motor vehicles", "rate": 18, "note": "", "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs"},
+      {"item": "commercial bingo", "rate": 7.5, "note": "Since October 1, 2025.", "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs"}
+    ],
+    "holidays2026": [],
+    "holidayNote": "No general sales tax holiday in 2026.",
+    "useTax": {
+      "rate": 6,
+      "note": "Use tax is due at the same rates as sales tax on taxable items bought for use in DC without DC sales tax.",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-2002"
+    },
+    "facts": [
+      {"text": "The increase of DC's general sales tax to 7% has been postponed; the rate stays 6% through September 30, 2027.", "url": "https://otr.cfo.dc.gov/"},
+      {"text": "The Sales Tax Increase Delay Amendment Act of 2025 had already kept the rate at 6% through September 30, 2026.", "url": "https://otr.cfo.dc.gov/release/notice-oct-1-2025-tax-changes"},
+      {"text": "DC applies seven different rates, from 6% on general goods to 18% on parking.", "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs"},
+      {"text": "Medicines and drugs are exempt whether or not sold on prescription.", "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-2005"},
+      {"text": "Street and mobile food vendors pay 10% on food and 6% on other sales, with a minimum of $375 per quarter.", "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs"},
+      {"text": "Late returns incur a 5% to 25% penalty plus 10% annual interest compounded daily.", "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs"}
+    ]
+  },
+  "property": {
+    "levied": "The District government levies and collects real property tax directly (OTR); rates per class are set each year by the Council of the District of Columbia.",
+    "assessment": {
+      "text": "Property is assessed annually at estimated market value. Tax = assessed value / 100 x class rate: Class 1A residential $0.85 per $100; Class 1B (up to two units) $0.85 on the first $2.558 million and $1.00 above; commercial $1.65 to $1.89; vacant $5.00; blighted $10.00. Homesteaded owners cannot be taxed on more than a 10% yearly increase in assessed value (2% for seniors and disabled owners).",
+      "ratio": 100,
+      "url": "https://otr.cfo.dc.gov/page/real-property-tax-rates"
+    },
+    "homestead": {
+      "name": "Homestead Deduction",
+      "amountType": "value-exemption",
+      "amount": 91950,
+      "text": "Reduces the assessed value of an owner-occupied principal residence by $91,950 for tax year 2026, saving $781.58 a year at the $0.85 rate (it was $89,850 for tax year 2025).",
+      "applyBy": "Apply online with form ASD-100 on MyTax.DC.gov; an application approved between October 1 and March 31 gives the full year, April 1 to September 30 gives half.",
+      "url": "https://otr.cfo.dc.gov/page/real-property-tax-reliefs-credits-and-deductions"
+    },
+    "otherRelief": [
+      {"name": "Senior Citizen or Disabled Property Owner Tax Relief", "text": "Cuts the property tax by 50% for owners aged 65+ or disabled who own at least 50% of the home, within the household income threshold ($159,750 for tax year 2025).", "url": "https://otr.cfo.dc.gov/page/real-property-tax-reliefs-credits-and-deductions"},
+      {"name": "Assessment Cap Credit", "text": "Homesteaded property is not taxed on more than a 10% annual increase in assessed value; 2% for senior and disabled owners.", "url": "https://otr.cfo.dc.gov/page/real-property-tax-reliefs-credits-and-deductions"},
+      {"name": "Disabled Veterans' Homestead Deduction", "text": "Separate deduction for disabled veterans owning at least 50% of the home; not combinable with the regular homestead deduction, senior relief or cap credit.", "url": "https://otr.cfo.dc.gov/page/real-property-tax-reliefs-credits-and-deductions"}
+    ],
+    "dueDates": {
+      "text": "Two installments: first half (October 1 - March 31) due by March 31; second half (April 1 - September 30) due by September 15.",
+      "url": "https://otr.cfo.dc.gov/page/real-property-tax-bill-due-dates-and-delayed-tax-bills"
+    },
+    "facts": [
+      {"text": "OTR's example: a $500,000 home in Class 1A owes $4,250 a year before the homestead deduction and credits.", "url": "https://otr.cfo.dc.gov/page/real-property-tax-rates"},
+      {"text": "Class 1B taxes the part of a one- or two-unit home's value above $2.558 million at $1.00 per $100 instead of $0.85.", "url": "https://otr.cfo.dc.gov/page/real-property-tax-rates"},
+      {"text": "The homestead deduction is $91,950 for tax year 2026, worth $781.58 a year.", "url": "https://otr.cfo.dc.gov/page/real-property-tax-reliefs-credits-and-deductions"},
+      {"text": "Vacant property is taxed at $5.00 and blighted property at $10.00 per $100, to push owners to use or repair it.", "url": "https://otr.cfo.dc.gov/page/real-property-tax-rates"},
+      {"text": "DC reassesses all real property every year.", "url": "https://otr.cfo.dc.gov/page/real-property-faqs"}
+    ]
+  },
+  "uncertain": [
+    "Contradiction: OTR's site-wide notice says the increase to 7% is postponed and 6% remains through September 30, 2027, while the codified D.C. Code § 47-2002 (code.dccouncil.gov) still reads 7% from October 1, 2026. The OTR notice (administering agency, newer) was followed; the act postponing it and the exact new effective date were not read. The 2027-10-01 date is inferred from 'remains 6% through September 30, 2027'.",
+    "Tax year 2026 senior/disabled income threshold not read (only TY2025: $159,750).",
+    "The OTR page 'Tax Rates and Revenues, Sales and Use Taxes...' returned HTTP 403; rates were read in the OTR Sales and Use Tax FAQs instead."
+  ]
+}

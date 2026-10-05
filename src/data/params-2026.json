@@ -1,0 +1,57 @@
+{
+  "_lisezmoi": "Paramètres nationaux et sources générales. Les faits de chaque état vivent dans src/data/states/<slug>.json (une source officielle par fait) ; la taxe foncière médiane et la valeur médiane dans src/data/census-acs.json (scripts/data/build-census.py). Rien en dur dans les pages.",
+  "year": 2026,
+  "retrieved_at": "2026-10-05",
+  "valid_from": "2026-01-01",
+  "valid_to": "2026-12-31",
+  "defaults": {
+    "price": 100,
+    "homeValue": 350000
+  },
+  "sources": {
+    "censusB25103": {
+      "url": "https://data.census.gov/table/ACSDT1Y2024.B25103",
+      "label": "U.S. Census Bureau, ACS 2024 1-year, table B25103: Median real estate taxes paid"
+    },
+    "censusB25077": {
+      "url": "https://data.census.gov/table/ACSDT1Y2024.B25077",
+      "label": "U.S. Census Bureau, ACS 2024 1-year, table B25077: Median value of owner-occupied housing units"
+    },
+    "censusAcsMethod": {
+      "url": "https://www.census.gov/programs-surveys/acs/methodology/design-and-methodology.html",
+      "label": "U.S. Census Bureau: American Community Survey design and methodology"
+    },
+    "censusStc": {
+      "url": "https://www.census.gov/programs-surveys/stc.html",
+      "label": "U.S. Census Bureau: Annual Survey of State Government Tax Collections"
+    },
+    "wayfair": {
+      "url": "https://www.supremecourt.gov/opinions/17pdf/17-494_j4el.pdf",
+      "label": "Supreme Court of the United States, South Dakota v. Wayfair, Inc., 585 U.S. 162 (2018)"
+    },
+    "sst": {
+      "url": "https://www.streamlinedsalestax.org/",
+      "label": "Streamlined Sales Tax Governing Board (member states' common rules)"
+    },
+    "irsTopic503": {
+      "url": "https://www.irs.gov/taxtopics/tc503",
+      "label": "IRS Topic no. 503: Deductible taxes (sales tax or income tax, real property tax)"
+    },
+    "irsSalesTaxCalc": {
+      "url": "https://apps.irs.gov/app/stdc/",
+      "label": "IRS Sales Tax Deduction Calculator"
+    },
+    "irsScheduleA": {
+      "url": "https://www.irs.gov/instructions/i1040sca",
+      "label": "IRS, Instructions for Schedule A (Form 1040) (2025): state and local general sales taxes, SALT limit"
+    }
+  },
+  "salt": {
+    "cap": 40000,
+    "capMarriedSeparate": 20000,
+    "floor": 10000,
+    "source": "irsTopic503",
+    "note": "IRS Topic no. 503 and Instructions for Schedule A (2025), read 2026-10-05: combined SALT deduction limited to $40,000 ($20,000 married filing separately), subject to a modified adjusted gross income limitation but not reduced below $10,000; applies to 2025 returns filed in 2026.",
+    "taxYear": 2025
+  }
+}

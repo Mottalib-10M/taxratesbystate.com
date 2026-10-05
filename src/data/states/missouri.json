@@ -1,0 +1,136 @@
+{
+  "name": "Missouri",
+  "abbr": "MO",
+  "slug": "missouri",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4.225,
+    "rateNote": "State rate of 4.225% = 4% general sales tax (RSMo 144.020) + 0.125% conservation tax (Const. art. IV, sec. 43(a)) + 0.1% soil, water and state parks tax (Const. art. IV, sec. 47(a)). Food is taxed at a reduced 1% state rate plus the same 0.225% constitutional taxes. Cities, counties and special districts add local taxes.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "cities, counties and special taxing districts",
+      "cap": null,
+      "capNote": null,
+      "groceriesTaxedLocally": true,
+      "lookupUrl": null,
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=144.014"
+    },
+    "groceries": {
+      "treatment": "reduced",
+      "rate": 1.225,
+      "note": "Since October 1, 1997 the state tax on food (SNAP-eligible products, including vending machine food) is 1% (RSMo 144.014), plus the 0.225% constitutional conservation and parks taxes = 1.225% state; local sales taxes generally apply to groceries at their full rate.",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=144.014"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable except during the August back-to-school holiday (items of $100 or less).",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=144.049"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=144.030"
+    },
+    "otherRates": [
+      {
+        "item": "motor vehicles, trailers, boats and outboard motors (titled)",
+        "rate": 4.225,
+        "note": "4% state tax imposed at titling (RSMo 144.020(9)) plus the 0.225% constitutional taxes; local taxes apply by residence.",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=144.020"
+      }
+    ],
+    "holidays2026": [
+      {
+        "name": "Show Me Green Sales Tax Holiday",
+        "start": "2026-04-19",
+        "end": "2026-04-25",
+        "items": "Energy Star certified new appliances, up to $1,500 per appliance; state and local taxes",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=144.526"
+      },
+      {
+        "name": "Back-to-School Sales Tax Holiday",
+        "start": "2026-08-07",
+        "end": "2026-08-09",
+        "items": "clothing $100 or less per item, school supplies up to $50 per purchase, software $350 or less, graphing calculators $150 or less, personal computers and peripherals up to $1,500",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=144.049"
+      }
+    ],
+    "holidayNote": "Dates from statute: Show Me Green runs April 19-25 every year; back-to-school runs from the first Friday in August through the following Sunday.",
+    "useTax": {
+      "rate": 4.225,
+      "note": "State use tax of 4% plus the 0.125% and 0.1% constitutional use taxes; some cities and counties also levy a local use tax.",
+      "url": "https://revisor.mo.gov/main/PageSelect.aspx?section=IV%20%20%20%2047(a)&bid=31872&constit=y"
+    },
+    "facts": [
+      {
+        "text": "Missouri's 4.225% state rate is the sum of three taxes: 4% general, 0.125% for conservation and 0.1% for soil, water and state parks.",
+        "url": "https://revisor.mo.gov/main/PageSelect.aspx?section=IV%20%20%20%2043(a)&bid=31865&constit=y"
+      },
+      {
+        "text": "The 0.1% parks and soils sales tax expires unless reauthorized by voters; it was reauthorized on November 8, 2016 and again on August 4, 2026.",
+        "url": "https://revisor.mo.gov/main/PageSelect.aspx?section=IV%20%20%20%2047(a)&bid=31872&constit=y"
+      },
+      {
+        "text": "Groceries are taxed at only 1% by the state (since October 1, 1997), with the revenue going to school districts.",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=144.014"
+      },
+      {
+        "text": "Missouri has two annual tax holidays: Show Me Green (April 19-25) for Energy Star appliances and back-to-school in early August.",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=144.526"
+      },
+      {
+        "text": "Cars, trailers, boats and outboard motors are taxed when titled, by the person titling them.",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=144.020"
+      }
+    ]
+  },
+  "property": {
+    "levied": "counties, cities, school districts and other local taxing districts; the county assessor values property",
+    "assessment": {
+      "text": "Property is assessed at a percentage of true value in money: residential real property 19%, agricultural and horticultural 12%, utility, industrial, commercial, railroad and other real property 32%; most personal property 33 1/3%. Real property is valued in odd-numbered years and the same values apply in the following even-numbered year, except for new construction.",
+      "ratio": 19,
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=137.115"
+    },
+    "homestead": {
+      "name": "Senior homestead property tax credit (local option, age 62+)",
+      "amountType": "freeze",
+      "amount": null,
+      "text": "Missouri has no general homestead exemption. Counties may adopt, by ordinance or by voter referendum, a credit for owners aged 62 or older that freezes their homestead tax at the level of their first credit year (the credit equals the increase in tax since then). Created by SB 190 (2023), amended in 2024 and by HB 199 (2025), effective August 28, 2025.",
+      "applyBy": "Only in counties that adopted the credit; apply to the county.",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=137.1050"
+    },
+    "otherRelief": [],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "Missouri homes are assessed at 19% of market value, farmland at 12% and commercial property at 32%.",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=137.115"
+      },
+      {
+        "text": "Assessors revalue real estate every odd-numbered year; the values carry over to the next even year.",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=137.115"
+      },
+      {
+        "text": "Counties can freeze property taxes for homeowners 62 and older, either by ordinance or after a petition signed by 5% of voters forces a referendum.",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=137.1050"
+      },
+      {
+        "text": "Most tangible personal property is assessed at 33 1/3% of its true value.",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=137.115"
+      }
+    ]
+  },
+  "uncertain": [
+    "dor.mo.gov blocks automated and browser access (Imperva 'Error 16'), so all facts come from the Revisor of Statutes (revisor.mo.gov). No Department of Revenue rate lookup URL could be verified; lookupUrl left null.",
+    "Local sales tax caps and the exact list of local taxes are not recorded.",
+    "Missouri Property Tax Credit (circuit breaker for seniors/disabled, administered by DOR) not documented because the DOR site was inaccessible.",
+    "Property tax due date (customarily December 31) not read on an official page; left null.",
+    "Whether every county allows local taxes on groceries at full rate was not read on an official page; groceriesTaxedLocally=true reflects that RSMo 144.014 only lowers the state rate."
+  ]
+}

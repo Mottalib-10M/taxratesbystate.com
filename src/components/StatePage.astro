@@ -1,0 +1,107 @@
+---
+/**
+ * A state page: facts of src/data/states/<slug>.json + prose of src/content/states/<slug>.ts.
+ * Order (built for this subject): the state's figures at a glance, the answer block (folded),
+ * the sales tax calculator locked on the state, then sales tax (prose, rules by item, local taxes,
+ * 2026 holidays, facts), then property tax (prose, mini-simulator, Census figures, homestead, relief).
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import MiniSim from './calc/MiniSim';
+import Clamp from './Clamp.astro';
+import SalesTaxCalculator from './calc/SalesTaxCalculator';
+import { route, ROUTES } from '../i18n/routes';
+import { label } from '../i18n/nav';
+import { t } from '../i18n/ui';
+import { pageById, statePageBySlug } from '../lib/pages';
+import { helpers, table, ext } from '../lib/helpers';
+import { stateBySlug, rank, CENSUS, STATES } from '../lib/engine/states';
+import { compactState } from '../lib/engine/compact';
+import { usd, rate, eff, day } from '../lib/fmt';
+import { articleSchema, faqSchema, breadcrumbSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
+import { AUTHOR_NAME } from '../data/site-config';
+import type { StateDef } from '../lib/page-types';
+interface Props { def: StateDef }
+const { def } = Astro.props;
+const lang = 'en';
+const ui = t(lang);
+const s = stateBySlug(def.slug);
+const S = s.sales, PR = s.property, C = s.census;
+const h = helpers();
+const path = route(def.slug, lang);
+const h1 = `${s.name} sales tax and property tax`;
+const jsonLd = [articleSchema({ title: h1, description: def.description, path, lang }), webPageSchema({ name: h1, description: def.description, path, lang }), webApplicationSchema({ name: `${s.name} sales tax calculator`, description: def.description, path, lang }), breadcrumbSchema([{ name: ui.breadcrumbHome, path: route('home', lang) }, { name: s.name, path }])];
+if (def.faqs.length) jsonLd.push(faqSchema(def.faqs, lang));
+const card = (id: string) => pageById(id)?.card ?? (statePageBySlug(id) ? `Rates, exemptions and property tax in ${stateBySlug(id).name}` : '');
+const related = def.related.filter((id) => ROUTES.some((r) => r.id === id)).map((id) => ({ href: route(id, lang), name: label(id), description: card(id) }));
+// Every official URL the facts were read on, once.
+const urls = new Map<string, string>();
+const add = (u?: string | null) => { if (u && !urls.has(u)) { const x = new URL(u); urls.set(u, `${x.hostname.replace(/^www\./, '')}${x.pathname.length > 1 ? x.pathname : ''}`); } };
+[S.local.url, S.local.lookupUrl, S.groceries.url, S.clothing.url, S.prescriptionDrugs.url, S.useTax?.url, ...(S.facts ?? []).map((f) => f.url), ...(S.holidays2026 ?? []).map((x) => x.url), ...(S.otherRates ?? []).map((x) => x.url), PR.assessment?.url, PR.homestead.url, ...(PR.otherRelief ?? []).map((x) => x.url), PR.dueDates?.url, ...(PR.facts ?? []).map((f) => f.url)].forEach(add);
+const sources = [...[...urls].map(([url, name]) => ({ name, url })), { name: 'U.S. Census Bureau, ACS 2024 1-year, tables B25103 and B25077', url: CENSUS.urls.B25103 }];
+const methodHref = route('method', lang);
+const compact = STATES.map(compactState).filter((x) => x.slug === s.slug);
+const effRank = rank(s, (x) => x.census.effectiveRate);
+const billRank = rank(s, (x) => x.census.medianTax);
+const groc = S.groceries.treatment === 'exempt' ? 'Exempt from the state rate' : S.groceries.treatment === 'reduced' ? `Reduced state rate, ${rate(S.groceries.rate ?? 0)}` : `Taxed${S.groceries.rate != null ? `, ${rate(S.groceries.rate)}` : ''}`;
+const cloth = S.clothing.treatment === 'exempt' ? 'Exempt' : S.clothing.treatment === 'exempt-under-threshold' ? `Exempt under ${usd(S.clothing.threshold ?? 0)} an item` : 'Taxed like other goods';
+const yesState = S.hasStateSalesTax;
+const itemRows: Array<Array<string>> = [
+  ['Most goods', yesState ? rate(S.stateRate) : 'none', S.local.allowed ? 'yes' : 'no', S.rateNote ?? ''],
+  ['Groceries (food for home)', yesState ? (S.groceries.treatment === 'exempt' ? '0%' : rate(S.groceries.rate ?? S.stateRate)) : 'none', S.local.allowed ? (S.groceries.treatment !== 'exempt' || S.local.groceriesTaxedLocally ? 'yes' : 'no') : 'no', S.groceries.note ?? ''],
+  ['Clothing', yesState ? (S.clothing.treatment === 'exempt' ? '0%' : S.clothing.treatment === 'exempt-under-threshold' ? `0% under ${usd(S.clothing.threshold ?? 0)}, then ${rate(S.stateRate)}` : rate(S.stateRate)) : 'none', S.local.allowed && S.clothing.treatment !== 'exempt' ? 'yes' : 'no', S.clothing.note ?? ''],
+  ['Prescription drugs', yesState ? (S.prescriptionDrugs.treatment === 'exempt' ? '0%' : rate(S.prescriptionDrugs.rate ?? S.stateRate)) : 'none', S.prescriptionDrugs.treatment === 'exempt' || !S.local.allowed ? 'no' : 'yes', S.prescriptionDrugs.note ?? ''],
+  ...(S.otherRates ?? []).map((o) => [o.item.charAt(0).toUpperCase() + o.item.slice(1), o.rate != null ? rate(o.rate) : 'see note', '', o.note ?? '']),
+];
+const hol = S.holidays2026 ?? [];
+const miniArg = JSON.stringify({ name: s.name, ratio: C.effectiveRate, medianTax: C.medianTax, medianValue: C.medianValue, rate: S.stateRate });
+const hs = PR.homestead;
+---
+<PageLayout title={def.title} description={def.description} lang={lang} jsonLd={jsonLd} faqs={def.faqs} related={related} sources={sources} breadcrumbs={[{ label: s.name }]}>
+  <article>
+    <header class="mb-5">
+      <p class="text-sm font-semibold uppercase tracking-wide text-accent-700">State guide · {s.abbr}</p>
+      <h1 class="mt-1 font-serif text-3xl font-bold text-navy-900 md:text-4xl">{h1}</h1>
+      <p class="mt-3 text-lg text-navy-700">{def.intro}</p>
+      <p class="mt-3 text-sm text-navy-600">Facts read on official {s.name} pages on <time datetime={s.verified}>{day(s.verified)}</time> · {ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={methodHref} class="underline hover:text-navy-900">{label('method')}</a></p>
+    </header>
+    <dl data-chrome class="mb-6 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-navy-200 bg-navy-200 text-sm sm:grid-cols-3">
+      <div class="bg-white p-3"><dt class="text-navy-600">State sales tax</dt><dd class="tabular-nums mt-0.5 text-xl font-bold text-navy-900">{yesState ? rate(S.stateRate) : 'None'}</dd></div>
+      <div class="bg-white p-3"><dt class="text-navy-600">Local sales taxes</dt><dd class="mt-0.5 font-semibold text-navy-900">{S.local.allowed ? 'Yes, by address' : 'None'}</dd></div>
+      <div class="bg-white p-3"><dt class="text-navy-600">Groceries</dt><dd class="mt-0.5 font-semibold text-navy-900">{yesState ? groc : 'No state tax'}</dd></div>
+      <div class="bg-white p-3"><dt class="text-navy-600">Clothing</dt><dd class="mt-0.5 font-semibold text-navy-900">{yesState ? cloth : 'No state tax'}</dd></div>
+      <div class="bg-white p-3"><dt class="text-navy-600">Median property tax</dt><dd class="tabular-nums mt-0.5 text-xl font-bold text-navy-900">{usd(C.medianTax)}</dd></div>
+      <div class="bg-white p-3"><dt class="text-navy-600">Effective property rate</dt><dd class="tabular-nums mt-0.5 font-semibold text-navy-900">{eff(C.effectiveRate)} · #{effRank} of 51</dd></div>
+    </dl>
+    <Clamp text={def.resume} lang={lang} id={`clamp-${s.slug}`} class="mb-5" />
+    <div data-outil class="mb-10">
+      <SalesTaxCalculator client:load states={compact} state={s.slug} lockState={true} methodHref={methodHref} idPrefix={s.abbr.toLowerCase()} />
+    </div>
+    <div class="prose prose-slate max-w-none prose-headings:font-serif">
+      <h2>Sales tax in {s.name}</h2>
+      <Fragment set:html={def.sales(h)} />
+      <h3>What the state charges, item by item</h3>
+      <Fragment set:html={table(['Item', 'State rate', 'Local tax', 'Rule'], itemRows, `${s.name}, rules read on ${day(s.verified)}`, ['l', 'r', 'l', 'l'])} />
+      {(S.scheduledChanges ?? []).length > 0 && <p>Scheduled by law: {(S.scheduledChanges ?? []).map((c, i) => <>{i > 0 && '; '}{day(c.date)}: {c.what}{c.rate != null && ` (${rate(c.rate)})`} <a href={c.url} target="_blank" rel="nofollow noopener noreferrer" class="text-sm">source</a></>)}.</p>}
+      <h3>Local sales taxes</h3>
+      {S.local.allowed
+        ? <p data-chrome>Levied by {S.local.levies ?? 'local governments'}.{S.local.capNote ? ` ${S.local.capNote}` : ''} {S.local.lookupUrl && <>Find the exact combined rate for an address with the <a href={S.local.lookupUrl} target="_blank" rel="nofollow noopener noreferrer">official {s.name} lookup</a>, then type the local part into the calculator above.</>}</p>
+        : <p data-chrome>{s.name} has no local sales taxes{S.local.capNote ? `: ${S.local.capNote}` : '.'}</p>}
+      <h3>Sales tax holidays in 2026</h3>
+      {hol.length > 0
+        ? <><Fragment set:html={table(['Holiday', 'Dates', 'What qualifies'], hol.map((x) => [ext(x.url, x.name), x.start === x.end ? day(x.start) : `${day(x.start)} to ${day(x.end)}`, x.items]), undefined, ['l', 'l', 'l'])} />{S.holidayNote && <p>{S.holidayNote}</p>}</>
+        : <p data-chrome>{S.holidayNote ?? `No 2026 sales tax holiday was found on the official ${s.name} pages read on ${day(s.verified)}.`}</p>}
+      {(S.facts ?? []).length > 0 && <><h3>Worth knowing about {s.name} sales tax</h3><ul>{(S.facts ?? []).map((f) => <li>{f.text} <a href={f.url} target="_blank" rel="nofollow noopener noreferrer" class="text-sm">source</a></li>)}</ul></>}
+      <h2>Property tax in {s.name}</h2>
+      <Fragment set:html={def.property(h)} />
+    </div>
+    <MiniSim client:load kind="stateProperty" arg={miniArg} href={route('property-tax-calculator', lang)} />
+    <div class="prose prose-slate max-w-none prose-headings:font-serif">
+      <Fragment set:html={table(['Census figure', s.name], [['Median home value (owner-occupied)', usd(C.medianValue)], ['Median real estate taxes paid', usd(C.medianTax)], ['with a mortgage', usd(C.medianTaxWithMortgage)], ['without a mortgage', usd(C.medianTaxNoMortgage)], ['Effective rate (tax ÷ value)', eff(C.effectiveRate)], ['Rank by effective rate (1 = highest)', `${effRank} of 51`], ['Rank by median bill', `${billRank} of 51`]], `American Community Survey ${CENSUS.year} 1-year estimates, read on ${day(CENSUS.retrieved_at)}`, ['l', 'r'])} />
+      <aside class="boxnote not-prose"><p class="boxnote-title">{hs.name ?? 'Homestead relief'}</p><div class="text-navy-800"><p>{hs.text}</p>{hs.applyBy && <p class="mt-1 text-sm">How to get it: {hs.applyBy}</p>}{hs.url && <p class="mt-1 text-sm"><a href={hs.url} target="_blank" rel="nofollow noopener noreferrer" class="underline">Official page</a></p>}</div></aside>
+      {PR.assessment?.text && <><h3>How the taxable value is set</h3><p>{PR.assessment.text}{PR.levied ? ` Who levies the tax: ${PR.levied}` : ''}</p></>}
+      {PR.dueDates?.text && <p>Payment calendar: {PR.dueDates.text}</p>}
+      {(PR.otherRelief ?? []).length > 0 && <><h3>Other property tax relief</h3><ul>{(PR.otherRelief ?? []).map((r) => <li><strong>{r.name}.</strong> {r.text} <a href={r.url} target="_blank" rel="nofollow noopener noreferrer" class="text-sm">source</a></li>)}</ul></>}
+      {(PR.facts ?? []).length > 0 && <><h3>Worth knowing about {s.name} property tax</h3><ul>{(PR.facts ?? []).map((f) => <li>{f.text} <a href={f.url} target="_blank" rel="nofollow noopener noreferrer" class="text-sm">source</a></li>)}</ul></>}
+    </div>
+  </article>
+</PageLayout>

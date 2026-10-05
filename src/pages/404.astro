@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SalesTaxCalculator from '../components/calc/SalesTaxCalculator';
+import { route, DEFAULT_LOCALE } from '../i18n/routes';
+import { t } from '../i18n/ui';
+import { STATES } from '../lib/engine/states';
+import { compactState } from '../lib/engine/compact';
+const ui = t(DEFAULT_LOCALE);
+const compact = STATES.map(compactState);
+---
+<BaseLayout title="Page not found: State Tax Calc" description="This address does not exist on State Tax Calc. The sales tax calculator for all fifty states and DC is below, and the home page leads to every state page." lang={DEFAULT_LOCALE} noindex={true}>
+  <div class="mx-auto max-w-6xl px-4 py-12">
+    <h1 class="font-serif text-3xl font-bold text-navy-900">Page not found</h1>
+    <p class="mt-4 text-navy-700">{ui.notFound}</p>
+    <div class="mt-6"><SalesTaxCalculator client:load states={compact} idPrefix="nf" /></div>
+    <p class="mt-6"><a href={route('home', DEFAULT_LOCALE)} class="rounded-lg bg-accent-600 px-5 py-2.5 font-semibold text-white hover:bg-accent-700">Go to the home page</a></p>
+  </div>
+</BaseLayout>

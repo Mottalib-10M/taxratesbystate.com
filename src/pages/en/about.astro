@@ -1,0 +1,29 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED, AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { STATES, CENSUS } from '../../lib/engine/states';
+const lang = 'en';
+const withHoliday = STATES.filter((s) => (s.sales.holidays2026 ?? []).length > 0).length;
+const noTax = STATES.filter((s) => !s.sales.hasStateSalesTax).map((s) => s.name);
+---
+<PageLayout title="State Tax Calc: who checks the state rates, and how it works" description="Who publishes State Tax Calc, why a sales tax calculator must know each state's grocery and clothing rules, where rates come from, and how to report an error." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
+  <header class="mb-6"><h1 class="font-serif text-3xl font-bold text-navy-900 md:text-4xl">About State Tax Calc</h1></header>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>State Tax Calc is published by Radif Partners, a small company that builds free calculators on top of official rules. This one answers two questions Americans ask at very different moments: what will this purchase cost at the register, and what will this house cost every year once the county sends its bill? Both answers depend on the state first, and on rules that general-purpose calculators usually leave out.</p>
+    <h2>Why this site does better than the first Google result</h2>
+    <p>The most visible sales tax calculators ask you to type a rate and multiply. The tables that sit next to them often carry no date and no source; on the day this site was built, one of the best-known still showed Louisiana at its old state rate, months after the change. Here, every statewide rate comes from the revenue department of the state concerned and carries the date we read it. The calculator also knows what that state does with groceries, clothing and prescription drugs, and it covers the {withHoliday} states that held a sales tax holiday in 2026. On the property side, it estimates the bill from Census Bureau figures for {CENSUS.year} and lets you rebuild your own bill from its mill rate, assessment ratio and the homestead exemption of your state.</p>
+    <h2>What we do not do</h2>
+    <p>We do not publish a city or county sales tax rate unless an official source dates it. Local rates change on the first day of a quarter in many states, and a stale local rate is the most common error in this field. The calculator therefore asks you for the local part and links to the address lookup each state runs for free. Likewise, {noTax.join(', ')} have no statewide sales tax, but some of them allow local taxes or charge other taxes on specific sales; their pages say so instead of printing a zero.</p>
+    <h2>How the figures are produced</h2>
+    <p>The facts of each state live in one data file with the address of the official page each fact was read on. The engine is a set of small functions that run in your browser and are tested on every build: clothing thresholds per item, reduced grocery rates, the reverse calculation from a receipt total, and property bills rebuilt from assessed value and mills. The full description, with its limits, is on the <a href={route('method', lang)}>method page</a>.</p>
+    <h2>Independence and funding</h2>
+    <p>Radif Partners sells no tax software, no compliance service and no financial advice, and no seller, lender or adviser pays to be mentioned. The site is free and asks for no account. If advertising is added one day it will never sit above a calculator, and nothing you type is used for it because nothing you type leaves your browser.</p>
+    <h2>Reporting a mistake</h2>
+    <p>If a receipt, a county bill or a state page disagrees with a figure here, write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> with the share link of your calculation and the official page you are looking at. Confirmed errors are fixed in the data file, turned into a test and dated. See also the <a href={route('editorial', lang)}>editorial policy</a> and the <a href={route('terms', lang)}>legal notice</a>.</p>
+    <p class="text-sm text-navy-600">Facts last checked on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'en-US')}</time>.</p>
+  </div>
+</PageLayout>

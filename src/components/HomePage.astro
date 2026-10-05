@@ -1,0 +1,52 @@
+---
+/**
+ * Home (pillar page, RECETTE §5), in its own order for this subject: the sales tax calculator first,
+ * the folded answer block, the 51 jurisdictions in one table, then the property tax estimator, the
+ * long text in accordions, and the FAQ. Text in src/content/home.ts.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Clamp from './Clamp.astro';
+import SalesTaxCalculator from './calc/SalesTaxCalculator';
+import PropertyTaxCalculator from './calc/PropertyTaxCalculator';
+import { HOME } from '../content/home';
+import { route } from '../i18n/routes';
+import { helpers } from '../lib/helpers';
+import { SOURCES } from '../lib/engine/params';
+import { STATES, CENSUS, FACTS_VERIFIED } from '../lib/engine/states';
+import { compactState } from '../lib/engine/compact';
+import { faqSchema, organizationSchema, websiteSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
+import { day } from '../lib/fmt';
+const lang = 'en';
+const x = HOME;
+const path = route('home', lang);
+const h = helpers();
+const compact = STATES.map(compactState);
+const keys = ['censusB25103', 'censusB25077', 'wayfair', 'irsTopic503'];
+const stateSources = HOME.sourceStates.map((slug) => { const s = STATES.find((y) => y.slug === slug)!; return { name: `${s.name} official sales tax rate page`, url: s.sales.local.url ?? s.sales.facts?.[0]?.url ?? '' }; });
+const sources = [...keys.map((k) => ({ name: SOURCES[k].label, url: SOURCES[k].url })), ...stateSources];
+const jsonLd = [websiteSchema(lang), organizationSchema(lang), webPageSchema({ name: x.h1, description: x.description, path, lang }), webApplicationSchema({ name: x.h1, description: x.description, path, lang }), faqSchema(x.faqs, lang)];
+const sections = x.sections(h);
+---
+<PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={x.faqs} sources={sources}>
+  <header class="mb-4">
+    <h1 class="font-serif text-3xl font-bold text-navy-900 md:text-4xl">{x.h1}</h1>
+    <p class="mt-3 text-lg text-navy-700">{x.intro}</p>
+    <p class="mt-2 text-sm text-navy-600">State rates read on the official pages of all 50 states and DC, updated <time datetime={FACTS_VERIFIED}>{day(FACTS_VERIFIED)}</time> · property tax from the Census Bureau (ACS {CENSUS.year}) · <a href={route('method', lang)} class="underline">How we calculate</a> · <a href={route('about', lang)} class="underline">About this site</a></p>
+  </header>
+  <SalesTaxCalculator client:load states={compact} methodHref={route('method', lang)} idPrefix="home" />
+  <Clamp text={x.resume} lang={lang} id="clamp-home" sentences={2} class="my-8" />
+  <section class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h2>{x.tableTitle}</h2>
+    <Fragment set:html={x.tableIntro(h)} />
+    <Fragment set:html={h.stateTable('all')} />
+  </section>
+  <section class="mt-10">
+    <h2 class="font-serif text-2xl font-bold text-navy-900">{x.propertyTitle}</h2>
+    <p class="mb-4 mt-2 text-navy-800">{x.propertyIntro}</p>
+    <PropertyTaxCalculator client:load states={compact} censusYear={CENSUS.year} methodHref={route('method', lang)} idPrefix="homept" />
+  </section>
+  <section class="prose prose-slate mt-10 max-w-none prose-headings:font-serif">
+    <h2>{x.foldTitle}</h2>
+    {sections.map((s) => <details class="fold not-prose"><summary>{s.title}</summary><div class="prose prose-slate max-w-none pb-4"><Fragment set:html={s.html} /></div></details>)}
+  </section>
+</PageLayout>

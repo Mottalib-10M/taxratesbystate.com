@@ -1,0 +1,157 @@
+{
+  "name": "Ohio",
+  "abbr": "OH",
+  "slug": "ohio",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 5.75,
+    "rateNote": "State rate 5.75%; counties and regional transit authorities add permissive local sales taxes on top, so the combined rate depends on the county.",
+    "effectiveSince": "2013-09-01",
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "counties and regional transit authorities (permissive sales and use taxes)",
+      "cap": 3.0,
+      "capNote": "Local add-ons are set in multiples of 0.05% up to 3%; state + county + transit combined cannot exceed 8.75%. County and transit rate changes may only take effect at the start of a calendar quarter.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://tax.ohio.gov/help-center/the-finder",
+      "url": "https://tax.ohio.gov/wps/portal/gov/tax/business/ohio-business-taxes/sales-and-use"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food for human consumption off the premises where sold has been exempt since a 1936 constitutional amendment; restaurant meals, prepared food, soft drinks, alcohol, dietary supplements and tobacco are taxable.",
+      "url": "https://dam.assets.ohio.gov/image/upload/v1768508046/tax.ohio.gov/communications/publications/annual_reports/2025annualreport.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable year-round except during the 3-day back-to-school holiday (items $75 or less).",
+      "url": "https://tax.ohio.gov/wps/portal/gov/tax/business/sales-and-use-tax/taxability"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://tax.ohio.gov/wps/portal/gov/tax/business/sales-and-use-tax/taxability"
+    },
+    "otherRates": [],
+    "holidays2026": [
+      {
+        "name": "Back-to-school sales tax holiday",
+        "start": "2026-08-07",
+        "end": "2026-08-09",
+        "items": "clothing priced at $75 or less per item; school supplies $20 or less; school instructional materials $20 or less",
+        "url": "https://tax.ohio.gov/wps/portal/gov/tax/business/sales-and-use-tax/sales-tax-holiday"
+      }
+    ],
+    "holidayNote": "No expanded holiday on items $500 and under in 2026 (the expanded holiday created by H.B. 33 was not repeated); only the standard back-to-school holiday applies.",
+    "useTax": {
+      "rate": 5.75,
+      "note": "Use tax at the same state and county rate is due when sales tax was owed but not collected, e.g. online or out-of-state purchases.",
+      "url": "https://tax.ohio.gov/wps/portal/gov/tax/business/ohio-business-taxes/sales-and-use"
+    },
+    "facts": [
+      {
+        "text": "Ohio's state sales and use tax rate has been 5.75% since September 1, 2013.",
+        "url": "https://dam.assets.ohio.gov/image/upload/v1768508046/tax.ohio.gov/communications/publications/annual_reports/2025annualreport.pdf"
+      },
+      {
+        "text": "Counties and transit authorities can add up to 3% in 0.05% steps, but the total state + local rate is capped at 8.75%.",
+        "url": "https://tax.ohio.gov/wps/portal/gov/tax/business/ohio-business-taxes/sales-and-use"
+      },
+      {
+        "text": "Warren County's sales and use tax rate changed effective October 1, 2026; no county rate changes took effect January 1, April 1 or July 1, 2026.",
+        "url": "https://tax.ohio.gov/wps/portal/gov/tax/business/ohio-business-taxes/sales-and-use"
+      },
+      {
+        "text": "Since 2018 Ohio law sets a permanent back-to-school holiday on the first Friday of August and the following weekend (clothing up to $75, school supplies and instructional materials up to $20).",
+        "url": "https://dam.assets.ohio.gov/image/upload/v1768508046/tax.ohio.gov/communications/publications/annual_reports/2025annualreport.pdf"
+      },
+      {
+        "text": "Prescription glasses and contact lenses have been exempt since July 1, 2019, and pads, tampons and period underwear since April 1, 2020.",
+        "url": "https://tax.ohio.gov/wps/portal/gov/tax/business/sales-and-use-tax/taxability"
+      },
+      {
+        "text": "A motor vehicle bought in a private (casual) sale is still subject to sales or use tax, paid to the county clerk of courts at title transfer.",
+        "url": "https://tax.ohio.gov/wps/portal/gov/tax/business/sales-and-use-tax/motor-vehicles"
+      },
+      {
+        "text": "H.B. 96 (2025) repealed several sales tax exemptions, and H.B. 366 raised the vendor's license fee from $25 to $50 effective April 9, 2025.",
+        "url": "https://dam.assets.ohio.gov/image/upload/v1768508046/tax.ohio.gov/communications/publications/annual_reports/2025annualreport.pdf"
+      },
+      {
+        "text": "Separate from sales tax, H.B. 519 cuts the state motor fuel tax (normally 38.5 cents/gal gasoline, 47 cents/gal diesel) to near zero from October 4, 2026 through January 2, 2027.",
+        "url": "https://tax.ohio.gov/wps/portal/gov/tax/home/news-and-events/all-news/10-02-2026-ohio-motor-fuel-tax-holiday"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local only: school districts, counties, municipalities, townships and special districts; values set by the 88 county auditors under Department of Taxation oversight",
+    "assessment": {
+      "text": "Taxable (assessed) value is 35% of true market value (CAUV farmland excepted). County auditors fully reappraise every six years with a triennial update in between; tax reduction factors (H.B. 920) offset value growth on voted levies.",
+      "ratio": 35,
+      "url": "https://dam.assets.ohio.gov/image/upload/v1768508046/tax.ohio.gov/communications/publications/annual_reports/2025annualreport.pdf"
+    },
+    "homestead": {
+      "name": "Homestead Exemption",
+      "amountType": "value-exemption",
+      "amount": 29700,
+      "text": "Credit equal to the taxes on up to $29,700 of market value (tax year 2026; $29,000 for 2025) for homeowners 65+ or totally and permanently disabled, and qualifying surviving spouses, with Ohio modified AGI of $41,000 or less (2026; $40,000 for 2025). Service-connected disabled veterans and surviving spouses of public service officers killed in the line of duty get an enhanced $59,400 with no income test.",
+      "applyBy": "File form DTE 105A (105I veterans, 105K surviving spouses of officers) with the county auditor on or before December 31 of the tax year.",
+      "url": "https://tax.ohio.gov/wps/portal/gov/tax/help-center/faqs/real-property-tax-homestead-means-testing/real-property-tax--homestead-means-testing"
+    },
+    "otherRelief": [
+      {
+        "name": "Owner-occupancy credit",
+        "text": "2.5% credit on property taxes for a homeowner's primary residence (dwelling plus up to one acre); it, like the 10% non-business credit, does not apply to new or replacement levies passed after September 29, 2013.",
+        "url": "https://dam.assets.ohio.gov/image/upload/v1768508046/tax.ohio.gov/communications/publications/annual_reports/2025annualreport.pdf"
+      },
+      {
+        "name": "Local-option homestead exemption (H.B. 96, 2025)",
+        "text": "County commissioners may adopt an additional homestead exemption equal to the state one, essentially doubling it; it is not reimbursed by the state and only applies if the county authorizes it.",
+        "url": "https://tax.ohio.gov/wps/portal/gov/tax/help-center/faqs/real-property-tax-homestead-means-testing/real-property-tax--homestead-means-testing"
+      },
+      {
+        "name": "Current Agricultural Use Value (CAUV)",
+        "text": "Farmland of 10+ acres in commercial agriculture (or under 10 acres with $2,500 average gross income) is valued on agricultural use rather than market value.",
+        "url": "https://tax.ohio.gov/individual/property-tax"
+      }
+    ],
+    "dueDates": {
+      "text": "Typically two installments: first half in late January or early February, second half in late June or early July; exact dates vary by county.",
+      "url": "https://tax.ohio.gov/individual/property-tax"
+    },
+    "facts": [
+      {
+        "text": "The Ohio Constitution limits unvoted ('inside') millage to 10 mills; because it applies to taxable value (35% of market value) the effective cap is 0.35% of true value.",
+        "url": "https://dam.assets.ohio.gov/image/upload/v1768508046/tax.ohio.gov/communications/publications/annual_reports/2025annualreport.pdf"
+      },
+      {
+        "text": "In tax year 2024 the statewide average effective rate after reduction factors was about 52.44 mills on residential and agricultural property and 66.69 mills on commercial and industrial property.",
+        "url": "https://dam.assets.ohio.gov/image/upload/v1768508046/tax.ohio.gov/communications/publications/annual_reports/2025annualreport.pdf"
+      },
+      {
+        "text": "A 10% non-business credit applies to real property not used primarily in business; the state reimburses local governments for it.",
+        "url": "https://dam.assets.ohio.gov/image/upload/v1768508046/tax.ohio.gov/communications/publications/annual_reports/2025annualreport.pdf"
+      },
+      {
+        "text": "Valuation complaints go to the county Board of Revision and must be filed between January 1 and March 31.",
+        "url": "https://tax.ohio.gov/individual/property-tax"
+      },
+      {
+        "text": "H.B. 186 created an 'inflation cap credit' that limits growth of school levies held at the 20-mill floor; the Department lists it as effective March 20, 2026.",
+        "url": "https://tax.ohio.gov/wps/portal/gov/tax/government/real-state/real-property-tax-legislation"
+      },
+      {
+        "text": "Once approved, the homestead exemption and owner-occupancy credit renew automatically unless eligibility changes.",
+        "url": "https://tax.ohio.gov/individual/property-tax"
+      }
+    ]
+  },
+  "uncertain": [
+    "Ohio Revised Code site (codes.ohio.gov) and legislature.ohio.gov were unreachable from this network; statutory facts are taken from Department of Taxation pages and its FY2025 annual report.",
+    "Motor vehicle sales tax rate rules (county of titling) not detailed on a page read; otherRates left empty.",
+    "H.B. 186 effective date is as stated on the Department's legislation page (March 20, 2026); full enrolled text not read.",
+    "Specific county due dates not statewide; only the Department's 'typical' schedule is given."
+  ]
+}

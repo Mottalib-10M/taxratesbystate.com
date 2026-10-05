@@ -1,0 +1,156 @@
+{
+  "name": "North Carolina",
+  "abbr": "NC",
+  "slug": "north-carolina",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 4.75,
+    "rateNote": "General State rate of 4.75%. Every county levies local taxes under Articles 39, 40 and 42 totalling 2.00%; some counties add 0.25% (Article 46) and some a 0.50% transit tax. Total county rates are published by NCDOR (current table effective July 1, 2026).",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "counties (Articles 39, 40 and 42 in all 100 counties; optional Article 46 quarter-cent) and county public transportation (transit) taxes under Article 43",
+      "cap": null,
+      "capNote": "Local rate increases must be enacted and levied at least 90 days before their effective date.",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/sales-and-use-tax-rates/current-sales-and-use-tax-rates",
+      "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/sales-and-use-tax-bulletins"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Qualifying food is exempt from the State and transit rates but subject to a flat 2.00% local rate statewide. Prepared food, candy, soft drinks, dietary supplements and food from vending machines (non-qualifying food) bear the full State, local and transit rates.",
+      "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/food-non-qualifying-food-and-prepaid-meal-plans"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable tangible personal property at the general State and local rates.",
+      "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/sales-and-use-tax-bulletins"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/sales-and-use-tax-bulletins"
+    },
+    "otherRates": [
+      {
+        "item": "boats",
+        "rate": 3,
+        "note": "3% State rate with a maximum tax of $1,500 per boat (jet skis, kayaks and canoes included); local and transit rates do not apply.",
+        "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/boats"
+      },
+      {
+        "item": "manufactured and modular homes",
+        "rate": 4.75,
+        "note": "General State rate applied to 50% of the sales price; local and transit rates do not apply.",
+        "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/manufactured-and-modular-homes"
+      },
+      {
+        "item": "aircraft",
+        "rate": 4.75,
+        "note": "General State rate only, maximum tax $2,500 per aircraft.",
+        "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/sales-and-use-tax-bulletins"
+      },
+      {
+        "item": "qualifying food",
+        "rate": 2,
+        "note": "Flat 2.00% local rate; State and transit rates do not apply.",
+        "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/food-non-qualifying-food-and-prepaid-meal-plans"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": null,
+    "useTax": {
+      "rate": 4.75,
+      "note": "Consumer use tax is due on taxable items bought without North Carolina tax; individuals filing Form D-400 report it on the income tax return, others on Form E-554 (boats, aircraft and 2% food always on E-554). Applicable local and transit rates are added.",
+      "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/use-tax"
+    },
+    "facts": [
+      {
+        "text": "Since July 1, 2026 Mecklenburg County levies an additional local sales and use tax, changing its combined rate.",
+        "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/sales-and-use-tax-rates/current-sales-and-use-tax-rates"
+      },
+      {
+        "text": "Groceries are not fully tax-free: a 2% local rate applies to qualifying food in every county, reported on the '2% Food Rate' line of Form E-500.",
+        "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/food-non-qualifying-food-and-prepaid-meal-plans"
+      },
+      {
+        "text": "Boats are capped at $1,500 of tax; surfboards, paddle boards and windsurfers are not 'boats' and pay the full general rate.",
+        "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/boats"
+      },
+      {
+        "text": "Drugs required by federal law to be dispensed only on prescription, over-the-counter drugs sold on prescription, and insulin are exempt.",
+        "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/sales-and-use-tax-bulletins"
+      },
+      {
+        "text": "Forty-eight counties levy the optional 0.25% Article 46 tax; the 0.50% Article 43 transit tax is levied only in Durham, Mecklenburg, Orange and Wake counties.",
+        "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/sales-and-use-tax-bulletins"
+      },
+      {
+        "text": "A prepared food item is food sold heated, two or more foods combined by the retailer, or food sold with utensils provided by the retailer.",
+        "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/food-non-qualifying-food-and-prepaid-meal-plans"
+      }
+    ]
+  },
+  "property": {
+    "levied": "local: counties, municipalities and special districts set tax rates per $100 of appraised value; county assessors appraise and list property. Real property is listed in the county where it is located.",
+    "assessment": {
+      "text": "The tax bill equals the county appraisal (market value as of the county's last reappraisal) divided by 100 and multiplied by the combined county and municipal/district rate. Reappraisal years vary by county and are published by NCDOR.",
+      "ratio": null,
+      "url": "https://www.ncdor.gov/taxes-forms/property-tax/how-calculate-tax-bill"
+    },
+    "homestead": {
+      "name": "Elderly or Disabled Homestead Exclusion",
+      "amountType": "value-exemption",
+      "amount": 25000,
+      "text": "Excludes the greater of the first $25,000 or 50% of the appraised value of the permanent residence of an owner aged 65+ or totally and permanently disabled whose prior-year income does not exceed $38,800 (2026 tax year; $39,900 for 2027).",
+      "applyBy": "Form AV-9 filed with the county assessor by June 1.",
+      "url": "https://www.ncdor.gov/av-9-2026-application-property-tax-relief"
+    },
+    "otherRelief": [
+      {
+        "name": "Circuit Breaker Property Tax Deferment",
+        "text": "For owners 65+ or totally disabled who have owned and occupied the home five full years: taxes are limited to 4% of income up to $38,800, or 5% of income up to $58,200 (2026); the excess is deferred. Cannot be combined with the other two exclusions.",
+        "url": "https://www.ncdor.gov/av-9-2026-application-property-tax-relief"
+      },
+      {
+        "name": "Disabled Veteran Exclusion",
+        "text": "Excludes up to the first $45,000 of appraised value of the permanent residence of a disabled veteran; no age or income limit; also available to an unremarried surviving spouse.",
+        "url": "https://www.ncdor.gov/av-9-2026-application-property-tax-relief"
+      }
+    ],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "The regular listing period for property is the month of January; counties may extend it, and individual extensions can run to April 15.",
+        "url": "https://www.ncdor.gov/taxes-forms/property-tax/listing-requirements"
+      },
+      {
+        "text": "Under 'Tag and Tax Together', vehicle property tax is paid to NCDMV with the registration renewal, not to the county.",
+        "url": "https://www.ncdor.gov/taxes-forms/property-tax/frequently-asked-questions"
+      },
+      {
+        "text": "NCDOR's official example: a $200,000 home taxed at a combined 0.865 per $100 owes $1,730.",
+        "url": "https://www.ncdor.gov/taxes-forms/property-tax/how-calculate-tax-bill"
+      },
+      {
+        "text": "Income limit for the elderly/disabled exclusion rises from $38,800 (2026) to $39,900 (2027); circuit breaker upper limit $59,850 in 2027.",
+        "url": "https://www.ncdor.gov/taxes-forms/property-tax/property-tax-forms/av-9-2027-application-property-tax-relief"
+      }
+    ]
+  },
+  "uncertain": [
+    "effectiveSince of the 4.75% State rate not stated on pages read; left null.",
+    "NCDOR has no address-level rate lookup; lookupUrl is the official table of total rates by county.",
+    "Statutes on ncleg.gov (G.S. 105-164.13, 105-286, 105-360) return HTTP 403 to scripts; prescription drug exemption read in the 2026 Sales and Use Tax Bulletins (SUTB 39-2) instead.",
+    "Property tax due date / delinquency date (G.S. 105-360) not read on an official page; dueDates left null.",
+    "Reappraisal cycle (maximum interval) not read on an accessible official page; not stated.",
+    "Sales tax holiday: none found in the 2026 bulletins, but no official page states the repeal; holidayNote left null.",
+    "Motor vehicles are subject to a highway use tax administered by NCDMV, not the sales tax; rate not recorded (not read on official page)."
+  ]
+}

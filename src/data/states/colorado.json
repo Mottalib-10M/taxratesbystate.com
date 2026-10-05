@@ -1,0 +1,132 @@
+{
+  "name": "Colorado",
+  "abbr": "CO",
+  "slug": "colorado",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 2.9,
+    "rateNote": "Colorado's 2.9% state rate is the lowest of any state with a sales tax, but cities, counties and special districts add their own taxes. Home-rule cities can run their own sales tax with their own rules, separately from the Department of Revenue.",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "state-administered city, county and special district taxes (e.g. RTD, Scientific and Cultural Facilities District, Rural Transportation Authorities) plus self-collected taxes of home-rule cities, which set their own base and exemptions",
+      "cap": null,
+      "capNote": "State-administered local rate changes can take effect only on January 1 or July 1.",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://salestaxlookup.colorado.gov/",
+      "url": "https://tax.colorado.gov/DR1002"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food for home consumption (SNAP/WIC-eligible items, with Colorado exceptions such as candy and soft drinks) is exempt from the 2.9% state tax. Cities and counties may choose to tax food; RTD, CD and RTA district taxes follow the state treatment.",
+      "url": "https://tax.colorado.gov/sites/tax/files/Sales%204.pdf"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "Clothing is taxable as tangible personal property; Colorado has no clothing exemption or sales tax holiday.",
+      "url": "https://tax.colorado.gov/sales-tax-guide"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://tax.colorado.gov/sites/tax/files/documents/SUTT_Medical_Exemptions_July_2022.pdf"
+    },
+    "otherRates": [],
+    "holidays2026": [],
+    "holidayNote": "Colorado has no sales tax holiday.",
+    "useTax": {
+      "rate": 2.9,
+      "note": "Consumer use tax is due at the state rate (plus applicable local use taxes) on taxable items bought without Colorado sales tax.",
+      "url": "https://tax.colorado.gov/consumer-use-tax"
+    },
+    "facts": [
+      {
+        "text": "Home-rule cities may administer their own sales tax, with their own licensing, rates and exemptions; the Department of Revenue does not collect those taxes.",
+        "url": "https://tax.colorado.gov/sales-tax-guide"
+      },
+      {
+        "text": "Businesses can file and pay participating home-rule city taxes through the state's Sales & Use Tax System (SUTS).",
+        "url": "https://tax.colorado.gov/SUTS-info"
+      },
+      {
+        "text": "Since January 1, 2026 (HB25B-1005), retailers can no longer keep the state sales tax vendor service fee; local service fees may still apply.",
+        "url": "https://tax.colorado.gov/sales-use-tax"
+      },
+      {
+        "text": "State-administered sales tax rate changes can only take effect on January 1 or July 1; the DR 1002 rate publication is updated on those dates.",
+        "url": "https://tax.colorado.gov/DR1002"
+      },
+      {
+        "text": "Cities and counties that exempt food must use the state's definition, and all must exempt purchases paid with SNAP or WIC.",
+        "url": "https://tax.colorado.gov/sites/tax/files/Sales%204.pdf"
+      },
+      {
+        "text": "With the end of penny production in November 2025, the Department issued rounding guidance for retailers in March 2026.",
+        "url": "https://tax.colorado.gov/sites/tax/files/documents/Rounding_Guidance_for_Retailers_Mar_2026.pdf"
+      }
+    ]
+  },
+  "property": {
+    "levied": "Local: counties, municipalities, school districts and special districts levy mills on assessed value; county assessors value property and county treasurers collect. The Division of Property Taxation (DOLA) oversees administration.",
+    "assessment": {
+      "text": "Taxable value = actual value x assessment rate. For 2026, residential property uses two rates: 7.05% for school district levies and 6.80% for other local government levies, the latter applied after a 10% reduction of the first $700,000 of actual value (minimum $1,000 assessed value). The school rate can be adjusted downward by the State Board of Equalization to respect the school revenue limit.",
+      "ratio": 6.8,
+      "url": "https://dpt.colorado.gov/residential-local-government-assessment-rate"
+    },
+    "homestead": {
+      "name": "Senior Property Tax Exemption",
+      "amountType": "percent",
+      "amount": 50,
+      "text": "Owners aged 65+ who have owned and lived in their home for at least 10 consecutive years before January 1 are exempt on 50% of the first $200,000 of actual value. There is no general homestead exemption for other owners.",
+      "applyBy": "Apply to the county assessor between January 1 and July 15 (late filing until August 15 without appeal rights).",
+      "url": "https://dpt.colorado.gov/senior-property-tax-exemption"
+    },
+    "otherRelief": [
+      {
+        "name": "Senior primary residence classification",
+        "text": "For 2025 and 2026, seniors who received the senior exemption in 2020 or later at a previous home can keep a comparable benefit on a new primary residence; SB26-116 ends this classification after tax year 2026.",
+        "url": "https://dpt.colorado.gov/senior-primary-residence-classification"
+      },
+      {
+        "name": "Veterans with a disability and Gold Star spouses",
+        "text": "Separate exemption program for veterans with a 100% permanent service-connected disability rating (or individual unemployability) who own and occupy their home on January 1, their surviving spouses, and Gold Star spouses.",
+        "url": "https://dpt.colorado.gov/veteran-with-a-disability-and-gold-star-exemptions"
+      }
+    ],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {
+        "text": "The 2026 residential assessment rate for school levies is 7.05%.",
+        "url": "https://dpt.colorado.gov/residential-school-assessment-rate"
+      },
+      {
+        "text": "The 2026 residential rate for non-school local levies is 6.80%, after first reducing actual value by 10% on the first $700,000.",
+        "url": "https://dpt.colorado.gov/residential-local-government-assessment-rate"
+      },
+      {
+        "text": "The senior exemption requires 10 consecutive years of ownership and occupancy before January 1 of the application year.",
+        "url": "https://dpt.colorado.gov/senior-property-tax-exemption"
+      },
+      {
+        "text": "SB26-116 eliminates the qualified-senior primary residence classification after property tax year 2026.",
+        "url": "https://dpt.colorado.gov/recent-legislation"
+      },
+      {
+        "text": "From January 1, 2027, deadlines for the disabled veteran exemption align with the senior exemption deadlines.",
+        "url": "https://dpt.colorado.gov/recent-legislation"
+      }
+    ]
+  },
+  "uncertain": [
+    "Property tax payment due dates (full payment by April 30 or two halves, under C.R.S. 39-10-104.5) were not found on an official page that could be read; the Colorado Revised Statutes are not hosted on a .gov site. dueDates left null.",
+    "The DPT 'Current Assessment Rates' table did not render (page error); residential rates read on the two dedicated DPT pages. Commercial and other class rates for 2026 not recorded.",
+    "Number of self-collecting home-rule cities not verified.",
+    "The consumer use tax page does not print the rate; 2.9% is the state sales tax rate that the companion use tax mirrors (local use taxes vary)."
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "name": "Washington",
+  "abbr": "WA",
+  "slug": "washington",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": true,
+    "stateRate": 6.5,
+    "rateNote": "State retail sales tax of 6.5% (RCW 82.08.020) plus a local rate that varies by city and county. Washington is destination-based: the rate is that of the place where the customer receives the goods or services.",
+    "effectiveSince": null,
+    "scheduledChanges": [
+      {
+        "date": "2025-10-01",
+        "rate": null,
+        "what": "ESSB 5814: advertising, IT services, custom website development, custom software, live presentations, security and investigation services and temporary staffing became subject to retail sales tax.",
+        "url": "https://dor.wa.gov/taxes-rates/retail-sales-tax/services-newly-subject-retail-sales-tax"
+      },
+      {
+        "date": "2026-01-01",
+        "rate": 0.5,
+        "what": "Additional motor vehicle sales/use tax rose from 0.3% to 0.5%; new 8% luxury tax on vehicles priced over $100,000.",
+        "url": "https://dor.wa.gov/taxes-rates/other-taxes/motor-vehicle-salesuse-tax"
+      },
+      {
+        "date": "2027-01-01",
+        "rate": 9.9,
+        "what": "Additional tax on retail car rentals falls from 11.9% (2026) to 9.9%.",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020"
+      }
+    ],
+    "local": {
+      "allowed": true,
+      "levies": "cities, counties, transit authorities and other special districts",
+      "cap": null,
+      "capNote": "No single overall local cap published by the Department of Revenue; local rates vary by location.",
+      "groceriesTaxedLocally": false,
+      "lookupUrl": "https://webgis.dor.wa.gov/taxratelookup/SalesTax.aspx",
+      "url": "https://dor.wa.gov/taxes-rates/sales-use-tax-rates"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "Food and food ingredients are exempt (RCW 82.08.0293); prepared food, soft drinks, bottled water and dietary supplements are taxable.",
+      "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.0293"
+    },
+    "clothing": {
+      "treatment": "taxed",
+      "threshold": null,
+      "note": "No clothing exemption.",
+      "url": "https://dor.wa.gov/taxes-rates/retail-sales-tax"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.0281"
+    },
+    "otherRates": [
+      {
+        "item": "motor vehicles (additional motor vehicle sales/use tax)",
+        "rate": 0.5,
+        "note": "On top of the regular sales tax; 0.3% through December 31, 2025, 0.5% since January 1, 2026.",
+        "url": "https://dor.wa.gov/taxes-rates/other-taxes/motor-vehicle-salesuse-tax"
+      },
+      {
+        "item": "luxury motor vehicles (price over $100,000)",
+        "rate": 8,
+        "note": "8% on the part of the price above $100,000 (deduction raised 2% each July 1), on top of sales tax and motor vehicle tax, since January 1, 2026.",
+        "url": "https://dor.wa.gov/taxes-rates/other-taxes/luxury-motor-vehicle-tax"
+      },
+      {
+        "item": "retail car rentals (additional tax)",
+        "rate": 11.9,
+        "note": "11.9% from January 1 to December 31, 2026, then 9.9% from 2027, in addition to sales tax.",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020"
+      },
+      {
+        "item": "recreational vessels (additional tax)",
+        "rate": 0.5,
+        "note": "Additional 0.5% on the retail sale of recreational vessels.",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020"
+      }
+    ],
+    "holidays2026": [],
+    "holidayNote": "Washington has no sales tax holiday.",
+    "useTax": {
+      "rate": 6.5,
+      "note": "Use tax (state plus local) is paid by the consumer when retail sales tax was not collected by the seller.",
+      "url": "https://dor.wa.gov/taxes-rates/retail-sales-tax"
+    },
+    "facts": [
+      {
+        "text": "Since October 1, 2025 (ESSB 5814), many business services are taxed: advertising, IT support and consulting, custom websites and software, security services, temporary staffing and live presentations.",
+        "url": "https://dor.wa.gov/taxes-rates/retail-sales-tax/services-newly-subject-retail-sales-tax"
+      },
+      {
+        "text": "Telehealth and telemedicine are now specifically excluded from retail sales tax.",
+        "url": "https://dor.wa.gov/taxes-rates/retail-sales-tax/services-newly-subject-retail-sales-tax"
+      },
+      {
+        "text": "Buying a car over $100,000 now costs an extra 8% luxury tax on the amount above $100,000: on a $150,000 selling price plus a $50,000 trade-in, it applies to $100,000.",
+        "url": "https://dor.wa.gov/taxes-rates/other-taxes/luxury-motor-vehicle-tax"
+      },
+      {
+        "text": "Bottled water and soft drinks are taxable even though groceries are exempt.",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.0293"
+      },
+      {
+        "text": "Retail services such as repairs, cleaning and installation for consumers have long been taxable in Washington.",
+        "url": "https://dor.wa.gov/taxes-rates/retail-sales-tax"
+      }
+    ]
+  },
+  "property": {
+    "levied": "state school levy plus local levies (counties, cities, school districts, fire, library and other districts); collected by county treasurers",
+    "assessment": {
+      "text": "County assessors appraise all property at 100% of its true and fair market value, according to its highest and best use. The state constitution limits regular (non-voted) levies on a property to 1% of market value ($10 per $1,000); voter-approved levies come on top.",
+      "ratio": 100,
+      "url": "https://dor.wa.gov/taxes-rates/property-tax/how-my-residential-property-valued"
+    },
+    "homestead": {
+      "name": "No general homestead exemption",
+      "amountType": "none",
+      "amount": null,
+      "text": "Washington has no general homestead exemption for all owners. Relief is income-based: an exemption for seniors (61+), people with disabilities and certain disabled veterans, plus deferral programs.",
+      "applyBy": "Apply with the county assessor.",
+      "url": "https://dor.wa.gov/taxes-rates/property-tax/property-tax-exemptions-and-deferrals"
+    },
+    "otherRelief": [
+      {
+        "name": "Senior citizens and people with disabilities exemption",
+        "text": "For owners aged 61+, retired due to disability, or veterans rated 80%+ or totally disabled, with combined disposable income at or below the county's Income Threshold 3; the reduction depends on income, home value and local levy rates. Renewal at least every six years.",
+        "url": "https://dor.wa.gov/taxes-rates/property-tax/property-tax-exemptions-and-deferrals"
+      },
+      {
+        "name": "Deferral for seniors and people with disabilities",
+        "text": "Owners 60+ or disabled can defer taxes and special assessments at 5% simple interest, repaid on sale or death.",
+        "url": "https://dor.wa.gov/taxes-rates/property-tax/property-tax-exemptions-and-deferrals"
+      },
+      {
+        "name": "Deferral for limited-income homeowners",
+        "text": "Owners of five years with combined disposable income of $57,000 or less can defer the October half; apply by September 1.",
+        "url": "https://dor.wa.gov/taxes-rates/property-tax/property-tax-exemptions-and-deferrals"
+      },
+      {
+        "name": "Assistance for widows/widowers of veterans",
+        "text": "Grant toward property taxes for qualifying surviving spouses of veterans, within the county income threshold.",
+        "url": "https://dor.wa.gov/taxes-rates/property-tax/property-tax-exemptions-and-deferrals"
+      }
+    ],
+    "dueDates": {
+      "text": "First half due April 30 and second half due October 31 (taxes under $50 must be paid in full by April 30). Late taxes accrue 1% interest per month, and a 3% penalty applies if still delinquent on June 1.",
+      "url": "https://dor.wa.gov/taxes-rates/property-tax/pay-my-property-tax-or-appeal-my-property-assessment"
+    },
+    "facts": [
+      {
+        "text": "Each taxing district can raise its regular levy by only 1% a year, plus revenue from new construction and improvements: a $1 million levy can become $1.01 million.",
+        "url": "https://dor.wa.gov/forms-publications/publications-subject/tax-topics/property-tax-how-1-property-tax-levy-limit-works"
+      },
+      {
+        "text": "Official example: a $150,000 home at a levy rate of $9.41 per $1,000 owes $1,411.50.",
+        "url": "https://dor.wa.gov/sites/default/files/2022-02/HomeOwn.pdf"
+      },
+      {
+        "text": "Property tax accounts for about 30% of total state and local taxes in Washington and was the first tax levied in the state.",
+        "url": "https://dor.wa.gov/taxes-rates/property-tax"
+      },
+      {
+        "text": "Senior exemption income thresholds are set by county; thresholds for 2027-2029 were updated under ESSB 6162.",
+        "url": "https://dor.wa.gov/taxes-rates/property-tax/senior-citizens-and-people-disabilities-exemption-and-deferred-income-thresholds"
+      },
+      {
+        "text": "Paying 2024 taxes on December 31, 2024 meant 8% interest plus an 11% penalty, per the Department's example.",
+        "url": "https://dor.wa.gov/taxes-rates/property-tax/pay-my-property-tax-or-appeal-my-property-assessment"
+      }
+    ]
+  },
+  "uncertain": [
+    "State rate: no change to the 6.5% state retail sales tax rate was found in 2025-2026 (RCW 82.08.020 still reads six and five-tenths percent).",
+    "Whether local sales taxes also exempt groceries is based on the local taxes following the state base; not read explicitly.",
+    "The date the 6.5% rate took effect was not verified."
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "name": "Alaska",
+  "abbr": "AK",
+  "slug": "alaska",
+  "verified": "2026-10-05",
+  "sales": {
+    "hasStateSalesTax": false,
+    "stateRate": 0,
+    "rateNote": "Alaska levies no statewide sales tax. Boroughs and cities may levy their own sales and use taxes, so the rate depends entirely on the delivery address (0% in areas without a local tax).",
+    "effectiveSince": null,
+    "scheduledChanges": [],
+    "local": {
+      "allowed": true,
+      "levies": "borough sales and use taxes (AS 29.45.650) and city sales and use taxes (AS 29.45.700); remote sales are collected through the Alaska Remote Seller Sales Tax Commission for member jurisdictions",
+      "cap": null,
+      "capNote": "No statutory maximum rate; each borough or city sets its rate, exemptions and any per-sale tax cap by ordinance.",
+      "groceriesTaxedLocally": true,
+      "lookupUrl": "https://arsstc.org/buyers/",
+      "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.650&secEnd=29.45.650"
+    },
+    "groceries": {
+      "treatment": "exempt",
+      "rate": null,
+      "note": "No state tax. Local sales taxes may apply to food depending on the borough or city ordinance; purchases paid with SNAP or WIC benefits cannot be taxed locally.",
+      "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.650&secEnd=29.45.650"
+    },
+    "clothing": {
+      "treatment": "exempt",
+      "threshold": null,
+      "note": "No state tax; local sales taxes may apply.",
+      "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.700&secEnd=29.45.700"
+    },
+    "prescriptionDrugs": {
+      "treatment": "exempt",
+      "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.650&secEnd=29.45.650"
+    },
+    "otherRates": [],
+    "holidays2026": [],
+    "holidayNote": "No statewide sales tax, so no state sales tax holiday.",
+    "useTax": {
+      "rate": 0,
+      "note": "No state use tax. A borough or city levying a sales tax may levy a use tax at the same rate, with credit for sales tax paid elsewhere.",
+      "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.650&secEnd=29.45.650"
+    },
+    "facts": [
+      {"text": "Boroughs may tax sales, rents and services; cities may levy sales taxes inside or outside a borough (AS 29.45.650 and 29.45.700).", "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.700&secEnd=29.45.700"},
+      {"text": "Purchases made with SNAP food stamps or WIC vouchers cannot be subject to borough or city sales tax.", "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.650&secEnd=29.45.650"},
+      {"text": "Since February 2020, member jurisdictions of the Alaska Remote Seller Sales Tax Commission collect local sales tax on online purchases, sourced to the point of delivery.", "url": "https://arsstc.org/buyers/"},
+      {"text": "Remote sellers must register with ARSSTC once they exceed $100,000 of annual sales into Alaska; the 200-transaction test was dropped on January 1, 2025.", "url": "https://arsstc.org/business-sellers/"},
+      {"text": "Many Alaska ZIP codes are larger than taxing boundaries, so buyers outside a taxing area can be wrongly charged; ARSSTC's official tax map and refund form address this.", "url": "https://arsstc.org/buyers/"},
+      {"text": "Interest on late municipal sales tax may not exceed 15% a year.", "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.650&secEnd=29.45.650"}
+    ]
+  },
+  "property": {
+    "levied": "Local: boroughs and cities levy property tax (many areas levy none). The state itself levies only an oil and gas production and pipeline property tax of 20 mills (AS 43.56).",
+    "assessment": {
+      "text": "Property is assessed at its full and true (market) value as of January 1 of the assessment year. A municipality may not levy more than 3% (30 mills) of assessed value in a year.",
+      "ratio": 100,
+      "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.110&secEnd=29.45.110"
+    },
+    "homestead": {
+      "name": "Senior citizen and disabled veteran exemption",
+      "amountType": "value-exemption",
+      "amount": 150000,
+      "text": "The first $150,000 of assessed value of the primary residence of a resident aged 65 or older, a disabled veteran, or a surviving spouse aged 60+ is exempt by state law. There is no general statewide homestead exemption for other owners.",
+      "applyBy": "Written application to the local assessor; each municipality sets procedures and deadlines by ordinance.",
+      "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.030&secEnd=29.45.030"
+    },
+    "otherRelief": [
+      {"name": "Optional residential exemption", "text": "With voter approval, a municipality may exempt up to $75,000 of assessed value per residence (indexable to the Urban Alaska CPI).", "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.050&secEnd=29.45.050"},
+      {"name": "Senior vehicle exemption", "text": "One motor vehicle per household owned by a resident aged 65+ is exempt from property tax or from the vehicle registration tax.", "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.030&secEnd=29.45.030"}
+    ],
+    "dueDates": {
+      "text": null,
+      "url": null
+    },
+    "facts": [
+      {"text": "A municipality may not levy property tax above 3% of assessed value (30 mills) in a year.", "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.090&secEnd=29.45.090"},
+      {"text": "Municipalities also face a per-capita cap: total tax revenue may not exceed $1,500 per resident a year.", "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.090&secEnd=29.45.090"},
+      {"text": "The state levies 20 mills on oil and gas production and pipeline property; local tax paid on that property is credited against it.", "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=43.56.010&secEnd=43.56.010"},
+      {"text": "Municipalities may require seniors to be eligible for the Permanent Fund Dividend to claim the $150,000 exemption.", "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.030&secEnd=29.45.030"},
+      {"text": "Value is set as of January 1 at the price a willing buyer would pay a willing seller on the open market.", "url": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=29.45.110&secEnd=29.45.110"}
+    ]
+  },
+  "uncertain": [
+    "The DCCED Office of the State Assessor site (commerce.alaska.gov, Alaska Taxable report) blocks automated access (HTTP 403, DataDome): number of municipalities levying sales or property tax and statewide totals not verified.",
+    "Prescription drug and grocery treatment is set by each local ordinance; 'exempt' here means no state tax only.",
+    "Property tax due dates are set by each municipality; no statewide date exists.",
+    "The ARSSTC (intergovernmental commission of Alaska municipalities) is used for remote-seller rules and the tax map; it is not a state agency."
+  ]
+}
