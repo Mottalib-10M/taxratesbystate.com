@@ -1,6 +1,6 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://us-sales-property-tax.example";
-export const SITE_NAMES: Record<string, string> = {"en": "State Tax Calc"};
+export const SITE_URL = "https://taxratesbystate.com";
+export const SITE_NAMES: Record<string, string> = {"en": "Tax Rates by State"};
 export const LANG_TAGS: Record<string, string> = {"en": "en-US"};
 export const OG_LOCALES: Record<string, string> = {"en": "en_US"};
 export const LOCALE_TAG = 'en-US';
@@ -16,7 +16,7 @@ export const AUTHOR_DESC: Record<string, string> = {"en": "Radif Partners publis
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["State sales tax rates", "Local sales and use taxes", "Sales tax holidays", "Grocery and clothing sales tax exemptions", "Property tax assessment and mill rates", "Homestead exemptions", "American Community Survey housing statistics"]};
-export const CONTACT_EMAIL = "contact@us-sales-property-tax.example";
+export const CONTACT_EMAIL = "contact@taxratesbystate.com";
 export const THEME_COLOR = '#3C3B6E';
 export const LOGO_SYMBOL = 'TAX';
 export const BING_VERIFY_CODE = '';

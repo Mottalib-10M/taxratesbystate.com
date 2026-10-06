@@ -5,7 +5,7 @@ import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, REVIEW_CYCLE_MONTHS, SITE_NAM
 import { route } from '../../i18n/routes';
 import { contactPageSchema } from '../../lib/seo';
 const lang = 'en';
-const description = 'Write to State Tax Calc to report a state rate or exemption that changed, question a property tax estimate, or embed the sales tax calculator on your own website.';
+const description = 'Write to Tax Rates by State to report a state rate or exemption that changed, question a property tax estimate, or embed the sales tax calculator on your own website.';
 ---
 <PageLayout title={`Contact ${SITE_NAMES[lang]}: rate changes, questions, embedding`} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Contact', description, path: route('contact', lang), lang })]} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
   <div class="prose prose-slate max-w-none prose-headings:font-serif">

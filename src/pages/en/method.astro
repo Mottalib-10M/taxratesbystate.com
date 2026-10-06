@@ -10,7 +10,7 @@ import { usd, rate, eff, day } from '../../lib/fmt';
 import { SOURCES } from '../../lib/engine/params';
 const lang = 'en';
 const title = 'Sales Tax and Property Tax Method 2026: Rules and Sources';
-const description = 'How State Tax Calc works out sales and property tax in 2026: state rates, the local rate you enter, grocery and clothing rules, reverse tax, mills, Census data.';
+const description = 'How Tax Rates by State works out sales and property tax in 2026: state rates, the local rate you enter, grocery and clothing rules, reverse tax, mills, Census.';
 const path = route('method', lang);
 const ny = STATES.find((s) => s.slug === 'new-york');
 const ex1 = ny ? salesTax({ state: ny, price: 95, category: 'clothing', localRate: 4.5 }) : null;
@@ -23,7 +23,7 @@ const pb = propertyTax({ marketValue: 300000, assessmentRatio: 40, exemption: 20
 const rows = STATES.map((s) => [s.name, s.sales.hasStateSalesTax ? rate(s.sales.stateRate) : 'none', s.sales.local.url ? ext(s.sales.local.url, new URL(s.sales.local.url).hostname.replace(/^www\./, '')) : '', day(s.verified), eff(s.census.effectiveRate)]);
 ---
 <PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: 'How we calculate', description, path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'How we calculate', path }])]} breadcrumbs={[{ label: 'How we calculate' }]}>
-  <header class="mb-6"><h1 class="font-serif text-3xl font-bold text-navy-900 md:text-4xl">How State Tax Calc calculates</h1>
+  <header class="mb-6"><h1 class="font-serif text-3xl font-bold text-navy-900 md:text-4xl">How Tax Rates by State calculates</h1>
   <p class="mt-3 text-lg text-navy-700">Two engines, one rule: every rate comes from a dated official page, and every figure in a sentence is computed, not typed.</p></header>
   <div class="prose prose-slate max-w-none prose-headings:font-serif">
     <h2>Sales tax: the state part</h2>

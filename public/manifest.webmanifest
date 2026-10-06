@@ -1,6 +1,6 @@
 {
- "name": "State Tax Calc",
- "short_name": "State Tax Calc",
+ "name": "Tax Rates by State",
+ "short_name": "Tax Rates",
  "description": "Sales tax and property tax by state: statewide rates, grocery and clothing rules and 2026 holidays read on official state pages, and Census property tax figures.",
  "start_url": "/en/",
  "display": "standalone",

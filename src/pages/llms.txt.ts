@@ -5,7 +5,7 @@ import { route } from '../i18n/routes';
 import { stateBySlug, CENSUS } from '../lib/engine/states';
 export function GET() {
   const lines = [
-    '# State Tax Calc',
+    '# Tax Rates by State',
     '',
     `> Sales tax and property tax for the 50 US states and DC. Statewide sales tax rates, grocery, clothing and prescription rules and 2026 sales tax holidays are read on each state's revenue department; property tax medians come from the U.S. Census Bureau (ACS ${CENSUS.year}, tables B25103 and B25077). Local sales tax rates are entered by the user from the state's official lookup, never guessed. Published by Radif Partners. Last updated ${LAST_UPDATED}.`,
     '',
