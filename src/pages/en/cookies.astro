@@ -4,12 +4,13 @@ import { CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config'
 import { route } from '../../i18n/routes';
 const lang = 'en';
 ---
-<PageLayout title={`Cookies on ${SITE_NAMES[lang]}: Clarity analytics and opt-out`} description="The sales tax and property tax calculators set no cookie of their own. The site measures page use with Microsoft Clarity: its cookies, lifetimes and how to opt out at any time." lang={lang} noindex={true} breadcrumbs={[{ label: 'Cookies' }]} showAuthor={false}>
+<PageLayout title={`Cookies on ${SITE_NAMES[lang]}: none set by the site`} description="The sales tax and property tax calculators set no cookie, and nor does the site. Stability is monitored anonymously with Microsoft Clarity in cookie-free mode, content masked." lang={lang} noindex={true} breadcrumbs={[{ label: 'Cookies' }]} showAuthor={false}>
   <div class="prose prose-slate max-w-none prose-headings:font-serif">
     <h1>Cookies</h1>
-    <p>The sales tax, reverse sales tax and property tax calculators set no cookie of their own, and the site shows no advertising.</p>
-    <h2>Analytics: Microsoft Clarity</h2><p>The site loads Microsoft Clarity, operated by Microsoft Ireland Operations Limited, to see which state pages are read and where visitors stop. A notice on your first visit says so and offers an opt-out. Clarity keeps anonymous session recordings and heatmaps of clicks and scrolling; prices, local rates and home values you type are masked in the browser before anything is sent. Cookies: <code>_clck</code> (one year) and <code>_clsk</code> (one day), plus <code>MUID</code> and <code>CLID</code> that Microsoft may set on its own domains.</p>
-    <h2>Opting out</h2><p>Click “Opt out” in the notice, or later “Cookie settings” in the footer, and Clarity stops loading. Your answer is stored in <code>localStorage</code> as <code>consent-choice</code> and never leaves your browser. Clearing this site’s data deletes cookies already set; blocking third-party cookies or the clarity.ms domain also works.</p>
+    <p>The sales tax, reverse sales tax and property tax calculators never need a cookie, and the site shows no advertising.</p>
+    <h2>No cookies</h2><p>No page of the site sets a cookie, and the calculators store nothing on your device: prices, local rates and home values stay in the open page and disappear when you close it. That is why there is no cookie banner: there is nothing to accept.</p>
+    <h2>Anonymous stability monitoring</h2><p>To catch broken pages, script errors, slow loading and dead buttons, the site loads Microsoft Clarity in its cookie-free mode. Clarity then sets no cookie (no <code>_clck</code>, <code>_clsk</code>, <code>MUID</code> or <code>CLID</code>), gives every page view its own one-off identifier and does not link visits together. Page content and anything you type are masked before data is sent.</p>
+    <h2>Blocking it</h2><p>Blocking the clarity.ms domain, or using a content blocker, stops this monitoring too; the calculators work just the same.</p>
     <p>More in the <a href={route('privacy', lang)}>privacy policy</a>. Questions: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Updated: {LAST_UPDATED}.</p>
   </div>
 </PageLayout>
