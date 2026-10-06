@@ -26,7 +26,7 @@ export const GOOGLE_VERIFY_CODE = '';
 export const CONSENT_MODE: 'opt-in' | 'notice' | 'none' = 'notice';
 export const GA4_ID = '';
 /** Projet Microsoft Clarity (compte amradif). Vide = aucun traceur ni bandeau. */
-export const CLARITY_ID = '';
+export const CLARITY_ID = 'ytm65gl9q1';
 export const INDEXNOW_KEY = '0a2da24566f5dbcf491da50e121beb86';
 
 /* ------------------------------------------------------------------------- *
