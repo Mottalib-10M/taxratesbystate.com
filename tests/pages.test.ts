@@ -65,7 +65,7 @@ describe.each(pages.map((p) => [p.id, p] as const))('page %s', (_id, p) => {
     for (const s of p.sources) expect(s.includes(':') ? STATES.some((x) => x.slug === s.split(':')[1]) : !!SOURCES[s], s).toBe(true);
     expect(!!p.tool || !!p.mini, 'a tool or a mini-simulator (RECETTE §9.3)').toBe(true);
     if (p.mini) { expect(MINIS[p.mini], p.mini).toBeTruthy(); const spec = MINIS[p.mini](p.miniArg); const out = spec.run(Object.fromEntries(spec.inputs.map((i) => [i.id, i.def]))); expect(out.head[1]).not.toMatch(/NaN|undefined/); }
-    for (const m of p.body(h).matchAll(/<!--mini:([A-Za-z0-9_-]+)/g)) expect(MINIS[m[1]], m[1]).toBeTruthy();
+    for (const m of p.body(h).matchAll(/<!--mini:([A-Za-z0-9_-]+?)(?:\|[a-z-]+)?-->/g)) expect(MINIS[m[1]], m[1]).toBeTruthy();
   });
   it('no banned phrase, no em dash', () => clean([p.title, p.description, p.h1, p.intro, p.resume, p.card, ...p.faqs.flatMap((f) => [f.q, f.a]), p.body(h)].join(' ')));
   it('body length (guides 600+ words of prose outside tables, tool pages 250+)', () => {

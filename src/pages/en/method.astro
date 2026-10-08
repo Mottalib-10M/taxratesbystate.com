@@ -8,6 +8,8 @@ import { propertyTax } from '../../lib/engine/property';
 import { table, ext } from '../../lib/helpers';
 import { usd, rate, eff, day } from '../../lib/fmt';
 import { SOURCES } from '../../lib/engine/params';
+import { FED } from '../../lib/engine/realestate';
+import { RE_RETRIEVED } from '../../lib/realestate';
 const lang = 'en';
 const title = 'Sales Tax and Property Tax Method 2026: Rules and Sources';
 const description = 'How Tax Rates by State works out sales and property tax in 2026: state rates, the local rate you enter, grocery and clothing rules, reverse tax, mills, Census.';
@@ -39,6 +41,9 @@ const rows = STATES.map((s) => [s.name, s.sales.hasStateSalesTax ? rate(s.sales.
     <h2>Property tax: two ways to estimate a bill</h2>
     <p><strong>Typical rate.</strong> For each state we divide the median real estate taxes paid by owner-occupants by the median value of their homes, both from the {SOURCES.censusB25103.label.split(',')[0]}'s American Community Survey {CENSUS.year} 1-year estimates (tables B25103 and B25077, read on {day(CENSUS.retrieved_at)}). The ratio says what a typical owner pays as a share of value, homestead exemptions and assessment caps included. It is a statewide median: two neighboring counties can differ by a factor of two.</p>
     <p><strong>Your own bill.</strong> Market value × assessment ratio = assessed value; minus exemptions = taxable value; × mill rate ÷ 1,000 = tax; minus credits. One mill is one dollar per $1,000 of taxable value, or 0.1%. Example: a $300,000 home assessed at 40%, with a $2,000 exemption and a 30-mill levy, pays {usd(pb.tax)} a year ({eff(pb.effectiveRate / 100)} of market value). Your bill or your assessor's site gives the assessed value and the combined mill rate.</p>
+    <h2>Real estate: home sale, 1031 exchange, closing costs, estate tax</h2>
+    <p>The real estate calculators share one engine and two data files. The federal file holds the {FED.year} figures of the IRS: the ordinary brackets and the 0%, 15% and 20% capital gains thresholds of <a href={SOURCES.rp202532.url} target="_blank" rel="nofollow noopener noreferrer">Rev. Proc. 2025-32</a>, the {usd(FED.sec121.single)} and {usd(FED.sec121.joint)} home sale exclusion of Publication 523, the 3.8% net investment income tax, the {FED.x1031.identifyDays} and {FED.x1031.exchangeDays}-day periods of the Form 8824 instructions and the {usd(FED.estate.basicExclusion)} estate tax exclusion. The state file holds, for each of the 51 jurisdictions, the transfer tax and mortgage recording tax, the top income tax rate applied to a capital gain and any special treatment, and the estate and inheritance taxes, each with the official page it was read on (last reading {day(RE_RETRIEVED)}).</p>
+    <p>A taxable gain is stacked on the other taxable income you enter: depreciation recapture first, at your ordinary rate capped at 25%, then the long-term gain through the 0%, 15% and 20% bands. The state tax uses the state's top rate after any statutory exclusion of long-term gains, an upper bound you can lower in the advanced options. In a 1031 exchange, boot is the cash not reinvested plus the mortgage relief not covered by cash added; the gain recognized is the smaller of boot and gain. Estate tax applies the unified rate schedule of section 2001(c) to the taxable estate and subtracts the tax on the exclusion; state estate taxes apply each state's own table and threshold. Local transfer taxes, lender fees, title charges and commissions are entered by you, from your Loan Estimate or contract, because they vary by county and by deal.</p>
     <h2>What the tools do not do</h2>
     <ul>
       <li>They do not know the local sales tax of an address; you type it.</li>

@@ -7,7 +7,7 @@
 import type { State, Category } from './kit';
 import type { SalesResult } from './engine/sales';
 
-export type Group = 'calculators' | 'sales' | 'property';
+export type Group = 'calculators' | 'sales' | 'property' | 'realestate';
 export interface FAQ { q: string; a: string }
 
 export interface Helpers {
@@ -38,7 +38,7 @@ export interface Helpers {
   stateTable: (cols?: 'all' | 'sales' | 'property' | 'groceries' | 'clothing', sortBy?: 'name' | 'rate' | 'eff' | 'bill', filter?: (s: State) => boolean, caption?: string) => string;
 }
 
-export type ToolKind = 'sales' | 'reverse' | 'property' | 'mills' | 'compare';
+export type ToolKind = 'sales' | 'reverse' | 'property' | 'mills' | 'compare' | 'homesale' | 'x1031' | 'closing' | 'estate' | 'inheritance';
 export interface ToolProps { state?: string; lockState?: boolean; category?: Category; price?: number; mode?: 'add' | 'remove'; advanced?: boolean }
 
 export interface PageDef {
@@ -65,6 +65,8 @@ export interface PageDef {
   mini?: string;
   /** Data for the mini (JSON string built from the facts with the kit). */
   miniArg?: string;
+  /** Long article folded into one <details> per H2 (RECETTE §26); minis stay visible. */
+  fold?: boolean;
   related: string[];
   /** Keys of params-2026.json > sources, or "state:<slug>" for a state's official rate page. */
   sources: string[];

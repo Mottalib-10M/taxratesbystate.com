@@ -1,0 +1,3808 @@
+{
+ "_lisezmoi": "Real estate facts of the 51 jurisdictions: transfer and mortgage taxes, state income tax on a capital gain (research of 2026-10-08, official pages only; URL per fact), estate and inheritance taxes. Null = not read on an official source (see uncertain).",
+ "retrieved_at": "2026-10-08",
+ "states": {
+  "alabama": {
+   "transfer": {
+    "has": true,
+    "name": "Deed tax (recording privilege tax on deeds)",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.1
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "$.50 for each $500 or fraction thereof in value of property conveyed (Code of Ala. §40-22-1)",
+    "local": "No local transfer tax add-on is set by §40-22-1; the tax is collected by the county judge of probate when the deed is recorded.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": true,
+     "ratePct": 0.15,
+     "name": "Mortgage recording privilege tax",
+     "note": "$.15 for each $100 (or fraction) of the initial indebtedness secured (Code of Ala. §40-22-2)."
+    },
+    "notes": "Only the value in excess of any mortgage or vendor's lien on which the mortgage tax has been paid is taxable under §40-22-1, so a deed recorded with a purchase-money mortgage is taxed on the price minus the loan. Proof of actual purchase price (or value) must accompany the deed.",
+    "url": "https://alison.legislature.state.al.us/code-of-alabama?section=40-22-1",
+    "url2": "https://alison.legislature.state.al.us/code-of-alabama?section=40-22-2",
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 5,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 3000,
+     "joint": 6000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "No special capital gains rate: gains are taxed as ordinary income at 2%-5%. Some Alabama cities/counties levy occupational taxes on wages, not on capital gains.",
+    "surtax": null,
+    "url": "https://www.revenue.alabama.gov/faqs/what-is-alabamas-individual-income-tax-rate/",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "The Code of Alabama pages render via JavaScript; the §40-22-1 and §40-22-2 text was read through the Legislature's own GraphQL API behind alison.legislature.state.al.us.",
+    "Alabama's conformity to the federal Section 121 home-sale exclusion was not read on an official source (Alabama does not start from federal AGI); not stated in cgNote.",
+    "Rates in Code §40-18-5 have no expiry; 2026 assumed same as the ADOR FAQ (no year given on the page)."
+   ]
+  },
+  "alaska": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state transfer tax; the state Recorder's Office charges a recording fee only ($20 for the first page of a document, plus a fee per additional page; AS 40.17.030, 11 AAC 05.200)",
+    "local": "No local real estate transfer tax found on official state sources; some boroughs and cities levy sales and property taxes (state DOR points to the 'Alaska Taxable' publication).",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "A deed of trust pays only the per-page recording fee."
+    },
+    "notes": "Recording is done by the Department of Natural Resources Recorder's Office, not by counties.",
+    "url": "https://dnr.alaska.gov/ssd/recoff/fees",
+    "url2": "https://tax.alaska.gov/programs/index.aspx",
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": false,
+    "taxesCapitalGains": false,
+    "topRatePct": 0,
+    "year": 2026,
+    "flat": null,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "'The State of Alaska currently does not have an individual income tax' (Alaska Department of Revenue).",
+    "surtax": null,
+    "url": "https://tax.alaska.gov/programs/programs/index.aspx?10001",
+    "cgShort": "no personal income tax"
+   },
+   "uncertain": [
+    "Absence of a transfer tax inferred from the DOR list of tax types (none on real estate transfers) and the Recorder's Office fee schedule (fees only); no official page states 'no transfer tax' in those words."
+   ]
+  },
+  "arizona": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No transfer tax; the county recorder collects a flat real estate transfer fee of $2 per deed or contract (A.R.S. §11-1132), with an affidavit of legal value",
+    "local": "Arizona Constitution art. IX §24 bars the state, counties, cities and any district from imposing any new tax or fee on the sale or transfer of real property (anything not in existence on Dec. 31, 2007).",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax; the §11-1132 fee does not apply to transfers solely to provide or release security for a debt (A.R.S. §11-1134)."
+    },
+    "notes": "Exemptions from the affidavit and fee include gift deeds, court-ordered conveyances and nominal-consideration transfers between spouses, parents and children (A.R.S. §11-1134).",
+    "url": "https://www.azleg.gov/ars/11/01132.htm",
+    "url2": "https://www.azleg.gov/const/9/24.htm",
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 2.5,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": 0,
+     "joint": 0
+    },
+    "cgExclusionPct": 25,
+    "cgNote": "A.R.S. §43-1022(22): residents subtract 25% of net long-term capital gain included in federal AGI from assets acquired after Dec. 31, 2011 (not allowed if the acquisition date cannot be verified). Arizona starts from federal AGI, so the federal Section 121 home-sale exclusion carries over.",
+    "surtax": null,
+    "url": "https://www.azleg.gov/ars/43/01011.01.htm",
+    "cgShort": "25% of a long-term gain subtracted"
+   },
+   "uncertain": [
+    "azdor.gov returns HTTP 403 to automated requests (curl and WebFetch); the 2.5% flat rate was read in A.R.S. §43-1011 (version 1, para. 9: 'the tax is 2.5% of taxable income' once the §43-243 trigger notice is given). That the trigger applies to 2023 onward, and so to 2026, was not read on an official page.",
+    "Section 121 carry-over is inferred from Arizona starting from federal AGI, not from an explicit official statement."
+   ]
+  },
+  "arkansas": {
+   "transfer": {
+    "has": true,
+    "name": "Real Property Transfer Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.33
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "$3.30 per $1,000 of actual consideration on transactions that exceed $100 (Arkansas DFA)",
+    "local": "No local add-on mentioned by DFA; the tax is evidenced by a Real Estate Transfer Document (stamp) bought from DFA / the county.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax found on DFA pages; recording fees only."
+    },
+    "notes": "Also applies to transfers of ownership of mineral rights.",
+    "url": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/miscellaneous-tax/arkansas-miscellaneous-tax-laws/real-property-transfer/",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 3.9,
+    "year": 2025,
+    "flat": false,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": 50,
+    "cgNote": "Form AR1000D: only 50% of the Arkansas net capital gain is taxable, and net capital gain above $10,000,000 is excluded entirely (line 7b caps it at $10M). Arkansas adopts IRC §121: gain on the sale of a personal residence is exempt up to $250,000 per taxpayer ($500,000 married filing on the same return) under the 2-of-5-year rule. Short-term gains are fully taxable.",
+    "surtax": null,
+    "url": "https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf",
+    "cgShort": "half of a long-term gain taxed"
+   },
+   "uncertain": [
+    "2026 rates not found on DFA; the 2025 instructions say 'Marginal Income Tax rates for 2025 are 3.9%' (Act 1 of the 2nd Extraordinary Session of 2024).",
+    "The income at which the 3.9% bracket starts was not read clearly (the tax table shows $3,809 + 3.9% of the excess over $100,000 for incomes above $100,000; brackets are the same for single and joint) - topBracketStart left null.",
+    "Who pays the transfer tax (buyer/seller) not stated on the DFA page.",
+    "Absence of a mortgage tax inferred (not listed among DFA miscellaneous taxes); not stated explicitly."
+   ]
+  },
+  "california": {
+   "transfer": {
+    "has": false,
+    "name": "Documentary Transfer Tax (county and city)",
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state transfer tax. Under Rev. & Tax. Code §11911 a county may impose $0.55 for each $500 (or fraction) of consideration (0.11%), on value exclusive of liens remaining on the property; a city in that county may impose half that rate, credited against the county tax",
+    "local": "County tax authorized at $0.55 per $500 (0.11% of price, net of liens remaining at sale); a city may levy $0.275 per $500, credited against the county tax (§11911(b)-(c)). Some charter cities (e.g. Los Angeles, San Francisco, Oakland, Berkeley) levy their own, much higher, real property transfer taxes under their charters, often graduated by price - check the city ordinance.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax; deeds of trust pay county recording fees only."
+    },
+    "notes": "The county/city documentary transfer tax applies only when consideration exceeds $100 and excludes the value of any lien or encumbrance remaining on the property at the time of sale (assumed loans).",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=11911",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 12.3,
+    "year": 2025,
+    "flat": false,
+    "topBracketStart": {
+     "single": 742953,
+     "joint": 1485906
+    },
+    "cgExclusionPct": null,
+    "cgNote": "'California does not have a lower rate for capital gains. All capital gains are taxed as ordinary income' (FTB). Top regular rate 12.3% (2025: single over $742,953, joint over $1,485,906), plus the 1% Behavioral Health Services Tax (formerly Mental Health Services Tax) on taxable income above $1,000,000 = 13.3%.",
+    "surtax": {
+     "ratePct": 1,
+     "threshold": 1000000,
+     "note": "Behavioral Health Services Tax: 1% of taxable income over $1,000,000 (same threshold for all filing statuses), confirmed in the 2026 Form 540-ES instructions."
+    },
+    "url": "https://www.ftb.ca.gov/forms/2025/2025-540-tax-rate-schedules.pdf",
+    "cgShort": "1% more on income above $1,000,000"
+   },
+   "uncertain": [
+    "leginfo.legislature.ca.gov blocks curl/WebFetch (403); §11911 was read in a real browser.",
+    "2026 bracket thresholds not yet published by FTB; topBracketStart are the 2025 thresholds (indexed yearly).",
+    "Charter-city transfer tax rates not compiled (city ordinances, not a statewide figure).",
+    "California conformity to the federal Section 121 home-sale exclusion was not read on an FTB page (FTB capital gains page read: https://www.ftb.ca.gov/file/personal/income-types/capital-gains-and-losses.html)."
+   ]
+  },
+  "colorado": {
+   "transfer": {
+    "has": true,
+    "name": "Documentary fee",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.01
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Documentary fee of $0.01 per each hundred dollars of consideration, on a non-exempt deed transferring property when consideration is more than $500 (county clerk and recorder fee schedule; C.R.S. 39-13-102)",
+    "local": "No county add-on beyond the documentary fee. A number of home-rule municipalities (mostly mountain resort towns) levy their own real estate transfer taxes by local ordinance; rates vary and are not set by state law.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax; flat per-document recording fee ($43 per document since July 1, 2025 in Boulder County's schedule)."
+    },
+    "notes": "The documentary fee is collected by the county clerk and recorder when the deed is recorded, along with a Real Property Transfer Declaration.",
+    "url": "https://www.bouldercounty.gov/records/recording/fees/",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 4.4,
+    "year": 2025,
+    "flat": true,
+    "topBracketStart": {
+     "single": 0,
+     "joint": 0
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Flat rate on Colorado taxable income, which starts from federal taxable income (so the federal Section 121 exclusion carries over). Since tax year 2022 the Colorado capital gain subtraction is limited to farmers (Schedule F filers) selling agricultural real property held 5+ years; it does not apply to a home sale.",
+    "surtax": null,
+    "url": "https://tax.colorado.gov/individual-income-tax-guide",
+    "cgShort": "flat rate"
+   },
+   "uncertain": [
+    "The 2026 rate is not yet published: the Department's table stops at 2025 (4.4%; 2024 was a temporary 4.25%). Colorado's rate can be lowered temporarily in a given year by TABOR surplus triggers.",
+    "The documentary fee figure was read on a county clerk (Boulder County) schedule; the C.R.S. 39-13-102 text itself was not read.",
+    "Municipal real estate transfer taxes not compiled."
+   ]
+  },
+  "connecticut": {
+   "transfer": {
+    "has": true,
+    "name": "Real Estate Conveyance Tax (state portion)",
+    "brackets": [
+     {
+      "from": 0,
+      "to": 800000,
+      "ratePct": 0.75
+     },
+     {
+      "from": 800000,
+      "to": 2500000,
+      "ratePct": 1.25
+     },
+     {
+      "from": 2500000,
+      "to": null,
+      "ratePct": 2.25
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Residential: 3/4 of 1% on the portion of consideration up to $800,000; 1 1/4% on the portion over $800,000 up to $2,500,000; 2 1/4% on the portion over $2,500,000 (C.G.S. §12-494(b)(2)(C)); applies when consideration is $2,000 or more",
+    "local": "Municipal conveyance tax of 1/4 of 1% of the consideration in every municipality (§12-494(a)(2)); targeted investment communities and towns with designated manufacturing plants may add up to another 1/4 of 1% (§12-494(c)), i.e. up to 0.5% local.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax; town clerk recording fees only."
+    },
+    "notes": "Non-residential property (other than unimproved land) is taxed at 1.25% for the state portion. Conveyances of delinquent-mortgage property to the lender are taxed at 0.75%. Revenue above $300M a year goes to the Housing Trust Fund from July 1, 2025.",
+    "url": "https://www.cga.ct.gov/current/pub/chap_223.htm",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 6.99,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 500000,
+     "joint": 1000000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "No special capital gains rate: gains are taxed as ordinary income (rates 2%-6.99% for tax years 2024 and later, C.G.S. §12-700(a)(10)). Connecticut starts from federal AGI, so the federal Section 121 home-sale exclusion carries over. High-income taxpayers also pay phase-out and 'benefit recapture' add-backs of the lower brackets (e.g. $50 per $5,000 of CT AGI over $500,000 for single filers, capped).",
+    "surtax": null,
+    "url": "https://www.cga.ct.gov/current/pub/chap_229.htm",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "DRS conveyance tax page has moved (404); the rates were read in the General Statutes (rev. to Jan. 1, 2025) and §12-494 does not appear in the 2026 Supplement, so it was not amended in 2025.",
+    "Who pays the conveyance tax by law (the grantor, by practice) was not confirmed in the statute text read - payer left null.",
+    "The benefit recapture amounts were not fully transcribed; only the $500,000+ single step was read.",
+    "Section 121 carry-over inferred from Connecticut starting from federal AGI."
+   ]
+  },
+  "delaware": {
+   "transfer": {
+    "has": true,
+    "name": "Realty Transfer Tax (state portion)",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 2.5
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "3 percent of the value of the property, unless the municipality or county has enacted the full 1 1/2 percent local realty transfer tax, in which case 2 1/2 percent (30 Del. C. §5402(a)); no tax when value is under $100",
+    "local": "Counties (9 Del. C. §8102) and municipalities (22 Del. C. §1601) may levy up to 1 1/2 percent. Where the full local 1.5% is levied the state rate is 2.5% (total 4%); otherwise the state rate is 3%.",
+    "payer": "split",
+    "payerNote": "'Said tax is to be apportioned equally between grantor and grantee' (30 Del. C. §5402(a)).",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "Mortgages are excluded from the definition of a taxable document (30 Del. C. §5401(1)c)."
+    },
+    "notes": "First-time home buyer: the buyer's portion of the state tax is reduced by 1/2 percent times the lesser of the value or $400,000 (§5402(c)); the seller's half is not reduced. 'Value' includes assumed liens and is at least the highest appraised value unless lower fair market value is shown. Transfers between spouses, parent-child, siblings and grandparent-grandchild are exempt.",
+    "url": "https://delcode.delaware.gov/title30/c054/sc01/index.html",
+    "url2": null,
+    "payerRaw": "split"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 6.6,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 60000,
+     "joint": 60000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "No special capital gains rate: gains are taxed as ordinary income (2.2%-6.6%; 6.6% on taxable income over $60,000, 30 Del. C. §1102(a), schedule in force for taxable years after Dec. 31, 2013). Delaware starts from federal AGI, so the federal Section 121 exclusion carries over. Wilmington levies a city earned income tax on wages, not on capital gains.",
+    "surtax": null,
+    "url": "https://delcode.delaware.gov/title30/c011/sc01/index.html",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "Delaware joint filers use the same bracket thresholds (no doubling) per §1102 - joint threshold set to $60,000 from the same schedule; Delaware also allows spouses to file separately on a combined return.",
+    "Whether every county/municipality levies the full 1.5% (making 2.5% the typical state rate) was not checked county by county; the state rate is 3% where it does not.",
+    "Section 121 carry-over inferred from Delaware starting from federal AGI."
+   ]
+  },
+  "district-of-columbia": {
+   "transfer": {
+    "has": true,
+    "name": "Deed recordation tax + real property transfer tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": 400000,
+      "ratePct": 2.2
+     },
+     {
+      "from": 400000,
+      "to": null,
+      "ratePct": 2.9
+     }
+    ],
+    "mode": "whole",
+    "rateText": "Recordation tax 1.1% of the consideration (D.C. Code §42-1103(a)(1)) plus transfer tax 1.1% (§47-903(a)(1)); each gets an additional 0.35% except for residential properties transferred for a consideration less than $400,000 (§42-1103(a-4), §47-903(a-4)). Residential total: 2.2% under $400,000, 2.9% of the whole consideration at $400,000 or more",
+    "local": "No separate local tax: the District is the only taxing level.",
+    "payer": "split",
+    "payerNote": "Transfer tax: 'imposed on the transferor', with the transferee jointly and severally liable if the transferor fails to pay (§47-903(a)(1),(c)). The statute does not assign the recordation tax to one party, but the first-time homebuyer reduction must benefit the grantees (buyers).",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": "Recordation tax on security interest instruments",
+     "note": "A purchase-money deed of trust recorded with the deed is exempt (§42-1102(5)). Other security instruments (e.g. refinances, on new money only) are taxed at 1.1% of the debt secured (§42-1103(a)(3))."
+    },
+    "notes": "First-time DC homebuyers who qualify get a reduced recordation tax rate of 0.725% for a deed of title (§42-1103), with the benefit going to the buyer; eligibility conditions (income, price) are in the statute. Transfers of an economic interest (controlling interest) are taxed at 2.9% recordation. Non-residential property pays the +0.35% at any price.",
+    "url": "https://code.dccouncil.gov/us/dc/council/code/sections/42-1103",
+    "url2": "https://code.dccouncil.gov/us/dc/council/code/sections/47-903",
+    "payerRaw": "split"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 10.75,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 1000000,
+     "joint": 1000000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "No special capital gains rate: gains are taxed as ordinary income under the schedule for tax years beginning after 12/31/2021 (4%-10.75%; 10.75% over $1,000,000, same brackets for all filing statuses). DC starts from federal AGI, so the federal Section 121 exclusion carries over.",
+    "surtax": null,
+    "url": "https://otr.cfo.dc.gov/page/dc-individual-and-fiduciary-income-tax-rates",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "The OTR recordation/transfer tax rate page was not found (404s); rates were read in the D.C. Code on the Council's official site.",
+    "Eligibility limits for the first-time homebuyer 0.725% rate (income and purchase-price caps) were not transcribed.",
+    "Section 121 carry-over inferred from DC starting from federal AGI."
+   ]
+  },
+  "florida": {
+   "transfer": {
+    "has": true,
+    "name": "Documentary Stamp Tax on deeds",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.7
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "70 cents on each $100 or portion thereof of the total consideration, in all counties except Miami-Dade (s. 201.02(1)(a), F.S.); Miami-Dade: 60 cents per $100, plus a 45-cent surtax per $100 that is not due on a document transferring only a single-family dwelling (s. 201.031, F.S.)",
+    "local": "Miami-Dade County: 0.60% instead of 0.70%, plus 0.45% surtax except on single-family dwellings. No other local add-on.",
+    "payer": null,
+    "payerNote": "'All parties to the document are liable for the tax regardless of which party agrees to pay the tax' (Florida DOR); if one party is exempt the non-exempt party must pay.",
+    "mortgageTax": {
+     "has": true,
+     "ratePct": 0.55,
+     "name": "Documentary stamp tax on notes/mortgages (0.35%) + nonrecurring intangible tax (0.2%)",
+     "note": "Doc stamp tax on mortgages and the debt they secure: 35 cents per $100 or portion thereof of the amount secured, no cap for recorded mortgages (s. 201.08, F.S.); the $2,450 cap applies only to notes not secured by a recorded mortgage. Nonrecurring intangible tax: 2 mills (0.2%) of the obligation secured by Florida real property (s. 199.133, F.S.)."
+    },
+    "notes": "Consideration includes any mortgage assumed. Transfers of homestead between spouses where the only consideration is a mortgage are exempt (s. 201.02(7)(b)). Tax is paid to the county clerk/recording official at recording.",
+    "url": "https://floridarevenue.com/taxes/taxesfees/Pages/doc_stamp.aspx",
+    "url2": "https://floridarevenue.com/taxes/taxesfees/Pages/nonrecurring_intangible_tax.aspx",
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": false,
+    "taxesCapitalGains": false,
+    "topRatePct": 0,
+    "year": 2026,
+    "flat": null,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Florida Constitution art. VII §5(a): no tax upon the income of natural persons who are residents or citizens of the state (beyond amounts creditable against federal tax). No state tax on a home-sale gain.",
+    "surtax": null,
+    "url": "https://www.leg.state.fl.us/Statutes/index.cfm?Mode=Constitution&Submenu=3&Tab=statutes",
+    "cgShort": "no personal income tax"
+   },
+   "uncertain": []
+  },
+  "georgia": {
+   "transfer": {
+    "has": true,
+    "name": "Real Estate Transfer Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.1
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "$1 for the first $1,000 or fractional part of $1,000 and 10 cents for each additional $100 or fractional part of $100 of the sale price (O.C.G.A. 48-6-1 to 48-6-10)",
+    "local": "No local add-on; the tax is paid to the clerk of the superior court of the county before the deed is recorded (Form PT-61 declaration).",
+    "payer": "seller",
+    "payerNote": "'The seller is liable for the real estate transfer tax, though frequently the parties agree in the sales contract that the buyer will pay the tax' (Georgia DOR).",
+    "mortgageTax": {
+     "has": true,
+     "ratePct": 0.3,
+     "name": "Intangible recording tax",
+     "note": "$1.50 for each $500 or fractional part of the face amount of the note secured by Georgia real estate; maximum $25,000 per note. Collected from the holder of the security instrument (lender), who may pass it on to the borrower."
+    },
+    "notes": "No mansion tax or first-time buyer reduction found on DOR pages.",
+    "url": "https://dor.georgia.gov/real-estate-transfer-tax",
+    "url2": "https://dor.georgia.gov/intangible-recording-tax",
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 4.99,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": 0,
+     "joint": 0
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Flat 4.99% for 2026 (down from 5.19%), standard deduction $15,000 single / $30,000 joint (Georgia DOR, 2026 Income Tax Changes). No special capital gains rate. Georgia starts from federal AGI, so the federal Section 121 exclusion carries over.",
+    "surtax": null,
+    "url": "https://dor.georgia.gov/taxes/important-tax-updates",
+    "cgShort": "flat rate"
+   },
+   "uncertain": [
+    "Section 121 carry-over inferred from Georgia starting from federal AGI.",
+    "Whether the transfer tax base excludes liens assumed (O.C.G.A. 48-6-1) was not read in the statute."
+   ]
+  },
+  "hawaii": {
+   "transfer": {
+    "has": true,
+    "name": "Conveyance Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": 600000,
+      "ratePct": 0.1
+     },
+     {
+      "from": 600000,
+      "to": 1000000,
+      "ratePct": 0.2
+     },
+     {
+      "from": 1000000,
+      "to": 2000000,
+      "ratePct": 0.3
+     },
+     {
+      "from": 2000000,
+      "to": 4000000,
+      "ratePct": 0.5
+     },
+     {
+      "from": 4000000,
+      "to": 6000000,
+      "ratePct": 0.7
+     },
+     {
+      "from": 6000000,
+      "to": 10000000,
+      "ratePct": 0.9
+     },
+     {
+      "from": 10000000,
+      "to": null,
+      "ratePct": 1.0
+     }
+    ],
+    "mode": "whole",
+    "rateText": "Rate per $100 of the actual and full consideration, applied to the whole price according to the property's value: $.10 under $600,000; $.20 $600,000-$999,999; $.30 $1M-$1,999,999; $.50 $2M-$3,999,999; $.70 $4M-$5,999,999; $.90 $6M-$9,999,999; $1.00 at $10M or more. Higher schedule for a condominium or single-family residence whose purchaser is ineligible for a county homeowner's exemption: $.15 / $.25 / $.40 / $.60 / $.85 / $1.10 / $1.25 per $100. Minimum $1",
+    "local": "No county add-on; the tax is state-wide (HRS chapter 247), paid with Form P-64A.",
+    "payer": "seller",
+    "payerNote": "'The person subject to the conveyance tax is generally the grantor, lessor, sublessor, assignor, transferor, seller, conveyor' (Form P-64A instructions).",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax found; Bureau of Conveyances recording fees only."
+    },
+    "notes": "Non-owner-occupant schedule (purchaser ineligible for the county homeowner's exemption) on condos and single-family homes: 0.15% under $600k, 0.25%, 0.40%, 0.60%, 0.85%, 1.10%, 1.25% at $10M+ (whole-price). Consideration includes liens or encumbrances on the property at the time of sale.",
+    "url": "https://files.hawaii.gov/tax/forms/current/p64ains.pdf",
+    "url2": null,
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 7.25,
+    "year": 2025,
+    "flat": false,
+    "topBracketStart": {
+     "single": 325000,
+     "joint": 650000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Net long-term capital gain is taxed at a maximum of 7.25% (alternative tax, Form N-11 instructions); ordinary income up to 11%.",
+    "surtax": null,
+    "url": "https://files.hawaii.gov/tax/forms/current/n11ins.pdf",
+    "cgShort": "long-term gain taxed at 7.25% at most"
+   },
+   "uncertain": [
+    "The 2026 tax rate schedules are not yet published; the top bracket thresholds are the 2025 ones (Form N-11 Rev. 2025: 11% over $325,000 single, $650,000 joint, $487,500 head of household). Hawaii is widening brackets each year under 2024 legislation, so 2026 thresholds will be higher.",
+    "HRS §247-2 on capitol.hawaii.gov is blocked by Cloudflare; the rates come from the official P-64A instructions (Rev. 2025).",
+    "Hawaii's conformity to the federal Section 121 exclusion was not read on an official page.",
+    "The capital gains alternative tax for long-term gains (7.25%) - the effective top rate on a home-sale gain - is not stored as topRatePct; topRatePct is the ordinary top rate."
+   ]
+  },
+  "idaho": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state real estate transfer tax; county recorders charge recording fees only",
+    "local": "No county or city real estate transfer tax found.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax; recording fees only."
+    },
+    "notes": null,
+    "url": null,
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 5.3,
+    "year": 2025,
+    "flat": true,
+    "topBracketStart": {
+     "single": 4812,
+     "joint": 9623
+    },
+    "cgExclusionPct": 60,
+    "cgNote": "Idaho Code §63-3022H: 60% of capital gain net income from the sale of qualified property is deductible; qualified property includes real property with an Idaho situs held at least 12 months (so a home in Idaho held 12+ months qualifies; out-of-state property does not). The deduction is limited to total capital gain net income and reduced by any federal capital loss carryover. Idaho starts from federal taxable income, so the federal Section 121 exclusion carries over. 2025 schedule: 0% up to $4,811 single / $9,622 joint, 5.3% above.",
+    "surtax": null,
+    "url": "https://web.archive.org/web/20260919070716/https://tax.idaho.gov/taxes/income-tax/individual-income/individual-income-tax-rate-schedule/",
+    "cgShort": "60% of the gain on Idaho real estate held 12 months deducted"
+   },
+   "uncertain": [
+    "All *.idaho.gov servers refused connections from this session (curl, browser and WebFetch); the rate schedule (Sept. 19, 2026 copy) and Idaho Code §63-3022H (Jan. 21, 2026 copy) were read on Internet Archive copies of the official pages. Official URLs: https://tax.idaho.gov/taxes/income-tax/individual-income/individual-income-tax-rate-schedule/ and https://legislature.idaho.gov/statutesrules/idstat/Title63/T63CH30/SECT63-3022H/.",
+    "No 2026 rate in the rate schedule (the latest year listed is 2025: 5.3%). The Tax Commission updated withholding tables for 2026 on July 31, 2026, which suggests a change for 2026 that was not read.",
+    "Absence of a transfer tax was not confirmed on an official page (transfer url null).",
+    "Section 121 carry-over inferred from Idaho starting from federal taxable income."
+   ]
+  },
+  "illinois": {
+   "transfer": {
+    "has": true,
+    "name": "Real Estate Transfer Tax (Illinois tax stamps)",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.1
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Illinois tax stamps: net consideration divided by $500 (rounded up to the next whole number) multiplied by $0.50, i.e. $0.50 per $500 (PTAX-203 line 19)",
+    "local": "County tax stamps add $0.25 per $500 (0.05%) (PTAX-203 line 20, all counties). Home-rule units such as Cook County and the City of Chicago file their own transfer declarations and levy their own additional transfer taxes (amounts not read on an official source here).",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No state mortgage recording tax found on the Illinois Department of Revenue forms; county recording fees only."
+    },
+    "notes": "Tax is computed on net consideration (Line 17: full consideration minus personal property and the amount of an assumed mortgage/exempt amounts); transfers listed in 35 ILCS 200/31-45 are exempt (PTAX-203 line 16).",
+    "url": "https://tax.illinois.gov/content/dam/soi/en/web/tax/localgovernments/property/documents/ptax-203.pdf",
+    "url2": "https://tax.illinois.gov/localgovernments/property/property-transfer-tax-declarations-and-mydec.html",
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 4.95,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Capital gains taxed as ordinary income at the flat 4.95%. IL-1040 starts from federal adjusted gross income (line 1), so the federal Section 121 home-sale exclusion ($250,000/$500,000) carries over.",
+    "surtax": null,
+    "url": "https://tax.illinois.gov/research/taxrates/income.html",
+    "cgShort": "flat rate"
+   },
+   "uncertain": [
+    "Illinois statute (ilga.gov, 35 ILCS 200/31-10) unreachable from this network (connection refused); rate read on the IDOR PTAX-203 form (R-10/24) instead.",
+    "Chicago / Cook County home-rule transfer tax amounts not verified on an official page; not written.",
+    "Statutory payer not read on an official source."
+   ]
+  },
+  "indiana": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state real estate transfer tax; a sales disclosure form is filed with the county (recording fees only)",
+    "local": "No county transfer tax found; county recorder fees apply.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": null
+    },
+    "notes": "Sales disclosure form (DLGF) must be filed on transfers for valuable consideration; its filing fee amount was not read on an official page.",
+    "url": "https://www.in.gov/dlgf/assessments/sales-disclosure-form-information",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 2.95,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Capital gains taxed as ordinary income at the flat state rate (2.95% for 2026, 2.90% in 2027). County income taxes are added on top: residents' county rates range from 0.5% to 3.0% (DOR Departmental Notice #1, effective Oct. 1, 2026).",
+    "surtax": null,
+    "url": "https://www.in.gov/dor/resources/tax-rates-and-reports/rates-fees-and-penalties",
+    "url2": "https://www.in.gov/dor/files/reference/dn01.pdf",
+    "cgShort": "flat rate"
+   },
+   "uncertain": [
+    "Absence of a state transfer tax is inferred from DLGF/DOR pages that list none; no official page states it explicitly.",
+    "IT-40 form (forms.in.gov) returned HTTP 403, so the starting point (federal AGI, which would carry the Section 121 home-sale exclusion) was not read on an official form."
+   ]
+  },
+  "iowa": {
+   "transfer": {
+    "has": true,
+    "name": "Real Estate Transfer Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": 500,
+      "ratePct": 0
+     },
+     {
+      "from": 500,
+      "to": null,
+      "ratePct": 0.16
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "When the actual market value of the real property transferred exceeds $500, the tax is eighty cents for each $500 or fractional part of $500 in excess of $500 (Iowa Code §428A.1)",
+    "local": "No separate county transfer tax in the statute; the tax is paid to the county recorder (§428A.5).",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": null
+    },
+    "notes": "Consideration includes an assumed encumbrance; personal property stated on the instrument is deducted. A declaration of value must accompany the deed; exemptions are listed in §428A.2.",
+    "url": "https://www.legis.iowa.gov/docs/code/428A.1.pdf",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 3.8,
+    "year": 2025,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Capital gains taxed at the flat 3.8% rate. The Iowa capital gain deduction (IA 100 forms) only covers specific qualifying assets; an ordinary home sale is taxed normally. Iowa starts from federal taxable income (IA 1040 line 2), so the federal Section 121 home-sale exclusion carries over.",
+    "surtax": null,
+    "url": "https://revenue.iowa.gov/taxes/tax-guidance/individual-income-tax/1040-expanded-instructions/iowa-tax",
+    "url2": "https://revenue.iowa.gov/taxes/tax-guidance/individual-income-tax/1040-expanded-instructions/federal-taxable-income",
+    "cgShort": "flat rate"
+   },
+   "uncertain": [
+    "The 3.8% flat rate was read in the 2025 IA 1040 instructions ('Iowa now has a flat tax rate of 3.8%'); no 2026 official page read, so year is 2025.",
+    "That the IA 100 capital gain deduction excludes a personal residence is inferred (it targets business/farm/qualifying property); the IA 100 forms were not read.",
+    "Payer of the transfer tax not read on an official source."
+   ]
+  },
+  "kansas": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state real estate transfer tax; county register of deeds recording fees only",
+    "local": "No county transfer tax found.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": "Mortgage registration fee (repealed)",
+     "note": "The mortgage registration fee of K.S.A. 79-3102 was repealed by L. 2014, ch. 140, § 22, effective January 1, 2019."
+    },
+    "notes": "No transfer tax and no mortgage registration fee since 2019.",
+    "url": "https://www.ksrevisor.org/statutes/chapters/ch79/079_031_0002.html",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 5.58,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 23000,
+     "joint": 46000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Capital gains taxed as ordinary income. K.S.A. 79-32,110(a), 'for tax year 2024, and all tax years thereafter': joint 5.2% up to $46,000, then $2,392 plus 5.58% over $46,000; single 5.2% up to $23,000, then $1,196 plus 5.58% over $23,000. K.S.A. 79-32,110c (2025) lets the Secretary of Revenue reduce these rates each year when revenues exceed an inflation-adjusted base.",
+    "surtax": null,
+    "url": "https://www.ksrevisor.org/statutes/chapters/ch79/079_032_0110.html",
+    "url2": "https://www.ksrevisor.org/statutes/chapters/ch79/079_032_0110c.html",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "ksrevenue.gov unreachable from this network (connection refused, also via WebFetch; Wayback rate-limited), so whether a 79-32,110c rate reduction was certified for tax year 2026 could not be checked; rates written are the statutory 2024+ schedule.",
+    "Absence of a transfer tax is inferred (no statute found); not stated explicitly on an official page read.",
+    "Starting point (federal AGI, carrying the Section 121 exclusion) not read on an official Kansas page."
+   ]
+  },
+  "kentucky": {
+   "transfer": {
+    "has": true,
+    "name": "Real Estate Transfer Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.1
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "A tax upon the grantor named in the deed at the rate of fifty cents ($0.50) for each $500 of value or fraction thereof (KRS 142.050(2))",
+    "local": "No additional local transfer tax in the statute; the county clerk collects the state-imposed tax, keeps 5% as a collection fee and remits the balance to the county general fund.",
+    "payer": "seller",
+    "payerNote": "KRS 142.050(2): the tax is imposed 'upon the grantor named in the deed'.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": null
+    },
+    "notes": "Value = full actual consideration including any liens; for gifts or nominal consideration, the estimated open-market price. Exemptions are listed in KRS 142.050(7).",
+    "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=43160",
+    "url2": null,
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 3.5,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Capital gains taxed as ordinary income at the flat rate: 4% for 2024-2025, 3.5% for taxable years beginning on or after January 1, 2026 (KRS 141.020(2)(f)); further reductions possible from 2027. Kentucky law is based on the Internal Revenue Code (as of Dec. 31, 2024 per DOR), so the federal Section 121 home-sale exclusion applies.",
+    "surtax": null,
+    "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=56339",
+    "url2": "https://revenue.ky.gov/Individual/Individual-Income-Tax/Pages/default.aspx",
+    "cgShort": "flat rate"
+   },
+   "uncertain": [
+    "The DOR individual income tax page still shows 'four (4) percent' (2025); the 3.5% 2026 rate was read in KRS 141.020(2)(f).",
+    "Local occupational license taxes (city/county) generally apply to wages and business net profits; their application to a home-sale gain was not verified."
+   ]
+  },
+  "louisiana": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state real estate transfer tax; parish clerk of court recording fees only",
+    "local": "No statewide parish transfer tax; some local governments (e.g. the City of New Orleans) charge their own fee on recorded real estate transfers, not verified on an official page here.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": null
+    },
+    "notes": "No state documentary or mortgage tax identified.",
+    "url": "https://revenue.louisiana.gov/individuals/general-resources/individual-income-tax/",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 3.0,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Since tax year 2025 a single 3% rate applies to all Louisiana taxable income (previously graduated 1.85%/3.5%/4.25%). Capital gains on a home sale are taxed as ordinary income at 3%.",
+    "surtax": null,
+    "url": "https://revenue.louisiana.gov/individuals/general-resources/individual-income-tax/",
+    "url2": null,
+    "cgShort": "flat rate"
+   },
+   "uncertain": [
+    "Absence of a state transfer tax is inferred (no statute or LDR page found); no official page states it explicitly. The 'url' field points to the LDR income tax page, not a transfer-tax source.",
+    "New Orleans local real estate transfer fee amount not read on an official page; not written.",
+    "LDR page shows the 3% rate for 'Tax Years (2025 and after)'; read as applying to 2026.",
+    "That Louisiana starts from federal AGI (carrying the Section 121 home-sale exclusion) is only implied on the LDR page (ratio of Louisiana AGI to federal AGI), not stated for residents."
+   ]
+  },
+  "maine": {
+   "transfer": {
+    "has": true,
+    "name": "Real Estate Transfer Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": 1000000,
+      "ratePct": 0.44
+     },
+     {
+      "from": 1000000,
+      "to": null,
+      "ratePct": 1.2
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "$2.20 for each $500 or fractional part of $500 of the value of the property transferred; when the value exceeds $1,000,000, an additional $3.80 for each $500 or fractional part of $500 of the value that exceeds $1,000,000 (36 M.R.S. §4641-A, text effective 11/01/25)",
+    "local": "No additional county or municipal transfer tax in the statute; the tax is paid to the county register of deeds.",
+    "payer": "split",
+    "payerNote": "36 M.R.S. §4641-A(1)(B): 'The tax is imposed 1/2 on the grantor and 1/2 on the grantee.'",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": null
+    },
+    "notes": "Since November 1, 2025 the slice of value above $1,000,000 bears an extra $3.80 per $500 (0.76%), i.e. 1.2% in total on that slice. The same rates apply to the transfer of a controlling interest in an entity owning Maine real property (§4641-A(2)).",
+    "url": "https://legislature.maine.gov/statutes/36/title36sec4641-A.html",
+    "url2": null,
+    "payerRaw": "split"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 7.15,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 64850,
+     "joint": 129750
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Capital gains taxed as ordinary income. 2026 brackets: single 5.8% under $27,400, 6.75% to $64,850, 7.15% above; joint 5.8% under $54,850, 6.75% to $129,750, 7.15% above.",
+    "surtax": {
+     "ratePct": 2,
+     "threshold": 1000000,
+     "note": "From tax year 2026, a 2% surcharge on Maine taxable income above $1,000,000 (single), $750,000 (married filing separately) or $1,500,000 (married filing jointly or head of household); thresholds indexed from 2027."
+    },
+    "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/2026-05/ind_tax_rate_sched_2026_rev.pdf",
+    "url2": "https://www.maine.gov/revenue/tax-return-forms/individual-income-tax-2026",
+    "cgShort": "2% surcharge on income above $1,000,000 single, $1,500,000 joint"
+   },
+   "uncertain": [
+    "Maine's starting point (federal AGI, which would carry the Section 121 home-sale exclusion) not read on an official Maine page."
+   ]
+  },
+  "maryland": {
+   "transfer": {
+    "has": true,
+    "name": "State Transfer Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.5
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "The rate of the transfer tax is 0.5% of the consideration payable for the instrument of writing (Tax-Property §13-203(a)); 0.25% for a sale of improved residential property to a first-time Maryland home buyer who will occupy it as a principal residence, paid entirely by the seller (§13-203(b)(3))",
+    "local": "Counties and Baltimore City set their own recordation tax rate per $500 of consideration (Tax-Property §12-103(b)), and many also levy a county transfer tax; rates vary by county and are not uniform. Counties may exempt part of the consideration for owner-occupied principal residences or first-time buyers.",
+    "payer": null,
+    "payerNote": "For a first-time Maryland home buyer purchase, the reduced 0.25% state transfer tax 'shall be paid entirely by the seller' (§13-203(b)(3)); otherwise the statute read does not allocate the tax.",
+    "mortgageTax": {
+     "has": true,
+     "ratePct": null,
+     "name": "Recordation tax (county rate)",
+     "note": "County recordation tax rates apply to each $500 of consideration payable or of the principal amount of the debt secured (Tax-Property §12-103(a)); rate set by each county, so no statewide figure."
+    },
+    "notes": "First-time Maryland home buyer (never owned a Maryland principal residence; all grantees must qualify) pays 0.25% state rate instead of 0.5%, borne by the seller. The 0.5% rate also applies to transfers of a controlling interest in certain LIHTC real property entities.",
+    "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=13-203&enactments=false",
+    "url2": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=12-103&enactments=false",
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 6.5,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 1000000,
+     "joint": 1200000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Graduated 2%-6.5% (single: 5.75% to $500,000, 6.25% $500,001-$1,000,000, 6.5% above; joint: 6.25% $600,001-$1,200,000, 6.5% above). Plus county income tax of 2.25% to 3.30% of Maryland taxable income (Tax-General §10-106). An additional 2% applies to net capital gain when federal AGI exceeds $350,000, but a gain on a primary-residence single-family home, townhouse, row home, condo or co-op sold for less than $1,500,000 is exempt from that additional 2%.",
+    "surtax": null,
+    "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=10-105&enactments=false",
+    "url2": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=10-106&enactments=false",
+    "cgShort": "county income tax on top; extra 2% above $350,000 of income, not on a main home sold under $1.5M"
+   },
+   "uncertain": [
+    "Statute text read on the current Maryland Code (mgaleg.maryland.gov); the effective tax year of the 6.25%/6.5% brackets and the 2% capital gain addition (enacted 2025) was not shown on the page; written as in force for 2026.",
+    "County recordation and county transfer tax rates not compiled (vary by county); payer by custom not stated officially.",
+    "Whether the $350,000 threshold is the same for joint filers: the statute says 'federal adjusted gross income in excess of $350,000' for individuals in paragraphs (1) or (2) without a separate joint figure."
+   ]
+  },
+  "massachusetts": {
+   "transfer": {
+    "has": true,
+    "name": "Deeds Excise",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.456
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Deeds: sales price (less mortgage assumed) of real estate, $2.28 per $500 (DOR Tax Rates page); i.e. $2.00 per $500 plus a 14% surtax",
+    "local": "Barnstable County has a different deeds excise rate (DOR Directive 95-4: 'except for Barnstable county'); the current Barnstable figure was not read on an official page.",
+    "payer": "seller",
+    "payerNote": "DOR Directive 95-4: the deeds excise is self-assessed and paid by the person who makes or signs the deed (the grantor), G.L. c. 64D, § 2.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": null
+    },
+    "notes": "Due on consideration in excess of $100; an assumed mortgage is deducted from the price. No first-time buyer reduction or mansion rate found on the DOR rate page.",
+    "url": "https://www.mass.gov/info-details/tax-rates",
+    "url2": "https://www.mass.gov/directive/directive-95-4-enforcement-of-the-deeds-excise",
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 5.0,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Long-term capital gains taxed at 5.00%; short-term capital gains at 8.5%; long-term gains on collectibles 12% (50% deduction). The 4% surtax on income above $1,107,750 (tax year 2026) comes on top (9% combined on long-term gains above the threshold). The surtax threshold is the same amount for single and joint returns (each return).",
+    "surtax": {
+     "ratePct": 4,
+     "threshold": 1107750,
+     "note": "Tax year 2026: additional 4% surtax on income exceeding $1,107,750 (2025: $1,083,150; 2024: $1,053,750)."
+    },
+    "url": "https://www.mass.gov/info-details/tax-rates",
+    "url2": null,
+    "cgShort": "4% surtax on income above $1,107,750"
+   },
+   "uncertain": [
+    "mass.gov returns HTTP 403 to curl/WebFetch; pages read in a real browser session (Chrome).",
+    "topRatePct is the 5% base rate; the 4% surtax above $1,107,750 is in 'surtax' (9% combined).",
+    "That the surtax threshold is not doubled for joint returns is a known feature of the Massachusetts rule but was not stated on the DOR rate page read.",
+    "Barnstable County deeds excise rate not verified (only a 1989 directive figure found); not written.",
+    "Massachusetts conformity with the federal Section 121 home-sale exclusion not read on an official page.",
+    "A FY26 governor's budget section proposed a deeds excise on controlling-interest transfers; whether enacted was not verified."
+   ]
+  },
+  "michigan": {
+   "transfer": {
+    "has": true,
+    "name": "State Real Estate Transfer Tax (SRETT)",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.75
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "$3.75 for each $500, or fraction of $500, of the total value of the property (MCL 207.525)",
+    "local": "County real estate transfer tax (Public Act 134 of 1966): $0.55 per $500 of consideration (0.11%), as published by Oakland County Register of Deeds and Mackinac County; total state + county = $4.30 per $500 (0.86%).",
+    "payer": "seller",
+    "payerNote": "Michigan Treasury: 'The seller (grantor) is legally responsible for paying SRETT'; some buyers and sellers agree that the buyer pays on the seller's behalf.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": null
+    },
+    "notes": "Principal residence exemption (MCL 207.526(u)): a seller can obtain a refund of SRETT (Form 2796, within four years and 15 days) on the sale of a principal residence when its conditions are met, which include proof of the SEV at purchase and in the year of sale. Transfers under $100 are exempt.",
+    "url": "https://www.michigan.gov/taxes/business-taxes/misc/state-real-estate-transfer-tax-srett",
+    "url2": "https://www.oaklandcountymi.gov/government/clerk-register-of-deeds/property-land/fees-forms",
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 4.25,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Capital gains taxed as ordinary income at the flat 4.25% (Treasury notice of April 15, 2026: no formula reduction for 2026). Federal AGI is the starting point of the Michigan return, so the federal Section 121 home-sale exclusion carries over. Some cities levy their own income tax on residents.",
+    "surtax": null,
+    "url": "https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/04/15/425-income-tax-rate-for-individuals-and-fiduciaries-in-2026-tax-year",
+    "url2": "https://www.michigan.gov/taxes/iit/tax-guidance/tax-situations/retirement-and-pension-benefits",
+    "cgShort": "flat rate"
+   },
+   "uncertain": [
+    "michigan.gov and legislature.mi.gov block curl (HTTP 403 / WAF); Treasury pages read in a real browser session (Chrome). MCL 207.505 itself not readable; county rate taken from two county register of deeds pages.",
+    "Exact conditions of the principal residence exemption (Gardner decision notice, three requirements) not read in full.",
+    "City income tax rates (e.g. Detroit) not verified; not written.",
+    "'Federal AGI is the starting point' was read in a Treasury snippet (retirement benefits page) via search results, not the full page."
+   ]
+  },
+  "minnesota": {
+   "transfer": {
+    "has": true,
+    "name": "Deed Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.33
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "When the consideration, exclusive of any lien or encumbrance remaining at the time of sale, exceeds $3,000, the tax is .0033 of the net consideration; $1.65 when it is $3,000 or less (Minn. Stat. §287.21, subd. 1)",
+    "local": "Hennepin County and Ramsey County may impose an additional deed tax of .0001 of the amount (0.01%) and an additional mortgage registry tax of .0001 of the principal (Minn. Stat. §383B.80 and §383A.80), giving 0.34% deed tax and 0.24% mortgage registry tax there.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": true,
+     "ratePct": 0.23,
+     "name": "Mortgage Registry Tax",
+     "note": "A tax on the privilege of recording a mortgage at .0023 of the debt secured; the person liable is the mortgagor (Minn. Stat. §287.035). Plus .0001 in Hennepin and Ramsey counties."
+    },
+    "notes": "The deed tax applies to net consideration (excluding liens or encumbrances remaining on the property). Entity conversions are not treated as conveyances.",
+    "url": "https://www.revisor.mn.gov/statutes/cite/287.21",
+    "url2": "https://www.revisor.mn.gov/statutes/cite/287.035",
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 9.85,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 203151,
+     "joint": 337931
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Capital gains taxed as ordinary income. 2026 brackets: single 5.35% to $33,310, 6.80% to $109,430, 7.85% to $203,150, 9.85% above; married filing jointly 5.35% to $48,700, 6.80% to $193,480, 7.85% to $337,930, 9.85% above. The 1% net investment income tax excludes the gain on property classified as class 2a (agricultural), not an ordinary home.",
+    "surtax": {
+     "ratePct": 1,
+     "threshold": 1000000,
+     "note": "Net investment income tax: 1% on net investment income (IRC §1411(c) definition, excluding gain on class 2a property) above $1,000,000 (Minn. Stat. §290.033); same threshold for all filers per the statute text."
+    },
+    "url": "https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets",
+    "url2": "https://www.revisor.mn.gov/statutes/cite/290.033",
+    "cgShort": "1% on investment income above $1,000,000"
+   },
+   "uncertain": [
+    "revenue.state.mn.us serves a captcha to curl; the 2026 bracket page was read in a real browser session (Chrome). Deed and mortgage registry tax rates read on the Revisor's statutes instead of the DOR pages.",
+    "Statutory payer of the deed tax not read (only the mortgagor for the mortgage registry tax).",
+    "Whether Hennepin/Ramsey currently impose their optional .0001 taxes was not confirmed on a county page (statutes say 'may impose').",
+    "Minnesota starting point (federal taxable income, which carries the Section 121 exclusion) not read on an official page; net investment income under IRC 1411(c) also excludes Section 121-excluded gain by federal definition."
+   ]
+  },
+  "mississippi": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state real estate transfer tax; chancery clerk recording fees only",
+    "local": "No county transfer tax identified.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": null
+    },
+    "notes": "No documentary stamp, deed or mortgage tax identified.",
+    "url": "https://www.dor.ms.gov/individual/tax-rates",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 4.0,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": 10000,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "0% on the first $10,000 of taxable income, then 4.4% (2025), 4% (2026), 3.75% (2027) on the excess. On a combined return each spouse may calculate the tax separately (each with the $10,000 0% band) and add the results. Capital gains taxed as ordinary income.",
+    "surtax": null,
+    "url": "https://www.dor.ms.gov/individual/tax-rates",
+    "url2": null,
+    "cgShort": "flat rate"
+   },
+   "uncertain": [
+    "Absence of a state transfer tax is inferred (no statute or DOR page found); the 'url' points to the DOR income tax page, not a transfer-tax source.",
+    "Joint threshold left null: the DOR page applies the $10,000 0% band per spouse when spouses compute separately on a combined return, not as a single joint figure.",
+    "Mississippi does not start from federal AGI; its treatment of the federal Section 121 home-sale exclusion was not read on an official page."
+   ]
+  },
+  "missouri": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state real estate transfer tax; county recorder of deeds fees only",
+    "local": "No county transfer tax identified.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": null
+    },
+    "notes": "No deed, documentary stamp or mortgage tax identified.",
+    "url": "https://revisor.mo.gov/main/OneSection.aspx?section=143.121",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": false,
+    "topRatePct": 0,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": 100,
+    "cgNote": "RSMo 143.121.3(14)(a): for all tax years beginning on or after January 1, 2025, 'one hundred percent of all income reported as a capital gain for federal income tax purposes' by an individual is subtracted from Missouri adjusted gross income. A home-sale gain that is taxable federally (above the Section 121 exclusion) is therefore not taxed by Missouri. Ordinary income remains taxed at graduated rates (RSMo 143.011: top rate 4.95% from 2023, with possible annual reductions).",
+    "surtax": null,
+    "url": "https://revisor.mo.gov/main/OneSection.aspx?section=143.121",
+    "url2": "https://revisor.mo.gov/main/OneSection.aspx?section=143.011",
+    "cgShort": "100% of capital gains subtracted since 2025"
+   },
+   "uncertain": [
+    "topRatePct left null: dor.mo.gov returns HTTP 403 to curl and an empty page in the browser, so the 2026 top rate after the statutory reductions (RSMo 143.011, ceiling 4.95% from 2023) could not be read on an official page. Irrelevant for a home-sale gain, which is 100% subtracted.",
+    "Absence of a state transfer tax is inferred (no statute found); the 'url' points to the capital gains statute, not a transfer-tax source.",
+    "Whether the Kansas City / St. Louis earnings taxes reach capital gains was not verified."
+   ]
+  },
+  "montana": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No real estate transfer tax: Montana Constitution Art. VIII, Sec. 17 provides that the state or any local government unit may not impose any tax, including a sales tax, on the sale or transfer of real property.",
+    "local": "Local governments are also barred by the same constitutional provision (CI-105, approved Nov. 2, 2010).",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No state mortgage recording/intangible tax identified; only ordinary county recording fees."
+    },
+    "notes": "A realty transfer certificate is filed with the deed for property-valuation purposes, but no tax is charged on the transfer.",
+    "url": "https://mca.legmt.gov/bills/mca/title_0000/article_0080/part_0010/section_0170/0000-0080-0010-0170.html",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 4.1,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 47500,
+     "joint": 95000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Net long-term capital gains are taxed at separate rates (MCA 15-30-2103, version through Dec. 31, 2026): 3.0% on the portion of capital gains up to $47,500 single / $95,000 joint (and $71,250 head of household) less nonqualified (ordinary) taxable income, 4.1% above. Ordinary income: 4.7% then 5.65%. From tax year 2027 the ordinary top rate falls to 5.4% above $65,000 single / $130,000 joint; capital gains rates stay 3.0%/4.1%. Montana taxable income starts from federal income, so the federal Section 121 home-sale exclusion carries through.",
+    "surtax": null,
+    "url": "https://mca.legmt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html",
+    "cgShort": "separate 3% and 4.1% rates on long-term gains"
+   },
+   "uncertain": [
+    "Statute read via WebFetch (legmt.gov blocks curl with a bot challenge). The statute text read shows no inflation adjustment for the 2026 brackets; DOR 2026 tables not checked.",
+    "Conformity to federal Section 121 is inferred from Montana's federal-taxable-income starting point (15-30-2101), not read on a specific DOR page."
+   ]
+  },
+  "nebraska": {
+   "transfer": {
+    "has": true,
+    "name": "Documentary Stamp Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.332
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "As of July 18, 2026, $3.32 for each $1,000 of value (or fraction thereof) of the real estate transferred (Neb. Rev. Stat. § 76-901); value divided by 1,000 is rounded up to the next whole number.",
+    "local": "No separate local transfer tax; the state tax is collected by each county's register of deeds.",
+    "payer": "seller",
+    "payerNote": "Nebraska DOR: the tax is imposed on the grantor executing a deed.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording/intangible tax identified on the DOR documentary stamp tax page."
+    },
+    "notes": "The rate rose to $3.32 per $1,000 on July 18, 2026. Exemptions are claimed with the Certificate of Exemption (e.g. deeds to trustees, family corporation/partnership/LLC transfers); Form 521 Real Estate Transfer Statement is filed with the deed.",
+    "url": "https://revenue.nebraska.gov/PAD/documentary-stamp-tax",
+    "url2": "https://revenue.nebraska.gov/sites/default/files/doc/pad/doc_stamp/Doc_Stamp_Calculation_Example.pdf",
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 4.55,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 24760,
+     "joint": 49530
+    },
+    "cgExclusionPct": null,
+    "cgNote": "No general capital gains preference: gains are taxed as ordinary income (2026 brackets 2.46%, 3.51%, 4.55%; the 3rd and 4th brackets are both 4.55% per Neb. Rev. Stat. § 77-2715.03(2)(c)(v)). Nebraska's special capital gains deduction applies only to employer stock, not to a home sale. Nebraska starts from federal AGI, so the federal Section 121 home-sale exclusion carries through.",
+    "surtax": null,
+    "url": "https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_1040N-ES.pdf",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "Top bracket start is from the DOR 2026 Estimated Income Tax Rate Schedule (Form 1040N-ES), which DOR says is for estimates only; the final 2026 tax return schedule was not yet published.",
+    "Nebraska Legislature statute site (nebraskalegislature.gov) refused connections, so § 76-901 and § 77-2715.03 were not read directly; the pre-July-2026 rate is not stated here. The statement that the special capital gains deduction is limited to employer stock was not re-read on an official page in this session.",
+    "The seller-pays mapping: DOR says the tax is imposed on the grantor (seller)."
+   ]
+  },
+  "nevada": {
+   "transfer": {
+    "has": true,
+    "name": "Real Property Transfer Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.39
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "NRS 375.023: $1.30 per $500 of value or fraction thereof (state, deposited in the State General Fund) plus NRS 375.020: $1.25 per $500 in a county of 700,000+ population (Clark) or 65 cents per $500 in other counties. Base total outside Clark County $1.95 per $500 (0.39%); Clark County $2.55 per $500 (0.51%).",
+    "local": "Counties under 700,000 population may add up to 5 cents per $500 (NRS 375.026). Washoe County Recorder states a total rate of $2.05 per $500 (0.41%); Clark County Recorder states $2.55 per $500 (0.51%).",
+    "payer": null,
+    "payerNote": "NRS 375.030(2): the buyer and seller are jointly and severally liable for the tax; the escrow holder is not liable. Allocation between them is left to the contract.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording/intangible tax in NRS chapter 375; only county recording fees."
+    },
+    "notes": "Tax applies when consideration or value exceeds $100 and is based on the declared value (Declaration of Value form, NRS 375.060); exemptions are listed in NRS 375.090.",
+    "url": "https://web.archive.org/web/2025id_/https://www.leg.state.nv.us/NRS/NRS-375.html",
+    "url2": "https://www.clarkcountynv.gov/government/elected_officials/county_recorder/land-documents",
+    "payerRaw": "both"
+   },
+   "income": {
+    "hasIncomeTax": false,
+    "taxesCapitalGains": false,
+    "topRatePct": 0,
+    "year": 2026,
+    "flat": null,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Nevada Constitution Art. 10, Sec. 1(9): no income tax shall be levied upon the wages or personal income of natural persons; capital gains of individuals are therefore not taxed by the state.",
+    "surtax": null,
+    "url": "https://web.archive.org/web/2025id_/https://www.leg.state.nv.us/Const/NvConst.html",
+    "cgShort": "no personal income tax"
+   },
+   "uncertain": [
+    "leg.state.nv.us returns HTTP 403 to automated clients; NRS 375 and the Constitution were read on an Internet Archive copy of the official pages (2025 snapshot). County totals were confirmed on the live Washoe and Clark County Recorder pages in October 2026.",
+    "The 0.39% bracket is the statutory minimum outside Clark County; some small counties add up to 5 cents per $500."
+   ]
+  },
+  "new-hampshire": {
+   "transfer": {
+    "has": true,
+    "name": "Real Estate Transfer Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 1.5
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "$.75 per $100 of the price or consideration (or fractional part thereof), imposed on both the buyer and the seller (RSA 78-B:1 and 78-B:4 III) — 0.75% each, 1.5% combined; minimum tax $20 where the price is $4,000 or less; computed to the nearest whole dollar.",
+    "local": "No local transfer tax; the state tax is collected through the county registers of deeds.",
+    "payer": "split",
+    "payerNote": "NH DRA: the tax is imposed on both the buyer and the seller at $.75 per $100 each (RSA 78-B:4 I-III).",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording/intangible tax identified in RSA 78-B."
+    },
+    "notes": "Every transfer of real estate or of an interest in real estate, including transfers by operation of law, is presumed taxable unless exempt under RSA 78-B:2; transfers of interests in entities owning real estate can be taxable. Buyer and seller each file a declaration of consideration (RSA 78-B:10).",
+    "url": "https://www.revenue.nh.gov/taxes-glance/real-estate-transfer-tax",
+    "url2": "https://web.archive.org/web/2025id_/https://www.gencourt.state.nh.us/rsa/html/V/78-B/78-B-4.htm",
+    "payerRaw": "both"
+   },
+   "income": {
+    "hasIncomeTax": false,
+    "taxesCapitalGains": false,
+    "topRatePct": 0,
+    "year": 2026,
+    "flat": null,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "NH DRA: New Hampshire does not have an income tax on W-2 wages; the Interest and Dividends Tax (3% for periods ending on or after Dec. 31, 2024) was repealed for taxable periods beginning after December 31, 2024 (TIR 2025-001). Individuals' capital gains were never within the I&D tax and are not taxed in 2026.",
+    "surtax": null,
+    "url": "https://www.revenue.nh.gov/taxes-glance/interest-dividends-tax",
+    "cgShort": "no tax on wages or capital gains"
+   },
+   "uncertain": [
+    "revenue.nh.gov blocks curl/WebFetch (HTTP 403); both DRA pages were read in a Chrome browser on 2026-10-08. RSA 78-B was read on an Internet Archive copy (2025) because gencourt.state.nh.us/gc.nh.gov did not respond.",
+    "The statement that capital gains were never within the I&D tax is from the tax's name/definition, not quoted from the DRA page; the DRA page confirms only wages are untaxed and I&D repealed. Business Profits Tax on sole proprietors' business income is outside scope."
+   ]
+  },
+  "new-jersey": {
+   "transfer": {
+    "has": true,
+    "name": "Realty Transfer Fee (RTF) + Graduated Percent Fee over $1 million",
+    "brackets": [
+     {
+      "from": 0,
+      "to": 150000,
+      "ratePct": 0.58
+     },
+     {
+      "from": 150000,
+      "to": 200000,
+      "ratePct": 0.85
+     },
+     {
+      "from": 200000,
+      "to": 550000,
+      "ratePct": 0.96
+     },
+     {
+      "from": 550000,
+      "to": 850000,
+      "ratePct": 1.06
+     },
+     {
+      "from": 850000,
+      "to": 1000000,
+      "ratePct": 1.16
+     },
+     {
+      "from": 1000000,
+      "to": null,
+      "ratePct": 1.21
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Standard transactions, total consideration over $350,000 (rate per $500 on each slice): $2.90 up to $150,000; $4.25 $150,000–$200,000; $4.80 $200,000–$550,000; $5.30 $550,000–$850,000; $5.80 $850,000–$1,000,000; $6.05 over $1,000,000. Total consideration not over $350,000: $2.00 up to $150,000; $3.35 $150,000–$200,000; $3.90 $200,000–$350,000 (0.40% / 0.67% / 0.78%).",
+    "local": "No separate county or municipal transfer tax is described by the Division of Taxation; the RTF and Graduated Percent Fee are paid when the deed is recorded with the county recording officer.",
+    "payer": "seller",
+    "payerNote": "NJ Division of Taxation: the State imposes the RTF on the seller; the seller is statutorily responsible for both the RTF and the Graduated Percent Fee.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax; deeds given solely to provide security for a debt are exempt from the RTF."
+    },
+    "notes": "Graduated Percent Fee (former buyer-paid 1% 'mansion tax'), since July 10, 2025 (P.L. 2025, c. 69) imposed on the seller and applied to the WHOLE consideration ('whole' mode) for Class 2 residential, Class 3A farm with residence, Class 4A commercial and Class 4C co-op: 1% over $1,000,000 to $2,000,000; 2% over $2,000,000 to $2,500,000; 2.5% over $2,500,000 to $3,000,000; 3% over $3,000,000 to $3,500,000; 3.5% over $3,500,000 (e.g. $2.75M → 2.5% × $2.75M = $68,750). Reduced RTF schedule for senior citizens, blind or disabled persons and low/moderate income housing (per $500: $0.50/$1.25 when ≤$350,000; $1.40/$2.15/$2.65/$3.15/$3.40 when over $350,000). A Controlling Interest Transfer Tax applies to certain entity transfers.",
+    "url": "https://www.nj.gov/treasury/taxation/realty.shtml",
+    "url2": "https://www.nj.gov/treasury/taxation/pdf/lpt/GraduatedPercentFeeNotice.pdf",
+    "payerRaw": "seller",
+    "low": {
+     "max": 350000,
+     "brackets": [
+      {
+       "from": 0,
+       "to": 150000,
+       "ratePct": 0.4
+      },
+      {
+       "from": 150000,
+       "to": 200000,
+       "ratePct": 0.67
+      },
+      {
+       "from": 200000,
+       "to": null,
+       "ratePct": 0.78
+      }
+     ]
+    },
+    "extra": [
+     {
+      "from": 1000000.01,
+      "to": 2000000.01,
+      "ratePct": 1,
+      "who": "seller",
+      "name": "Graduated percent fee"
+     },
+     {
+      "from": 2000000.01,
+      "to": 2500000.01,
+      "ratePct": 2,
+      "who": "seller",
+      "name": "Graduated percent fee"
+     },
+     {
+      "from": 2500000.01,
+      "to": 3000000.01,
+      "ratePct": 2.5,
+      "who": "seller",
+      "name": "Graduated percent fee"
+     },
+     {
+      "from": 3000000.01,
+      "to": 3500000.01,
+      "ratePct": 3,
+      "who": "seller",
+      "name": "Graduated percent fee"
+     },
+     {
+      "from": 3500000.01,
+      "to": null,
+      "ratePct": 3.5,
+      "who": "seller",
+      "name": "Graduated percent fee"
+     }
+    ]
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 10.75,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 1000000,
+     "joint": 1000000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Capital gains are taxed as ordinary income (rates 1.4% to 10.75%; 8.97% from $500,000 to $1,000,000). NJ computes the gain the same way as for federal purposes and allows the principal residence exclusion based on federal guidelines: up to $250,000 ($500,000 married filing jointly), with a reduced exclusion where the federal rules allow it. Nonresident sellers may owe an estimated tax payment at closing (GIT/REP forms).",
+    "surtax": null,
+    "url": "https://www.nj.gov/treasury/taxation/pdf/current/njtaxratesch.pdf",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "NJ rate schedules are those published as '2020 and After' on nj.gov (taxtables.shtml); no specific 2026 schedule was published separately, so 2026 rates assume no change since 2020.",
+    "The RTF brackets model the schedule for total consideration over $350,000; sales of $350,000 or less use the lower schedule given in rateText. The asterisk on '$1,000,000*' in the official table was not explained in the extracted text."
+   ]
+  },
+  "new-mexico": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state real estate transfer tax identified for New Mexico (no official statement found either way; see uncertain).",
+    "local": "No county or municipal real estate transfer tax identified.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording/intangible tax identified."
+    },
+    "notes": null,
+    "url": null,
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 5.9,
+    "year": 2025,
+    "flat": false,
+    "topBracketStart": {
+     "single": 210000,
+     "joint": 315000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Net capital gains deduction (NMSA 7-2-34 as amended by HB 252, from tax year 2025): the greater of 100% of net capital gains up to $2,500, or 40% of up to $1,000,000 of net capital gain from the sale of a business allocated/apportioned to New Mexico. For a home sale this generally means only the $2,500 deduction (half each for married filing separately). Before 2025 it was the greater of $1,000 or 40% of net capital gains. Rates (NMSA 7-2-7, tax years beginning on or after Jan. 1, 2025): 1.5%, 3.2%, 4.3%, 4.7%, 4.9%, 5.9%. NM starts from federal AGI, so the federal Section 121 home-sale exclusion carries through.",
+    "surtax": null,
+    "url": "https://realfile.tax.newmexico.gov/2025pit-adj-ins.pdf",
+    "cgShort": "home sale gain deduction limited to $2,500"
+   },
+   "uncertain": [
+    "No official page explicitly stating that New Mexico has or does not have a real estate transfer tax was found (searches of nm.gov/newmexico.gov/nmlegis.gov returned nothing; nmlegis.gov blocks automated access). has:false reflects that no such tax was found in TRD's site, not a quoted statement, so transfer.url is null.",
+    "2026 income tax rates: the rate table read (TRD 'PIT rates_2005_2025.pdf', NMSA 7-2-7 per Laws 2024 ch. 67 sec. 5) applies to taxable years beginning on or after Jan. 1, 2025 with no later change shown; year is given as 2025 accordingly. Rate PDF: https://klvg4oyd4j.execute-api.us-west-2.amazonaws.com/prod/PublicFiles/34821a9573ca43e7b06dfad20f5183fd/fd8f3075-42e7-4cdd-88db-7cab84ef72de/PIT%20rates_2005_2025.pdf (TRD file host linked from https://www.tax.newmexico.gov/all-nm-taxes/current-historic-tax-rates-overview/personal-income-tax-rates/).",
+    "nmlegis.gov blocks automated access (WAF), so HB 252 itself was not read; the capital gains rule is from TRD's 2025 PIT-ADJ instructions. The pre-2025 rule ($1,000 or 40%) is from TRD's 2025 instructions' strike-through and the 2022 PIT-EZ instructions."
+   ]
+  },
+  "new-york": {
+   "transfer": {
+    "has": true,
+    "name": "Real Estate Transfer Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.4
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Two dollars for each $500, or fractional part thereof, of consideration (0.4%), on conveyances where consideration exceeds $500. Additional tax (mansion tax): 1% of the sale price of residences where consideration is $1 million or more (whole price, paid by buyer).",
+    "local": "New York City (since July 1, 2019): additional base tax of $1.25 per $500 (0.25%, total base 0.65%) when consideration for residential property is $3 million or more (seller), plus a buyer-paid supplemental tax on residential conveyances of $2 million or more applied to the entire consideration: 0.25% ($2M–<$3M), 0.5% ($3M–<$5M), 1.25% ($5M–<$10M), 2.25% ($10M–<$15M), 2.5% ($15M–<$20M), 2.75% ($20M–<$25M), 2.9% ($25M+). New York City also levies its own Real Property Transfer Tax, and some localities levy local transfer taxes; these are not described on the DTF page and were not verified.",
+    "payer": "seller",
+    "payerNote": "NY DTF: the base tax and additional base tax are paid by the grantor (seller) — the buyer pays only if the seller fails to pay or is exempt, or by contract; the mansion tax and NYC supplemental tax are paid by the buyer (seller liable if the buyer fails to pay or is exempt).",
+    "mortgageTax": {
+     "has": true,
+     "ratePct": 1.0,
+     "name": "Mortgage Recording Tax",
+     "note": "State: basic tax 50 cents per $100 (0.5%) + special additional tax 25 cents per $100 (0.25%) + additional tax 25 cents per $100 (0.25%; 30 cents/0.30% in the Metropolitan Commuter Transportation District, unless suspended in the county; first $10,000 of debt deducted for 1–2 family residences) = 1.0% outside the MCTD, 1.05% within it. New York City, Yonkers and various counties add 25 to 50 cents per $100; rates by jurisdiction are on Form MT-15."
+    },
+    "notes": "Mansion tax (1%) is computed on the whole price once consideration is $1 million or more ('whole' mode); NYC additional base tax (0.25%, residential ≥ $3M) and the NYC supplemental tax rate also apply to the entire consideration. Transfers or acquisitions of a controlling interest in an entity owning real property are taxable on apportioned fair market value.",
+    "url": "https://www.tax.ny.gov/bus/transfer/rptidx.htm",
+    "url2": "https://www.tax.ny.gov/pit/mortgage/mtgidx.htm",
+    "payerRaw": "seller",
+    "extra": [
+     {
+      "from": 1000000,
+      "to": null,
+      "ratePct": 1,
+      "who": "buyer",
+      "name": "Mansion tax"
+     }
+    ]
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 10.9,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 25000000,
+     "joint": 25000000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "No capital gains preference: gains are taxed as ordinary income under the 2026 schedule (3.90% to 10.9%; 6.85% from $215,400 single / $323,200 joint, 9.65% from $1,077,550 single / $2,155,350 joint, 10.3% from $5,000,000, 10.9% above $25,000,000). Above certain NYAGI thresholds the benefit of lower brackets is recaptured (flat-rate computation). New York City residents also pay NYC personal income tax (top 3.876% for 2026). NY starts from federal AGI, so the federal Section 121 home-sale exclusion carries through; nonresident sellers make an estimated income tax payment at transfer (IT-2663) unless exempt.",
+    "surtax": null,
+    "url": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "2026 rates read from Form IT-2105-I (2026 estimated tax instructions), not from final 2026 return instructions.",
+    "The DTF transfer-tax page does not describe NYC's own Real Property Transfer Tax (NYC Department of Finance) or other local transfer taxes; their rates were not verified.",
+    "NYC supplemental tax rates are from TP-584-NYC-I (8/25)."
+   ]
+  },
+  "north-carolina": {
+   "transfer": {
+    "has": true,
+    "name": "Excise Tax on Conveyances (real estate excise tax)",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.2
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "One dollar ($1.00) on each five hundred dollars ($500.00) or fractional part thereof of the consideration or value of the interest conveyed (G.S. 105-228.30(a)).",
+    "local": "Proceeds are split half to the county general fund and half to the State. A few counties levy their own local land transfer tax under local acts; those rates were not verified on an official source in this session.",
+    "payer": "seller",
+    "payerNote": "G.S. 105-228.30(a): the transferor must pay the tax to the register of deeds of the county where the real estate is located before recording.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording/intangible tax in Article 8E; only register of deeds recording fees."
+    },
+    "notes": "Applies to every instrument conveying an interest in real property (including timber deeds); exemptions are listed in G.S. 105-228.29 (among them transfers by operation of a merger or conversion of an entity).",
+    "url": "https://web.archive.org/web/2025id_/https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-228.30.html",
+    "url2": "https://www.ncdor.gov/taxes-forms/other-taxes-and-fees/conveyance-tax",
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 3.99,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Flat rate; capital gains taxed like other income. NCDOR: 4.25% for taxable years beginning in 2025 and 3.99% for taxable years after 2025 (S.L. 2023-134); further reductions may apply from 2027 based on revenue triggers. NC starts from federal AGI, so the federal Section 121 home-sale exclusion carries through.",
+    "surtax": null,
+    "url": "https://www.ncdor.gov/taxes-forms/tax-rate-schedules",
+    "cgShort": "flat rate"
+   },
+   "uncertain": [
+    "ncleg.gov blocks automated access (Cloudflare), so G.S. 105-228.30 was read on an Internet Archive copy (2025). The exemption list (G.S. 105-228.29) was not read in full.",
+    "County local land transfer taxes (local acts) not verified: names and rates omitted."
+   ]
+  },
+  "north-dakota": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No real estate transfer tax identified: N.D.C.C. chapter 11-18 (recorders) requires only a statement of full consideration to be filed with the deed (11-18-02.2), with no tax on the conveyance.",
+    "local": "No local real estate transfer tax identified.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording/registry tax identified; only recording fees."
+    },
+    "notes": "Certain transfers (e.g. forced sales, mortgage foreclosures and tax sales) are exempt from filing the statement of full consideration.",
+    "url": "https://ndlegis.gov/cencode/t11c18.pdf",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 2.5,
+    "year": 2025,
+    "flat": false,
+    "topBracketStart": {
+     "single": 244825,
+     "joint": 298075
+    },
+    "cgExclusionPct": 40,
+    "cgNote": "N.D.C.C. 57-38-30.3(2)(d): North Dakota taxable income is reduced by 40% of the excess of net long-term capital gain over net short-term capital loss (as computed federally), to the extent the gain is allocated to North Dakota. 2025 rates: 0% up to $48,475 single / $80,975 joint, 1.95% up to $244,825 / $298,075, 2.50% above. ND starts from federal taxable income, so the federal Section 121 home-sale exclusion carries through.",
+    "surtax": null,
+    "url": "https://www.tax.nd.gov/individual-income-tax",
+    "cgShort": "40% of a long-term gain excluded"
+   },
+   "uncertain": [
+    "2026 figures not yet published on tax.nd.gov (page shows the 2025 tax year); 2026 thresholds were not verified.",
+    "No official page explicitly stating 'North Dakota has no transfer tax' was found; has:false is based on the recorder chapter (N.D.C.C. 11-18) containing only a consideration statement and no tax."
+   ]
+  },
+  "ohio": {
+   "transfer": {
+    "has": true,
+    "name": "Real Property Conveyance Fee (county auditor fee R.C. 319.54(G)(3) + county real property transfer tax R.C. 322.02)",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.1
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Statewide mandatory fee for receiving statements of value (R.C. 319.54(G)(3)): one dollar, or ten cents for each one hundred dollars or fraction of one hundred dollars (0.1%), whichever is greater, of the value of the real property transferred. Counties may add a real property transfer tax of up to thirty cents per one hundred dollars (0.3%) (R.C. 322.02), for a maximum combined 0.4%.",
+    "local": "Each county may levy, by resolution of the board of county commissioners after two public hearings, a real property transfer tax at a uniform rate not to exceed 30 cents per $100 of value (R.C. 322.02(A)); county rates vary and were not compiled here.",
+    "payer": "seller",
+    "payerNote": "R.C. 322.02(A): the county real property transfer tax is levied upon the grantor named in the deed and paid by the grantor to the county auditor before the deed is presented to the recorder. The payer of the 0.1% auditor fee is not stated in the text of 319.54(G)(3) read.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording/intangible tax identified; only recorder fees."
+    },
+    "notes": "No fee is charged on transfers to or from the United States, Ohio or its subdivisions, or made solely to provide or release security for a debt, or to confirm/correct a recorded deed, among other exemptions listed in R.C. 319.54(G)(3).",
+    "url": "https://web.archive.org/web/2025id_/https://codes.ohio.gov/ohio-revised-code/section-322.02",
+    "url2": "https://web.archive.org/web/2025id_/https://codes.ohio.gov/ohio-revised-code/section-319.54",
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 3.125,
+    "year": 2025,
+    "flat": false,
+    "topBracketStart": {
+     "single": 100000,
+     "joint": 100000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "No capital gains preference for individuals: gains are nonbusiness income taxed under the regular schedule (2025: 0% up to $26,050; $342 + 2.75% of excess over $26,050 up to $100,000; $2,394.32 + 3.125% of excess over $100,000; same brackets for all filing statuses). Business income is taxed at a flat 3%. Ohio starts from federal AGI, so the federal Section 121 home-sale exclusion carries through.",
+    "surtax": null,
+    "url": "https://tax.ohio.gov/individual/resources/annual-tax-rates",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "2026 Ohio income tax rate not verified: the Department of Taxation page lists brackets through 2025 only, and codes.ohio.gov and legislature.ohio.gov did not respond (connection refused/timeouts), so the 2026 change enacted in the 2025 budget bill (reported as a flat 2.75% above $26,050) could not be read on an official source. 2025 figures are given. The DOT '2026 Ohio Estimated Income Tax Payment Worksheet' (https://dam.assets.ohio.gov/image/upload/v1735926006/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf) still shows the 2025-style brackets (2.75% / 3.125% above $100,000) but appears to have been uploaded before the budget bill, so it is not conclusive.",
+    "Ohio statutes (R.C. 319.54, 322.02) read on Internet Archive copies (2025) because codes.ohio.gov refused connections.",
+    "Combined county rates (many counties at the 0.3% maximum, giving 0.4% total) not verified county by county."
+   ]
+  },
+  "oklahoma": {
+   "transfer": {
+    "has": true,
+    "name": "Documentary Stamp Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.15
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Seventy-five cents ($0.75) for each Five Hundred Dollars ($500.00) of the consideration or any fractional part thereof (68 O.S. § 3201), on deeds conveying realty sold when consideration (exclusive of liens remaining) exceeds $100.",
+    "local": "No separate local transfer tax; stamps are sold by the county clerks for the Oklahoma Tax Commission (68 O.S. § 3204).",
+    "payer": null,
+    "payerNote": "68 O.S. § 3203(A): the tax shall be paid by any person who makes, signs, issues or sells the deed, or for whose use or benefit it is made — the statute does not assign it to the buyer or seller specifically.",
+    "mortgageTax": {
+     "has": true,
+     "ratePct": 0.1,
+     "name": "Mortgage Registration Tax",
+     "note": "68 O.S. § 1904(A): ten cents per $100 (0.1%) of the principal debt where the mortgage is for five years or more; 8 cents (4–5 years), 6 cents (3–4 years), 4 cents (2–3 years), 2 cents (under 2 years); plus a $10 county treasurer certification fee per mortgage. May be paid by the mortgagor, the mortgagee or any other interested party."
+    },
+    "notes": "Consideration includes any assumed indebtedness but excludes liens remaining on the property; exemptions in 68 O.S. § 3202 (e.g. deeds securing a debt, confirmatory deeds, certain family transfers without consideration).",
+    "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os68.pdf",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 4.5,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 7200,
+     "joint": 14400
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Capital gain deduction (68 O.S. § 2358(F)): individuals may deduct 'qualifying gains receiving capital treatment', including net capital gains from the sale of real property located in Oklahoma owned for a holding period of at least five years — so the gain on an Oklahoma home held 5+ years is fully deductible; otherwise gains are taxed as ordinary income. 2026 rates (68 O.S. § 2355(D)): single 0% on first $3,750, 2.5% on next $1,150, 3.5% on next $2,300, 4.5% on the remainder (above $7,200); joint/head of household 0% on first $7,500, 2.5% on next $2,300, 3.5% on next $4,600, 4.5% above $14,400. Rates may fall by 0.25 point steps under revenue triggers (§ 2355(E)). Oklahoma starts from federal AGI, so the Section 121 exclusion carries through.",
+    "surtax": null,
+    "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os68.pdf",
+    "cgShort": "gain on Oklahoma real estate held 5 years or more is deductible"
+   },
+   "uncertain": [
+    "Read from the Oklahoma Legislature's complete Title 68 PDF (includes Laws 2025 amendments effective Nov. 1, 2025). Whether a trigger-based 0.25-point reduction applies for 2026 was not checked (Board of Equalization certification).",
+    "Oklahoma Tax Commission pages on the documentary stamp tax were not found on oklahoma.gov/tax."
+   ]
+  },
+  "oregon": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state real estate transfer tax. Washington County levies a county Real Property Transfer Tax of one dollar per thousand dollars of the selling price (0.1%).",
+    "local": "Washington County (Washington County Code chapter 3.04, 'Real Property Transfer Tax Ordinance'): $1 per $1,000 of the selling price (0.1%), with exemptions applied for in writing within 15 days of tender for recording. No other county or city transfer tax was verified.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording/intangible tax identified."
+    },
+    "notes": null,
+    "url": "https://www.washingtoncountyor.gov/at/recording/transfer-tax-exemption",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 9.9,
+    "year": 2025,
+    "flat": false,
+    "topBracketStart": {
+     "single": 125000,
+     "joint": 250000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "No general capital gains preference: gains are taxed as ordinary income (2025 charts: 8.75% from $50,000 to $125,000 single / $250,000 joint, 9.9% above). Oregon DOR: Oregon follows federal law on the gain from the sale of a residence and won't tax gains of $500,000 or less ($250,000 married filing separately) if the federal qualifications are met. A separate farm asset capital gain method applies only to qualifying farm assets.",
+    "surtax": null,
+    "url": "https://www.oregon.gov/dor/forms/FormsPubs/form-or-40-inst_101-040-1_2025.pdf",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "washingtoncountyor.gov and oregonlegislature.gov blocked automated access (403 / bot check / connection refused); the Washington County rate ($1 per $1,000 of selling price) was read only in the search-result extract of the county's official pages, not on the loaded page. The statewide prohibition (ORS 306.815) and the payer of the county tax were not verified. Oregon is generally reported to prohibit new local transfer taxes (ORS 306.815, with Washington County's tax grandfathered); not verified on an official page.",
+    "2026 Oregon rate charts not yet published (OR-40 2026 instructions return 404); 2025 figures given. Local income taxes (e.g. Portland Metro SHS and Multnomah County PFA personal income taxes on high incomes) were not checked."
+   ]
+  },
+  "pennsylvania": {
+   "transfer": {
+    "has": true,
+    "name": "Realty Transfer Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 1.0
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "1 percent on the value of real estate (including contracted-for improvements) transferred by deed, instrument, long-term lease or other writing (state); an additional local realty transfer tax is often collected with it.",
+    "local": "Local realty transfer taxes are collected by the county Recorders of Deeds together with the state 1%; locals may share their tax among school districts and municipalities. Local rates vary by municipality/school district and were not verified (no uniform statutory figure on the Department of Revenue page).",
+    "payer": null,
+    "payerNote": "PA Department of Revenue: both grantor and grantee are held jointly and severally liable for payment of the tax; the split is left to the parties.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording/intangible tax identified."
+    },
+    "notes": "Exempt transfers include certain transfers among family members, to governmental units, between religious organizations, to shareholders or partners, to/from nonprofit industrial development agencies, burial sites, certain transfers of ownership in real estate companies and farms, and property passed by will or intestacy. 15% of collections go to the Keystone Recreation, Park and Conservation Fund.",
+    "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/realty-transfer-tax",
+    "url2": null,
+    "payerRaw": "both"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 3.07,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Flat 3.07%; net gains from the disposition of property are one of eight income classes (no standard deduction or personal exemption; losses cannot offset other classes or be carried over). PA does NOT use the federal Section 121 computation: it has its own principal residence exclusion for sales after Dec. 31, 1997 — the seller must have owned and used the home as principal residence for at least 2 of the 5 years before sale and not sold another principal residence within the prior 2 years (unforeseen change in employment, health or severe financial hardship excepted). The REV-625 brochure states no dollar cap; on a joint PA return both spouses qualify if one spouse meets the requirements. Gain on portions used for business/rental or for which office-in-home depreciation was allowable is not excluded; non-qualifying gain is reported on PA Schedule D (PA-19 worksheet).",
+    "surtax": null,
+    "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/personal-income-tax",
+    "cgShort": "own home sale exclusion (2 of 5 years), no dollar cap"
+   },
+   "uncertain": [
+    "Local realty transfer tax rates vary by municipality/school district and were not verified on an official source.",
+    "REV-625 brochure is dated 04-15 but is the current pa.gov publication; it does not mention a dollar limit on the exclusion.",
+    "Residence-exclusion rules read in PA DOR brochure REV-625: https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/rev-625.pdf"
+   ]
+  },
+  "rhode-island": {
+   "transfer": {
+    "has": true,
+    "name": "Realty Conveyance Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": 800000,
+      "ratePct": 0.75
+     },
+     {
+      "from": 800000,
+      "to": null,
+      "ratePct": 1.5
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Since October 1, 2025: Tier 1 $3.75 for each $500 or fractional part of the entire consideration (0.75%); Tier 2 an additional $3.75 per $500 (0.75%) on the consideration paid for residential real property in excess of $800,000, so 1.5% on the slice above $800,000 (R.I. Gen. Laws § 44-25-1(a)-(b); ADV 2025-13). Before Oct. 1, 2025 both tiers were $2.30 per $500.",
+    "local": "No separate local conveyance tax; part of the state tax ($1.80 of each $3.75 in Tier 1) is distributed to the city or town.",
+    "payer": "seller",
+    "payerNote": "R.I. Gen. Laws § 44-25-1(a): in the absence of an agreement to the contrary, the tax shall be paid by the grantor.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax found in chapter 44-25."
+    },
+    "notes": "The $800,000 Tier 2 threshold is adjusted for inflation (CPI-U) from January 1, 2026, rounded up to the nearest $5, never decreasing; the 2026 figure was not found. The tax also applies to transfers of interests in an acquired real estate company (controlling-interest rule).",
+    "url": "https://web.archive.org/web/20250916111653/https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-08/ADV_2025_13_Conveyance_tax_increase.pdf",
+    "url2": "https://web.archive.org/web/20260912153618/https://webserver.rilegislature.gov/Statutes/TITLE44/44-25/44-25-1.htm",
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 5.99,
+    "year": 2025,
+    "flat": false,
+    "topBracketStart": {
+     "single": 181650,
+     "joint": 181650
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Tax year 2025 brackets (same for all filing statuses): 3.75% up to $79,900, 4.75% to $181,650, 5.99% over $181,650. Capital gains are taxed as ordinary income (no special rate or exclusion found in the instructions). Rhode Island starts from federal AGI, so the federal § 121 home-sale exclusion carries through.",
+    "surtax": null,
+    "url": "https://web.archive.org/web/20260317090020/https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "tax.ri.gov sits behind a Cloudflare challenge and webserver.rilegislature.gov refuses connections from this network, so all RI sources are Internet Archive copies of official pages (ADV 2025-13 snapshot 2025-09-16, § 44-25-1 snapshot 2026-09-12, 2025 RI-1040 instructions snapshot 2026-03-17).",
+    "2026 CPI-adjusted Tier 2 conveyance threshold (above $800,000) not found; $800,000 used.",
+    "2026 income tax brackets not found (inflation-indexed); 2025 values used. Any 2026 legislative change to RI income tax rates could not be checked.",
+    "Capital-gain-as-ordinary-income and federal AGI starting point are stated from the structure of the RI-1040, not from an explicit sentence read."
+   ]
+  },
+  "south-carolina": {
+   "transfer": {
+    "has": true,
+    "name": "Deed Recording Fee",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.37
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "$1.85 for each $500, or fractional part of $500, of the realty's value (S.C. Code § 12-24-10), made of a state fee of $1.30 per $500 and a county fee of $0.55 per $500 (§ 12-24-90)",
+    "local": "The $1.85 per $500 already includes the county share ($0.55 per $500, credited to the county general fund under § 12-24-90); the statute sets no other uniform local deed fee. Ordinary per-document recording charges of the register of deeds apply in addition.",
+    "payer": "seller",
+    "payerNote": "S.C. Code § 12-24-20: the fee is the liability of the grantor (seller); the grantee is secondarily liable.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "Chapter 24 of Title 12 imposes the fee on deeds only; no state mortgage recording tax was found in the statute."
+    },
+    "notes": "Value is the consideration paid or to be paid (§ 12-24-30). § 12-24-40 lists exempt deeds (e.g. transfers to a family trust or partnership without consideration, corrective deeds, deeds in lieu of foreclosure).",
+    "url": "https://www.scstatehouse.gov/code/t12c024.php",
+    "url2": null,
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 5.21,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 30000,
+     "joint": 30000
+    },
+    "cgExclusionPct": 44,
+    "cgNote": "S.C. Code § 12-6-1150 allows individuals a deduction equal to 44% of net capital gain (as defined in IRC § 1222, i.e. long-term). For 2026 (Act 110 of 2026, SC Information Letter #26-20): 1.99% on taxable income up to $29,999 and 5.21% of taxable income minus $966 from $30,000 (same brackets for all filing statuses); SC taxable income now starts from federal AGI and the federal standard/itemized deductions are replaced by the SC Income Adjusted Deduction. SC conforms to the IRC (as of 31 Dec 2024), so the federal § 121 home-sale exclusion carries through via federal AGI. Top rate was 6% for 2025.",
+    "surtax": null,
+    "url": "https://dor.sc.gov/sites/dor/files/policies/IL26-20.pdf",
+    "cgShort": "44% of a long-term gain deducted"
+   },
+   "uncertain": [
+    "IL #26-20 does not mention the 44% capital gain deduction; the code chapter online (https://www.scstatehouse.gov/code/t12c006.php) still shows § 12-6-1150 at 44%, so it is assumed unchanged by Act 110 of 2026.",
+    "The $30,000 bracket threshold is the 2026 figure from IL #26-20; it is indexed yearly."
+   ]
+  },
+  "south-dakota": {
+   "transfer": {
+    "has": true,
+    "name": "Real Estate Transfer Fee",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.1
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Fifty cents for each five hundred dollars of value or fraction thereof upon the privilege of transferring title to real property (SDCL 43-4-21)",
+    "local": "No local add-on is set by the statute; the fee is statewide.",
+    "payer": "seller",
+    "payerNote": "SDCL 43-4-21: the fee shall be paid by the grantor.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "Transfers solely to provide or release security for a debt are exempt from the transfer fee (SDCL 43-4-22(3)); no state mortgage recording tax found."
+    },
+    "notes": "SDCL 43-4-22 exempts, among others, gifts without consideration, transfers between spouses or parent and child for nominal consideration, divorce decrees, foreclosure deeds and corrective deeds.",
+    "url": "https://sdlegislature.gov/Statutes/43-4-21",
+    "url2": "https://sdlegislature.gov/Statutes/43-4-22",
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": false,
+    "taxesCapitalGains": false,
+    "topRatePct": 0,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "South Dakota does not impose a state income tax (SD Department of Revenue), so a gain on a home sale is not taxed by the state.",
+    "surtax": null,
+    "url": "https://dor.sd.gov/individuals/taxes/",
+    "cgShort": "no personal income tax"
+   },
+   "uncertain": []
+  },
+  "tennessee": {
+   "transfer": {
+    "has": true,
+    "name": "Realty Transfer Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.37
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Property Transfer Tax: .37 per $100 (Knox County Register of Deeds fee schedule, collected by county registers for the state)",
+    "local": "Collected by the county register of deeds at recording; no separate county transfer tax appears on the register fee schedules read (Knox, Shelby), only per-page recording fees.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": true,
+     "ratePct": 0.115,
+     "name": "Mortgage (indebtedness) tax",
+     "note": ".115 per $100 of the indebtedness; the first $2,000 is exempt (Knox and Shelby County Register of Deeds fee schedules)."
+    },
+    "notes": null,
+    "url": "https://rod.knoxcounty.org/fee-schedules/",
+    "url2": "https://register.shelby.tn.us/fee-schedule",
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": false,
+    "taxesCapitalGains": false,
+    "topRatePct": 0,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Tennessee taxes neither wages nor capital gains: the Hall income tax (on interest and dividends only) was repealed for tax periods beginning on or after January 1, 2021 (TN Department of Revenue).",
+    "surtax": null,
+    "url": "https://web.archive.org/web/20260831054118/https://www.tn.gov/revenue/taxes/hall-income-tax.html",
+    "cgShort": "no tax on wages or capital gains"
+   },
+   "uncertain": [
+    "tn.gov (Department of Revenue) and the TN legislature sites return 403 / time out from this network (France), and the Internet Archive was rate-limiting, so the rates were read on two county Register of Deeds fee schedules (Knox, Shelby) rather than on the Department of Revenue page; statutory payer (Tenn. Code 67-4-409) not read, so payer is null.",
+    "tn.gov blocks this network (403); the Department of Revenue Hall income tax page was read through an Internet Archive snapshot dated 2026-08-31."
+   ]
+  },
+  "texas": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No real estate transfer tax: Texas Constitution Art. VIII, Sec. 29 provides that after January 1, 2016, no law may be enacted that imposes a transfer tax on a transaction that conveys fee simple title to real property.",
+    "local": "The constitutional prohibition applies to any law, so counties and cities levy no transfer tax; only the county clerk's per-document recording fees apply.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax found; only per-document recording fees."
+    },
+    "notes": "Art. VIII Sec. 29(b) still allows a tax on the issuance of title insurance and general business taxes.",
+    "url": "https://tlc.texas.gov/docs/legref/TxConst.pdf",
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": false,
+    "taxesCapitalGains": false,
+    "topRatePct": 0,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Texas Constitution Art. VIII, Sec. 24-a prohibits a tax on the net incomes of individuals (added 2019) and Sec. 24-b (added Nov. 4, 2025) prohibits a tax on the realized or unrealized capital gains of an individual, family, estate or trust.",
+    "surtax": null,
+    "url": "https://tlc.texas.gov/docs/legref/TxConst.pdf",
+    "cgShort": "no personal income tax"
+   },
+   "uncertain": [
+    "The new statutes.capitol.texas.gov site is a JavaScript app that curl cannot read, so the official Texas Legislative Council PDF of the Constitution was used."
+   ]
+  },
+  "utah": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state real estate transfer tax or deed tax; only the county recorder's per-document recording fee applies.",
+    "local": "No county or city transfer tax found; county recorders charge flat per-document recording fees.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax found."
+    },
+    "notes": null,
+    "url": null,
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 4.45,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": 0,
+     "joint": 0
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Flat 4.45% on state taxable income for taxable years beginning on or after January 1, 2026 (S.B. 60, 2026 General Session, retrospective operation; down from 4.5% in 2025). Capital gains are taxed as ordinary income; Utah taxable income starts from federal adjusted gross income, so the federal § 121 home-sale exclusion carries through.",
+    "surtax": null,
+    "url": "https://le.utah.gov/xcode/Title59/Chapter10/59-10-S104.html",
+    "cgShort": "flat rate"
+   },
+   "uncertain": [
+    "Absence of a Utah transfer tax could not be confirmed by an official page stating it (tax.utah.gov returns 403 from this network, and no statute imposes one); transfer fields describe the absence and url is null.",
+    "Utah Code 59-10-103 defines adjusted gross income by reference to IRC § 62 (federal AGI); S.B. 60 enrolled text (https://le.utah.gov/Session/2026/bills/enrolled/SB0060.pdf) confirms 4.45% for 2026. No special capital gains rate was found in 59-10-104 (single flat rate)."
+   ]
+  },
+  "vermont": {
+   "transfer": {
+    "has": true,
+    "name": "Property Transfer Tax (plus Clean Water Surcharge)",
+    "brackets": [
+     {
+      "from": 0,
+      "to": 200000,
+      "ratePct": 0.5
+     },
+     {
+      "from": 200000,
+      "to": null,
+      "ratePct": 1.47
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Principal residence of the buyer: 0.5% on the first $200,000 of value (no Clean Water Surcharge on that slice), then the general rate of 1.25% plus the 0.22% Clean Water Surcharge (total 1.47%) on value above $200,000. Other property: 1.25% + 0.22% = 1.47% of the whole value. Non-principal residence fit for year-round habitation that is not a long-term rental: 3.4% (3.62% with the surcharge). (32 V.S.A. §§ 9602, 9602a; Vermont Department of Taxes)",
+    "local": "No local transfer tax; the tax and surcharge are state levies.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax found."
+    },
+    "notes": "Brackets model a sale to a buyer who will use the home as principal residence. If the buyer gets a purchase money mortgage with a VHCB homeland grant or a VHFA/USDA Rural Development loan, the first $250,000 is exempt from both tax and surcharge. Second homes (year-round, not long-term rental) pay 3.4% + 0.22%. The tax also applies to transfers of a controlling interest in an entity owning Vermont property.",
+    "url": "https://tax.vermont.gov/property/property-transfer-tax",
+    "url2": "https://legislature.vermont.gov/statutes/section/32/231/09602",
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 8.75,
+    "year": 2025,
+    "flat": false,
+    "topBracketStart": {
+     "single": 249700,
+     "joint": 304000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "32 V.S.A. § 5811(21)(B)(ii): taxpayers may exclude either the first $5,000 of adjusted net capital gain or 40% of adjusted net capital gain from assets held more than three years, capped at 40% of federal taxable income or $350,000; but the 40% exclusion does not cover gains from the sale of real estate used as a primary or nonprimary residence (nor publicly traded stocks/bonds), so a home-sale gain can only use the flat $5,000 exclusion. Vermont starts from federal taxable income, so the federal § 121 exclusion carries through. A separate Vermont land gains tax (32 V.S.A. ch. 236) can apply to land held under six years.",
+    "surtax": null,
+    "url": "https://tax.vermont.gov/sites/tax/files/documents/TaxRateSched-2025.pdf",
+    "cgShort": "only the $5,000 exclusion applies to a home"
+   },
+   "uncertain": [
+    "Income brackets are the 2025 Vermont Tax Rate Schedules (TaxRateSched-2026.pdf returns 404 on 2026-10-08); thresholds are indexed yearly, rates (3.35/6.6/7.6/8.75%) unchanged in 32 V.S.A. § 5822.",
+    "Statutory payer of the property transfer tax not read (payer left null).",
+    "Whether the $5,000 flat exclusion applies to a residence gain depends on how the 'except' clause in § 5811(21)(B)(ii) is read; the Department of Taxes page on this point was not read.",
+    "Land gains tax exemptions for a principal residence not detailed (not read)."
+   ]
+  },
+  "virginia": {
+   "transfer": {
+    "has": true,
+    "name": "State Recordation Tax on deeds + Grantor Tax",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.35
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "State recordation tax: 25 cents on every $100 or fraction thereof of the consideration or the assessed value, whichever is greater (Va. Code § 58.1-801) = 0.25%; plus grantor tax: 50 cents for each $500 or fraction thereof of the consideration or value, exclusive of liens remaining on the property (§ 58.1-802) = 0.10%. Combined state level 0.35%.",
+    "local": "Cities and counties may add a local recordation tax equal to one-third of the state recordation tax (§ 58.1-814), i.e. about 0.0833% when levied. Half of the grantor tax goes to the locality. In member localities of the Northern Virginia Transportation Authority a regional WMATA capital fee of $0.10 per $100 (0.10%) is added, paid by the grantor (§ 58.1-802.3).",
+    "payer": "split",
+    "payerNote": "Grantor tax (and the NoVA WMATA fee) shall be paid by the grantor (seller), though grantor and grantee may arrange for the grantee to pay (§ 58.1-802, § 58.1-802.3). § 58.1-801 does not name a payer for the state recordation tax on the deed.",
+    "mortgageTax": {
+     "has": true,
+     "ratePct": 0.25,
+     "name": "Recordation tax on deeds of trust or mortgages",
+     "note": "25 cents per $100 of the obligation secured (§ 58.1-803), declining on tranches above $10 million; refinancing of debt already taxed pays 18 cents per $100 on the first $10 million. Localities may add one-third of the state tax (§ 58.1-814)."
+    },
+    "notes": "Recordation tax applies to the greater of price or the most recent assessment. Grantor tax excludes the value of liens that remain on the property.",
+    "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter8/section58.1-801/",
+    "url2": "https://law.lis.virginia.gov/vacode/title58.1/chapter8/section58.1-802/",
+    "payerRaw": "split"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 5.75,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 17000,
+     "joint": 17000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Graduated 2% / 3% / 5% / 5.75%; 5.75% on Virginia taxable income over $17,000 for taxable years beginning on and after January 1, 1990 (Va. Code § 58.1-320), the same brackets for every filing status. No special capital gains rate: gains are taxed as ordinary income. Virginia starts from federal AGI, so the federal § 121 home-sale exclusion carries through.",
+    "surtax": null,
+    "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "The Virginia Tax web page for income tax rates was not located (404 on guessed URLs); the statute was used. Conformity to federal AGI is stated from Va. Code § 58.1-322 knowledge, not read in this session."
+   ]
+  },
+  "washington": {
+   "transfer": {
+    "has": true,
+    "name": "Real Estate Excise Tax (REET)",
+    "brackets": [
+     {
+      "from": 0,
+      "to": 525000,
+      "ratePct": 1.1
+     },
+     {
+      "from": 525000,
+      "to": 1525000,
+      "ratePct": 1.28
+     },
+     {
+      "from": 1525000,
+      "to": 3025000,
+      "ratePct": 2.75
+     },
+     {
+      "from": 3025000,
+      "to": null,
+      "ratePct": 3.0
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "Graduated state REET on the selling price (RCW 82.45.060), current thresholds: $525,000 or less 1.10%; $525,000.01-$1,525,000 1.28%; $1,525,000.01-$3,025,000 2.75%; $3,025,000.01 or more 3%. For sales from January 1, 2027 the thresholds become $551,000 / $1,551,000 / $3,051,000 with the same rates.",
+    "local": "Local REET must be added to the state rate; it varies by city/county location code and is published by DOR in periodic rate tables (e.g. 'Rates May 1, 2026 and after'). A $5 state technology fee applies to every transfer.",
+    "payer": "seller",
+    "payerNote": "Washington DOR: 'Usually, the seller pays this tax, but if they don't, the buyer is responsible'; unpaid tax can become a lien on the property.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax found; the loan amount is not separately taxed (REET is on the full price)."
+    },
+    "notes": "Thresholds are adjusted every four years (next change January 1, 2027). Agricultural and timberland pay a flat 1.28% state rate. Transfers of a controlling interest (50% or more within 36 months) in an entity owning Washington real property are subject to REET.",
+    "url": "https://dor.wa.gov/taxes-rates/other-taxes/real-estate-excise-tax",
+    "url2": null,
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": false,
+    "taxesCapitalGains": false,
+    "topRatePct": 0,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": "Washington does not currently have an individual income tax (DOR). Its capital gains excise tax (RCW 82.87: 7% on Washington capital gains above a standard deduction of $278,000 for 2025, plus 2.9% on gains above $1,000,000 from 2025) exempts real estate, so a home-sale gain is not taxed. DOR announces a new 9.9% income tax on adjusted gross income above $1 million from January 1, 2028, which does not apply to 2026.",
+    "surtax": null,
+    "url": "https://dor.wa.gov/taxes-rates/income-tax",
+    "cgShort": "capital gains excise tax exempts real estate"
+   },
+   "uncertain": [
+    "Local REET rates differ by location code and were not tabulated.",
+    "2026 capital gains standard deduction not shown on the DOR page read (2025: $278,000); irrelevant for real estate, which is exempt."
+   ]
+  },
+  "west-virginia": {
+   "transfer": {
+    "has": true,
+    "name": "Excise Tax on the Privilege of Transferring Real Estate",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.33
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "State excise tax of $1.10 for each $500 value or fraction thereof (0.22%) plus the additional county excise tax of 55 cents for each $500 (0.11%), W. Va. Code § 11-22-2(a)-(b); total 0.33% at the base county rate.",
+    "local": "The county tax is 55 cents per $500 (0.11%), but a county may raise it, up to $1.65 per $500 (0.33%) under § 11-22-2(b); with the state $1.10 the total can reach $2.75 per $500 (0.55%). 20% of the state tax collected is retained by the county.",
+    "payer": "seller",
+    "payerNote": "W. Va. Code § 11-22-2(b): the tax shall be paid by the grantor unless the grantee accepts the document without the tax having been paid, in which event it is paid by the grantee.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax found in article 22."
+    },
+    "notes": "Only one state tax and one county tax are paid on any document, in the county where it is first recorded.",
+    "url": "https://code.wvlegislature.gov/11-22-2/",
+    "url2": null,
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 4.58,
+    "year": 2026,
+    "flat": false,
+    "topBracketStart": {
+     "single": 60000,
+     "joint": 60000
+    },
+    "cgExclusionPct": null,
+    "cgNote": "For taxable years beginning on and after January 1, 2026 (W. Va. Code § 11-21-4j): 2.11% up to $10,000, 2.81%, 3.16%, 4.22%, and 4.58% over $60,000 (same table for single, joint and head of household; married filing separately 4.58% over $30,000). No special capital gains rate or exclusion found; WV taxable income starts from federal AGI, so the federal § 121 home-sale exclusion carries through.",
+    "surtax": null,
+    "url": "https://code.wvlegislature.gov/11-21-4j/",
+    "cgShort": "graduated rates, gain taxed as income"
+   },
+   "uncertain": [
+    "Federal AGI starting point (§ 11-21-11/12) stated from the code structure; § 11-21-12 contains no capital gain modification (checked), but the WV Tax Division page was not read."
+   ]
+  },
+  "wisconsin": {
+   "transfer": {
+    "has": true,
+    "name": "Real Estate Transfer Fee",
+    "brackets": [
+     {
+      "from": 0,
+      "to": null,
+      "ratePct": 0.3
+     }
+    ],
+    "mode": "marginal",
+    "rateText": "30 cents for each $100 of value or fraction thereof (Wisconsin DOR, RETR overview; sec. 77.22 Wis. Stats.); example: $100,000 x .003 = $300",
+    "local": "No local add-on; the fee is collected by the county register of deeds (part of it retained by the county).",
+    "payer": "seller",
+    "payerNote": "Wisconsin DOR: 'A grantor of real estate must pay a real estate transfer fee'.",
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax found."
+    },
+    "notes": "A reduced rate of 10 cents per $100 applies to deeds satisfying certain original land contracts; sec. 77.25 lists exemptions (e.g. value of $1,000 or less, corrective deeds, agent to principal).",
+    "url": "https://revenue.wi.gov/DOR%20Publications/retr-overview.pdf",
+    "url2": "https://revenue.wi.gov/Pages/RETR/home.aspx",
+    "payerRaw": "seller"
+   },
+   "income": {
+    "hasIncomeTax": true,
+    "taxesCapitalGains": true,
+    "topRatePct": 7.65,
+    "year": 2025,
+    "flat": false,
+    "topBracketStart": {
+     "single": 323290,
+     "joint": 431060
+    },
+    "cgExclusionPct": 30,
+    "cgNote": "A deduction of 30% of net capital gain from assets held more than one year is allowed when computing Wisconsin taxable income (60% for farm assets) (DOR Publication 103, 2025). Wisconsin starts from federal adjusted gross income, so the federal § 121 home-sale exclusion carries through. 2025 rates: 3.5%, 4.4%, 5.3%, 7.65%; 7.65% from $323,290 (single/head of household) and $431,060 (married filing jointly).",
+    "surtax": null,
+    "url": "https://www.revenue.wi.gov/TaxForms2025/2025-Form1-Inst.pdf",
+    "cgShort": "30% of a long-term gain excluded"
+   },
+   "uncertain": [
+    "2026 Wisconsin brackets not yet published (2026 Form 1 instructions return 404); 2025 thresholds from the 2025 Form 1 Tax Computation Worksheet used. The lower rates 3.5% and 4.4% are stated from knowledge, only 5.3% and 7.65% were read on the worksheet.",
+    "The statute sec. 77.22 at docs.legis.wisconsin.gov could not be loaded (connection refused); the DOR publication was used."
+   ]
+  },
+  "wyoming": {
+   "transfer": {
+    "has": false,
+    "name": null,
+    "brackets": [],
+    "mode": "marginal",
+    "rateText": "No state real estate transfer tax; only the county clerk's per-document recording fees apply.",
+    "local": "No county or city transfer tax found.",
+    "payer": null,
+    "payerNote": null,
+    "mortgageTax": {
+     "has": false,
+     "ratePct": null,
+     "name": null,
+     "note": "No mortgage recording tax found."
+    },
+    "notes": null,
+    "url": null,
+    "url2": null,
+    "payerRaw": null
+   },
+   "income": {
+    "hasIncomeTax": false,
+    "taxesCapitalGains": false,
+    "topRatePct": 0,
+    "year": 2026,
+    "flat": true,
+    "topBracketStart": {
+     "single": null,
+     "joint": null
+    },
+    "cgExclusionPct": null,
+    "cgNote": null,
+    "surtax": null,
+    "url": null,
+    "cgShort": "no personal income tax"
+   },
+   "uncertain": [
+    "Wyoming levies no personal income tax and no real estate transfer tax (widely known, and the Department of Revenue site https://revenue.wyo.gov/ lists only property, excise, mineral and liquor divisions), but no official page explicitly stating either absence could be read: the Wyoming Business Council site returns 403 and the DOR annual reports are Google Drive files that could not be parsed. URLs left null."
+   ]
+  }
+ },
+ "estate": [
+  {
+   "slug": "connecticut",
+   "name": "Connecticut",
+   "exemption": 15000000,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 15000000,
+     "ratePct": 0
+    },
+    {
+     "from": 15000000,
+     "to": null,
+     "ratePct": 12
+    }
+   ],
+   "method": "whole",
+   "cap": 15000000,
+   "notes": "No tax up to the federal basic exclusion amount, then 12% of the excess; total tax capped at $15,000,000.",
+   "urls": [
+    "https://www.cga.ct.gov/current/pub/chap_217.htm",
+    "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+   ]
+  },
+  {
+   "slug": "district-of-columbia",
+   "name": "District of Columbia",
+   "exemption": 4988400,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 4988400,
+     "ratePct": 0
+    },
+    {
+     "from": 4988400,
+     "to": 5000000,
+     "ratePct": 11.2
+    },
+    {
+     "from": 5000000,
+     "to": 6000000,
+     "ratePct": 12.0
+    },
+    {
+     "from": 6000000,
+     "to": 7000000,
+     "ratePct": 12.8
+    },
+    {
+     "from": 7000000,
+     "to": 8000000,
+     "ratePct": 13.6
+    },
+    {
+     "from": 8000000,
+     "to": 9000000,
+     "ratePct": 14.4
+    },
+    {
+     "from": 9000000,
+     "to": 10000000,
+     "ratePct": 15.2
+    },
+    {
+     "from": 10000000,
+     "to": null,
+     "ratePct": 16.0
+    }
+   ],
+   "method": "whole",
+   "notes": "Graduated rates on the part above the exclusion, prorated when part of the estate lies outside DC.",
+   "urls": [
+    "https://otr.cfo.dc.gov/sites/default/files/dc/sites/otr/publication/attachments/2026_D-76_v1.0_final.pdf",
+    "https://otr.cfo.dc.gov/page/dc-estate-inheritance-and-fiduciary-tax-information",
+    "https://code.dccouncil.gov/us/dc/council/code/sections/47-3702",
+    "https://code.dccouncil.gov/us/dc/council/code/sections/47-3701"
+   ]
+  },
+  {
+   "slug": "hawaii",
+   "name": "Hawaii",
+   "exemption": 5490000,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 1000000,
+     "ratePct": 10.0
+    },
+    {
+     "from": 1000000,
+     "to": 2000000,
+     "ratePct": 11.0
+    },
+    {
+     "from": 2000000,
+     "to": 3000000,
+     "ratePct": 12.0
+    },
+    {
+     "from": 3000000,
+     "to": 4000000,
+     "ratePct": 13.0
+    },
+    {
+     "from": 4000000,
+     "to": 5000000,
+     "ratePct": 14.0
+    },
+    {
+     "from": 5000000,
+     "to": 10000000,
+     "ratePct": 15.7
+    },
+    {
+     "from": 10000000,
+     "to": null,
+     "ratePct": 20.0
+    }
+   ],
+   "method": "excess",
+   "notes": "Exclusion subtracted first, then 10% to 20% on the rest; the exclusion is fixed at $5,490,000 and portable between spouses.",
+   "urls": [
+    "https://files.hawaii.gov/tax/forms/2025/m6ins.pdf",
+    "https://files.hawaii.gov/tax/forms/2025/m6_i.pdf"
+   ]
+  },
+  {
+   "slug": "illinois",
+   "name": "Illinois",
+   "exemption": 4000000,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 40000,
+     "ratePct": 0
+    },
+    {
+     "from": 40000,
+     "to": 90000,
+     "ratePct": 0.8
+    },
+    {
+     "from": 90000,
+     "to": 140000,
+     "ratePct": 1.6
+    },
+    {
+     "from": 140000,
+     "to": 240000,
+     "ratePct": 2.4
+    },
+    {
+     "from": 240000,
+     "to": 440000,
+     "ratePct": 3.2
+    },
+    {
+     "from": 440000,
+     "to": 640000,
+     "ratePct": 4.0
+    },
+    {
+     "from": 640000,
+     "to": 840000,
+     "ratePct": 4.8
+    },
+    {
+     "from": 840000,
+     "to": 1040000,
+     "ratePct": 5.6
+    },
+    {
+     "from": 1040000,
+     "to": 1540000,
+     "ratePct": 6.4
+    },
+    {
+     "from": 1540000,
+     "to": 2040000,
+     "ratePct": 7.2
+    },
+    {
+     "from": 2040000,
+     "to": 2540000,
+     "ratePct": 8.0
+    },
+    {
+     "from": 2540000,
+     "to": 3040000,
+     "ratePct": 8.8
+    },
+    {
+     "from": 3040000,
+     "to": 3540000,
+     "ratePct": 9.6
+    },
+    {
+     "from": 3540000,
+     "to": 4040000,
+     "ratePct": 10.4
+    },
+    {
+     "from": 4040000,
+     "to": 5040000,
+     "ratePct": 11.2
+    },
+    {
+     "from": 5040000,
+     "to": 6040000,
+     "ratePct": 12.0
+    },
+    {
+     "from": 6040000,
+     "to": 7040000,
+     "ratePct": 12.8
+    },
+    {
+     "from": 7040000,
+     "to": 8040000,
+     "ratePct": 13.6
+    },
+    {
+     "from": 8040000,
+     "to": 9040000,
+     "ratePct": 14.4
+    },
+    {
+     "from": 9040000,
+     "to": 10040000,
+     "ratePct": 15.2
+    },
+    {
+     "from": 10040000,
+     "to": null,
+     "ratePct": 16.0
+    }
+   ],
+   "method": "illinois",
+   "notes": "Interrelated calculation of the Attorney General: steep phase-in just above the threshold ($285,714 on a $5,000,000 estate), no portability.",
+   "urls": [
+    "https://illinoisattorneygeneral.gov/estate-taxes",
+    "https://illinoisattorneygeneral.gov/Page-Attachments/EstateTaxInstructionFactSheet.pdf",
+    "https://illinoisattorneygeneral.gov/estate-taxes/2013-2025-estate-calculator"
+   ]
+  },
+  {
+   "slug": "maine",
+   "name": "Maine",
+   "exemption": 7160000,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 7160000,
+     "ratePct": 0
+    },
+    {
+     "from": 7160000,
+     "to": 10160000,
+     "ratePct": 8
+    },
+    {
+     "from": 10160000,
+     "to": 13160000,
+     "ratePct": 10
+    },
+    {
+     "from": 13160000,
+     "to": null,
+     "ratePct": 12
+    }
+   ],
+   "method": "whole",
+   "notes": "8% on the next $3,000,000 above the exclusion, 10% on the following $3,000,000, 12% beyond.",
+   "urls": [
+    "https://www.maine.gov/revenue/taxes/income-estate-tax/estate-tax-706me",
+    "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/26_706ME_instructions.pdf"
+   ]
+  },
+  {
+   "slug": "maryland",
+   "name": "Maryland",
+   "exemption": 5000000,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 5000000,
+     "ratePct": 0
+    },
+    {
+     "from": 5000000,
+     "to": null,
+     "ratePct": 16
+    }
+   ],
+   "method": "whole",
+   "notes": "16% of the excess for most estates (the tax cannot exceed the old federal state death tax credit); Maryland portability allowed; inheritance tax paid is credited.",
+   "urls": [
+    "https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/2026/met-1.pdf"
+   ]
+  },
+  {
+   "slug": "massachusetts",
+   "name": "Massachusetts",
+   "exemption": 2000000,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 40000,
+     "ratePct": 0
+    },
+    {
+     "from": 40000,
+     "to": 90000,
+     "ratePct": 0.8
+    },
+    {
+     "from": 90000,
+     "to": 140000,
+     "ratePct": 1.6
+    },
+    {
+     "from": 140000,
+     "to": 240000,
+     "ratePct": 2.4
+    },
+    {
+     "from": 240000,
+     "to": 440000,
+     "ratePct": 3.2
+    },
+    {
+     "from": 440000,
+     "to": 640000,
+     "ratePct": 4.0
+    },
+    {
+     "from": 640000,
+     "to": 840000,
+     "ratePct": 4.8
+    },
+    {
+     "from": 840000,
+     "to": 1040000,
+     "ratePct": 5.6
+    },
+    {
+     "from": 1040000,
+     "to": 1540000,
+     "ratePct": 6.4
+    },
+    {
+     "from": 1540000,
+     "to": 2040000,
+     "ratePct": 7.2
+    },
+    {
+     "from": 2040000,
+     "to": 2540000,
+     "ratePct": 8.0
+    },
+    {
+     "from": 2540000,
+     "to": 3040000,
+     "ratePct": 8.8
+    },
+    {
+     "from": 3040000,
+     "to": 3540000,
+     "ratePct": 9.6
+    },
+    {
+     "from": 3540000,
+     "to": 4040000,
+     "ratePct": 10.4
+    },
+    {
+     "from": 4040000,
+     "to": 5040000,
+     "ratePct": 11.2
+    },
+    {
+     "from": 5040000,
+     "to": 6040000,
+     "ratePct": 12.0
+    },
+    {
+     "from": 6040000,
+     "to": 7040000,
+     "ratePct": 12.8
+    },
+    {
+     "from": 7040000,
+     "to": 8040000,
+     "ratePct": 13.6
+    },
+    {
+     "from": 8040000,
+     "to": 9040000,
+     "ratePct": 14.4
+    },
+    {
+     "from": 9040000,
+     "to": 10040000,
+     "ratePct": 15.2
+    },
+    {
+     "from": 10040000,
+     "to": null,
+     "ratePct": 16.0
+    }
+   ],
+   "method": "credit",
+   "offset": 60000,
+   "credit": 99600,
+   "notes": "Old federal state death tax credit table on the estate less $60,000, minus a $99,600 credit: nothing up to $2,000,000, then 7.2% and up, no cliff.",
+   "urls": [
+    "https://www.mass.gov/info-details/estate-tax-guide"
+   ]
+  },
+  {
+   "slug": "minnesota",
+   "name": "Minnesota",
+   "exemption": 3000000,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 7100000,
+     "ratePct": 13.0
+    },
+    {
+     "from": 7100000,
+     "to": 8100000,
+     "ratePct": 13.6
+    },
+    {
+     "from": 8100000,
+     "to": 9100000,
+     "ratePct": 14.4
+    },
+    {
+     "from": 9100000,
+     "to": 10100000,
+     "ratePct": 15.2
+    },
+    {
+     "from": 10100000,
+     "to": null,
+     "ratePct": 16.0
+    }
+   ],
+   "method": "excess",
+   "notes": "Exclusion subtracted first, then 13% to 16% on the rest; extra deduction for qualified small business and farm property.",
+   "urls": [
+    "https://www.revisor.mn.gov/statutes/cite/291.03",
+    "https://www.revisor.mn.gov/statutes/cite/291.016",
+    "https://www.revisor.mn.gov/statutes/cite/289A.10"
+   ]
+  },
+  {
+   "slug": "new-york",
+   "name": "New York",
+   "exemption": 7350000,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 500000,
+     "ratePct": 3.06
+    },
+    {
+     "from": 500000,
+     "to": 1000000,
+     "ratePct": 5.0
+    },
+    {
+     "from": 1000000,
+     "to": 1500000,
+     "ratePct": 5.5
+    },
+    {
+     "from": 1500000,
+     "to": 2100000,
+     "ratePct": 6.5
+    },
+    {
+     "from": 2100000,
+     "to": 2600000,
+     "ratePct": 8.0
+    },
+    {
+     "from": 2600000,
+     "to": 3100000,
+     "ratePct": 8.8
+    },
+    {
+     "from": 3100000,
+     "to": 3600000,
+     "ratePct": 9.6
+    },
+    {
+     "from": 3600000,
+     "to": 4100000,
+     "ratePct": 10.4
+    },
+    {
+     "from": 4100000,
+     "to": 5100000,
+     "ratePct": 11.2
+    },
+    {
+     "from": 5100000,
+     "to": 6100000,
+     "ratePct": 12.0
+    },
+    {
+     "from": 6100000,
+     "to": 7100000,
+     "ratePct": 12.8
+    },
+    {
+     "from": 7100000,
+     "to": 8100000,
+     "ratePct": 13.6
+    },
+    {
+     "from": 8100000,
+     "to": 9100000,
+     "ratePct": 14.4
+    },
+    {
+     "from": 9100000,
+     "to": 10100000,
+     "ratePct": 15.2
+    },
+    {
+     "from": 10100000,
+     "to": null,
+     "ratePct": 16.0
+    }
+   ],
+   "method": "cliff",
+   "cliffPct": 105,
+   "notes": "Table on the whole estate; the credit shrinks between 100% and 105% of the exclusion and disappears above it (the cliff).",
+   "urls": [
+    "https://www.tax.ny.gov/pit/estate/etidx.htm",
+    "https://www.tax.ny.gov/pdf/current_forms/et/et706_fill_in.pdf",
+    "https://www.tax.ny.gov/pdf/current_forms/et/et706i.pdf"
+   ]
+  },
+  {
+   "slug": "oregon",
+   "name": "Oregon",
+   "exemption": 1000000,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 1000000,
+     "ratePct": 0
+    },
+    {
+     "from": 1000000,
+     "to": 1500000,
+     "ratePct": 10.0
+    },
+    {
+     "from": 1500000,
+     "to": 2500000,
+     "ratePct": 10.25
+    },
+    {
+     "from": 2500000,
+     "to": 3500000,
+     "ratePct": 10.5
+    },
+    {
+     "from": 3500000,
+     "to": 4500000,
+     "ratePct": 11.0
+    },
+    {
+     "from": 4500000,
+     "to": 5500000,
+     "ratePct": 11.5
+    },
+    {
+     "from": 5500000,
+     "to": 6500000,
+     "ratePct": 12.0
+    },
+    {
+     "from": 6500000,
+     "to": 7500000,
+     "ratePct": 13.0
+    },
+    {
+     "from": 7500000,
+     "to": 8500000,
+     "ratePct": 14.0
+    },
+    {
+     "from": 8500000,
+     "to": 9500000,
+     "ratePct": 15.0
+    },
+    {
+     "from": 9500000,
+     "to": null,
+     "ratePct": 16.0
+    }
+   ],
+   "method": "whole",
+   "notes": "10% from $1,000,000 rising to 16% above $9,500,000; the $1,000,000 threshold is not indexed and not portable.",
+   "urls": [
+    "https://www.oregon.gov/dor/forms/FormsPubs/form-or-706-inst_104-001-1_2025.pdf",
+    "https://secure.dor.state.or.us/Services/draftforms/api/document/7556/download"
+   ]
+  },
+  {
+   "slug": "rhode-island",
+   "name": "Rhode Island",
+   "exemption": 1838056,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 40000,
+     "ratePct": 0
+    },
+    {
+     "from": 40000,
+     "to": 90000,
+     "ratePct": 0.8
+    },
+    {
+     "from": 90000,
+     "to": 140000,
+     "ratePct": 1.6
+    },
+    {
+     "from": 140000,
+     "to": 240000,
+     "ratePct": 2.4
+    },
+    {
+     "from": 240000,
+     "to": 440000,
+     "ratePct": 3.2
+    },
+    {
+     "from": 440000,
+     "to": 640000,
+     "ratePct": 4.0
+    },
+    {
+     "from": 640000,
+     "to": 840000,
+     "ratePct": 4.8
+    },
+    {
+     "from": 840000,
+     "to": 1040000,
+     "ratePct": 5.6
+    },
+    {
+     "from": 1040000,
+     "to": 1540000,
+     "ratePct": 6.4
+    },
+    {
+     "from": 1540000,
+     "to": 2040000,
+     "ratePct": 7.2
+    },
+    {
+     "from": 2040000,
+     "to": 2540000,
+     "ratePct": 8.0
+    },
+    {
+     "from": 2540000,
+     "to": 3040000,
+     "ratePct": 8.8
+    },
+    {
+     "from": 3040000,
+     "to": 3540000,
+     "ratePct": 9.6
+    },
+    {
+     "from": 3540000,
+     "to": 4040000,
+     "ratePct": 10.4
+    },
+    {
+     "from": 4040000,
+     "to": 5040000,
+     "ratePct": 11.2
+    },
+    {
+     "from": 5040000,
+     "to": 6040000,
+     "ratePct": 12.0
+    },
+    {
+     "from": 6040000,
+     "to": 7040000,
+     "ratePct": 12.8
+    },
+    {
+     "from": 7040000,
+     "to": 8040000,
+     "ratePct": 13.6
+    },
+    {
+     "from": 8040000,
+     "to": 9040000,
+     "ratePct": 14.4
+    },
+    {
+     "from": 9040000,
+     "to": 10040000,
+     "ratePct": 15.2
+    },
+    {
+     "from": 10040000,
+     "to": null,
+     "ratePct": 16.0
+    }
+   ],
+   "method": "credit",
+   "offset": 60000,
+   "credit": 87940,
+   "notes": "Old federal state death tax credit table minus an $87,940 credit for 2026, which exempts the first $1,838,056; indexed each year.",
+   "urls": [
+    "https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/ADV_2025_27_Estate_Updates.pdf",
+    "https://webserver.rilegislature.gov/Statutes/TITLE44/44-22/44-22-1.1.htm",
+    "https://tax.ri.gov/tax-sections/estate-tax"
+   ]
+  },
+  {
+   "slug": "vermont",
+   "name": "Vermont",
+   "exemption": 5000000,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 5000000,
+     "ratePct": 0
+    },
+    {
+     "from": 5000000,
+     "to": null,
+     "ratePct": 16
+    }
+   ],
+   "method": "whole",
+   "notes": "16% of the excess over $5,000,000, prorated to the Vermont share; taxable gifts within 2 years of death are added back.",
+   "urls": [
+    "https://tax.vermont.gov/individuals/estate-tax",
+    "https://legislature.vermont.gov/statutes/section/32/190/07442a",
+    "https://legislature.vermont.gov/statutes/section/32/190/07402"
+   ]
+  },
+  {
+   "slug": "washington",
+   "name": "Washington",
+   "exemption": 3000000,
+   "year": 2026,
+   "brackets": [
+    {
+     "from": 0,
+     "to": 1000000,
+     "ratePct": 10
+    },
+    {
+     "from": 1000000,
+     "to": 2000000,
+     "ratePct": 14
+    },
+    {
+     "from": 2000000,
+     "to": 3000000,
+     "ratePct": 15
+    },
+    {
+     "from": 3000000,
+     "to": 4000000,
+     "ratePct": 16
+    },
+    {
+     "from": 4000000,
+     "to": 6000000,
+     "ratePct": 18
+    },
+    {
+     "from": 6000000,
+     "to": 7000000,
+     "ratePct": 19
+    },
+    {
+     "from": 7000000,
+     "to": 9000000,
+     "ratePct": 19.5
+    },
+    {
+     "from": 9000000,
+     "to": null,
+     "ratePct": 20
+    }
+   ],
+   "method": "excess",
+   "notes": "Deaths from July 1, 2026: $3,000,000 exclusion, 10% to 20%. Deaths January 1 to June 30, 2026: $3,076,000 and 10% to 35%.",
+   "urls": [
+    "https://dor.wa.gov/taxes-rates/other-taxes/estate-tax-tables",
+    "https://dor.wa.gov/taxes-rates/other-taxes/estate-tax"
+   ]
+  }
+ ],
+ "inheritance": [
+  {
+   "slug": "kentucky",
+   "name": "Kentucky",
+   "classes": [
+    {
+     "who": "Class A: spouse, parent, child, grandchild, brother, sister",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": null,
+       "ratePct": 0
+      }
+     ]
+    },
+    {
+     "who": "Class B: niece, nephew, son- or daughter-in-law, aunt, uncle, great-grandchild",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": 1000,
+       "ratePct": 0
+      },
+      {
+       "from": 1000,
+       "to": 10000,
+       "ratePct": 4
+      },
+      {
+       "from": 10000,
+       "to": 20000,
+       "ratePct": 5
+      },
+      {
+       "from": 20000,
+       "to": 30000,
+       "ratePct": 6
+      },
+      {
+       "from": 30000,
+       "to": 45000,
+       "ratePct": 8
+      },
+      {
+       "from": 45000,
+       "to": 60000,
+       "ratePct": 10
+      },
+      {
+       "from": 60000,
+       "to": 100000,
+       "ratePct": 12
+      },
+      {
+       "from": 100000,
+       "to": 200000,
+       "ratePct": 14
+      },
+      {
+       "from": 200000,
+       "to": null,
+       "ratePct": 16
+      }
+     ]
+    },
+    {
+     "who": "Class C: everyone else, such as cousins and friends",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": 500,
+       "ratePct": 0
+      },
+      {
+       "from": 500,
+       "to": 1000,
+       "ratePct": 6
+      },
+      {
+       "from": 1000,
+       "to": 10000,
+       "ratePct": 6
+      },
+      {
+       "from": 10000,
+       "to": 20000,
+       "ratePct": 8
+      },
+      {
+       "from": 20000,
+       "to": 30000,
+       "ratePct": 10
+      },
+      {
+       "from": 30000,
+       "to": 45000,
+       "ratePct": 12
+      },
+      {
+       "from": 45000,
+       "to": 60000,
+       "ratePct": 14
+      },
+      {
+       "from": 60000,
+       "to": 100000,
+       "ratePct": 16
+      },
+      {
+       "from": 100000,
+       "to": 200000,
+       "ratePct": 16
+      },
+      {
+       "from": 200000,
+       "to": null,
+       "ratePct": 16
+      }
+     ]
+    }
+   ],
+   "notes": "Kentucky sorts heirs into three classes. Class A, which covers the spouse, parents, children, grandchildren and siblings, pays nothing. Class B pays 4% to 16% after a $1,000 exemption, and Class C 6% to 16% after $500. A 5% discount applies if the tax is paid within nine months of the death, and Kentucky has no estate tax of its own.",
+   "year": 2026,
+   "urls": [
+    "https://revenue.ky.gov/Individual/Inheritance-Estate-Tax/Pages/default.aspx",
+    "https://revenue.ky.gov/Individual/Inheritance-Estate-Tax/PublishingImages/Pages/default/Inheritance%20Tax%20Guide%2092F101%20%281-21%29.pdf"
+   ]
+  },
+  {
+   "slug": "maryland",
+   "name": "Maryland",
+   "classes": [
+    {
+     "who": "Spouse, parents, children and descendants, siblings, stepchildren, in-laws through a child",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": null,
+       "ratePct": 0
+      }
+     ]
+    },
+    {
+     "who": "Everyone else: nieces, nephews, aunts, uncles, cousins, friends",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": 1000,
+       "ratePct": 0
+      },
+      {
+       "from": 1000,
+       "to": null,
+       "ratePct": 10
+      }
+     ],
+     "mode": "whole"
+    }
+   ],
+   "notes": "Maryland is the only state with both an inheritance tax and an estate tax. The inheritance tax is a flat 10% of the clear value received by anyone outside the exempt circle of close family, and nothing is due when one person receives $1,000 or less. Life insurance paid to a named beneficiary is exempt. The tax is collected by the Register of Wills of the county and credited against the Maryland estate tax.",
+   "year": 2026,
+   "urls": [
+    "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=7-204&enactments=false",
+    "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=7-203&enactments=false",
+    "https://services.marylandcomptroller.gov/taxes/en/estate-and-inheritance-tax-information?id=kb_article_view&sysparm_article=KB0010033"
+   ]
+  },
+  {
+   "slug": "nebraska",
+   "name": "Nebraska",
+   "classes": [
+    {
+     "who": "Surviving spouse",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": null,
+       "ratePct": 0
+      }
+     ]
+    },
+    {
+     "who": "Parents, grandparents, siblings, children and other descendants",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": 100000,
+       "ratePct": 0
+      },
+      {
+       "from": 100000,
+       "to": null,
+       "ratePct": 1
+      }
+     ]
+    },
+    {
+     "who": "Uncles, aunts, nieces, nephews and their descendants",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": 40000,
+       "ratePct": 0
+      },
+      {
+       "from": 40000,
+       "to": null,
+       "ratePct": 11
+      }
+     ]
+    },
+    {
+     "who": "Everyone else",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": 25000,
+       "ratePct": 0
+      },
+      {
+       "from": 25000,
+       "to": null,
+       "ratePct": 15
+      }
+     ]
+    }
+   ],
+   "notes": "Nebraska cut its rates for deaths from 2023: close relatives pay 1% above $100,000, uncles, aunts, nieces and nephews 11% above $40,000, and everyone else 15% above $25,000. Any heir under 22 is exempt. The tax is a county tax, filed and paid in the county court where the estate is probated.",
+   "year": 2026,
+   "urls": [
+    "https://nebraskalegislature.gov/laws/statutes.php?statute=77-2004",
+    "https://nebraskalegislature.gov/laws/statutes.php?statute=77-2005",
+    "https://nebraskalegislature.gov/laws/statutes.php?statute=77-2006",
+    "https://revenue.nebraska.gov/PAD/inheritance-tax"
+   ]
+  },
+  {
+   "slug": "new-jersey",
+   "name": "New Jersey",
+   "classes": [
+    {
+     "who": "Class A: spouse or partner, parents, grandparents, children, stepchildren, grandchildren",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": null,
+       "ratePct": 0
+      }
+     ]
+    },
+    {
+     "who": "Class C: brother or sister, son- or daughter-in-law",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": 25000,
+       "ratePct": 0
+      },
+      {
+       "from": 25000,
+       "to": 1100000,
+       "ratePct": 11
+      },
+      {
+       "from": 1100000,
+       "to": 1400000,
+       "ratePct": 13
+      },
+      {
+       "from": 1400000,
+       "to": 1700000,
+       "ratePct": 14
+      },
+      {
+       "from": 1700000,
+       "to": null,
+       "ratePct": 16
+      }
+     ]
+    },
+    {
+     "who": "Class D: everyone else, such as nieces, nephews and friends",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": 700000,
+       "ratePct": 15
+      },
+      {
+       "from": 700000,
+       "to": null,
+       "ratePct": 16
+      }
+     ]
+    },
+    {
+     "who": "Class E: charities and public bodies",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": null,
+       "ratePct": 0
+      }
+     ]
+    }
+   ],
+   "notes": "New Jersey repealed its estate tax for deaths from 2018 but kept the transfer inheritance tax. Class C heirs pay nothing on the first $25,000, then 11% to 16%; Class D heirs pay 15% on the first $700,000 and 16% above. Children and grandchildren are in Class A and pay nothing.",
+   "year": 2026,
+   "urls": [
+    "https://www.nj.gov/treasury/taxation/inheritance-estate/tax-rates.shtml",
+    "https://www.nj.gov/treasury/taxation/pdf/other_forms/inheritance/transferinheritanceclasses.pdf",
+    "https://www.nj.gov/treasury/taxation/inheritance-estate/inheritance.shtml"
+   ]
+  },
+  {
+   "slug": "pennsylvania",
+   "name": "Pennsylvania",
+   "classes": [
+    {
+     "who": "Surviving spouse, or parent inheriting from a child 21 or younger",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": null,
+       "ratePct": 0
+      }
+     ]
+    },
+    {
+     "who": "Children, grandchildren, parents and other lineal heirs",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": null,
+       "ratePct": 4.5
+      }
+     ]
+    },
+    {
+     "who": "Brothers and sisters",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": null,
+       "ratePct": 12
+      }
+     ]
+    },
+    {
+     "who": "Other heirs, such as nieces, nephews and friends",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": null,
+       "ratePct": 15
+      }
+     ]
+    },
+    {
+     "who": "Charities and exempt institutions",
+     "exemption": null,
+     "brackets": [
+      {
+       "from": 0,
+       "to": null,
+       "ratePct": 0
+      }
+     ]
+    }
+   ],
+   "notes": "Pennsylvania taxes almost every inheritance outside the spouse: 4.5% for children and other lineal heirs, 12% for siblings and 15% for others, with no exemption amount. Property owned jointly by spouses is exempt, as is some farmland passed to family. The tax is due at death and a 5% discount applies when it is paid within three months.",
+   "year": 2026,
+   "urls": [
+    "https://www.revenue.pa.gov/TaxTypes/InheritanceTax/Pages/default.aspx"
+   ]
+  }
+ ]
+}

@@ -3,6 +3,7 @@
  * nothing typed (RECETTE §17.4, point 7).
  */
 import type { FAQ, Helpers } from '../lib/page-types';
+import { FED } from '../lib/engine/realestate';
 import { STATES, CENSUS, usd, rate, eff, listOf, noSalesTax, salesTax, day, FACTS_VERIFIED } from '../lib/kit';
 
 const byEff = [...STATES].sort((a, b) => b.census.effectiveRate - a.census.effectiveRate);
@@ -61,6 +62,10 @@ export const HOME = {
     {
       title: 'Homestead exemptions',
       html: `<p>Most states reduce the tax on the home you live in: a fixed dollar amount off the assessed value, a percentage, a credit on the bill, or a cap on how fast the assessed value may rise. The amounts range from a few thousand dollars to six figures, and some only apply to school taxes. You usually have to apply once, with the county assessor, by a deadline in the spring. The ${h.a('homestead-exemption-by-state', 'homestead exemption by state')} page lists the main one of each state with its official page.</p>`,
+    },
+    {
+      title: 'Buying, selling or inheriting a home',
+      html: `<p>A sale of real estate brings its own taxes. The deed is taxed when it is recorded: a transfer tax charged by the state in most places, sometimes doubled by the county or city, plus a tax on the mortgage in a handful of states; the ${h.a('closing-costs-calculator', 'closing costs calculator')} lists the rate of every state with its source. On the gain, a homeowner can exclude up to ${usd(FED.sec121.single)}, or ${usd(FED.sec121.joint)} for a couple, before federal and state income tax apply: see ${h.a('capital-gains-tax-on-home-sale', 'capital gains tax on a home sale')}. An investor can postpone the tax by buying another property within ${FED.x1031.exchangeDays} days through a ${h.a('1031-exchange', '1031 exchange')}. And at death, a few states tax the estate (${h.a('estate-tax-by-state', 'estate tax by state')}) or the heirs (${h.a('inheritance-tax-by-state', 'inheritance tax by state')}) long before the federal threshold is reached.</p>`,
     },
     {
       title: 'Where the property tax figures come from',

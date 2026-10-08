@@ -8,14 +8,14 @@ export const CURRENCY = 'USD';
 export const YEAR = 2026;
 /** Année de création du site — signal d'ancienneté (RECETTE §8.0). */
 export const SITE_FOUNDED = '2026';
-export const LAST_UPDATED = '2026-10-05';
+export const LAST_UPDATED = '2026-10-08';
 export const AUTHOR_NAME = 'Radif Partners';
 export const AUTHOR_ROLE: Record<string, string> = {"en": "Radif Partners"};
 export const AUTHOR_DESC: Record<string, string> = {"en": "Radif Partners publishes this independent sales tax and property tax calculator for the fifty states and the District of Columbia. Each statewide rate, grocery or clothing rule and 2026 holiday is read on the revenue department of the state concerned, and property tax figures come from the Census Bureau, with the date of reading shown on every page."};
 /** Sujets sur lesquels l'editeur est competent (schema.org knowsAbout). Ce sont les
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
-export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["State sales tax rates", "Local sales and use taxes", "Sales tax holidays", "Grocery and clothing sales tax exemptions", "Property tax assessment and mill rates", "Homestead exemptions", "American Community Survey housing statistics"]};
+export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["State sales tax rates", "Local sales and use taxes", "Sales tax holidays", "Grocery and clothing sales tax exemptions", "Property tax assessment and mill rates", "Homestead exemptions", "American Community Survey housing statistics", "Real estate transfer taxes", "Capital gains tax on a home sale", "1031 like-kind exchanges", "State estate and inheritance taxes"]};
 export const CONTACT_EMAIL = "contact@taxratesbystate.com";
 export const THEME_COLOR = '#3C3B6E';
 export const LOGO_SYMBOL = 'TAX';

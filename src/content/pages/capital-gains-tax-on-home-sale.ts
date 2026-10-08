@@ -1,0 +1,62 @@
+import { definePage } from '../../lib/page-types';
+import { usd, rate, listOf } from '../../lib/kit';
+import { FED, sec121, federalGainTax, stateGainTax } from '../../lib/engine/realestate';
+import { RE_STATES, gainStates } from '../../lib/realestate';
+
+const T = FED.sec121, L = FED.ltcg;
+const G = gainStates();
+const noTax = G.filter((s) => !s.taxesCapitalGains);
+const byTop = [...G].filter((s) => s.taxesCapitalGains).sort((a, b) => b.topRatePct - a.topRatePct);
+const hi = byTop[0];
+// Worked example (the calculator defaults): couple, $900,000 sale, $350,000 basis, $50,000 costs, lived there 8 years.
+const ex = sec121({ filing: 'joint', price: 900000, sellingCosts: 50000, basis: 350000, monthsOwned: 96, monthsUsed: 96, usedExclusionLast2y: false, partialReason: false, depreciationAfter1997: 0, nonqualifiedMonths: 0 });
+// Bigger gain: $1,400,000 sale, same basis and costs.
+const big = sec121({ filing: 'joint', price: 1400000, sellingCosts: 70000, basis: 350000, monthsOwned: 180, monthsUsed: 180, usedExclusionLast2y: false, partialReason: false, depreciationAfter1997: 0, nonqualifiedMonths: 0 });
+const bigFed = federalGainTax({ filing: 'joint', otherTaxable: 150000, ltcg: big.taxableGain, unrecaptured: 0 });
+const ca = G.find((s) => s.slug === 'california');
+const bigCa = ca ? stateGainTax(big.taxableGain, ca, undefined, 150000) : 0;
+// Single seller, 12 months, job move.
+const part = sec121({ filing: 'single', price: 520000, sellingCosts: 30000, basis: 380000, monthsOwned: 12, monthsUsed: 12, usedExclusionLast2y: false, partialReason: true, depreciationAfter1997: 0, nonqualifiedMonths: 0 });
+
+export default definePage({
+  id: 'capital-gains-tax-on-home-sale',
+  group: 'realestate',
+  order: 20,
+  slug: 'capital-gains-tax-on-home-sale',
+  nav: 'Capital gains tax on a home sale',
+  card: 'The $250,000 / $500,000 exclusion, the 2-out-of-5-year test and your state rate',
+  title: 'Capital Gains Tax on Home Sale 2026: $250k/$500k Calculator',
+  description: `Capital gains tax on a home sale in 2026: the Section 121 exclusion of ${usd(T.single)} or ${usd(T.joint)}, partial exclusion, 0/15/20% federal rates, NIIT and state tax.`,
+  h1: 'Capital gains tax on the sale of a home',
+  intro: 'Most homeowners owe nothing. The calculator shows whether you do, and how much your state adds.',
+  resume: `When you sell your main home, you can exclude up to ${usd(T.single)} of gain from federal income tax, or ${usd(T.joint)} for a married couple filing jointly, under section 121 of the tax code. Two conditions must both be met: you owned the home and lived in it as your main residence for at least ${T.ownMonths / 12} of the ${T.windowMonths / 12} years before the sale, and you did not exclude the gain on another home in the previous ${T.onceEvery} years. Gain above the exclusion is taxed as a long-term capital gain at 0%, 15% or 20% depending on your income (in 2026 the 20% rate starts at ${usd(L.fifteenMax.joint)} of taxable income for couples), plus the 3.8% net investment income tax for high earners and your state's income tax. A couple selling for ${usd(900000)} a home bought for ${usd(350000)}, after ${usd(50000)} of selling costs, has a gain of ${usd(ex.gain)} and owes nothing. Sell before two years for a job, health or an unforeseen event and a prorated exclusion still applies.`,
+  tool: 'homesale',
+  toolProps: { state: 'california', price: 900000 },
+  fold: true,
+  body: (h) => `<h2>The gain is smaller than the price difference</h2>
+<p>Tax is due on the gain, not on the sale price, and the gain is not simply what you sold for minus what you paid. Start from the amount realized: the price minus selling expenses such as the agent's commission, transfer taxes you paid as seller, title and escrow fees, and legal costs. Subtract your adjusted basis: the purchase price, plus the closing costs you paid when you bought (title insurance, recording fees, transfer tax paid as buyer), plus every capital improvement since. A new roof, a kitchen remodel, an addition, central air or a fence raise the basis; painting and repairs do not. Keep the receipts for as long as you own the home and three years after the return that reports the sale. Casualty losses you deducted and certain energy credits reduce the basis.</p>
+<h2>The 2-out-of-5-year test, read closely</h2>
+<p>The ${T.ownMonths} months of ownership and the ${T.useMonths} months of use do not have to be continuous, and they do not have to be the same months. You can rent the house out for three years, move in for two, and sell. Short absences, such as vacations, count as use. For the ${h.usd(T.joint)} figure, either spouse may meet the ownership test, but both must meet the use test, and neither may have excluded a gain in the past two years; otherwise each spouse's own ${h.usd(T.single)} is figured separately. Members of the uniformed services, the Foreign Service and the intelligence community on qualified extended duty can suspend the five-year window for up to ${T.militarySuspensionYears} years. A surviving spouse who has not remarried keeps the ${h.usd(T.joint)} limit for a sale within ${T.survivingSpouseYears} years of the death.</p>
+<h2>Selling early: the partial exclusion</h2>
+<p>If the main reason for the sale is a change of place of employment, health, or an unforeseen event (a divorce, a death, multiple births from the same pregnancy, a disaster, losing a job and qualifying for unemployment), you can exclude a prorated amount. Take the shortest of the time you owned the home, the time you lived in it, and the time since your last exclusion, divide by ${T.partialDivisorMonths} months (or ${T.partialDivisorDays} days), and multiply by ${h.usd(T.single)} or ${h.usd(T.joint)}. A single owner who moves for a new job after 12 months can exclude up to ${h.usd(part.maxExclusion)}: on a ${h.usd(part.gain)} gain, nothing is taxable. The prorated limit is a ceiling, not a share of the gain, which is why short holds with small gains often owe nothing either.</p>
+<!--mini:partialExclusion-->
+<h2>What stays taxable even with the exclusion</h2>
+<p>Two parts of the gain cannot be excluded. The first is depreciation claimed after May 6, 1997 for a home office or a rental period: it is taxed as unrecaptured section 1250 gain at your ordinary rate, with a ceiling of ${FED.ltcg.unrecaptured1250MaxPct}%. The second is gain allocated to nonqualified use after 2008, typically years when the house was a rental or vacation home before you moved in. The allocation is by time: a house owned ten years and rented for the first four leaves 40% of the gain (after depreciation) outside the exclusion. Renting after you move out does not count as nonqualified use if it falls within the five-year window, which is how many landlords sell an old home tax-free within three years of leaving it.</p>
+<h2>Federal rates on the rest in 2026</h2>
+<p>Gain above the exclusion is a long-term capital gain if you owned the home more than a year. It is taxed on top of your other taxable income: the part that fits under ${h.usd(L.zeroMax.joint)} of taxable income for a couple (${h.usd(L.zeroMax.single)} single, ${h.usd(L.zeroMax.hoh)} head of household) is taxed at 0%, the part up to ${h.usd(L.fifteenMax.joint)} (${h.usd(L.fifteenMax.single)} single) at 15%, and the rest at 20%. The net investment income tax adds 3.8% on the taxable gain when modified adjusted gross income exceeds ${h.usd(FED.niit.threshold.joint)} for couples or ${h.usd(FED.niit.threshold.single)} for single filers; the excluded part is not investment income. A couple with ${h.usd(150000)} of other taxable income who sell for ${h.usd(1400000)} after fifteen years, with a ${h.usd(350000)} basis and ${h.usd(70000)} of costs, has ${h.usd(big.taxableGain)} of taxable gain and owes about ${h.usd(bigFed.onLtcg + bigFed.niit)} in federal tax${ca ? `, plus about ${h.usd(bigCa)} to California at its top rate` : ''}.</p>
+<h2>Your state's share</h2>
+<p>States that tax income almost all start from federal adjusted gross income, so the federal exclusion carries over and only the taxable gain reaches the state return. ${listOf(noTax.map((s) => s.name))} do not tax the gain at all. Elsewhere, most states tax capital gains as ordinary income, and a few give them a break, such as excluding a share of long-term gains. The table lists the top rate and any special treatment, read on each revenue department's site; the calculator starts from that top rate, which is an upper bound for a household whose income stays in lower brackets. ${hi ? `The highest top rate is ${hi.name}'s ${rate(hi.topRatePct)}.` : ''}</p>
+${h.table(['State', 'Top rate on the gain', 'Special treatment', 'Source'], RE_STATES.map((s) => [s.name, s.income.taxesCapitalGains ? rate(s.income.topRatePct) : 'none', s.income.cgShort, s.income.url ? h.ext(s.income.url, new URL(s.income.url).hostname.replace(/^www\./, '')) : 'no income tax']), `State income tax on a capital gain, tax year ${RE_STATES[0].income.year} (or latest published), official revenue department pages.`, ['l', 'r', 'l', 'l'])}
+<h2>Reporting the sale</h2>
+<p>If the whole gain is excluded and you did not receive a Form 1099-S from the closing agent, you do not report the sale on your return. If you received a 1099-S, or part of the gain is taxable, report it on Form 8949 and Schedule D. A loss on the sale of a personal residence is not deductible. When the home was also a rental or an office, you split the sale between the personal part, which can use the exclusion, and the business part, reported on Form 4797. For a property that was only ever a rental, the exclusion does not apply at all, and the tool to look at is the ${h.a('1031-exchange', '1031 exchange')}, which defers the tax instead of excusing it.</p>`,
+  faqs: [
+    { q: 'Do I pay capital gains tax if I buy another house?', a: `Not because of the purchase. The rule that let sellers roll a gain into a more expensive home was replaced in 1997 by today's exclusion of up to $250,000 or $500,000 of gain. Whether you buy again, rent or move abroad, only gain above the exclusion is taxed, and reinvesting it in a new home does not defer that tax.` },
+    { q: 'How do I avoid capital gains tax on a home sale above $500,000 of gain?', a: `Raise the basis with every capital improvement you can document, include all selling costs, and time the sale for a year when your other income is low so more of the gain falls in the 0% or 15% bracket. Heirs who inherit the home get a basis stepped up to its value at death, which is why some owners keep a highly appreciated home rather than sell it.` },
+    { q: 'Can I use the home sale exclusion on a rental property I used to live in?', a: `Yes, if you lived in it as your main home for at least two of the five years before the sale. Depreciation taken while it was rented after May 6, 1997 stays taxable at up to 25%, and gain allocated to rental years after 2008 that came before you moved in is not excluded. Rental after you move out does not reduce the exclusion.` },
+    { q: 'Does the 2-out-of-5-year rule apply to a second home?', a: `Only if the second home becomes your main residence for at least two of the five years before the sale. While it is a vacation home, its gain is fully taxable, and the years it was not your main home after 2008 count as nonqualified use, which reduces the exclusion even after you move in. You can have only one main home at a time.` },
+    { q: 'Is the $250,000 home sale exclusion indexed for inflation?', a: `No. The $250,000 and $500,000 limits have been unchanged since they were set in 1997, and the IRS does not adjust them each year as it does for tax brackets. In high-cost markets, owners who bought decades ago increasingly have gains above the limit, which is why the federal 15% and 20% rates and the state tax matter more than they used to.` },
+    { q: 'What is the tax on a house sold after less than a year?', a: `A home owned one year or less produces a short-term gain, taxed at your ordinary income tax rate instead of the 0%, 15% or 20% capital gains rates. The exclusion can still apply in part if the sale is due to a job change, health or an unforeseen event. Without such a reason, the whole gain is taxable, and the state taxes it as income too.` },
+  ],
+  related: ['1031-exchange', 'closing-costs-calculator', 'property-tax-calculator', 'homestead-exemption-by-state'],
+  sources: ['irsPub523', 'rp202532', 'irsTopic409', 'irsNiit', 'irsNiitQa'],
+});

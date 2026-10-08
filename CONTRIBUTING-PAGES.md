@@ -88,6 +88,18 @@ dans le navigateur) : les chiffres d'état passent par `miniArg` (JSON construit
 `<!--mini:<kind>|<slug>-->` dans le corps. Guides : ≥ 850 mots de prose hors tableaux, FAQ 3 à 8 ; pages outil ≥ 250.
 `sources` : clés de `params-2026.json > sources` ou `state:<slug>`.
 
+## Module immobilier (2026-10-08)
+
+Cinq pages thématiques du groupe `realestate` : `1031-exchange`, `capital-gains-tax-on-home-sale`,
+`closing-costs-calculator`, `estate-tax-by-state`, `inheritance-tax-by-state`, chacune avec son calculateur
+(`tool` : `x1031`, `homesale`, `closing`, `estate`, `inheritance`) et `fold: true` (une section H2 = un
+`<details>`, les minis restent visibles). Moteur : `src/lib/engine/realestate.ts` (testé dans
+`tests/realestate.test.ts`). Chiffres fédéraux : `src/data/realestate-federal-2026.json` (Rev. Proc. 2025-32,
+Pub. 523, instructions 8824 et 706). Faits par état : `src/data/realestate-states-2026.json` (transfer tax,
+mortgage tax, impôt de l'état sur une plus-value, estate et inheritance taxes), une URL officielle par fait,
+`uncertain` pour ce qui n'a pas été lu. Mise à jour annuelle : relire ces URL, en particulier les années
+marquées `year: 2025`.
+
 ## Ton et langue
 
 - **Anglais américain** : « color », « neighbor », « homeowner », « county assessor », « levy », « mill rate », « tax bill ».

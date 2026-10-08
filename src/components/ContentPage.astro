@@ -10,6 +10,12 @@ import Clamp from './Clamp.astro';
 import SalesTaxCalculator from './calc/SalesTaxCalculator';
 import PropertyTaxCalculator from './calc/PropertyTaxCalculator';
 import CompareStates from './calc/CompareStates';
+import HomeSaleCalculator from './calc/HomeSaleCalculator';
+import Exchange1031Calculator from './calc/Exchange1031Calculator';
+import ClosingCostsCalculator from './calc/ClosingCostsCalculator';
+import EstateTaxCalculator from './calc/EstateTaxCalculator';
+import InheritanceTaxCalculator from './calc/InheritanceTaxCalculator';
+import { gainStates, transferStates, estateStates, inheritanceStates } from '../lib/realestate';
 import { route, ROUTES } from '../i18n/routes';
 import { label, GROUP_LABEL } from '../i18n/nav';
 import { t } from '../i18n/ui';
@@ -47,6 +53,16 @@ const miniArg = (slug?: string) => {
   const s = stateBySlug(slug);
   return JSON.stringify({ name: s.name, ratio: s.census.effectiveRate, medianTax: s.census.medianTax, medianValue: s.census.medianValue, rate: s.sales.stateRate });
 };
+/** Folded long article (RECETTE §26): each H2 section becomes a <details>, its text stays in the HTML;
+ *  the mini-simulators of a section stay visible right after it. */
+const MINI_RE = /<!--mini:([A-Za-z0-9_-]+)(?:\|([a-z-]+))?-->/g;
+const folded = page.fold ? page.body(helpers()).split(/(?=<h2>)/).map((sec) => {
+  const minis = [...sec.matchAll(MINI_RE)].map((m) => ({ kind: m[1], slug: m[2] }));
+  const prose = sec.replace(MINI_RE, '');
+  const m = prose.match(/^<h2>([\s\S]*?)<\/h2>([\s\S]*)$/);
+  return { title: m ? m[1] : null, html: m ? m[2] : prose, minis };
+}) : [];
+const ip = page.id.slice(0, 10);
 ---
 <PageLayout title={page.title} description={page.description} lang={lang} jsonLd={jsonLd} faqs={page.faqs} related={related} sources={sources} breadcrumbs={[{ label: page.nav }]}>
   <article>
@@ -63,6 +79,11 @@ const miniArg = (slug?: string) => {
           {(page.tool === 'sales' || page.tool === 'reverse') && <SalesTaxCalculator client:load states={compact} state={tp.state} lockState={tp.lockState} category={tp.category} price={tp.price} mode={page.tool === 'reverse' ? 'remove' : tp.mode} methodHref={methodHref} idPrefix={page.id.slice(0, 10)} />}
           {page.tool === 'property' && <PropertyTaxCalculator client:load states={compact} state={tp.state} value={tp.price} advanced={tp.advanced} censusYear={CENSUS.year} methodHref={methodHref} idPrefix={page.id.slice(0, 10)} />}
           {page.tool === 'compare' && <CompareStates client:load states={compact} censusYear={CENSUS.year} idPrefix={page.id.slice(0, 10)} />}
+          {page.tool === 'homesale' && <HomeSaleCalculator client:load states={gainStates()} state={tp.state} price={tp.price} methodHref={methodHref} idPrefix={ip} />}
+          {page.tool === 'x1031' && <Exchange1031Calculator client:load states={gainStates()} state={tp.state} price={tp.price} methodHref={methodHref} idPrefix={ip} />}
+          {page.tool === 'closing' && <ClosingCostsCalculator client:load states={transferStates()} state={tp.state} price={tp.price} methodHref={methodHref} idPrefix={ip} />}
+          {page.tool === 'estate' && <EstateTaxCalculator client:load states={estateStates()} state={tp.state} price={tp.price} methodHref={methodHref} idPrefix={ip} />}
+          {page.tool === 'inheritance' && <InheritanceTaxCalculator client:load states={inheritanceStates()} state={tp.state} price={tp.price} methodHref={methodHref} idPrefix={ip} />}
         </div>
       </>
     ) : (
@@ -71,8 +92,20 @@ const miniArg = (slug?: string) => {
         {page.mini && <MiniSim client:load kind={page.mini} arg={page.miniArg} href={route('home', lang)} />}
       </>
     )}
+    {page.fold ? (
+      <div>
+        {folded.map((f) => (
+          <>
+            {f.title ? <details class="fold not-prose"><summary><h2 class="fold-h" set:html={f.title} /></summary><div class="prose prose-slate max-w-none pb-4 prose-headings:font-serif"><Fragment set:html={f.html} /></div></details>
+              : <div class="prose prose-slate max-w-none prose-headings:font-serif"><Fragment set:html={f.html} /></div>}
+            {f.minis.map((m) => <MiniSim client:load kind={m.kind} arg={miniArg(m.slug)} />)}
+          </>
+        ))}
+      </div>
+    ) : (
     <div class="prose prose-slate max-w-none prose-headings:font-serif">
       {parts.map((p, i) => i % 3 === 0 ? <Fragment set:html={p ?? ''} /> : i % 3 === 1 ? <MiniSim client:load kind={p} arg={miniArg(parts[i + 1])} href={route('home', lang)} /> : null)}
     </div>
+    )}
   </article>
 </PageLayout>

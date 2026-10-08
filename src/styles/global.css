@@ -63,6 +63,7 @@ h1 { font-weight: 700; } h2 { font-weight: 650; } h3 { font-weight: 600; }
   .fold > summary::-webkit-details-marker { display: none; }
   .fold > summary::after { content: '+'; float: right; color: var(--color-navy-600); }
   .fold[open] > summary::after { content: '–'; }
+  .fold > summary > .fold-h { display: inline; font: inherit; margin: 0; color: inherit; }
   /* Ruled box in the press style (§10.2): rule on the left, faint tint, small-caps title. */
   .boxnote { border-left: 3px solid var(--color-accent-500); background: var(--color-accent-50); padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
   .boxnote > .boxnote-title { font-variant: small-caps; letter-spacing: .03em; font-weight: 700; color: var(--color-accent-700); margin: 0 0 .25rem; }

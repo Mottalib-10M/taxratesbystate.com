@@ -1,0 +1,317 @@
+{
+  "_lisezmoi": "Federal figures for the real estate pages (home sale, 1031 exchange, estate tax). Every figure read on irs.gov on 2026-10-08. Rev. Proc. 2025-32 = 2026 inflation adjustments (incl. One Big Beautiful Bill Act, Pub. L. 119-21).",
+  "year": 2026,
+  "retrieved_at": "2026-10-08",
+  "ltcg": {
+    "zeroMax": {
+      "single": 49450,
+      "joint": 98900,
+      "hoh": 66200,
+      "separate": 49450
+    },
+    "fifteenMax": {
+      "single": 545500,
+      "joint": 613700,
+      "hoh": 579600,
+      "separate": 306850
+    },
+    "unrecaptured1250MaxPct": 25,
+    "source": "rp202532"
+  },
+  "ordinary": {
+    "single": [
+      [
+        12400,
+        10
+      ],
+      [
+        50400,
+        12
+      ],
+      [
+        105700,
+        22
+      ],
+      [
+        201775,
+        24
+      ],
+      [
+        256225,
+        32
+      ],
+      [
+        640600,
+        35
+      ],
+      [
+        null,
+        37
+      ]
+    ],
+    "joint": [
+      [
+        24800,
+        10
+      ],
+      [
+        100800,
+        12
+      ],
+      [
+        211400,
+        22
+      ],
+      [
+        403550,
+        24
+      ],
+      [
+        512450,
+        32
+      ],
+      [
+        768700,
+        35
+      ],
+      [
+        null,
+        37
+      ]
+    ],
+    "hoh": [
+      [
+        17700,
+        10
+      ],
+      [
+        67450,
+        12
+      ],
+      [
+        105700,
+        22
+      ],
+      [
+        201750,
+        24
+      ],
+      [
+        256200,
+        32
+      ],
+      [
+        640600,
+        35
+      ],
+      [
+        null,
+        37
+      ]
+    ],
+    "separate": [
+      [
+        12400,
+        10
+      ],
+      [
+        50400,
+        12
+      ],
+      [
+        105700,
+        22
+      ],
+      [
+        201775,
+        24
+      ],
+      [
+        256225,
+        32
+      ],
+      [
+        384350,
+        35
+      ],
+      [
+        null,
+        37
+      ]
+    ],
+    "standardDeduction": {
+      "single": 16100,
+      "joint": 32200,
+      "hoh": 24150,
+      "separate": 16100
+    },
+    "source": "rp202532"
+  },
+  "niit": {
+    "ratePct": 3.8,
+    "threshold": {
+      "single": 200000,
+      "joint": 250000,
+      "hoh": 200000,
+      "separate": 125000
+    },
+    "indexed": false,
+    "source": "irsNiit"
+  },
+  "sec121": {
+    "single": 250000,
+    "joint": 500000,
+    "ownMonths": 24,
+    "useMonths": 24,
+    "windowMonths": 60,
+    "onceEvery": 2,
+    "partialDivisorMonths": 24,
+    "partialDivisorDays": 730,
+    "depreciationAfter": "1997-05-06",
+    "nonqualifiedUseAfter": "2008-12-31",
+    "militarySuspensionYears": 10,
+    "survivingSpouseYears": 2,
+    "source": "irsPub523"
+  },
+  "x1031": {
+    "identifyDays": 45,
+    "exchangeDays": 180,
+    "maxIdentified": 3,
+    "relatedPartyYears": 2,
+    "realPropertyOnlySince": 2018,
+    "source": "irsI8824"
+  },
+  "estate": {
+    "basicExclusion": 15000000,
+    "basicExclusion2025": 13990000,
+    "annualGiftExclusion": 19000,
+    "topRatePct": 40,
+    "gstExemption": 15000000,
+    "schedule": [
+      [
+        0,
+        10000,
+        0,
+        18
+      ],
+      [
+        10000,
+        20000,
+        1800,
+        20
+      ],
+      [
+        20000,
+        40000,
+        3800,
+        22
+      ],
+      [
+        40000,
+        60000,
+        8200,
+        24
+      ],
+      [
+        60000,
+        80000,
+        13000,
+        26
+      ],
+      [
+        80000,
+        100000,
+        18200,
+        28
+      ],
+      [
+        100000,
+        150000,
+        23800,
+        30
+      ],
+      [
+        150000,
+        250000,
+        38800,
+        32
+      ],
+      [
+        250000,
+        500000,
+        70800,
+        34
+      ],
+      [
+        500000,
+        750000,
+        155800,
+        37
+      ],
+      [
+        750000,
+        1000000,
+        248300,
+        39
+      ],
+      [
+        1000000,
+        null,
+        345800,
+        40
+      ]
+    ],
+    "source": "rp202532",
+    "scheduleSource": "irsI706"
+  },
+  "sources": {
+    "rp202532": {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "label": "IRS, Rev. Proc. 2025-32: 2026 inflation adjustments (tax brackets, capital gains thresholds, estate exclusion $15,000,000, gift exclusion $19,000)"
+    },
+    "irsPub523": {
+      "url": "https://www.irs.gov/publications/p523",
+      "label": "IRS Publication 523: Selling Your Home (Section 121 exclusion)"
+    },
+    "irsPub544": {
+      "url": "https://www.irs.gov/publications/p544",
+      "label": "IRS Publication 544: Sales and Other Dispositions of Assets (like-kind exchanges, depreciation recapture)"
+    },
+    "irsI8824": {
+      "url": "https://www.irs.gov/instructions/i8824",
+      "label": "IRS, Instructions for Form 8824: Like-Kind Exchanges (45-day and 180-day periods, boot, basis)"
+    },
+    "irsTopic409": {
+      "url": "https://www.irs.gov/taxtopics/tc409",
+      "label": "IRS Topic no. 409: Capital gains and losses (0%, 15%, 20%, 25% on unrecaptured section 1250 gain)"
+    },
+    "irsNiit": {
+      "url": "https://www.irs.gov/taxtopics/tc559",
+      "label": "IRS Topic no. 559: Net investment income tax (3.8%, $200,000 / $250,000 thresholds)"
+    },
+    "irsNiitQa": {
+      "url": "https://www.irs.gov/newsroom/questions-and-answers-on-the-net-investment-income-tax",
+      "label": "IRS: Questions and answers on the net investment income tax (thresholds not indexed)"
+    },
+    "irsEstate": {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax",
+      "label": "IRS: Estate tax (filing threshold $15,000,000 for 2026 deaths)"
+    },
+    "irs706": {
+      "url": "https://www.irs.gov/forms-pubs/about-form-706",
+      "label": "IRS: About Form 706, United States Estate (and Generation-Skipping Transfer) Tax Return"
+    },
+    "cfpbClosingDisclosure": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-closing-disclosure-en-1983/",
+      "label": "CFPB: What is a Closing Disclosure? (received at least three business days before closing)"
+    },
+    "cfpbLoanEstimate": {
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-loan-estimate-en-1995/",
+      "label": "CFPB: What is a Loan Estimate? (within three business days of application)"
+    },
+    "irsI706": {
+      "url": "https://www.irs.gov/instructions/i706",
+      "label": "IRS, Instructions for Form 706: unified rate schedule of section 2001(c) (18% to 40%), portability of the deceased spousal unused exclusion"
+    }
+  }
+}
