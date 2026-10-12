@@ -5,6 +5,7 @@
  */
 import { useEffect, useMemo, useState } from 'react';
 import NumberField from '../ui/NumberField';
+import { useBelow, StickyBar } from './StickyResult';
 import SelectField from '../ui/SelectField';
 import Toggle from '../ui/Toggle';
 import StackedBar from '../ui/StackedBar';
@@ -25,6 +26,7 @@ export default function SalesTaxCalculator({ states, state = 'california', lockS
   const [cat, setCat] = useState<Category>(category);
   const [m, setM] = useState<'add' | 'remove'>(mode);
   const [copied, setCopied] = useState(false);
+  const [card, below] = useBelow<HTMLDivElement>();
   useEffect(() => {
     const u = readParams(window.location.search);
     if (!lockState) { const s = str(u, 's', state); if (states.some((x) => x.slug === s)) setSlug(s); }
@@ -42,18 +44,18 @@ export default function SalesTaxCalculator({ states, state = 'california', lockS
   const p = idPrefix;
   const copy = () => { navigator.clipboard?.writeText(window.location.href).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1500); }); };
   return (
-    <div className="rechner rounded-xl border border-navy-200 bg-white p-4 sm:p-6">
+    <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
       <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
         {lockState
           ? <div className="grid grid-rows-subgrid row-span-3 content-start gap-y-0"><span className="mb-1 block text-sm font-medium text-navy-700">State</span><p className="flex h-12 items-center rounded-lg border border-navy-200 bg-navy-50 px-4 font-semibold text-navy-900">{S.name} · state rate {rate(S.facts.sales.stateRate)}</p><span /></div>
-          : <SelectField id={`${p}-state`} label="State" value={slug} onChange={setSlug} options={states.map((x) => ({ value: x.slug, label: `${x.name} (${rate(x.facts.sales.stateRate)})` }))} help="Statewide rate, read on the state's revenue department site." />}
+          : <SelectField id={`${p}-state`} label="State" value={slug} onChange={setSlug} options={states.map((x) => ({ value: x.slug, label: `${x.name} (${rate(x.facts.sales.stateRate)})` }))} help="Statewide rate, read on the state's revenue department site."  className="sm:col-span-2" />}
         <NumberField id={`${p}-price`} label={m === 'add' ? 'Price before tax' : 'Total paid, tax included'} value={amount} onChange={setAmount} unit="$" max={10_000_000} decimals={2} help={cat === 'clothing' ? 'Price of one item: clothing thresholds apply per item.' : undefined} />
         <NumberField id={`${p}-local`} label="Local rate (county, city, district)" value={local} onChange={setLocal} unit="%" max={10} decimals={3}
-          help={!S.facts.sales.local.allowed ? `${S.name} has no local sales taxes.` : 'Type the local part from the state’s address lookup (link below).'} />
+          help={!S.facts.sales.local.allowed ? `${S.name} has no local sales taxes.` : 'Type the local part from the state’s address lookup (link below).'} className={lockState ? 'sm:col-span-2' : undefined} />
         <SelectField id={`${p}-cat`} label="What you are buying" value={cat} onChange={(v) => setCat(v as Category)} options={(Object.keys(CAT_LABEL) as Category[]).map((c) => ({ value: c, label: CAT_LABEL[c] }))} />
         <Toggle id={`${p}-mode`} label="Direction" value={m} onChange={(v) => setM(v as 'add' | 'remove')} options={[{ value: 'add', label: 'Add tax' }, { value: 'remove', label: 'Remove tax' }]} />
       </form>
-      <div aria-live="polite" className="mt-6 rounded-xl bg-accent-50 p-4 sm:p-5">
+      <div ref={card} aria-live="polite" data-resultat className="rounded-xl bg-accent-50 p-4 sm:p-5">
         <p className="text-sm font-medium text-navy-700">{m === 'add' ? 'Total to pay' : 'Price before tax'}</p>
         <p className="tabular-nums mt-1 text-4xl font-bold text-navy-900">{usd(m === 'add' ? r.total : r.price)}</p>
         <p className="mt-1 text-sm text-navy-700">Sales tax {usd(r.tax)} · {rate(Math.round(r.effectiveRate * 1000) / 1000)} of the price{noState ? ` · ${S.name} has no statewide sales tax` : ''}</p>
@@ -69,6 +71,7 @@ export default function SalesTaxCalculator({ states, state = 'california', lockS
           <button type="button" onClick={copy} className="rounded-lg border border-navy-300 bg-white px-3 py-1.5 font-medium text-navy-800 hover:bg-navy-50">{copied ? 'Link copied' : 'Copy share link'}</button>
           <button type="button" onClick={() => window.print()} className="rounded-lg border border-navy-300 bg-white px-3 py-1.5 font-medium text-navy-800 hover:bg-navy-50">Print</button>
         </div>
+        <StickyBar show={below} target={card} label={m === 'add' ? 'Total to pay' : 'Price before tax'} value={usd(m === 'add' ? r.total : r.price)} />
       </div>
     </div>
   );

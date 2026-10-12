@@ -1,8 +1,9 @@
 ---
 /**
  * A state page: facts of src/data/states/<slug>.json + prose of src/content/states/<slug>.ts.
- * Order (built for this subject): the state's figures at a glance, the answer block (folded),
- * the sales tax calculator locked on the state, then sales tax (prose, rules by item, local taxes,
+ * Order (built for this subject): the answer block (folded), the sales tax calculator locked on the state,
+ * then the verification line and the state's figures at a glance (first screen, RECETTE §5, 2026-10-11),
+ * then sales tax (prose, rules by item, local taxes,
  * 2026 holidays, facts), then property tax (prose, mini-simulator, Census figures, homestead, relief).
  */
 import PageLayout from '../layouts/PageLayout.astro';
@@ -58,13 +59,17 @@ const hs = PR.homestead;
 ---
 <PageLayout title={def.title} description={def.description} lang={lang} jsonLd={jsonLd} faqs={def.faqs} related={related} sources={sources} breadcrumbs={[{ label: s.name }]}>
   <article>
-    <header class="mb-5">
-      <p class="text-sm font-semibold uppercase tracking-wide text-accent-700">State guide · {s.abbr}</p>
-      <h1 class="mt-1 font-serif text-3xl font-bold text-navy-900 md:text-4xl">{h1}</h1>
-      <p class="mt-3 text-lg text-navy-700">{def.intro}</p>
-      <p class="mt-3 text-sm text-navy-600">Facts read on official {s.name} pages on <time datetime={s.verified}>{day(s.verified)}</time> · {ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={methodHref} class="underline hover:text-navy-900">{label('method')}</a></p>
+    <header class="mb-4">
+      <p class="text-xs font-semibold uppercase tracking-wide text-accent-700 sm:text-sm">State guide · {s.abbr}</p>
+      <h1 class="mt-1 font-serif text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{h1}</h1>
+      <p class="mt-2 text-base text-navy-700 sm:text-lg">{def.intro}</p>
     </header>
-    <dl data-chrome class="mb-6 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-navy-200 bg-navy-200 text-sm sm:grid-cols-3">
+    <Clamp text={def.resume} lang={lang} id={`clamp-${s.slug}`} class="mb-3" />
+    <div data-outil class="mb-4">
+      <SalesTaxCalculator client:load states={compact} state={s.slug} lockState={true} methodHref={methodHref} idPrefix={s.abbr.toLowerCase()} />
+    </div>
+    <p class="mb-5 text-sm text-navy-600">Facts read on official {s.name} pages on <time datetime={s.verified}>{day(s.verified)}</time> · {ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={methodHref} class="underline hover:text-navy-900">{label('method')}</a></p>
+    <dl data-chrome class="mb-10 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-navy-200 bg-navy-200 text-sm sm:grid-cols-3">
       <div class="bg-white p-3"><dt class="text-navy-600">State sales tax</dt><dd class="tabular-nums mt-0.5 text-xl font-bold text-navy-900">{yesState ? rate(S.stateRate) : 'None'}</dd></div>
       <div class="bg-white p-3"><dt class="text-navy-600">Local sales taxes</dt><dd class="mt-0.5 font-semibold text-navy-900">{S.local.allowed ? 'Yes, by address' : 'None'}</dd></div>
       <div class="bg-white p-3"><dt class="text-navy-600">Groceries</dt><dd class="mt-0.5 font-semibold text-navy-900">{yesState ? groc : 'No state tax'}</dd></div>
@@ -72,10 +77,6 @@ const hs = PR.homestead;
       <div class="bg-white p-3"><dt class="text-navy-600">Median property tax</dt><dd class="tabular-nums mt-0.5 text-xl font-bold text-navy-900">{usd(C.medianTax)}</dd></div>
       <div class="bg-white p-3"><dt class="text-navy-600">Effective property rate</dt><dd class="tabular-nums mt-0.5 font-semibold text-navy-900">{eff(C.effectiveRate)} · #{effRank} of 51</dd></div>
     </dl>
-    <Clamp text={def.resume} lang={lang} id={`clamp-${s.slug}`} class="mb-5" />
-    <div data-outil class="mb-10">
-      <SalesTaxCalculator client:load states={compact} state={s.slug} lockState={true} methodHref={methodHref} idPrefix={s.abbr.toLowerCase()} />
-    </div>
     <div class="prose prose-slate max-w-none prose-headings:font-serif">
       <h2>Sales tax in {s.name}</h2>
       <Fragment set:html={def.sales(h)} />

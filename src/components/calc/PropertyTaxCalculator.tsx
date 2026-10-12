@@ -6,6 +6,7 @@
  */
 import { useEffect, useMemo, useState } from 'react';
 import NumberField from '../ui/NumberField';
+import { useBelow, StickyBar } from './StickyResult';
 import SelectField from '../ui/SelectField';
 import Toggle from '../ui/Toggle';
 import { propertyTax, millsFromEffective } from '../../lib/engine/property';
@@ -27,6 +28,7 @@ export default function PropertyTaxCalculator({ states, state = 'texas', lockSta
   const [exempt, setExempt] = useState(0);
   const [credit, setCredit] = useState(0);
   const [copied, setCopied] = useState(false);
+  const [card, below] = useBelow<HTMLDivElement>();
   useEffect(() => {
     const u = readParams(window.location.search);
     if (!lockState) { const s = str(u, 's', state); if (states.some((x) => x.slug === s)) setSlug(s); }
@@ -50,8 +52,8 @@ export default function PropertyTaxCalculator({ states, state = 'texas', lockSta
   const copy = () => { navigator.clipboard?.writeText(window.location.href).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1500); }); };
   const hs = S.homestead;
   return (
-    <div className="rechner rounded-xl border border-navy-200 bg-white p-4 sm:p-6">
-      <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
+    <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
+      <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2 lg:grid-cols-1" onSubmit={(e) => e.preventDefault()}>
         {lockState
           ? <div className="grid grid-rows-subgrid row-span-3 content-start gap-y-0"><span className="mb-1 block text-sm font-medium text-navy-700">State</span><p className="flex h-12 items-center rounded-lg border border-navy-200 bg-navy-50 px-4 font-semibold text-navy-900">{S.name} · median rate {eff(S.census.effectiveRate)}</p><span /></div>
           : <SelectField id={`${p}-state`} label="State" value={slug} onChange={pickState} options={states.map((x) => ({ value: x.slug, label: `${x.name} (${eff(x.census.effectiveRate)})` }))} help={`Median tax ÷ median home value, Census ACS ${censusYear}.`} />}
@@ -62,7 +64,7 @@ export default function PropertyTaxCalculator({ states, state = 'texas', lockSta
         {mode === 'bill' && <NumberField id={`${p}-exempt`} label="Exemptions off assessed value" value={exempt} onChange={setExempt} unit="$" max={10_000_000} help={hs.name ? `${S.name}: ${hs.name}${hs.amount && hs.amountType === 'value-exemption' ? `, ${usd(hs.amount)}` : ''}.` : undefined} />}
         {mode === 'bill' && <NumberField id={`${p}-credit`} label="Credits off the tax" value={credit} onChange={setCredit} unit="$" max={1_000_000} help="Some states give a credit or rebate instead of an exemption." />}
       </form>
-      <div aria-live="polite" className="mt-6 rounded-xl bg-accent-50 p-4 sm:p-5">
+      <div ref={card} aria-live="polite" data-resultat className="rounded-xl bg-accent-50 p-4 sm:p-5">
         <p className="text-sm font-medium text-navy-700">Estimated property tax per year</p>
         <p className="tabular-nums mt-1 text-4xl font-bold text-navy-900">{usd(r.tax)}</p>
         <p className="mt-1 text-sm text-navy-700">{usd(r.monthly)} a month · {formatNumber(r.effectiveRate, 2)}% of market value</p>
@@ -80,6 +82,7 @@ export default function PropertyTaxCalculator({ states, state = 'texas', lockSta
           <button type="button" onClick={copy} className="rounded-lg border border-navy-300 bg-white px-3 py-1.5 font-medium text-navy-800 hover:bg-navy-50">{copied ? 'Link copied' : 'Copy share link'}</button>
           <button type="button" onClick={() => window.print()} className="rounded-lg border border-navy-300 bg-white px-3 py-1.5 font-medium text-navy-800 hover:bg-navy-50">Print</button>
         </div>
+        <StickyBar show={below} target={card} label="Estimated property tax per year" value={usd(r.tax)} />
       </div>
     </div>
   );

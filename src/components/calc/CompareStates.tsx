@@ -4,6 +4,7 @@
  */
 import { useEffect, useMemo, useState } from 'react';
 import NumberField from '../ui/NumberField';
+import { useBelow, StickyBar } from './StickyResult';
 import SelectField from '../ui/SelectField';
 import { salesTax } from '../../lib/engine/sales';
 import { taxAtEffectiveRate } from '../../lib/engine/property';
@@ -37,15 +38,17 @@ export default function CompareStates({ states, a = 'california', b = 'texas', c
   const opts = states.map((s) => ({ value: s.slug, label: s.name }));
   const p = idPrefix;
   const diff = rows[0].total - rows[1].total;
+  const [card, below] = useBelow<HTMLDivElement>();
   return (
-    <div className="rechner rounded-xl border border-navy-200 bg-white p-4 sm:p-6">
-      <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
+    <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
+      <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2 lg:grid-cols-1" onSubmit={(e) => e.preventDefault()}>
         <SelectField id={`${p}-a`} label="First state" value={sa} onChange={setSa} options={opts} />
         <SelectField id={`${p}-b`} label="Second state" value={sb} onChange={setSb} options={opts} />
         <NumberField id={`${p}-spend`} label="Taxable purchases in a year" value={spend} onChange={setSpend} unit="$" max={10_000_000} help="Goods taxed at the general rate (not groceries)." />
         <NumberField id={`${p}-home`} label="Home value" value={home} onChange={setHome} unit="$" max={50_000_000} />
       </form>
-      <div aria-live="polite" className="mt-6 grid gap-4 sm:grid-cols-2">
+      <div>
+      <div ref={card} aria-live="polite" data-resultat className="grid gap-4 sm:grid-cols-2">
         {rows.map(({ S, st, pt, total }) => (
           <div key={S.slug} className="rounded-xl bg-accent-50 p-4">
             <p className="text-sm font-semibold text-navy-900">{S.name}</p>
@@ -58,6 +61,8 @@ export default function CompareStates({ states, a = 'california', b = 'texas', c
         ))}
       </div>
       <p className="mt-4 text-sm text-navy-800">{diff === 0 ? 'Same total in both states.' : `${(diff > 0 ? rows[1] : rows[0]).S.name} costs ${usd(Math.abs(diff))} less a year on these figures.`} Local sales taxes are not included (they depend on the address); property tax uses each state's median effective rate, Census ACS {censusYear}.</p>
+      <StickyBar show={below} target={card} label={`${rows[0].S.name} / ${rows[1].S.name}`} value={`${usd(rows[0].total)} / ${usd(rows[1].total)}`} />
+      </div>
     </div>
   );
 }

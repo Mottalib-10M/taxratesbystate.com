@@ -57,7 +57,8 @@ export default function HomeSaleCalculator({ states, state = 'california', price
   const p = idPrefix;
   const net = price - costs - r.total;
   return (
-    <div className="rechner rounded-xl border border-navy-200 bg-white p-4 sm:p-6">
+    <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
+      <div>
       <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
         <SelectField id={`${p}-filing`} label="Filing status" value={filing} onChange={(v) => setFiling(v as Filing)} options={FILINGS} />
         <SelectField id={`${p}-state`} label="State" value={slug} onChange={pick} options={states.map((x) => ({ value: x.slug, label: `${x.name} (${x.taxesCapitalGains ? rate(x.topRatePct) : 'no tax on the gain'})` }))} help="Top state income tax rate on the gain, editable below." />
@@ -78,6 +79,7 @@ export default function HomeSaleCalculator({ states, state = 'california', price
           <NumberField id={`${p}-strate`} label={`State tax rate on the gain (${St.name})`} value={stRate} onChange={setStRate} unit="%" max={20} decimals={2} help={St.cgExclusionPct ? `${St.name} excludes ${St.cgExclusionPct}% of a long-term gain before this rate.` : St.flat ? 'Flat rate.' : 'Top rate shown; lower if your income stays in a lower bracket.'} />
         </div>
       </details>
+      </div>
       <ResultPanel label="Tax on the sale of your home" value={usd(r.total)} sub={`${usd(r.x.exclusion)} of the ${usd(r.x.gain)} gain excluded · you keep ${usd(net)} before paying off any mortgage`}
         rows={[
           ['Gain (price − selling costs − basis)', usd(r.x.gain)],

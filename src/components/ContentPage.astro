@@ -66,16 +66,15 @@ const ip = page.id.slice(0, 10);
 ---
 <PageLayout title={page.title} description={page.description} lang={lang} jsonLd={jsonLd} faqs={page.faqs} related={related} sources={sources} breadcrumbs={[{ label: page.nav }]}>
   <article>
-    <header class="mb-6">
-      <p class="text-sm font-semibold uppercase tracking-wide text-accent-700">{GROUP_LABEL[page.group]}</p>
-      <h1 class="mt-1 font-serif text-3xl font-bold text-navy-900 md:text-4xl">{page.h1}</h1>
-      <p class="mt-3 text-lg text-navy-700">{page.intro}</p>
-      <p class="mt-3 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={route('editorial', lang)} class="underline hover:text-navy-900">{ui.editorialPolicy}</a> · <a href={methodHref} class="underline hover:text-navy-900">{label('method')}</a></p>
+    <header class="mb-4">
+      <p class="text-xs font-semibold uppercase tracking-wide text-accent-700 sm:text-sm">{GROUP_LABEL[page.group]}</p>
+      <h1 class="mt-1 font-serif text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{page.h1}</h1>
+      <p class="mt-2 text-base text-navy-700 sm:text-lg">{page.intro}</p>
     </header>
     {page.tool ? (
       <>
-        <Clamp text={page.resume} lang={lang} id={`clamp-${page.id}`} class="mb-4" />
-        <div data-outil class="mb-10">
+        <Clamp text={page.resume} lang={lang} id={`clamp-${page.id}`} class="mb-3" />
+        <div data-outil class="mb-4">
           {(page.tool === 'sales' || page.tool === 'reverse') && <SalesTaxCalculator client:load states={compact} state={tp.state} lockState={tp.lockState} category={tp.category} price={tp.price} mode={page.tool === 'reverse' ? 'remove' : tp.mode} methodHref={methodHref} idPrefix={page.id.slice(0, 10)} />}
           {page.tool === 'property' && <PropertyTaxCalculator client:load states={compact} state={tp.state} value={tp.price} advanced={tp.advanced} censusYear={CENSUS.year} methodHref={methodHref} idPrefix={page.id.slice(0, 10)} />}
           {page.tool === 'compare' && <CompareStates client:load states={compact} censusYear={CENSUS.year} idPrefix={page.id.slice(0, 10)} />}
@@ -85,11 +84,13 @@ const ip = page.id.slice(0, 10);
           {page.tool === 'estate' && <EstateTaxCalculator client:load states={estateStates()} state={tp.state} price={tp.price} methodHref={methodHref} idPrefix={ip} />}
           {page.tool === 'inheritance' && <InheritanceTaxCalculator client:load states={inheritanceStates()} state={tp.state} price={tp.price} methodHref={methodHref} idPrefix={ip} />}
         </div>
+        <p class="mb-10 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={route('editorial', lang)} class="underline hover:text-navy-900">{ui.editorialPolicy}</a> · <a href={methodHref} class="underline hover:text-navy-900">{label('method')}</a></p>
       </>
     ) : (
       <>
-        <p class="mb-6 text-navy-800">{page.resume}</p>
-        {page.mini && <MiniSim client:load kind={page.mini} arg={page.miniArg} href={route('home', lang)} />}
+        <Clamp text={page.resume} lang={lang} id={`clamp-${page.id}`} class="mb-3" />
+        {page.mini && <MiniSim client:load spacing="mb-4 mt-3" kind={page.mini} arg={page.miniArg} href={route('home', lang)} />}
+        <p class="mb-8 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={route('editorial', lang)} class="underline hover:text-navy-900">{ui.editorialPolicy}</a> · <a href={methodHref} class="underline hover:text-navy-900">{label('method')}</a></p>
       </>
     )}
     {page.fold ? (

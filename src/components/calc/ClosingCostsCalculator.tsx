@@ -61,7 +61,8 @@ export default function ClosingCostsCalculator({ states, state = 'new-york', pri
   const p = idPrefix;
   const buyer = role === 'buyer';
   return (
-    <div className="rechner rounded-xl border border-navy-200 bg-white p-4 sm:p-6">
+    <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
+      <div>
       <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
         <Toggle id={`${p}-role`} label="I am the" value={role} onChange={pickRole} options={[{ value: 'buyer', label: 'Buyer' }, { value: 'seller', label: 'Seller' }]} />
         <SelectField id={`${p}-state`} label="State" value={slug} onChange={pick} options={states.map((x) => ({ value: x.slug, label: x.name }))} />
@@ -83,6 +84,7 @@ export default function ClosingCostsCalculator({ states, state = 'new-york', pri
           <NumberField id={`${p}-other`} label="Other fees (recording, inspection, attorney, HOA)" value={other} onChange={setOther} unit="$" max={1_000_000} />
         </div>
       </details>
+      </div>
       <ResultPanel label={buyer ? 'Your closing costs as the buyer' : 'Your closing costs as the seller'} value={usd(r.total)}
         sub={`${formatNumber(price ? (r.total / price) * 100 : 0, 2)}% of the price · ${buyer ? `cash to close about ${usd(r.cash)}` : `net proceeds about ${usd(r.cash)}`}`}
         rows={[

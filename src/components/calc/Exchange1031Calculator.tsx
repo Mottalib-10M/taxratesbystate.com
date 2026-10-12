@@ -52,7 +52,8 @@ export default function Exchange1031Calculator({ states, state = 'florida', pric
   }, [sale, costs, basis, depr, oldDebt, repl, newDebt, filing, income, St, stRate]);
   const p = idPrefix;
   return (
-    <div className="rechner rounded-xl border border-navy-200 bg-white p-4 sm:p-6">
+    <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
+      <div>
       <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
         <NumberField id={`${p}-sale`} label="Sale price of the property you give up" value={sale} onChange={setSale} unit="$" max={500_000_000} />
         <NumberField id={`${p}-basis`} label="Adjusted basis (after depreciation)" value={basis} onChange={setBasis} unit="$" max={500_000_000} help="Purchase price + improvements − depreciation taken." />
@@ -71,6 +72,7 @@ export default function Exchange1031Calculator({ states, state = 'florida', pric
           <NumberField id={`${p}-strate`} label={`State tax rate on the gain (${St.name})`} value={stRate} onChange={setStRate} unit="%" max={20} decimals={2} help={St.cgExclusionPct ? `${St.name} excludes ${St.cgExclusionPct}% of a long-term gain before this rate.` : 'Top rate by default; lower if your income stays in a lower bracket.'} />
         </div>
       </details>
+      </div>
       <ResultPanel label="Tax deferred by the exchange" value={usd(Math.max(0, r.deferredTax))}
         sub={r.x.boot > 0 ? `${usd(r.x.recognized)} of boot taxed now: ${usd(r.now)} due this year` : 'No boot: the whole gain is deferred'}
         rows={[

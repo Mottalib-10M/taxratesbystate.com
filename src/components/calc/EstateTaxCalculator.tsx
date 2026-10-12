@@ -40,7 +40,8 @@ export default function EstateTaxCalculator({ states, state = 'massachusetts', p
   }, [gross, debts, marital, charity, gifts, dsue, St]);
   const p = idPrefix;
   return (
-    <div className="rechner rounded-xl border border-navy-200 bg-white p-4 sm:p-6">
+    <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
+      <div>
       <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
         <SelectField id={`${p}-state`} label="State of residence at death" value={slug} onChange={setSlug} options={states.map((x) => ({ value: x.slug, label: `${x.name}${x.estate ? ` (estate tax above ${usd(x.estate.exemption)})` : x.inheritance ? ' (inheritance tax)' : ''}` }))} />
         <NumberField id={`${p}-gross`} label="Gross estate (everything owned)" value={gross} onChange={setGross} unit="$" max={10_000_000_000} help="Home, investments, retirement accounts, life insurance you owned." />
@@ -55,6 +56,7 @@ export default function EstateTaxCalculator({ states, state = 'massachusetts', p
           <NumberField id={`${p}-dsue`} label="Deceased spousal unused exclusion (DSUE)" value={dsue} onChange={setDsue} unit="$" max={100_000_000} help="Only if elected on the late spouse's Form 706 (federal only)." />
         </div>
       </details>
+      </div>
       <ResultPanel label="Estate tax due" value={usd(r.total)}
         sub={`${formatNumber(gross ? (r.total / gross) * 100 : 0, 1)}% of the gross estate`}
         rows={[

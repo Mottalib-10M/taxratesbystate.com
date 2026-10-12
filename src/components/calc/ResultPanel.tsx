@@ -1,13 +1,15 @@
 /** Shared result block of the real estate calculators: the headline figure, a sub-line, the detail rows and the note. */
 import { useState, type ReactNode } from 'react';
+import { useBelow, StickyBar } from './StickyResult';
 
 interface Props { label: string; value: string; sub?: string; rows: Array<[string, string] | null | false>; note?: ReactNode; methodHref?: string }
 
 export default function ResultPanel({ label, value, sub, rows, note, methodHref }: Props) {
   const [copied, setCopied] = useState(false);
+  const [card, below] = useBelow<HTMLDivElement>();
   const copy = () => { navigator.clipboard?.writeText(window.location.href).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1500); }); };
   return (
-    <div aria-live="polite" className="mt-6 rounded-xl bg-accent-50 p-4 sm:p-5">
+    <div ref={card} aria-live="polite" data-resultat className="rounded-xl bg-accent-50 p-4 sm:p-5">
       <p className="text-sm font-medium text-navy-700">{label}</p>
       <p className="tabular-nums mt-1 text-4xl font-bold text-navy-900">{value}</p>
       {sub && <p className="mt-1 text-sm text-navy-700">{sub}</p>}
@@ -19,6 +21,7 @@ export default function ResultPanel({ label, value, sub, rows, note, methodHref 
         <button type="button" onClick={copy} className="rounded-lg border border-navy-300 bg-white px-3 py-1.5 font-medium text-navy-800 hover:bg-navy-50">{copied ? 'Link copied' : 'Copy share link'}</button>
         <button type="button" onClick={() => window.print()} className="rounded-lg border border-navy-300 bg-white px-3 py-1.5 font-medium text-navy-800 hover:bg-navy-50">Print</button>
       </div>
+      <StickyBar show={below} target={card} label={label} value={value} />
     </div>
   );
 }
