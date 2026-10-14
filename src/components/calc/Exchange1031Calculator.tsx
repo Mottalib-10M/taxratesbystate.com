@@ -54,7 +54,7 @@ export default function Exchange1031Calculator({ states, state = 'florida', pric
   return (
     <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
       <div>
-      <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
+      <form className="grid content-start gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
         <NumberField id={`${p}-sale`} label="Sale price of the property you give up" value={sale} onChange={setSale} unit="$" max={500_000_000} />
         <NumberField id={`${p}-basis`} label="Adjusted basis (after depreciation)" value={basis} onChange={setBasis} unit="$" max={500_000_000} help="Purchase price + improvements − depreciation taken." />
         <NumberField id={`${p}-depr`} label="Depreciation taken over the years" value={depr} onChange={setDepr} unit="$" max={500_000_000} help="Taxed up to 25% when recognized." />

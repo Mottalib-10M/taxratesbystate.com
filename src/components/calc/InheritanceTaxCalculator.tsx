@@ -36,7 +36,7 @@ export default function InheritanceTaxCalculator({ states, state = 'pennsylvania
   const p = idPrefix;
   return (
     <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
-      <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2 lg:grid-cols-1" onSubmit={(e) => e.preventDefault()}>
+      <form className="grid content-start gap-x-5 gap-y-4 sm:grid-cols-2 lg:grid-cols-1" onSubmit={(e) => e.preventDefault()}>
         <SelectField id={`${p}-state`} label="State where the deceased lived" value={slug} onChange={(s) => { setSlug(s); const n = states.find((x) => x.slug === s); setCls(n ? first(n) : 0); }} options={states.map((x) => ({ value: x.slug, label: x.name }))} help="Real estate is taxed by the state where it sits." />
         <SelectField id={`${p}-class`} label="Heir's relationship to the deceased" value={String(cls)} onChange={(v) => setCls(Number(v))} options={St.classes.map((c, i) => ({ value: String(i), label: c.who }))} />
         <NumberField id={`${p}-share`} label="Value this heir receives" value={share} onChange={setShare} unit="$" max={10_000_000_000} help="After the estate's debts and expenses." />

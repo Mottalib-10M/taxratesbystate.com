@@ -63,7 +63,7 @@ export default function ClosingCostsCalculator({ states, state = 'new-york', pri
   return (
     <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
       <div>
-      <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
+      <form className="grid content-start gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
         <Toggle id={`${p}-role`} label="I am the" value={role} onChange={pickRole} options={[{ value: 'buyer', label: 'Buyer' }, { value: 'seller', label: 'Seller' }]} />
         <SelectField id={`${p}-state`} label="State" value={slug} onChange={pick} options={states.map((x) => ({ value: x.slug, label: x.name }))} />
         <NumberField id={`${p}-price`} label="Sale price" value={price} onChange={setPrice} unit="$" max={500_000_000} />

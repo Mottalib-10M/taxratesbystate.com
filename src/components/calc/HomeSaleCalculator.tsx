@@ -59,7 +59,7 @@ export default function HomeSaleCalculator({ states, state = 'california', price
   return (
     <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
       <div>
-      <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
+      <form className="grid content-start gap-x-5 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
         <SelectField id={`${p}-filing`} label="Filing status" value={filing} onChange={(v) => setFiling(v as Filing)} options={FILINGS} />
         <SelectField id={`${p}-state`} label="State" value={slug} onChange={pick} options={states.map((x) => ({ value: x.slug, label: `${x.name} (${x.taxesCapitalGains ? rate(x.topRatePct) : 'no tax on the gain'})` }))} help="Top state income tax rate on the gain, editable below." />
         <NumberField id={`${p}-price`} label="Sale price" value={price} onChange={setPrice} unit="$" max={100_000_000} />

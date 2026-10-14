@@ -41,7 +41,7 @@ export default function CompareStates({ states, a = 'california', b = 'texas', c
   const [card, below] = useBelow<HTMLDivElement>();
   return (
     <div className="rechner grid gap-6 rounded-xl border border-navy-200 bg-white p-4 sm:p-6 lg:grid-cols-2 lg:items-start">
-      <form className="grid gap-x-5 gap-y-4 sm:grid-cols-2 lg:grid-cols-1" onSubmit={(e) => e.preventDefault()}>
+      <form className="grid content-start gap-x-5 gap-y-4 sm:grid-cols-2 lg:grid-cols-1" onSubmit={(e) => e.preventDefault()}>
         <SelectField id={`${p}-a`} label="First state" value={sa} onChange={setSa} options={opts} />
         <SelectField id={`${p}-b`} label="Second state" value={sb} onChange={setSb} options={opts} />
         <NumberField id={`${p}-spend`} label="Taxable purchases in a year" value={spend} onChange={setSpend} unit="$" max={10_000_000} help="Goods taxed at the general rate (not groceries)." />
